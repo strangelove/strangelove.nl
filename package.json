@@ -1,0 +1,20 @@
+{
+	"name": "strangelove.nl",
+	"version": "0.0.0",
+	"description": "strangelove.nl templates",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:strangelove/strangelove.nl"
+	},
+	"author": "Strangelove",
+	"bugs": {
+		"url": "https://github.com/strangelove/strangelove.nl/issues"
+	},
+	"homepage": "https://github.com/strangelove/strangelove.nl",
+	"dependencies": {
+		"grunt": "0.4",
+		"grunt-contrib-watch": "0.6",
+		"grunt-sass": "0.14"
+	}
+}
