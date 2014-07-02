@@ -24,4 +24,11 @@ $ grunt
 
 If the above `npm install` throws an error, you probably need `sudo`.
 
+## Used fonts
+
+- [Aleo][font-aleo]
+- [Ubuntu][font-ubuntu]
+
 [nodejs]: http://nodejs.org/
+[font-aleo]: http://www.fontsquirrel.com/fonts/aleo
+[font-ubuntu]: https://www.google.com/fonts/specimen/Ubuntu
