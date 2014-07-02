@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/Aleo/Regular.eot');
+	src: url('/fonts/Aleo/Regular.eot?iefix') format('eot'),
+		url('/fonts/Aleo/Regular.woff') format('woff'),
+		url('/fonts/Aleo/Regular.ttf') format('truetype'),
+		url('/fonts/Aleo/Regular.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 400;
+	src: url('/fonts/Aleo/Italic.eot');
+	src: url('/fonts/Aleo/Italic.eot?iefix') format('eot'),
+		url('/fonts/Aleo/Italic.woff') format('woff'),
+		url('/fonts/Aleo/Italic.ttf') format('truetype'),
+		url('/fonts/Aleo/Italic.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 700;
+	src: url('/fonts/Aleo/BoldItalic.eot');
+	src: url('/fonts/Aleo/BoldItalic.eot?iefix') format('eot'),
+		url('/fonts/Aleo/BoldItalic.woff') format('woff'),
+		url('/fonts/Aleo/BoldItalic.ttf') format('truetype'),
+		url('/fonts/Aleo/BoldItalic.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}

@@ -1,0 +1,38 @@
+.services {
+	ol, ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+	.step {
+		float: left;
+		width: 20%;
+		padding: 130px 0 0;
+	}
+	h3:after {
+		content: ' ';
+		display: block;
+		width: 30px;
+		height: 4px;
+		margin: 24px auto 0;
+	}
+	.clarify h3:after {
+		background: #515875;
+	}
+	.create h3:after {
+		background: #576f9e;
+	}
+	.code h3:after {
+		background: #6697b9;
+	}
+	.connect h3:after {
+		background: #88c3d8;
+	}
+	.control h3:after {
+		background: #afdae2;
+	}
+	ul {
+		font-style: italic;
+	}
+}

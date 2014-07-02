@@ -1,0 +1,31 @@
+.mood {
+	position: relative;
+
+	p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 800px;
+		margin: -50px 0 0 -400px;
+		padding: 18px 0;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		font-size: 22px;
+		font-style: italic;
+		text-align: center;
+		strong {
+			display: block;
+			font: 700 36px 'Ubuntu';
+			text-transform: uppercase;
+			letter-spacing: 4px;
+		}
+	}
+	.continue {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		width: 76px;
+		height: 36px;
+		margin: 0 0 0 -38px;
+	}
+}

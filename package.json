@@ -2,7 +2,7 @@
 	"name": "strangelove.nl",
 	"version": "0.0.0",
 	"description": "strangelove.nl templates",
-	"main": "index.js",
+	"main": "app.js",
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:strangelove/strangelove.nl"
@@ -13,8 +13,18 @@
 	},
 	"homepage": "https://github.com/strangelove/strangelove.nl",
 	"dependencies": {
+		"consolidate": "0.9",
+		"express": "3.4",
+		"optimist": "0.6",
+		"swig": "1.1"
+	},
+	"devDependencies": {
 		"grunt": "0.4",
+		"grunt-concurrent": "0.5",
+		"grunt-contrib-symlink": "0.3",
 		"grunt-contrib-watch": "0.6",
+		"grunt-mkdir": "0.1",
+		"grunt-nodemon": "0.1",
 		"grunt-sass": "0.14"
 	}
 }

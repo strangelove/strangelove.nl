@@ -1,0 +1,51 @@
+.header-main {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+}
+
+.logo {
+	float: left;
+	margin-left: 30px;
+	font: 700 26px 'Ubuntu';
+	line-height: 80px;
+	text-rendering: optimizeLegibility;
+	text-transform: uppercase;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.nav-primary {
+	float: right;
+	margin-right: 18px;
+	font: bold italic 14px 'Aleo';
+	line-height: 88px;
+	li {
+		float: left;
+		margin-left: 60px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	.count {
+		position: relative;
+		top: -2px;
+		display: inline-block;
+		width: 14px;
+		margin: 0 0 0 2px;
+		border-radius: 7px;
+		background: #2795bd;
+		font-size: 9px;
+		line-height: 14px;
+		text-align: center;
+	}
+}
