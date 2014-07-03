@@ -8,7 +8,7 @@
 	.step {
 		float: left;
 		width: 20%;
-		padding: 130px 0 0;
+		padding: 140px 0 0;
 	}
 	h3:after {
 		content: ' ';
@@ -17,20 +17,35 @@
 		height: 4px;
 		margin: 24px auto 18px;
 	}
-	.clarify h3:after {
-		background: #515875;
+	.clarify {
+		background: url(/img/services/clarify.png) no-repeat center top;
+		h3:after {
+			background: #515875;
+		}
 	}
-	.create h3:after {
-		background: #576f9e;
+	.create {
+		background: url(/img/services/create.png) no-repeat center top;
+		h3:after {
+			background: #576f9e;
+		}
 	}
-	.code h3:after {
-		background: #6697b9;
+	.code {
+		background: url(/img/services/code.png) no-repeat center top;
+		h3:after {
+			background: #6697b9;
+		}
 	}
-	.connect h3:after {
-		background: #88c3d8;
+	.connect {
+		background: url(/img/services/connect.png) no-repeat center top;
+		h3:after {
+			background: #88c3d8;
+		}
 	}
-	.control h3:after {
-		background: #afdae2;
+	.control {
+		background: url(/img/services/control.png) no-repeat center top;
+		h3:after {
+			background: #afdae2;
+		}
 	}
 	ul {
 		font-style: italic;
