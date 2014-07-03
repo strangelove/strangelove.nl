@@ -1,0 +1,15 @@
+.clients {
+	ul {
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		float: left;
+		width: 25%;
+		height: 120px;
+		margin: 90px 0 0;
+		background-position: center;
+	}
+}
