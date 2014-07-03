@@ -36,8 +36,10 @@ module.exports = function(grunt){
 				overwrite: false
 			},
 			explicit: {
-				src: 'src/fonts',
-				dest: 'public/fonts'
+				files: [
+					{ src: 'src/fonts', dest: 'public/fonts' },
+					{ src: 'src/img', dest: 'public/img' }
+				]
 			}
 		},
 
