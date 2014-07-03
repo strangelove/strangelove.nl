@@ -3,9 +3,12 @@
 @import 'fonts';
 @import 'base';
 @import 'header';
+
+@import 'modules/text-slides';
+
 @import 'sections/mood';
 @import 'sections/services';
-@import 'sections/about';
 @import 'sections/cases';
 @import 'sections/clients';
 @import 'sections/team';
+@import 'sections/office';

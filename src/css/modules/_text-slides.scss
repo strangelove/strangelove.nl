@@ -1,12 +1,7 @@
-.about {
-	.wrap {
-		position: relative;
-	}
-	.slides {
-		max-width: 800px;
-		margin: 76px auto 0;
-		text-align: center;
-	}
+.text-slides {
+	position: relative;
+	margin: 76px auto 0;
+	text-align: center;
 	.slides-prev, .slides-next {
 		position: absolute;
 		width: 36px;
@@ -23,15 +18,14 @@
 		background: rgba(255, 255, 255, .3);
 	}
 	.slides-tabs {
+		display: inline-block;
+		padding: 0 24px;
 		border-top: 1px solid #fff;
 		border-bottom: 1px solid #fff;
 		font: 700 18px 'Ubuntu';
 		letter-spacing: 3px;
 		line-height: 58px;
 		text-transform: uppercase;
-		ul {
-			overflow: hidden;
-		}
 		li {
 			display: inline;
 			margin: 0 0 0 110px;
@@ -45,9 +39,8 @@
 		}
 	}
 	.slides-contents {
+		max-width: 460px;
+		margin: 0 auto;
 		padding: 70px 0 0;
-		article {
-			padding: 0 170px;
-		}
 	}
 }
