@@ -1,0 +1,31 @@
+.team {
+	ul {
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		float: left;
+		width: 33.33333333333333%;
+		margin: 80px 0 0;
+		text-align: center;
+	}
+	img {
+		display: block;
+		width: 180px;
+		height: 180px;
+		margin: 0 auto 24px;
+	}
+	h3:after {
+		content: ' ';
+		display: block;
+		width: 30px;
+		height: 4px;
+		margin: 18px auto 12px;
+		background: #2994be;
+	}
+	p {
+		font-style: italic;
+	}
+}
