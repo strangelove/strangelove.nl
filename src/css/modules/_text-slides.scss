@@ -4,18 +4,13 @@
 	text-align: center;
 	.slides-prev, .slides-next {
 		position: absolute;
-		width: 36px;
-		height: 76px;
 		margin: 200px 0 0;
-		text-indent: -999em;
 	}
 	.slides-prev {
 		left: 0;
-		background: rgba(255, 255, 255, .3);
 	}
 	.slides-next {
 		right: 0;
-		background: rgba(255, 255, 255, .3);
 	}
 	.slides-tabs {
 		display: inline-block;

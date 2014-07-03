@@ -61,6 +61,25 @@ a {
 	text-transform: uppercase;
 }
 
+.arrow-down {
+	width: 75px;
+	height: 35px;
+	background: url(/img/arrow-down.png);
+	text-indent: -999em;
+}
+.arrow-left {
+	width: 35px;
+	height: 75px;
+	background: url(/img/arrow-left.png);
+	text-indent: -999em;
+}
+.arrow-right {
+	width: 35px;
+	height: 75px;
+	background: url(/img/arrow-right.png);
+	text-indent: -999em;
+}
+
 .page {
 	height: 100%;
 	&.dark {
