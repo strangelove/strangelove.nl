@@ -27,9 +27,15 @@ h3 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
+h4 {
+	margin: 0;
+	font: 11px/25px Ubuntu, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
 
 p {
-	margin: 0 0 18px;
+	margin: 0 0 25px;
 }
 
 a {
@@ -70,6 +76,17 @@ a {
 	}
 	.wrap {
 		height: 100%;
+	}
+}
+
+.logo {
+	margin: 0;
+	font: 700 26px/25px 'Ubuntu';
+	text-rendering: optimizeLegibility;
+	text-transform: uppercase;
+	a {
+		color: #fff;
+		text-decoration: none;
 	}
 }
 

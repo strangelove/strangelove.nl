@@ -1,0 +1,48 @@
+.footer-main {
+	overflow: hidden;
+	padding: 74px 0;
+	font-size: 12px;
+	.footer-col {
+		float: left;
+		width: 20%;
+		&:first-child {
+			width: 40%;
+			padding: 0 230px 0 0;
+			text-align: right;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	a {
+		color: #333;
+	}
+	.slogan {
+		color: #2795bd;
+	}
+	.social {
+		display: inline-block;
+		overflow: hidden;
+		margin: 25px 0 0;
+		li {
+			float: left;
+			margin: 0 0 0 16px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		a {
+			display: block;
+			width: 18px;
+			height: 18px;
+			background: #bcbcbc;
+			text-indent: 999em;
+		}
+	}
+	.copyright {
+		margin: 0;
+		color: #666;
+	}
+}

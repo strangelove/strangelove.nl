@@ -5,18 +5,10 @@
 	left: 0;
 	right: 0;
 	height: 80px;
-}
-
-.logo {
-	float: left;
-	margin-left: 30px;
-	font: 700 26px 'Ubuntu';
-	line-height: 80px;
-	text-rendering: optimizeLegibility;
-	text-transform: uppercase;
-	a {
-		color: #fff;
-		text-decoration: none;
+	.logo {
+		float: left;
+		margin-left: 30px;
+		line-height: 80px;
 	}
 }
 
