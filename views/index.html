@@ -276,40 +276,44 @@
 		</section>
 
 		<section class="page dark contact">
-			<div class="wrap">
-				<a class="push" name="contact"></a>
-				<h2>Have that strange feeling of love?<br>Contact us</h2>
-				<ul>
-					<li>
-						<h3>52&deg;22'17.6"N</h3>
-						<p>Our home</p>
-						<p>
-							Tweede Kostverlorenkade 68<br>
-							1053 SB Amsterdam
-						</p>
-						<a href="#">Location</a>
-					</li>
-					<li>
-						<img src="#" alt="Vincent van Dijk">
-						<h3>New business</h3>
-						<p>Managing Director</p>
-						<p>
-							Want to start something?<br>
-							Talk to Vincent!
-						</p>
-						<a href="#">Mail</a>
-					</li>
-					<li>
-						<img src="#" alt="Office">
-						<dl>
-							<dt>0800 - 1486</dt>
-							<dd>Helpdesk</dd>
-							<dt>(0)20 470 05 33</dt>
-							<dd>HQ</dd>
-						</dl>
-						<a href="#">Call</a>
-					</li>
-				</ul>
+			<div class="map-canvas" id="map-canvas"></div>
+			<div class="contact-content">
+				<div class="wrap">
+					<a class="push" name="contact"></a>
+					<h2>Have that strange feeling of love?<br>Contact us</h2>
+					<ul>
+						<li>
+							<img src="#" alt="Office">
+							<dl>
+								<dt>0800 - 1486</dt>
+								<dd>Helpdesk</dd>
+								<dt>(0)20 470 05 33</dt>
+								<dd>HQ</dd>
+							</dl>
+							<a href="#" class="btn">Call</a>
+						</li>
+						<li>
+							<a href="#" class="show-map">Show map</a>
+							<h3>52&deg;22'17.6"N</h3>
+							<p class="sub-title">Our home</p>
+							<p>
+								Tweede Kostverlorenkade 68<br>
+								1053 SB Amsterdam
+							</p>
+							<a href="#" class="btn">Location</a>
+						</li>
+						<li>
+							<img src="#" alt="Vincent van Dijk">
+							<h3>New business</h3>
+							<p class="sub-title">Managing Director</p>
+							<p>
+								Want to start something?<br>
+								Talk to Vincent!
+							</p>
+							<a href="#" class="btn">Mail</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
@@ -356,5 +360,16 @@
 				</div>
 			</div>
 		</footer>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+		<script type="text/javascript">
+			var initialize = function(){
+				var mapOptions = {
+					center: new google.maps.LatLng(52.366394, 4.861973),
+					zoom: 16
+				};
+				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			};
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 	</body>
 </html>
