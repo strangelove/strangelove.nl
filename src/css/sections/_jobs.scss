@@ -1,0 +1,22 @@
+.jobs {
+	.job-listing {
+		overflow: hidden;
+	}
+	article {
+		float: left;
+		width: 50%;
+		padding: 0 110px;
+		text-align: center;
+	}
+	.subtitle {
+		margin-top: 9px;
+		&:after {
+			content: ' ';
+			display: block;
+			width: 30px;
+			height: 4px;
+			margin: 30px auto 24px;
+			background: #2795bd;
+		}
+	}
+}
