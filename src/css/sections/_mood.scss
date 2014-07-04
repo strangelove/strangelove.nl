@@ -1,6 +1,8 @@
 .mood {
 	position: relative;
-
+	background-image: url(/img/header.jpg);
+	background-position: center;
+	background-size: cover;
 	p {
 		position: absolute;
 		top: 50%;
