@@ -26,7 +26,8 @@ module.exports = function(grunt){
 		sass: {
 			dev: {
 				files: {
-					'public/css/site.css': 'src/css/site.scss'
+					'public/css/site.css': 'src/css/site.scss',
+					'public/css/cases/litedark.css': 'src/css/cases/litedark.scss'
 				}
 			}
 		},

@@ -19,6 +19,10 @@ app.get('/', function(req, res){
 	res.render('index');
 });
 
+app.get('/cases/litedark', function(req, res){
+	res.render('cases/litedark');
+});
+
 var port = parseInt(argv.p, 10) || 3000;
 app.listen(port, function(){
 	console.log('Listening on port %d', port);

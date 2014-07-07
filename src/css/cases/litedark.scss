@@ -1,0 +1,100 @@
+.litedark {
+	.client {
+		.wrap {
+			position: relative;
+		}
+		.leaves {
+			position: absolute;
+			top: 20px;
+			right: 50px;
+			width: 363px;
+			height: 540px;
+			background: url(/img/cases/litedark/leaves.png);
+			-webkit-transform: translateX(400px);
+			-webkit-transition: -webkit-transform .5s ease-in-out;
+		}
+		.orange {
+			position: absolute;
+			top: 360px;
+			right: -70px;
+			width: 498px;
+			height: 416px;
+			background: url(/img/cases/litedark/orange.png);
+			-webkit-transform: translateX(60px);
+			-webkit-transition: -webkit-transform .5s ease-in-out;
+		}
+		.strawberry {
+			position: absolute;
+			top: 515px;
+			right: -65px;
+			width: 353px;
+			height: 291px;
+			background: url(/img/cases/litedark/strawberry.png);
+			-webkit-transform: translateX(160px);
+			-webkit-transition: -webkit-transform .5s ease-in-out;
+		}
+		.cup {
+			position: absolute;
+			top: 160px;
+			right: -100px;
+			width: 485px;
+			height: 674px;
+			background: url(/img/cases/litedark/cup.png);
+			-webkit-transform: translateX(200px);
+			-webkit-transition: -webkit-transform .5s ease-in-out;
+		}
+		&.animate {
+			.leaves {
+				-webkit-transform: translateX(0);
+			}
+			.orange {
+				-webkit-transform: translateX(0);
+			}
+			.strawberry {
+				-webkit-transform: translateX(0);
+			}
+			.cup {
+				-webkit-transform: translateX(0);
+			}
+		}
+	}
+	.brand-identity {
+		position: relative;
+		z-index: 1;
+		height: 787px;
+		background: url(/img/cases/litedark/bg-wood.jpg) no-repeat center;
+		.products {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 422px;
+			background: url(/img/cases/litedark/products.png) no-repeat center;
+		}
+	}
+	.final-logo {
+		overflow: hidden;
+		position: relative;
+		z-index: 2;
+		padding: 380px 0 0;
+		background: #fff;
+		-webkit-transition: -webkit-transform 1s ease-out;
+		.circles {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			height: 120px;
+			background: url(/img/cases/litedark/circles.png) no-repeat center;
+			-webkit-transform: translateY(-210px);
+			-webkit-transition: -webkit-transform 1s ease-out;
+		}
+		&.pull-up {
+			-webkit-transform: translateY(-210px);
+			background-position: center 0;
+			.circles {
+				-webkit-transform: translateY(0);
+			}
+		}
+	}
+}
