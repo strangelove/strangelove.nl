@@ -120,7 +120,7 @@
 			<div class="wrap">
 				<a class="push" name="cases"></a>
 				<h2>The cases we love</h2>
-				<div class="slides">
+				<div class="slides" data-case-slides>
 					<div class="slides-contents">
 						<article>
 							<div class="summary">
@@ -132,6 +132,20 @@
 								<a href="#" class="more">Read more</a>
 							</div>
 						</article>
+						<article></article>
+						<article></article>
+						<article></article>
+						<article></article>
+					</div>
+					<div class="screenshots">
+						<div class="imac"></div>
+						<ul>
+							<li class="screenshot-1"></li>
+							<li class="screenshot-2"></li>
+							<li class="screenshot-3"></li>
+							<li class="screenshot-4"></li>
+							<li class="screenshot-5"></li>
+						</ul>
 					</div>
 					<nav class="slides-tabs">
 						<ul>
@@ -360,8 +374,9 @@
 				</div>
 			</div>
 		</footer>
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-		<script type="text/javascript">
+		<script src="/js/site.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
 			var initialize = function(){
 				var mapOptions = {
 					center: new google.maps.LatLng(52.366394, 4.861973),
