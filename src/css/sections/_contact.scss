@@ -1,16 +1,29 @@
 .contact {
 	position: relative;
+	.hide-map {
+		position: absolute;
+		z-index: 2;
+		top: 10px;
+		right: 10px;
+		width: 30px;
+		height: 30px;
+		background: rgba(0, 0, 0, .3);
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+		opacity: 0;
+	}
 	.map-canvas {
 		position: absolute;
 		z-index: 1;
 		top: 0;
 		right: 0;
-		bottom: 0;
 		left: 0;
+		height: 700px;
 	}
 	.contact-content {
 		position: absolute;
-		z-index: 2;
+		z-index: 3;
 		top: 0;
 		right: 0;
 		bottom: 0;
