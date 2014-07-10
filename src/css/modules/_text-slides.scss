@@ -5,6 +5,10 @@
 	.slides-prev, .slides-next {
 		position: absolute;
 		margin: 200px 0 0;
+		transition: opacity .3s;
+		&.disabled {
+			opacity: .1;
+		}
 	}
 	.slides-prev {
 		left: 0;
@@ -24,18 +28,28 @@
 		li {
 			display: inline;
 			margin: 0 0 0 110px;
-			opacity: .2;
 			&:first-child {
 				margin-left: 0;
 			}
+		}
+		a {
+			display: inline-block;
+			-webkit-transition: opacity .3s;
+			opacity: .2;
 			&.active {
 				opacity: 1;
 			}
 		}
 	}
 	.slides-contents {
+		position: relative;
 		max-width: 460px;
-		margin: 0 auto;
-		padding: 70px 0 0;
+		margin: 70px auto 0;
+		article {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
 	}
 }
