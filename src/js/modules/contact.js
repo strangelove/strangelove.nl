@@ -2,13 +2,10 @@
 'use strict';
 
 var $ = require('elements'),
+	mapStyles = require('./map-styles'),
 	contact = $('.contact');
 
 require('moofx');
-
-var mapStyles = require('./map-styles');
-
-console.log('map styles', mapStyles);
 
 if (contact){
 	var header = $('.header-main'),
