@@ -1,390 +1,366 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>STRANGELOVE</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "layouts/default.html" %}
 
-		<link rel="stylesheet" href="/css/site.css">
-	</head>
+{% block content %}
+	<section class="page dark mood">
+		<p class="mission"><span>In the new reality</span> <strong>simplicity works</strong></p>
+		<a href="#services" class="arrow-down continue">Continue</a>
+	</section>
 
-	<body>
-		<header class="header-main">
-			<div class="wrap">
-				<p class="logo"><a href="#">Strangelove</a></p>
-				<nav class="nav-primary">
+	<section class="page services">
+		<div class="wrap">
+			<a class="push" name="services"></a>
+			<h2>What we do</h2>
+			<ol>
+				<li class="step clarify">
+					<h3>Clarify</h3>
 					<ul>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#cases">Cases</a></li>
-						<li><a href="#clients">Clients</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#office">Office</a></li>
-						<li><a href="#jobs">Jobs <span class="count">2</span></a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li>Businesses</li>
+						<li>Positionings</li>
+					</ul>
+				</li>
+				<li class="step create">
+					<h3>Create</h3>
+					<ul>
+						<li>Identities</li>
+						<li>Campaigns</li>
+					</ul>
+				</li>
+				<li class="step code">
+					<h3>Code</h3>
+					<ul>
+						<li>Online</li>
+						<li>Mobile</li>
+					</ul>
+				</li>
+				<li class="step connect">
+					<h3>Connect</h3>
+					<ul>
+						<li>Activate</li>
+						<li>Measure</li>
+					</ul>
+				</li>
+				<li class="step control">
+					<h3>Control</h3>
+					<ul>
+						<li>Hosting</li>
+						<li>Insights</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="page dark about">
+		<div class="wrap">
+			<a class="push" name="about"></a>
+			<h2>About</h2>
+			<div class="slides text-slides" data-slides>
+				<a href="#prev" class="arrow-left slides-prev">Previous</a>
+				<a href="#next" class="arrow-right slides-next">Next</a>
+				<nav class="slides-tabs">
+					<ul>
+						<li><a href="#about/how-we-think">How we think</a></li>
+						<li><a href="#about/how-we-work">How we work</a></li>
+						<li><a href="#about/how-we-help">How we help</a></li>
+					</ul>
+				</nav>
+				<div class="slides-contents">
+					<article>
+						<p>In today's complex and transparent world the game has changed.</p>
+						<p>
+							Consumers have less time and the amount of content fighting for their
+							attention is overwhelming. Traditional advertising is often money wasted.
+						</p>
+						<p>
+							In this complex world, we simplify. Welcome to Strangelove, an
+							advertising agency that believes what you do comes before what you say.
+						</p>
+						<p>
+							We combine business thinking with communication services. Creating
+							opportunities and solutions that matter to people.
+						</p>
+						<p>This is how we grow your business.</p>
+					</article>
+					<article>
+						<p>In today's complex and transparent world the game has changed.</p>
+						<p>
+							Consumers have less time and the amount of content fighting for their
+							attention is overwhelming. Traditional advertising is often money wasted.
+						</p>
+						<p>
+							In this complex world, we simplify. Welcome to Strangelove, an
+							advertising agency that believes what you do comes before what you say.
+						</p>
+						<p>
+							We combine business thinking with communication services. Creating
+							opportunities and solutions that matter to people.
+						</p>
+						<p>This is how we grow your business.</p>
+					</article>
+					<article>
+						<p>In today's complex and transparent world the game has changed.</p>
+						<p>
+							Consumers have less time and the amount of content fighting for their
+							attention is overwhelming. Traditional advertising is often money wasted.
+						</p>
+						<p>
+							In this complex world, we simplify. Welcome to Strangelove, an
+							advertising agency that believes what you do comes before what you say.
+						</p>
+						<p>
+							We combine business thinking with communication services. Creating
+							opportunities and solutions that matter to people.
+						</p>
+						<p>This is how we grow your business.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page cases">
+		<div class="wrap">
+			<a class="push" name="cases"></a>
+			<h2>The cases we love</h2>
+			<div class="slides" data-case-slides>
+				<div class="slides-contents">
+					<article>
+						<div class="summary">
+							<h3>Prins Bernhard Cultuurfonds</h3>
+							<p>
+								We helped them with developing their communication strategy of many
+								levels
+							</p>
+							<a href="#" class="more">Read more</a>
+						</div>
+					</article>
+					<article></article>
+					<article></article>
+					<article></article>
+					<article></article>
+				</div>
+				<div class="screenshots">
+					<div class="imac"></div>
+					<ul>
+						<li class="screenshot-1"></li>
+						<li class="screenshot-2"></li>
+						<li class="screenshot-3"></li>
+						<li class="screenshot-4"></li>
+						<li class="screenshot-5"></li>
+					</ul>
+				</div>
+				<nav class="slides-tabs">
+					<ul>
+						<li class="active"><a href="#"><img src="/img/case-button-cultuurfonds.png" alt="Cultuurfonds">Cultuurfonds</a></li>
+						<li><a href="#"><img src="#" alt="Lite/Dark">Lite/Dark</a></li>
+						<li><a href="#"><img src="#" alt="Slimleren">Slimleren</a></li>
+						<li><a href="#"><img src="#" alt="Pensioenfonds ING">Pensioenfonds ING</a></li>
+						<li><a href="#"><img src="#" alt="KPMG Meijburg &amp; Co.">KPMG Meijburg &amp; Co.</a></li>
 					</ul>
 				</nav>
 			</div>
-		</header>
+		</div>
+	</section>
 
-		<section class="page dark mood">
-			<p class="mission"><span>In the new reality</span> <strong>simplicity works</strong></p>
-			<a href="#services" class="arrow-down continue">Continue</a>
-		</section>
+	<section class="page dark clients">
+		<div class="wrap">
+			<a class="push" name="clients"></a>
+			<h2>Current and past clients</h2>
+			<ul>
+				<li>Prins Bernhard Cultuurfonds</li>
+				<li>Vanmoof</li>
+				<li>KLM</li>
+				<li>upc</li>
+				<li>Microsoft</li>
+				<li>Lite/Dark</li>
+				<li>VU medisch centrum</li>
+				<li>Philips</li>
+				<li>Cuba Travel Network</li>
+				<li>Mr Maria</li>
+				<li>Vosta LMG</li>
+				<li>Red Bull</li>
+			</ul>
+		</h2>
+	</section>
 
-		<section class="page services">
-			<div class="wrap">
-				<a class="push" name="services"></a>
-				<h2>What we do</h2>
-				<ol>
-					<li class="step clarify">
-						<h3>Clarify</h3>
-						<ul>
-							<li>Businesses</li>
-							<li>Positionings</li>
-						</ul>
-					</li>
-					<li class="step create">
-						<h3>Create</h3>
-						<ul>
-							<li>Identities</li>
-							<li>Campaigns</li>
-						</ul>
-					</li>
-					<li class="step code">
-						<h3>Code</h3>
-						<ul>
-							<li>Online</li>
-							<li>Mobile</li>
-						</ul>
-					</li>
-					<li class="step connect">
-						<h3>Connect</h3>
-						<ul>
-							<li>Activate</li>
-							<li>Measure</li>
-						</ul>
-					</li>
-					<li class="step control">
-						<h3>Control</h3>
-						<ul>
-							<li>Hosting</li>
-							<li>Insights</li>
-						</ul>
-					</li>
-				</ol>
-			</div>
-		</section>
+	<section class="page team">
+		<div class="wrap">
+			<a class="push" name="team"></a>
+			<h2>Leadership</h2>
+			<ul>
+				<li>
+					<img src="/img/placeholder/team-vincent.png" alt="Vincent van Dijk">
+					<h3>Vincent van Dijk</h3>
+					<p>Managing Director</p>
+				</li>
+				<li>
+					<img src="/img/placeholder/team-jeroen.png" alt="Jeroen Gouw">
+					<h3>Jeroen Gouw</h3>
+					<p>Creative Director</p>
+				</li>
+				<li>
+					<img src="/img/placeholder/team-martin.png" alt="Martin Palamarz">
+					<h3>Martin Palamarz</h3>
+					<p>Strategy Director</p>
+				</li>
+				<li>
+					<img src="/img/placeholder/team-anne.png" alt="Anne van Haeften">
+					<h3>Anne van Haeften</h3>
+					<p>Client Service Director</p>
+				</li>
+				<li>
+					<img src="/img/placeholder/team-onno.png" alt="Onno van der Steen">
+					<h3>Onno van der Steen</h3>
+					<p>Development Director</p>
+				</li>
+				<li>
+					<img src="/img/placeholder/team-tim.png" alt="Tim 'O Kennedy">
+					<h3>Tim 'O Kennedy</h3>
+					<p>Non-Executive Director</p>
+				</li>
+			</ul>
+		</div>
+	</section>
 
-		<section class="page dark about">
-			<div class="wrap">
-				<a class="push" name="about"></a>
-				<h2>About</h2>
-				<div class="slides text-slides">
-					<a href="#prev" class="arrow-left slides-prev">Previous</a>
-					<a href="#next" class="arrow-right slides-next">Next</a>
-					<nav class="slides-tabs">
-						<ul>
-							<li><a href="#">How we think</a></li>
-							<li class="active"><a href="#">How we work</a></li>
-							<li><a href="#">How we help</a></li>
-						</ul>
-					</nav>
-					<div class="slides-contents">
-						<article></article>
-						<article>
-							<p>In today's complex and transparent world the game has changed.</p>
-							<p>
-								Consumers have less time and the amount of content fighting for their
-								attention is overwhelming. Traditional advertising is often money wasted.
-							</p>
-							<p>
-								In this complex world, we simplify. Welcome to Strangelove, an
-								advertising agency that believes what you do comes before what you say.
-							</p>
-							<p>
-								We combine business thinking with communication services. Creating
-								opportunities and solutions that matter to people.
-							</p>
-							<p>This is how we grow your business.</p>
-						</article>
-						<article></article>
-					</div>
+	<section class="page dark office">
+		<div class="wrap">
+			<a class="push" name="office"></a>
+			<h2>Our culture</h2>
+			<div class="slides text-slides" data-slides>
+				<a href="#prev" class="arrow-left slides-prev">Previous</a>
+				<a href="#next" class="arrow-right slides-next">Next</a>
+				<nav class="slides-tabs">
+					<ul>
+						<li><a href="#">We are family</a></li>
+						<li class="active"><a href="#">Everything you need</a></li>
+						<li><a href="#">A creative capital</a></li>
+					</ul>
+				</nav>
+				<div class="slides-contents">
+					<article>
+						<p>In today's complex and transparent world the game has changed.</p>
+						<p>
+							Consumers have less time and the amount of content fighting for their
+							attention is overwhelming. Traditional advertising is often money wasted.
+						</p>
+						<p>
+							In this complex world, we simplify. Welcome to Strangelove, an
+							advertising agency that believes what you do comes before what you say.
+						</p>
+						<p>
+							We combine business thinking with communication services. Creating
+							opportunities and solutions that matter to people.
+						</p>
+						<p>This is how we grow your business.</p>
+					</article>
+					<article>
+						<p>
+							Hey there, let me get the door for you. New here? Cool! Here's your new
+							MacBook or iMac and some other cool accessories.
+						</p>
+						<p>Of course with a comfortable chair to complete your workspace.</p>
+						<p>
+							You can enjoy a healthy, biological lunch, afternoon snacks, great coffee
+							and fresh fruit every single day.
+						</p>
+						<p>And hey, work hard play hard, so Friday drinks are on the house.</p>
+					</article>
+					<article>
+						<p>In today's complex and transparent world the game has changed.</p>
+						<p>
+							Consumers have less time and the amount of content fighting for their
+							attention is overwhelming. Traditional advertising is often money wasted.
+						</p>
+						<p>
+							In this complex world, we simplify. Welcome to Strangelove, an
+							advertising agency that believes what you do comes before what you say.
+						</p>
+						<p>
+							We combine business thinking with communication services. Creating
+							opportunities and solutions that matter to people.
+						</p>
+						<p>This is how we grow your business.</p>
+					</article>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="page cases">
-			<div class="wrap">
-				<a class="push" name="cases"></a>
-				<h2>The cases we love</h2>
-				<div class="slides" data-case-slides>
-					<div class="slides-contents">
-						<article>
-							<div class="summary">
-								<h3>Prins Bernhard Cultuurfonds</h3>
-								<p>
-									We helped them with developing their communication strategy of many
-									levels
-								</p>
-								<a href="#" class="more">Read more</a>
-							</div>
-						</article>
-						<article></article>
-						<article></article>
-						<article></article>
-						<article></article>
-					</div>
-					<div class="screenshots">
-						<div class="imac"></div>
-						<ul>
-							<li class="screenshot-1"></li>
-							<li class="screenshot-2"></li>
-							<li class="screenshot-3"></li>
-							<li class="screenshot-4"></li>
-							<li class="screenshot-5"></li>
-						</ul>
-					</div>
-					<nav class="slides-tabs">
-						<ul>
-							<li class="active"><a href="#"><img src="/img/case-button-cultuurfonds.png" alt="Cultuurfonds">Cultuurfonds</a></li>
-							<li><a href="#"><img src="#" alt="Lite/Dark">Lite/Dark</a></li>
-							<li><a href="#"><img src="#" alt="Slimleren">Slimleren</a></li>
-							<li><a href="#"><img src="#" alt="Pensioenfonds ING">Pensioenfonds ING</a></li>
-							<li><a href="#"><img src="#" alt="KPMG Meijburg &amp; Co.">KPMG Meijburg &amp; Co.</a></li>
-						</ul>
-					</nav>
-				</div>
+	<section class="page jobs">
+		<div class="wrap">
+			<a class="push" name="jobs"></a>
+			<h2>Become strange</h2>
+			<div class="job-listing">
+				<article>
+					<h3>Front-end developer</h3>
+					<p class="subtitle">Medior Level</p>
+					<p>
+						Consumers have less time and the amount of content fighting for their
+						attention is overwhelming. Traditional advertising is often money wasted.
+					</p>
+					<p>
+						In this complex world, we simplify. Welcome to Strangelove, an
+						advertising agency that believes what you do comes before what you say.
+					</p>
+					<a href="#" class="btn">Apply</a>
+				</article>
+				<article>
+					<h3>Project producer</h3>
+					<p class="subtitle">Senior Level</p>
+					<p>
+						Consumers have less time and the amount of content fighting for their
+						attention is overwhelming. Traditional advertising is often money wasted.
+					</p>
+					<p>
+						In this complex world, we simplify. Welcome to Strangelove, an
+						advertising agency that believes what you do comes before what you say.
+					</p>
+					<a href="#" class="btn">Apply</a>
+				</article>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="page dark clients">
+	<section class="page dark contact">
+		<a href="#" class="hide-map">&times;</a>
+		<div class="map-canvas" id="map-canvas"></div>
+		<div class="contact-content">
 			<div class="wrap">
-				<a class="push" name="clients"></a>
-				<h2>Current and past clients</h2>
+				<a class="push" name="contact"></a>
+				<h2>Have that strange feeling of love?<br>Contact us</h2>
 				<ul>
-					<li>Prins Bernhard Cultuurfonds</li>
-					<li>Vanmoof</li>
-					<li>KLM</li>
-					<li>upc</li>
-					<li>Microsoft</li>
-					<li>Lite/Dark</li>
-					<li>VU medisch centrum</li>
-					<li>Philips</li>
-					<li>Cuba Travel Network</li>
-					<li>Mr Maria</li>
-					<li>Vosta LMG</li>
-					<li>Red Bull</li>
-				</ul>
-			</h2>
-		</section>
-
-		<section class="page team">
-			<div class="wrap">
-				<a class="push" name="team"></a>
-				<h2>Leadership</h2>
-				<ul>
+					<li>
+						<img src="/img/office.png" alt="Office">
+						<dl>
+							<dt>0800 - 1486</dt>
+							<dd>Helpdesk</dd>
+							<dt>(0)20 470 05 33</dt>
+							<dd>HQ</dd>
+						</dl>
+						<a href="#" class="btn">Call</a>
+					</li>
+					<li>
+						<a href="#" class="show-map">Show map</a>
+						<h3>52&deg;22'17.6"N</h3>
+						<p class="sub-title">Our home</p>
+						<p>
+							Tweede Kostverlorenkade 68<br>
+							1053 SB Amsterdam
+						</p>
+						<a href="#" class="btn">Location</a>
+					</li>
 					<li>
 						<img src="/img/placeholder/team-vincent.png" alt="Vincent van Dijk">
-						<h3>Vincent van Dijk</h3>
-						<p>Managing Director</p>
-					</li>
-					<li>
-						<img src="/img/placeholder/team-jeroen.png" alt="Jeroen Gouw">
-						<h3>Jeroen Gouw</h3>
-						<p>Creative Director</p>
-					</li>
-					<li>
-						<img src="/img/placeholder/team-martin.png" alt="Martin Palamarz">
-						<h3>Martin Palamarz</h3>
-						<p>Strategy Director</p>
-					</li>
-					<li>
-						<img src="/img/placeholder/team-anne.png" alt="Anne van Haeften">
-						<h3>Anne van Haeften</h3>
-						<p>Client Service Director</p>
-					</li>
-					<li>
-						<img src="/img/placeholder/team-onno.png" alt="Onno van der Steen">
-						<h3>Onno van der Steen</h3>
-						<p>Development Director</p>
-					</li>
-					<li>
-						<img src="/img/placeholder/team-tim.png" alt="Tim 'O Kennedy">
-						<h3>Tim 'O Kennedy</h3>
-						<p>Non-Executive Director</p>
+						<h3>New business</h3>
+						<p class="sub-title">Managing Director</p>
+						<p>
+							Want to start something?<br>
+							Talk to Vincent!
+						</p>
+						<a href="#" class="btn">Mail</a>
 					</li>
 				</ul>
 			</div>
-		</section>
-
-		<section class="page dark office">
-			<div class="wrap">
-				<a class="push" name="office"></a>
-				<h2>Our culture</h2>
-				<div class="slides text-slides">
-					<a href="#prev" class="arrow-left slides-prev">Previous</a>
-					<a href="#next" class="arrow-right slides-next">Next</a>
-					<nav class="slides-tabs">
-						<ul>
-							<li><a href="#">We are family</a></li>
-							<li class="active"><a href="#">Everything you need</a></li>
-							<li><a href="#">A creative capital</a></li>
-						</ul>
-					</nav>
-					<div class="slides-contents">
-						<article></article>
-						<article>
-							<p>
-								Hey there, let me get the door for you. New here? Cool! Here's your new
-								MacBook or iMac and some other cool accessories.
-							</p>
-							<p>Of course with a comfortable chair to complete your workspace.</p>
-							<p>
-								You can enjoy a healthy, biological lunch, afternoon snacks, great coffee
-								and fresh fruit every single day.
-							</p>
-							<p>And hey, work hard play hard, so Friday drinks are on the house.</p>
-						</article>
-						<article></article>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="page jobs">
-			<div class="wrap">
-				<a class="push" name="jobs"></a>
-				<h2>Become strange</h2>
-				<div class="job-listing">
-					<article>
-						<h3>Front-end developer</h3>
-						<p class="subtitle">Medior Level</p>
-						<p>
-							Consumers have less time and the amount of content fighting for their
-							attention is overwhelming. Traditional advertising is often money wasted.
-						</p>
-						<p>
-							In this complex world, we simplify. Welcome to Strangelove, an
-							advertising agency that believes what you do comes before what you say.
-						</p>
-						<a href="#" class="btn">Apply</a>
-					</article>
-					<article>
-						<h3>Project producer</h3>
-						<p class="subtitle">Senior Level</p>
-						<p>
-							Consumers have less time and the amount of content fighting for their
-							attention is overwhelming. Traditional advertising is often money wasted.
-						</p>
-						<p>
-							In this complex world, we simplify. Welcome to Strangelove, an
-							advertising agency that believes what you do comes before what you say.
-						</p>
-						<a href="#" class="btn">Apply</a>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<section class="page dark contact">
-			<div class="map-canvas" id="map-canvas"></div>
-			<div class="contact-content">
-				<div class="wrap">
-					<a class="push" name="contact"></a>
-					<h2>Have that strange feeling of love?<br>Contact us</h2>
-					<ul>
-						<li>
-							<img src="/img/office.png" alt="Office">
-							<dl>
-								<dt>0800 - 1486</dt>
-								<dd>Helpdesk</dd>
-								<dt>(0)20 470 05 33</dt>
-								<dd>HQ</dd>
-							</dl>
-							<a href="#" class="btn">Call</a>
-						</li>
-						<li>
-							<a href="#" class="show-map">Show map</a>
-							<h3>52&deg;22'17.6"N</h3>
-							<p class="sub-title">Our home</p>
-							<p>
-								Tweede Kostverlorenkade 68<br>
-								1053 SB Amsterdam
-							</p>
-							<a href="#" class="btn">Location</a>
-						</li>
-						<li>
-							<img src="/img/placeholder/team-vincent.png" alt="Vincent van Dijk">
-							<h3>New business</h3>
-							<p class="sub-title">Managing Director</p>
-							<p>
-								Want to start something?<br>
-								Talk to Vincent!
-							</p>
-							<a href="#" class="btn">Mail</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<footer class="footer-main">
-			<div class="wrap">
-				<div class="footer-col">
-					<p class="logo">Strangelove</p>
-					<p class="slogan">Simplicity Works</p>
-					<ul class="social">
-						<li><a href="#" class="twitter">Twitter</a></li>
-						<li><a href="#" class="facebook">Facebook</a></li>
-						<li><a href="#" class="linkedin">LinkedIn</a></li>
-					</ul>
-					<p class="copyright">&copy; 2014 - All Rights Reserved</p>
-				</div>
-				<nav class="footer-col">
-					<h4>This site</h4>
-					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#cases">Cases</a></li>
-						<li><a href="#office">Office</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#jobs">Jobs</a></li>
-					</ul>
-				</nav>
-				<nav class="footer-col">
-					<h4>More</h4>
-					<ul>
-						<li><a href="#about">Dutch Site</a></li>
-						<li><a href="#cases">Strange.Lab</a></li>
-						<li><a href="#office">Mixed Tapes</a></li>
-						<li><a href="#team">Disclaimer</a></li>
-						<li><a href="#jobs">Terms &amp; Conditions</a></li>
-					</ul>
-				</nav>
-				<div class="footer-col">
-					<h4>KVK/BTW</h4>
-					<p>
-						55431194<br>
-						NL820375664B01
-					</p>
-					<h4>VEA member</h4>
-					<img src="#" alt="VEA">
-				</div>
-			</div>
-		</footer>
-		<script src="/js/site.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
-		<script>
-			var initialize = function(){
-				var mapOptions = {
-					center: new google.maps.LatLng(52.366394, 4.861973),
-					zoom: 16
-				};
-				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-			};
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-	</body>
-</html>
+		</div>
+	</section>
+{% endblock %}

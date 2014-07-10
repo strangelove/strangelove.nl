@@ -1,109 +1,35 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>STRANGELOVE</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "../layouts/default.html" %}
 
-		<link rel="stylesheet" href="/css/site.css">
-		<link rel="stylesheet" href="/css/cases/litedark.css">
-	</head>
+{% block content %}
+	<section class="page dark mood">
+		<p class="mission"><strong>LITE/DARK</strong> <span>brand identity</span></p>
+		<a href="#services" class="arrow-down continue">Continue</a>
+	</section>
 
-	<body class="litedark">
-		<header class="header-main">
-			<div class="wrap">
-				<p class="logo"><a href="#">Strangelove</a></p>
-				<nav class="nav-primary">
-					<ul>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#cases">Cases</a></li>
-						<li><a href="#clients">Clients</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#office">Office</a></li>
-						<li><a href="#jobs">Jobs <span class="count">2</span></a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
-		<section class="page dark mood">
-			<p class="mission"><strong>LITE/DARK</strong> brand identity</p>
-			<a href="#services" class="arrow-down continue">Continue</a>
-		</section>
-
-		<section class="page client">
-			<div class="wrap">
-				<h2>The client</h2>
-				<p>
-					The LITE/DARK concept was deliciously straightforward. Just coffee and
-					juices, fruit and chocolate. All organic, hand made and fair-trade.
-				</p>
-				<div class="leaves"></div>
-				<div class="orange"></div>
-				<div class="strawberry"></div>
-				<div class="cup"></div>
-			</div>
-		</section>
-
-		<section class="brand-identity">
-			<h2>Brand identity</h2>
+	<section class="page client">
+		<div class="wrap">
+			<h2>The client</h2>
 			<p>
-				Consumers have less time and the amount of content fighting for their
-				attention is overwhelming. Traditional advertising is often money wasted.
+				The LITE/DARK concept was deliciously straightforward. Just coffee and
+				juices, fruit and chocolate. All organic, hand made and fair-trade.
 			</p>
-			<div class="products"></div>
-		</section>
+			<div class="leaves"></div>
+			<div class="orange"></div>
+			<div class="strawberry"></div>
+			<div class="cup"></div>
+		</div>
+	</section>
 
-		<section class="final-logo">
-			<div class="circles"></div>
-		</section>
+	<section class="brand-identity">
+		<h2>Brand identity</h2>
+		<p>
+			Consumers have less time and the amount of content fighting for their
+			attention is overwhelming. Traditional advertising is often money wasted.
+		</p>
+		<div class="products"></div>
+	</section>
 
-		<footer class="footer-main">
-			<div class="wrap">
-				<div class="footer-col">
-					<p class="logo">Strangelove</p>
-					<p class="slogan">Simplicity Works</p>
-					<ul class="social">
-						<li><a href="#" class="twitter">Twitter</a></li>
-						<li><a href="#" class="facebook">Facebook</a></li>
-						<li><a href="#" class="linkedin">LinkedIn</a></li>
-					</ul>
-					<p class="copyright">&copy; 2014 - All Rights Reserved</p>
-				</div>
-				<nav class="footer-col">
-					<h4>This site</h4>
-					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#cases">Cases</a></li>
-						<li><a href="#office">Office</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#jobs">Jobs</a></li>
-					</ul>
-				</nav>
-				<nav class="footer-col">
-					<h4>More</h4>
-					<ul>
-						<li><a href="#about">Dutch Site</a></li>
-						<li><a href="#cases">Strange.Lab</a></li>
-						<li><a href="#office">Mixed Tapes</a></li>
-						<li><a href="#team">Disclaimer</a></li>
-						<li><a href="#jobs">Terms &amp; Conditions</a></li>
-					</ul>
-				</nav>
-				<div class="footer-col">
-					<h4>KVK/BTW</h4>
-					<p>
-						55431194<br>
-						NL820375664B01
-					</p>
-					<h4>VEA member</h4>
-					<img src="#" alt="VEA">
-				</div>
-			</div>
-		</footer>
-	</body>
-</html>
+	<section class="final-logo">
+		<div class="circles"></div>
+	</section>
+{% endblock %}
