@@ -1,3 +1,16 @@
+@include keyframes(borderGrow){
+	to {
+		width: 100%;
+	}
+}
+
+@include keyframes(fadeSlideIn){
+	to {
+		@include transform(translateX(0));
+		opacity: 1;
+	}
+}
+
 .mood {
 	position: relative;
 	background-image: url(/img/header.jpg);
@@ -10,16 +23,40 @@
 		width: 800px;
 		margin: -50px 0 0 -400px;
 		padding: 18px 0;
-		border-top: 1px solid #fff;
-		border-bottom: 1px solid #fff;
 		font-size: 22px;
 		font-style: italic;
 		text-align: center;
+		&:before, &:after {
+			content: ' ';
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 1px;
+			background: #fff;
+			@include animation(borderGrow 1s 1s forwards);
+		}
+		&:before {
+			top: 0;
+			left: 0;
+		}
+		&:after {
+			right: 0;
+			bottom: 0;
+		}
+		span {
+			display: block;
+			opacity: 0;
+			@include transform(translateX(-20px));
+			@include animation(fadeSlideIn 1s 1s forwards);
+		}
 		strong {
 			display: block;
 			font: 700 36px 'Ubuntu';
 			text-transform: uppercase;
 			letter-spacing: 4px;
+			opacity: 0;
+			@include transform(translateX(20px));
+			@include animation(fadeSlideIn 1s 1s forwards);
 		}
 	}
 	.continue {
