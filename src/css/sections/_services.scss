@@ -1,3 +1,24 @@
+@include keyframes(clarify){
+	from { background-position: 0 0; }
+	to { background-position: -3696px 0; }
+}
+@include keyframes(create){
+	from { background-position: 0 -112px; }
+	to { background-position: -4816px -112px; }
+}
+@include keyframes(code){
+	from { background-position: 0 -224px; }
+	to { background-position: -4704px -224px; }
+}
+@include keyframes(connect){
+	from { background-position: 0 -336px; }
+	to { background-position: -4480px -336px; }
+}
+@include keyframes(control){
+	from { background-position: 0 -448px; }
+	to { background-position: -4592px -448px; }
+}
+
 .services {
 	ol, ul {
 		margin: 0;
@@ -5,10 +26,17 @@
 		list-style: none;
 		text-align: center;
 	}
-	.step {
+	.service {
 		float: left;
 		width: 20%;
-		padding: 140px 0 0;
+		&:before {
+			content: ' ';
+			display: block;
+			width: 112px;
+			height: 112px;
+			margin: 0 auto 30px;
+			background: url(/img/services.png) no-repeat center top;
+		}
 	}
 	h3:after {
 		content: ' ';
@@ -18,31 +46,66 @@
 		margin: 24px auto 18px;
 	}
 	.clarify {
-		background: url(/img/services/clarify.png) no-repeat center top;
+		&:before {
+			background-position: 0 0;
+		}
+		&:hover, &.loop {
+			&:before {
+				@include animation(clarify 1.32s steps(33));
+			}
+		}
 		h3:after {
 			background: #515875;
 		}
 	}
 	.create {
-		background: url(/img/services/create.png) no-repeat center top;
+		&:before {
+			background-position: 0 -112px;
+		}
+		&:hover, &.loop {
+			&:before {
+				@include animation(create 1.72s steps(43));
+			}
+		}
 		h3:after {
 			background: #576f9e;
 		}
 	}
 	.code {
-		background: url(/img/services/code.png) no-repeat center top;
+		&:before {
+			background-position: 0 -224px;
+		}
+		&:hover, &.loop {
+			&:before {
+				@include animation(code 1.68s steps(42));
+			}
+		}
 		h3:after {
 			background: #6697b9;
 		}
 	}
 	.connect {
-		background: url(/img/services/connect.png) no-repeat center top;
+		&:before {
+			background-position: 0 -336px;
+		}
+		&:hover, &.loop {
+			&:before {
+				@include animation(connect 1.6s steps(40));
+			}
+		}
 		h3:after {
 			background: #88c3d8;
 		}
 	}
 	.control {
-		background: url(/img/services/control.png) no-repeat center top;
+		&:before {
+			background-position: 0 -448px;
+		}
+		&:hover {
+			&:before, &.loop {
+				@include animation(control 1.64s steps(41));
+			}
+		}
 		h3:after {
 			background: #afdae2;
 		}
