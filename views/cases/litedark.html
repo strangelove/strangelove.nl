@@ -1,5 +1,14 @@
 {% extends "../layouts/default.html" %}
 
+{% block stylesheets %}
+	{% parent %}
+	<link rel="stylesheet" href="/css/cases/litedark.css">
+{% endblock %}
+
+{% block bodytag %}
+	<body class="litedark">
+{% endblock %}
+
 {% block content %}
 	<section class="page dark mood">
 		<p class="mission"><strong>LITE/DARK</strong> <span>brand identity</span></p>
