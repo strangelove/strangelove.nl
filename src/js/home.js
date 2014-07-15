@@ -37,6 +37,11 @@ scrollFx.add({
 		transform: ['translateY(0px)', 'translateY(300px)']
 	}
 });
+scrollFx.add({ el: $('.clarify'), posStart: 500, callback: causeLoop });
+scrollFx.add({ el: $('.create'),  posStart: 500, callback: causeLoop });
+scrollFx.add({ el: $('.code'),    posStart: 500, callback: causeLoop });
+scrollFx.add({ el: $('.connect'), posStart: 500, callback: causeLoop });
+scrollFx.add({ el: $('.control'), posStart: 500, callback: causeLoop });
 
 var scrollTop = function(){
 	return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
