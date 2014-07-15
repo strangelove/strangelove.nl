@@ -49,7 +49,7 @@
 		&:before {
 			background-position: 0 0;
 		}
-		&:hover, &.loop {
+		&.loop {
 			&:before {
 				@include animation(clarify 1.32s steps(33));
 			}
@@ -62,7 +62,7 @@
 		&:before {
 			background-position: 0 -112px;
 		}
-		&:hover, &.loop {
+		&.loop {
 			&:before {
 				@include animation(create 1.72s steps(43));
 			}
@@ -75,7 +75,7 @@
 		&:before {
 			background-position: 0 -224px;
 		}
-		&:hover, &.loop {
+		&.loop {
 			&:before {
 				@include animation(code 1.68s steps(42));
 			}
@@ -88,7 +88,7 @@
 		&:before {
 			background-position: 0 -336px;
 		}
-		&:hover, &.loop {
+		&.loop {
 			&:before {
 				@include animation(connect 1.6s steps(40));
 			}
@@ -101,8 +101,8 @@
 		&:before {
 			background-position: 0 -448px;
 		}
-		&:hover {
-			&:before, &.loop {
+		&.loop {
+			&:before {
 				@include animation(control 1.64s steps(41));
 			}
 		}

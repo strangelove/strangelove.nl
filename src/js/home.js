@@ -2,6 +2,15 @@
 
 var $ = require('elements');
 
+var causeLoop = function(el){
+	el.addClass('loop');
+	setTimeout(function(){ el.removeClass('loop'); }, 1720);
+};
+
+$('.services').delegate('mouseover', '.service', function(e, el){
+	if (!el.hasClass('loop')) causeLoop(el);
+});
+
 var scrollTop = function(){
 	return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 };
