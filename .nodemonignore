@@ -1,4 +1,6 @@
+.git/*
 Gruntfile.js
+package.json
 public/*
 src/*
 views/*
