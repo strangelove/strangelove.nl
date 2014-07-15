@@ -1,5 +1,13 @@
 .contact {
 	position: relative;
+	.map-canvas {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 740px;
+	}
 	.hide-map {
 		position: absolute;
 		z-index: 2;
@@ -13,23 +21,15 @@
 		text-align: center;
 		opacity: 0;
 	}
-	.map-canvas {
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		right: 0;
-		left: 0;
-		height: 740px;
-	}
-	.contact-content {
-		position: absolute;
-		z-index: 3;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background: url(/img/contact-bg.png) center -416px;
-	}
+}
+.contact-content {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(/img/contact-bg.png) center -416px;
 	ul {
 		margin: 0;
 		padding: 0;

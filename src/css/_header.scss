@@ -1,10 +1,12 @@
 .header-main {
-	position: fixed;
+	position: absolute;
 	z-index: 10;
 	top: 0;
 	left: 0;
 	right: 0;
 	height: 80px;
+	@include transform(translateZ(0));
+	@include backface-visibility(hidden);
 	.logo {
 		float: left;
 		margin-left: 30px;
@@ -36,8 +38,15 @@
 		margin: 0 0 0 2px;
 		border-radius: 7px;
 		background: #2795bd;
+		color: #fff;
 		font-size: 9px;
 		line-height: 14px;
 		text-align: center;
+	}
+}
+
+.light {
+	.header-main a, .nav-primary a {
+		color: #000;
 	}
 }
