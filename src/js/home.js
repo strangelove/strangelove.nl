@@ -1,6 +1,7 @@
 'use strict';
 
-var $ = require('elements');
+var scrollFx = new (require('./modules/scrollfx'))(),
+	$ = require('elements');
 
 var causeLoop = function(el){
 	el.addClass('loop');
@@ -9,6 +10,32 @@ var causeLoop = function(el){
 
 $('.services').delegate('mouseover', '.service', function(e, el){
 	if (!el.hasClass('loop')) causeLoop(el);
+});
+
+scrollFx.add({
+	el: $('.mood-bg'),
+	posStart: 0,
+	posEnd: window.innerHeight,
+	styles: {
+		transform: ['translateY(0%)', 'translateY(25%)']
+	}
+});
+scrollFx.add({
+	el: $('.mission'),
+	posStart: 0,
+	posEnd: window.innerHeight,
+	styles: {
+		top: ['50%', '110%'],
+		opacity: [1, 0.3]
+	}
+});
+scrollFx.add({
+	el: $('.continue'),
+	posStart: 0,
+	posEnd: 300,
+	styles: {
+		transform: ['translateY(0px)', 'translateY(300px)']
+	}
 });
 
 var scrollTop = function(){
