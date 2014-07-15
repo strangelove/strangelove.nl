@@ -26,6 +26,7 @@
 		font-size: 22px;
 		font-style: italic;
 		text-align: center;
+		@include transform(translateZ(0));
 		&:before, &:after {
 			content: ' ';
 			display: block;
@@ -33,6 +34,7 @@
 			width: 0;
 			height: 1px;
 			background: #fff;
+			@include transform(translateZ(0));
 			@include animation(borderGrow 1s 1s forwards);
 		}
 		&:before {
