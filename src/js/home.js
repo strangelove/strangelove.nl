@@ -63,9 +63,11 @@ for (i = 0; i < sections.length; i++){
 
 header.style({display: 'none'});
 
-$(window).on('scroll', function(){
-	y = scrollTop();
-	for (i = 0; i < sections.length; i++){
-		headers[i].style({transform: 'translateY(' + (y - sectionTops[i]) + 'px)'});
-	}
-});
+setInterval(function(){
+	window.requestAnimationFrame(function(){
+		y = scrollTop();
+		for (i = 0; i < sections.length; i++){
+			headers[i].style({transform: 'translate3d(0px, ' + Math.round(y - sectionTops[i]) + 'px, 0)'});
+		}
+	});
+}, 10);
