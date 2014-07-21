@@ -83,7 +83,6 @@ a {
 .page {
 	overflow: hidden;
 	position: relative;
-	height: 100%;
 	&.dark {
 		background-color: #333b4a;
 		color: #fff;
@@ -97,6 +96,7 @@ a {
 	}
 	.wrap {
 		height: 100%;
+		padding: 0 0 150px;
 	}
 }
 

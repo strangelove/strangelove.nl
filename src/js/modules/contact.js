@@ -8,7 +8,8 @@ var $ = require('elements'),
 require('moofx');
 
 if (contact){
-	var header = $('.header-main'),
+	var header = contact.search('.header-main'),
+		rect = contact[0].getBoundingClientRect(),
 		canvas = contact.search('.map-canvas'),
 		contents = contact.search('.contact-content'),
 		showMapBtn = contact.search('.show-map'),
@@ -29,6 +30,7 @@ if (contact){
 			canvas.style({height: 'auto', bottom: 0});
 			google.maps.event.trigger(map, 'resize');
 			center = map.getCenter();
+			contact.style('height', rect.bottom - rect.top);
 		});
 
 		new google.maps.Marker({

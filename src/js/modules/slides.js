@@ -17,7 +17,8 @@ var Slides = function(el, options){
 	el = $(el);
 	options = options || {};
 	this.tabs = el.search('.slides-tabs a');
-	this.contents = el.search('.slides-contents > article');
+	this.contentsWrap = el.search('.slides-contents');
+	this.contents = this.contentsWrap.search('> article');
 
 	if (this.tabs.length != this.contents.length){
 		throw new Error('Amount of tabs is not equal is not equal to the amount of content panels');
@@ -25,8 +26,13 @@ var Slides = function(el, options){
 
 	this.initial = parseInt(options.initial, 10) || 0;
 
-	for (var i = 0; i < this.tabs.length; i++){
+	var i, rect, heights = [];
+	for (i = 0; i < this.tabs.length; i++){
 		$(this.tabs[i]).attribute('data-index', i);
+
+		rect = this.contents[i].getBoundingClientRect();
+
+		heights.push(rect.bottom - rect.top);
 
 		if (i === this.initial){
 			this.tabs[i].classList.add('active');
@@ -34,6 +40,8 @@ var Slides = function(el, options){
 			this.contents[i].style.display = 'none';
 		}
 	}
+
+	this.contentsWrap.style({height: Math.max.apply(null, heights)});
 
 	this.prevButton = el.search('.slides-prev');
 	this.nextButton = el.search('.slides-next');

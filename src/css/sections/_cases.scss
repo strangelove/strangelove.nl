@@ -1,6 +1,8 @@
 .cases {
+	min-height: 100%;
 	.wrap {
 		position: relative;
+		height: 100%;
 	}
 	.slides {
 		position: absolute;

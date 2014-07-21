@@ -1,6 +1,6 @@
 .team-list {
 	overflow: hidden;
-	margin: 0;
+	margin: 0 0 -80px;
 	padding: 0;
 	list-style: none;
 	li {
@@ -24,6 +24,7 @@
 		background: #2994be;
 	}
 	p {
+		margin: 0;
 		font-style: italic;
 	}
 }

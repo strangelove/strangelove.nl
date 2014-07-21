@@ -23,7 +23,7 @@
 	}
 }
 .contact-content {
-	position: absolute;
+	position: relative;
 	z-index: 3;
 	top: 0;
 	right: 0;
@@ -31,6 +31,7 @@
 	left: 0;
 	background: url(/img/contact-bg.png) center -416px;
 	ul {
+		overflow: hidden;
 		margin: 0;
 		padding: 0;
 		list-style: none;
