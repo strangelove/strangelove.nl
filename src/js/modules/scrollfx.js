@@ -1,8 +1,5 @@
 'use strict';
 
-var $ = require('elements');
-require('moofx');
-
 var isFunction = require('mout/lang/isFunction'),
 	isNumber = require('mout/lang/isNumber');
 
@@ -13,20 +10,26 @@ var scrollTop = function(){
 var ScrollFx = function(){
 	this.animations = [];
 	this.bound = {
-		checkAnimations: this.checkAnimations.bind(this)
+		updateFx: this.updateFx.bind(this)
 	};
+
+	setInterval(this.bound.updateFx, 10);
 };
 
 ScrollFx.prototype.add = function(animation){
 	this.animations.push(animation);
-	if (!this.eventBound){
-		$(window).on('scroll', this.bound.checkAnimations);
-		this.eventBound = true;
-	}
 };
 
-ScrollFx.prototype.checkAnimations = function(){
-	var y = scrollTop(), i, len = this.animations.length,
+ScrollFx.prototype.updateFx = function(){
+	var self = this;
+	window.requestAnimationFrame(function(){
+		self.scrollTop = scrollTop();
+		self.paint();
+	});
+};
+
+ScrollFx.prototype.paint = function(){
+	var i, len = this.animations.length,
 		a, prop, progress, s, e, styles, sVals, eVals, j, newStr, sj, ej;
 
 	for (i = 0; i < len; i++){
@@ -36,8 +39,8 @@ ScrollFx.prototype.checkAnimations = function(){
 
 		// if we're not in range of this element's enimation
 		// just apply styles from beginning or end
-		if (y < a.posStart || (a.posEnd && y > a.posEnd)){
-			j = y < a.posStart ? 0 : 1;
+		if (this.scrollTop < a.posStart || (a.posEnd && this.scrollTop > a.posEnd)){
+			j = this.scrollTop < a.posStart ? 0 : 1;
 			styles = {};
 			for (prop in a.styles){
 				styles[prop] = a.styles[prop][j];
@@ -49,7 +52,7 @@ ScrollFx.prototype.checkAnimations = function(){
 		// calculate progress
 		progress = undefined;
 		if (a.posEnd){
-			progress = (100 / (a.posEnd - a.posStart)) * (y - a.posStart);
+			progress = (100 / (a.posEnd - a.posStart)) * (this.scrollTop - a.posStart);
 		}
 
 		if (isFunction(a.callback)){
