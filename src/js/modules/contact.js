@@ -38,10 +38,10 @@ if (contact){
 
 			scrollFx.add({
 				el: $('.map-overlay'),
-				posStart: contactTop - (window.innerHeight + 100),
+				posStart: contactTop - ((window.innerHeight / 3) * 2),
 				posEnd: contactTop - 150,
 				styles: {
-					transform: ['translateY(-130px)', 'translateY(0)']
+					transform: ['translateY(-110px)', 'translateY(0)']
 				}
 			});
 		});
