@@ -64,7 +64,7 @@
 		}
 		li {
 			display: inline-block;
-			width: 150px;
+			width: 139px;
 			margin: 0 0 0 80px;
 			&:first-child {
 				margin-left: 0;
@@ -81,22 +81,36 @@
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 150px;
-				height: 100px;
+				width: 139px;
+				height: 117px;
 			}
 			&:before {
 				z-index: 1;
-				background: url(/img/case-button-bg.png);
+				background: url(/img/cases/buttons/bg.png);
 			}
 			&:after {
 				z-index: 3;
-				background: url(/img/case-button-cover.png);
+			}
+			&.pbcf:after {
+				background: url(/img/cases/buttons/1_mask.png);
+			}
+			&.litedark:after {
+				background: url(/img/cases/buttons/2_mask.png);
+			}
+			&.slimleren:after {
+				background: url(/img/cases/buttons/3_mask.png);
+			}
+			&.ing:after {
+				background: url(/img/cases/buttons/4_mask.png);
+			}
+			&.kpmg:after {
+				background: url(/img/cases/buttons/5_mask.png);
 			}
 			img {
 				position: relative;
 				z-index: 2;
-				width: 150px;
-				height: 100px;
+				width: 139px;
+				height: 117px;
 				-webkit-transition: -webkit-transform .15s ease-out;
 			}
 			&:hover img {
@@ -152,22 +166,18 @@
 	}
 	.screenshot-2 {
 		left: 100%;
-		background: #bbb;
 		background: rgba(0, 255, 0, .2);
 	}
 	.screenshot-3 {
 		left: 100%;
-		background: #ccc;
 		background: rgba(0, 0, 255, .2);
 	}
 	.screenshot-4 {
 		left: 100%;
-		background: #ddd;
 		background: rgba(255, 255, 0, .2);
 	}
 	.screenshot-5 {
 		left: 100%;
-		background: #eee;
 		background: rgba(255, 0, 255, .2);
 	}
 }
