@@ -37,8 +37,17 @@
 			display: block;
 			width: 18px;
 			height: 18px;
-			background: #bcbcbc;
+			background: url(/img/social.png);
 			text-indent: 999em;
+			&.twitter {
+				width: 20px;
+			}
+			&.facebook {
+				background-position: -20px 0;
+			}
+			&.linkedin {
+				background-position: -38px 0;
+			}
 		}
 	}
 	.copyright {
