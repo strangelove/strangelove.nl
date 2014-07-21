@@ -38,6 +38,9 @@
 			margin: 0 auto 30px;
 			background: url(/img/services.png) no-repeat center top;
 		}
+		&:hover h3:after {
+			width: 40px;
+		}
 	}
 	h3:after {
 		content: ' ';
@@ -45,6 +48,7 @@
 		width: 30px;
 		height: 4px;
 		margin: 24px auto 18px;
+		@include transition(width .25s ease-in-out);
 	}
 	.clarify {
 		&:before {

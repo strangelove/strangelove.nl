@@ -7,6 +7,9 @@
 		width: 50%;
 		padding: 0 110px;
 		text-align: center;
+		&:hover .subtitle:after {
+			width: 40px;
+		}
 	}
 	.subtitle {
 		margin-top: 9px;
@@ -17,6 +20,7 @@
 			height: 4px;
 			margin: 24px auto;
 			background: #2795bd;
+			@include transition(width .25s ease-in-out);
 		}
 	}
 	.btn {
