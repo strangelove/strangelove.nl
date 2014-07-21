@@ -25,16 +25,8 @@ scrollFx.add({
 	posStart: 0,
 	posEnd: window.innerHeight,
 	styles: {
-		top: ['50%', '110%'],
+		transform: ['translateY(0px)', 'translateY(300px)'],
 		opacity: [1, 0.3]
-	}
-});
-scrollFx.add({
-	el: $('.continue'),
-	posStart: 0,
-	posEnd: 300,
-	styles: {
-		transform: ['translateY(0px)', 'translateY(300px)']
 	}
 });
 scrollFx.add({ el: $('.clarify'), posStart: 500, callback: causeLoop });
