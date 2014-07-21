@@ -94,20 +94,22 @@ Slides.prototype.to = function(index){
 	this.tabs[this.current].classList.remove('active');
 	this.tabs[index].classList.add('active');
 
-	var current = $(this.contents[this.current]),
+	var distance = 25,
+		current = $(this.contents[this.current]),
 		next = $(this.contents[index]),
-		currEnd = {left: '-50%', opacity: 0},
-		nextStart = {display: 'block', left: 0, opacity: 0},
-		nextEnd = {opacity: 1};
+		currEnd = {left: -distance, opacity: 0},
+		nextStart = {display: 'block', left: distance, opacity: 0},
+		nextEnd = {opacity: 1, left: 0};
 
 	if (this.current > index){
-		currEnd.left = '50%';
+		currEnd.left = distance;
+		nextStart.left = -distance;
 	}
 
 	next.style(nextStart);
 
-	current.animate(currEnd);
-	next.animate(nextEnd);
+	current.animate(currEnd, {duration: 750});
+	next.animate(nextEnd, {duration: 750});
 
 	if (this.prevButton) {
 		this.prevButton[index === 0 ? 'addClass' : 'removeClass']('disabled');
