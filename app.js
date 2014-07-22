@@ -1,6 +1,7 @@
 'use strict';
 
-var express = require('express'),
+var fs = require('fs'),
+	express = require('express'),
 	swig = require('swig'),
 	cons = require('consolidate'),
 	argv = require('optimist').argv;
@@ -16,7 +17,9 @@ if (app.settings.env == 'development'){
 }
 
 app.get('/', function(req, res){
-	res.render('index');
+	fs.readFile(__dirname + '/data/home.json', {encoding: 'utf8'}, function(err, body){
+		res.render('index', {locals: JSON.parse(body)});
+	});
 });
 
 app.get('/cases/litedark', function(req, res){

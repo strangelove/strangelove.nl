@@ -63,69 +63,17 @@
 				<a href="#next" class="arrow-right slides-next">Next</a>
 				<nav class="slides-tabs">
 					<ul>
-						<li><a href="#about/what-we-believe">What we believe</a></li>
-						<li><a href="#about/how-we-work">How we work</a></li>
-						<li><a href="#about/how-we-help">How we help</a></li>
+						{% for section in about %}
+						<li><a href="#about/{{section.slug}}">{{section.title}}</a></li>
+						{% endfor %}
 					</ul>
 				</nav>
 				<div class="slides-contents">
+					{% for section in about %}
 					<article>
-						<p>In today's complex and transparent world the game has changed.</p>
-						<p>
-							Consumers have less time and the amount of content fighting for their
-							attention is overwhelming. Traditional advertising is often money wasted.
-						</p>
-						<p>
-							In this complex world, we simplify. Welcome to Strangelove, an
-							advertising agency that believes what you do comes before what you say.
-						</p>
-						<p>
-							We combine business thinking with communication services. Creating
-							opportunities and solutions that matter to people.
-						</p>
-						<p>This is how we grow your business.</p>
+						{{section.body|safe}}
 					</article>
-					<article>
-						<p>
-							Our job is to make what you do, what you say and how you say it live up
-							to consumers expectations.
-						</p>
-						<p>That's why everything we make is:</p>
-						<p>
-							<strong>relevant</strong>,<br>
-							<strong>human</strong>-friendly,<br>
-							<strong>memorable</strong>,<br>
-							&hellip;and above all, <strong>simple</strong>.
-						</p>
-						<p>
-							Once all four factors are present, we know we've delivered a future-proof
-							solution that works.
-						</p>
-					</article>
-					<article>
-						<p>When almost everyone is busy selling everything, how can you be noticed?</p>
-						<p>All healthy businesses of today are doing at least two things right:</p>
-						<p>
-							- Their businesses add true customer value<br>
-							- Their brands live up to their promises.
-						</p>
-						<p>
-							To maximise your customers devotion towards your brand, Strangelove does
-							a couple of things.
-						</p>
-						<p>
-							- First, we study your business to clarify how you can unlock true customer value.<br>
-							- Then we create relevant tools that will transform this value into memorable brand propositions and solutions.
-						</p>
-						<p>
-							Everything we do is built to serve personal brand experiences. We pursue
-							making consumers feel appreciated and better connected to your brand.
-							This will boost your brand loyalty, selling more products or services,
-							more effectively.
-						</p>
-						<p>Simple.</p>
-						<p>Please click here to find out how we can help you.</p>
-					</article>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -137,20 +85,15 @@
 			<h2>The cases we love</h2>
 			<div class="slides" data-case-slides>
 				<div class="slides-contents">
+					{% for project in cases %}
 					<article>
 						<div class="summary">
-							<h3>Prins Bernhard Cultuurfonds</h3>
-							<p>
-								We helped them with developing their communication strategy of many
-								levels
-							</p>
-							<a href="#" class="more">Read more</a>
+							<h3>{{project.title}}</h3>
+							<p>{{project.summary}}</p>
+							<a href="/cases/{{project.slug}}" class="more">Read more</a>
 						</div>
 					</article>
-					<article></article>
-					<article></article>
-					<article></article>
-					<article></article>
+					{% endfor %}
 				</div>
 				<div class="screenshots">
 					<div class="imac"></div>
@@ -164,11 +107,9 @@
 				</div>
 				<nav class="slides-tabs">
 					<ul>
-						<li class="active"><a href="#" class="pbcf"><img src="/img/cases/buttons/1_logo.png" alt="Cultuurfonds">Cultuurfonds</a></li>
-						<li><a href="#" class="litedark"><img src="/img/cases/buttons/2_logo.png" alt="Lite/Dark">Lite/Dark</a></li>
-						<li><a href="#" class="slimleren"><img src="/img/cases/buttons/3_logo.png" alt="Slimleren">Slimleren</a></li>
-						<li><a href="#" class="ing"><img src="/img/cases/buttons/4_logo.png" alt="Pensioenfonds ING">Pensioenfonds ING</a></li>
-						<li><a href="#" class="kpmg"><img src="/img/cases/buttons/5_logo.png" alt="KPMG Meijburg &amp; Co.">KPMG Meijburg &amp; Co.</a></li>
+						{% for project in cases %}
+						<li><a href="#" class="{{project.slug}}"><img src="/img/cases/buttons/{{project.slug}}_logo.png" alt="{{project.title}}">{{project.title}}</a></li>
+						{% endfor %}
 					</ul>
 				</nav>
 			</div>
@@ -180,18 +121,9 @@
 			<a class="push" name="clients"></a>
 			<h2>Current and past clients</h2>
 			<ul class="client-list">
-				<li><img src="/img/clients/pbcf.png" alt="Prins Bernhard Cultuurfonds"></li>
-				<li><img src="/img/clients/vanmoof.png" alt="Vanmoof"></li>
-				<li><img src="/img/clients/klm.png" alt="KLM"></li>
-				<li><img src="/img/clients/upc.png" alt="upc"></li>
-				<li><img src="/img/clients/microsoft.png" alt="Microsoft"></li>
-				<li><img src="/img/clients/litedark.png" alt="Lite/Dark"></li>
-				<li><img src="/img/clients/vu.png" alt="VU medisch centrum"></li>
-				<li><img src="/img/clients/philips.png" alt="Philips"></li>
-				<li><img src="/img/clients/ctn.png" alt="Cuba Travel Network"></li>
-				<li><img src="/img/clients/mrmaria.png" alt="Mr Maria"></li>
-				<li><img src="/img/clients/vosta.png" alt="Vosta LMG"></li>
-				<li><img src="/img/clients/redbull.png" alt="Red Bull"></li>
+				{% for client in clients %}
+				<li><img src="{{client.image}}" alt="{{client.title}}"></li>
+				{% endfor %}
 			</ul>
 		</h2>
 	</section>
@@ -201,105 +133,17 @@
 			<a class="push" name="team"></a>
 			<h2>Leadership</h2>
 			<ul class="team-list">
+				{% for person in team %}
 				<li>
-					<img src="/img/placeholder/team-vincent.png" alt="Vincent van Dijk">
-					<h3>Vincent van Dijk</h3>
-					<p>Managing Director</p>
+					<img src="{{person.image}}" alt="{{person.name}}">
+					<h3>{{person.name}}</h3>
+					<p>{{person.title}}</p>
 					<section class="popover-content">
-						<h3>Vincent van Dijk</h3>
-						<p>
-							Business acumen is Vincent's signature. He has an extensive track record
-							of transforming traditional businesses into innovative digital
-							experiences that in an immersive way add value to people’s lives.
-						</p>
-						<p>
-							<em>Brand experience: ING, KLM, Amsterdam Dance Event, Telfort, De Baak,
-							Regiobank, VU, Philips and Mutsy.</em>
-						</p>
+						<h3>{{person.name}}</h3>
+						{{person.body|safe}}
 					</section>
 				</li>
-				<li>
-					<img src="/img/placeholder/team-jeroen.png" alt="Jeroen Gouw">
-					<h3>Jeroen Gouw</h3>
-					<p>Creative Director</p>
-					<section class="popover-content">
-						<h3>Jeroen Gouw</h3>
-						<p>
-							Jeroen has made digital design into an art form where he transforms
-							complex digital briefs into memorable and simple masterpieces. His UX and
-							UI leadership allows Strangelove to transform any brand's business into a
-							human friendly digital solution that makes a stand in today's complex
-							world.
-						</p>
-						<p>
-							<em>Brand experience: ING, KLM, Philips, Prins Bernhard Cultuurfonds, Cuba
-							Travel Network.</em>
-						</p>
-					</section>
-				</li>
-				<li>
-					<img src="/img/placeholder/team-martin.png" alt="Martin Palamarz">
-					<h3>Martin Palamarz</h3>
-					<p>Strategy Director</p>
-					<section class="popover-content">
-						<h3>Martin Palamarz</h3>
-						<p>
-							Our simplifier, making our client's business relevant, human friendly,
-							memorable and simple.
-						</p>
-						<p>
-							<em>Brand experience: ASUS, Intel, Adidas Performance, Nike Football, Tele2,
-							Sony PlayStation 3, Volvo Cars, Mercedes-Benz and Country of South
-							Africa. In 2010 Martin had the honour of judging in the prestigious
-							D&amp;AD yellow and black pencil awards.</em>
-						</p>
-					</section>
-				</li>
-				<li>
-					<img src="/img/placeholder/team-anne.png" alt="Anne van Haeften">
-					<h3>Anne van Haeften</h3>
-					<p>Client Service Director</p>
-					<section class="popover-content">
-						<h3>Anne van Haeften</h3>
-						<p>
-							Superior mind that truly understands clients and how creativity can
-							propel their businesses. Constantly approached by previous clients and
-							employers to begin working for them again.
-						</p>
-						<p>
-							<em>Brand experience: Neckermann.com, Corendon, Jumbo, Kruidvat,
-							Andrélon, Albert Heijn and Dirk van der Broek.</em>
-						</p>
-					</section>
-				</li>
-				<li>
-					<img src="/img/placeholder/team-onno.png" alt="Onno van der Steen">
-					<h3>Onno van der Steen</h3>
-					<p>Development Director</p>
-					<section class="popover-content">
-						<h3>Onno van der Steen</h3>
-						<p>
-
-						</p>
-					</section>
-				</li>
-				<li>
-					<img src="/img/placeholder/team-tim.png" alt="Tim 'O Kennedy">
-					<h3>Tim 'O Kennedy</h3>
-					<p>Non-Executive Director</p>
-					<section class="popover-content">
-						<h3>Tim 'O Kennedy</h3>
-						<p>
-							Marketing guru. Helped Apple with their first campaigns, established Nike
-							in Europe, managed one of the world's prominent agencies and enjoyed
-							guiding the creative industry being the chief executive of D&amp;AD.
-						</p>
-						<p>
-							<em>Brand experience: Apple, Nike, Porsche, Yamaha, Procter &amp; Gamble,
-							BBC, Coca-Cola, to name a few.</em>
-						</p>
-					</section>
-				</li>
+				{% endfor %}
 			</ul>
 		</div>
 	</section>
@@ -313,45 +157,17 @@
 				<a href="#next" class="arrow-right slides-next">Next</a>
 				<nav class="slides-tabs">
 					<ul>
-						<li><a href="#">A creative capital</a></li>
-						<li class="active"><a href="#">Everything you need</a></li>
-						<li><a href="#">We are family</a></li>
+						{% for section in office %}
+						<li><a href="#office/{{section.slug}}">{{section.title}}</a></li>
+						{% endfor %}
 					</ul>
 				</nav>
 				<div class="slides-contents">
+					{% for section in office %}
 					<article>
-						<p>
-							Named as one of the world's most relaxed and creative cities, Amsterdam
-							guarantees a high quality of life.
-						</p>
-						<p>
-							Take a walk over one the beautiful canals and you’ll hear English,
-							French, Spanish and German being spoken in the span of one block. This
-							unique free-thinking capital is a place of wonder.
-						</p>
+						{{section.body|safe}}
 					</article>
-					<article>
-						<p>
-							Hey there, let me get the door for you. New here? Cool. Here’s your new
-							MacBook, Cinema Display and some other cool accessories. Of course with
-							a comfortable chair to complete the workspace. You can enjoy a healthy
-							lunch, afternoon snacks, great coffee and fresh fruit every single day.
-							And hey, work hard play hard, so Friday drinks are on the house.
-						</p>
-					</article>
-					<article>
-						<p>
-							To us, you are more than an employee. You are family. And we value
-							family.
-						</p>
-						<p>
-							So expect no senseless hierarchies, just open discussions and
-							transparency.
-						</p>
-						<p>
-							And we have plenty family gatherings, celebrations and
-						</p>
-					</article>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -362,32 +178,14 @@
 			<a class="push" name="jobs"></a>
 			<h2>Become strange</h2>
 			<div class="job-listing">
+				{% for job in jobs %}
 				<article>
-					<h3>Front-end developer</h3>
-					<p class="subtitle">Medior Level</p>
-					<p>
-						Consumers have less time and the amount of content fighting for their
-						attention is overwhelming. Traditional advertising is often money wasted.
-					</p>
-					<p>
-						In this complex world, we simplify. Welcome to Strangelove, an
-						advertising agency that believes what you do comes before what you say.
-					</p>
+					<h3>{{job.title}}</h3>
+					<p class="subtitle">{{job.experience}}</p>
+					{{job.body|safe}}
 					<a href="#" class="btn">Apply</a>
 				</article>
-				<article>
-					<h3>Project producer</h3>
-					<p class="subtitle">Senior Level</p>
-					<p>
-						Consumers have less time and the amount of content fighting for their
-						attention is overwhelming. Traditional advertising is often money wasted.
-					</p>
-					<p>
-						In this complex world, we simplify. Welcome to Strangelove, an
-						advertising agency that believes what you do comes before what you say.
-					</p>
-					<a href="#" class="btn">Apply</a>
-				</article>
+				{% endfor %}
 			</div>
 		</div>
 	</section>
