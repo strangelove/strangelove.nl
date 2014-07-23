@@ -126,14 +126,14 @@
 			"slug": "onno",
 			"image": "/img/placeholder/team-onno.png",
 			"name": "Onno van der Steen",
-			"title": "Team Lead Digital",
+			"title": "Team Lead Development",
 			"body": "<p>As our senior coding ninja and digital team leader, Onno creates seamless digital solutions that are human friendly and state of the art. He also leads technology concepts beyond the realm of the web.</p>"
 		},
 		{
 			"slug": "franklin",
 			"image": "/img/placeholder/team-franklin1.png",
 			"name": "Franklin Schamhart",
-			"title": "Team Lead UX Design",
+			"title": "Team Lead UX",
 			"body": "<p>Functional design thinker and maker with an extensive knowledge about popular culture and digital technology. Passionate about the opportunities of consumer experiences on the intersection between the digital and physical world.</p>"
 		}
 	],
