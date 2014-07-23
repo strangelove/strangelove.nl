@@ -64,10 +64,10 @@ module.exports = function(grunt){
 		wrapup: {
 			dev: {
 				requires: {
-					'./src/js/site.js': true
+					'./src/js/home.js': true
 				},
 				options: {
-					'output': './public/js/site.js'
+					'output': './public/js/home.js'
 				}
 			}
 		}
