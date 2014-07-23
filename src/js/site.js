@@ -6,5 +6,6 @@ behaviour.register('data-slides', require('./modules/slides'));
 behaviour.register('data-case-slides', require('./modules/case-slides'));
 behaviour.execute();
 
+require('./modules/team');
 require('./modules/contact');
 require('./home');

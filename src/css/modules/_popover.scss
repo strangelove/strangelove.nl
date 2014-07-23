@@ -1,0 +1,55 @@
+.popover {
+	position: absolute;
+	z-index: 9;
+	width: 420px;
+	padding: 45px;
+	border: 1px solid #d9d9d9;
+	background: rgba(255, 255, 255, .95);
+	&:after, &:before {
+		content: ' ';
+		position: absolute;
+		top: 100px;
+		width: 0;
+		height: 0;
+		border: solid transparent;
+		pointer-events: none;
+	}
+	&:after {
+		border-width: 14px;
+		margin-top: -14px;
+	}
+	&:before {
+		border-width: 15px;
+		margin-top: -15px;
+	}
+	&.left {
+		&:after, &:before {
+			right: 100%;
+		}
+		&:after {
+			border-right-color: rgba(255, 255, 255, .95);
+		}
+		&:before {
+			border-right-color: #d9d9d9;
+		}
+	}
+	&.right {
+		&:after, &:before {
+			left: 100%;
+		}
+		&:after {
+			border-left-color: rgba(255, 255, 255, .95);
+		}
+		&:before {
+			border-left-color: #d9d9d9;
+		}
+	}
+	.close {
+		position: absolute;
+		top: 45px;
+		right: 45px;
+		width: 10px;
+		height: 10px;
+		background: #aaa;
+	}
+}
