@@ -26,7 +26,7 @@ module.exports = function(grunt){
 		sass: {
 			dev: {
 				files: {
-					'public/css/site.css': 'src/css/site.scss',
+					'public/css/home.css': 'src/css/home.scss',
 					'public/css/cases/litedark.css': 'src/css/cases/litedark.scss'
 				}
 			}
@@ -57,12 +57,12 @@ module.exports = function(grunt){
 					'src/js/*.js',
 					'src/js/**/*.js'
 				],
-				tasks: ['wrapup:dev']
+				tasks: ['wrapup']
 			}
 		},
 
 		wrapup: {
-			dev: {
+			home: {
 				requires: {
 					'./src/js/home.js': true
 				},
@@ -85,7 +85,7 @@ module.exports = function(grunt){
 		'symlink',
 		'mkdir',
 		'sass:dev',
-		'wrapup:dev',
+		'wrapup',
 		'concurrent:dev'
 	]);
 };
