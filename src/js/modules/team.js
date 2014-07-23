@@ -5,6 +5,14 @@ var $ = require('elements'),
 	teamList = $('.team-list'),
 	popovers = [], i = 0;
 
+var franklinImg = teamList.search('.franklin img'),
+	src = franklinImg.attribute('src'),
+	num = Math.round(Math.random());
+
+if (num === 0){
+	franklinImg.attribute('src', src.replace('1', '2'));
+}
+
 teamList.search('> li').forEach(function(el){
 	el = $(el);
 	el.attribute('data-index', i++);
