@@ -20,6 +20,7 @@
 		"moofx": "kamicane/moofx#a3716037e78f057e6eb06504c4192abb56edb4c0",
 		"mout": "0.9",
 		"optimist": "0.6",
+		"request": "2.39",
 		"swig": "1.1"
 	},
 	"devDependencies": {

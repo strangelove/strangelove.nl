@@ -1,5 +1,5 @@
 {
-	"about": [
+	"home_about": [
 		{
 			"slug": "what-we-believe",
 			"name": "What we believe",
@@ -16,7 +16,7 @@
 			"summary": "<p>When almost everyone is busy selling everything, how can you be noticed?</p><p>All healthy businesses of today are doing at least two things right:</p><p>- Their businesses add true customer value<br>- Their brands live up to their promises.</p><p>To maximise your customers devotion towards your brand, Strangelove does a couple of things.</p><p>- First, we study your business to clarify how you can unlock true customer value.<br>- Then we create relevant tools that will transform this value into memorable brand propositions and solutions.</p><p>Everything we do is built to serve personal brand experiences. We pursue making consumers feel appreciated and better connected to your brand. This will boost your brand loyalty, selling more products or services, more effectively.</p><p>Simple.</p><p>Please click here to find out how we can help you.</p>"
 		}
 	],
-	"cases": [
+	"home_cases": [
 		{
 			"slug": "pbcf",
 			"name": "Cultuurfonds",

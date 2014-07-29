@@ -4,6 +4,7 @@ var fs = require('fs'),
 	express = require('express'),
 	swig = require('swig'),
 	cons = require('consolidate'),
+	request = require('request'),
 	argv = require('optimist').argv;
 
 var app = express()
@@ -17,8 +18,11 @@ if (app.settings.env == 'development'){
 }
 
 app.get('/', function(req, res){
-	fs.readFile(__dirname + '/data/home.json', {encoding: 'utf8'}, function(err, body){
-		res.render('index', {locals: JSON.parse(body)});
+	request({
+		url: 'http://localhost:8000/api/v1/home',
+		json: {} 
+	}, function(err, resp, body){
+		res.render('index', {locals: body});
 	});
 });
 

@@ -72,13 +72,13 @@
 				<a href="#next" class="arrow-right slides-next">Next</a>
 				<nav class="slides-tabs">
 					<ul>
-						{% for section in about %}
+						{% for section in home_about %}
 						<li><a href="#about/{{section.slug}}">{{section.name}}</a></li>
 						{% endfor %}
 					</ul>
 				</nav>
 				<div class="slides-contents">
-					{% for section in about %}
+					{% for section in home_about %}
 					<article>
 						{{section.summary|safe}}
 					</article>
@@ -94,7 +94,7 @@
 			<h2>The cases we love</h2>
 			<div class="slides" data-case-slides>
 				<div class="slides-contents">
-					{% for project in cases %}
+					{% for project in home_cases %}
 					<article>
 						<div class="summary">
 							<h3>{{project.name}}</h3>
@@ -116,7 +116,7 @@
 				</div>
 				<nav class="slides-tabs">
 					<ul>
-						{% for project in cases %}
+						{% for project in home_cases %}
 						<li><a href="#" class="{{project.slug}}"><img src="/img/cases/buttons/{{project.slug}}_logo.png" alt="{{project.title}}">{{project.title}}</a></li>
 						{% endfor %}
 					</ul>
