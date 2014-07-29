@@ -2,44 +2,44 @@
 	"about": [
 		{
 			"slug": "what-we-believe",
-			"title": "What we believe",
-			"body": "<p>In today's complex and transparent world the game has changed.</p><p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p><p>In this complex world, we simplify. Welcome to Strangelove, an advertising agency that believes what you do comes before what you say.</p><p>We combine business thinking with communication services. Creating opportunities and solutions that matter to people.</p><p>This is how we grow your business.</p>"
+			"name": "What we believe",
+			"summary": "<p>In today's complex and transparent world the game has changed.</p><p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p><p>In this complex world, we simplify. Welcome to Strangelove, an advertising agency that believes what you do comes before what you say.</p><p>We combine business thinking with communication services. Creating opportunities and solutions that matter to people.</p><p>This is how we grow your business.</p>"
 		},
 		{
 			"slug": "how-we-work",
-			"title": "How we work",
-			"body": "<p>Our job is to make what you do, what you say and how you say it live up to consumers expectations.</p><p>That's why everything we make is:</p><p><strong>relevant</strong>,<br><strong>human</strong>-friendly,<br><strong>memorable</strong>,<br>&hellip;and above all, <strong>simple</strong>.</p><p>Once all four factors are present, we know we've delivered a future-proof solution that works.</p>"
+			"name": "How we work",
+			"summary": "<p>Our job is to make what you do, what you say and how you say it live up to consumers expectations.</p><p>That's why everything we make is:</p><p><strong>relevant</strong>,<br><strong>human</strong>-friendly,<br><strong>memorable</strong>,<br>&hellip;and above all, <strong>simple</strong>.</p><p>Once all four factors are present, we know we've delivered a future-proof solution that works.</p>"
 		},
 		{
 			"slug": "how-we-help",
-			"title": "How we help",
-			"body": "<p>When almost everyone is busy selling everything, how can you be noticed?</p><p>All healthy businesses of today are doing at least two things right:</p><p>- Their businesses add true customer value<br>- Their brands live up to their promises.</p><p>To maximise your customers devotion towards your brand, Strangelove does a couple of things.</p><p>- First, we study your business to clarify how you can unlock true customer value.<br>- Then we create relevant tools that will transform this value into memorable brand propositions and solutions.</p><p>Everything we do is built to serve personal brand experiences. We pursue making consumers feel appreciated and better connected to your brand. This will boost your brand loyalty, selling more products or services, more effectively.</p><p>Simple.</p><p>Please click here to find out how we can help you.</p>"
+			"name": "How we help",
+			"summary": "<p>When almost everyone is busy selling everything, how can you be noticed?</p><p>All healthy businesses of today are doing at least two things right:</p><p>- Their businesses add true customer value<br>- Their brands live up to their promises.</p><p>To maximise your customers devotion towards your brand, Strangelove does a couple of things.</p><p>- First, we study your business to clarify how you can unlock true customer value.<br>- Then we create relevant tools that will transform this value into memorable brand propositions and solutions.</p><p>Everything we do is built to serve personal brand experiences. We pursue making consumers feel appreciated and better connected to your brand. This will boost your brand loyalty, selling more products or services, more effectively.</p><p>Simple.</p><p>Please click here to find out how we can help you.</p>"
 		}
 	],
 	"cases": [
 		{
 			"slug": "pbcf",
-			"title": "Cultuurfonds",
+			"name": "Cultuurfonds",
 			"summary": "We helped them with developing their communication strategy of many levels"
 		},
 		{
 			"slug": "litedark",
-			"title": "Lite/Dark",
+			"name": "Lite/Dark",
 			"summary": ""
 		},
 		{
 			"slug": "slimleren",
-			"title": "Slimleren",
+			"name": "Slimleren",
 			"summary": ""
 		},
 		{
 			"slug": "ing",
-			"title": "Pensioenfonds ING",
+			"name": "Pensioenfonds ING",
 			"summary": ""
 		},
 		{
 			"slug": "kpmg",
-			"title": "KPMG Meijburg & Co.",
+			"name": "KPMG Meijburg & Co.",
 			"summary": ""
 		}
 	],
@@ -99,71 +99,71 @@
 			"image": "/img/placeholder/team-vincent.png",
 			"name": "Vincent van Dijk",
 			"title": "Managing Director",
-			"body": "<p>Business developer and advocate of simplicity, with an extensive track record of transforming traditional businesses into innovative experiences and concepts that add value to people’s lives.</p>"
+			"value": "<p>Business developer and advocate of simplicity, with an extensive track record of transforming traditional businesses into innovative experiences and concepts that add value to people’s lives.</p>"
 		},
 		{
 			"slug": "jeroen",
 			"image": "/img/placeholder/team-jeroen.png",
 			"name": "Jeroen Gouw",
 			"title": "Creative Consultant",
-			"body": "<p>Transformer of complex digital briefs. His leadership allows Strangelove to transform any brand's business into a human friendly digital solution that makes a stand in today's complex world.</p>"
+			"value": "<p>Transformer of complex digital briefs. His leadership allows Strangelove to transform any brand's business into a human friendly digital solution that makes a stand in today's complex world.</p>"
 		},
 		{
 			"slug": "martin",
 			"image": "/img/placeholder/team-martin.png",
 			"name": "Martin Palamarz",
 			"title": "Strategy Director",
-			"body": "<p>Strategist and simplifier with leadership experience at global agencies and clients. Aiming to make our client's businesses relevant, human friendly, memorable and simple.</p>"
+			"value": "<p>Strategist and simplifier with leadership experience at global agencies and clients. Aiming to make our client's businesses relevant, human friendly, memorable and simple.</p>"
 		},
 		{
 			"slug": "anne",
 			"image": "/img/placeholder/team-anne.png",
 			"name": "Anne van Haeften",
 			"title": "Client Service Director",
-			"body": "<p>Brand mind that truly understands retail and fmcg clients and how creativity can propel their businesses. Constantly looking for exciting new ideas on the intersection of content and design.</p>"
+			"value": "<p>Brand mind that truly understands retail and fmcg clients and how creativity can propel their businesses. Constantly looking for exciting new ideas on the intersection of content and design.</p>"
 		},
 		{
 			"slug": "onno",
 			"image": "/img/placeholder/team-onno.png",
 			"name": "Onno van der Steen",
 			"title": "Team Lead Development",
-			"body": "<p>As our senior coding ninja and digital team leader, Onno creates seamless digital solutions that are human friendly and state of the art. He also leads technology concepts beyond the realm of the web.</p>"
+			"value": "<p>As our senior coding ninja and digital team leader, Onno creates seamless digital solutions that are human friendly and state of the art. He also leads technology concepts beyond the realm of the web.</p>"
 		},
 		{
 			"slug": "franklin",
 			"image": "/img/placeholder/team-franklin1.png",
 			"name": "Franklin Schamhart",
 			"title": "Team Lead UX",
-			"body": "<p>Functional design thinker and maker with an extensive knowledge about popular culture and digital technology. Passionate about the opportunities of consumer experiences on the intersection between the digital and physical world.</p>"
+			"value": "<p>Functional design thinker and maker with an extensive knowledge about popular culture and digital technology. Passionate about the opportunities of consumer experiences on the intersection between the digital and physical world.</p>"
 		}
 	],
 	"office": [
 		{
 			"slug": "a-creative-capital",
-			"title": "A creative capital",
-			"body": "<p>Named as one of the world's most relaxed and creative cities, Amsterdam guarantees a high quality of life.</p><p>Take a walk over one the beautiful canals and you’ll hear English, French, Spanish and German being spoken in the span of one block. This unique free-thinking capital is a place of wonder.</p>"
+			"name": "A creative capital",
+			"value": "<p>Named as one of the world's most relaxed and creative cities, Amsterdam guarantees a high quality of life.</p><p>Take a walk over one the beautiful canals and you’ll hear English, French, Spanish and German being spoken in the span of one block. This unique free-thinking capital is a place of wonder.</p>"
 		},
 		{
 			"slug": "everything-you-need",
-			"title": "Everything you need",
-			"body": "<p>Hey there, let me get the door for you. New here? Cool. Here’s your new MacBook, Cinema Display and some other cool accessories. Of course with a comfortable chair to complete the workspace. You can enjoy a healthy lunch, afternoon snacks, great coffee and fresh fruit every single day. And hey, work hard play hard, so Friday drinks are on the house.</p>"
+			"name": "Everything you need",
+			"value": "<p>Hey there, let me get the door for you. New here? Cool. Here’s your new MacBook, Cinema Display and some other cool accessories. Of course with a comfortable chair to complete the workspace. You can enjoy a healthy lunch, afternoon snacks, great coffee and fresh fruit every single day. And hey, work hard play hard, so Friday drinks are on the house.</p>"
 		},
 		{
 			"slug": "we-are-family",
-			"title": "We are family",
-			"body": "<p>To us, you are more than an employee. You are family. And we value family.</p><p>So expect no senseless hierarchies, just open discussions and transparency.</p><p>And we have plenty family gatherings, celebrations and</p>"
+			"name": "We are family",
+			"value": "<p>To us, you are more than an employee. You are family. And we value family.</p><p>So expect no senseless hierarchies, just open discussions and transparency.</p><p>And we have plenty family gatherings, celebrations and</p>"
 		}
 	],
 	"jobs": [
 		{
-			"title": "Front-end developer",
+			"name": "Front-end developer",
 			"experience": "Medior level",
-			"body": "<p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p><p>In this complex world, we simplify. Welcome to Strangelove, an advertising agency that believes what you do comes before what you say.</p>"
+			"value": "<p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p><p>In this complex world, we simplify. Welcome to Strangelove, an advertising agency that believes what you do comes before what you say.</p>"
 		},
 		{
-			"title": "Project producer",
+			"name": "Project producer",
 			"experience": "Senior level",
-			"body": "<p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p><p>In this complex world, we simplify. Welcome to Strangelove, an advertising agency that believes what you do comes before what you say.</p>"
+			"value": "<p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p><p>In this complex world, we simplify. Welcome to Strangelove, an advertising agency that believes what you do comes before what you say.</p>"
 		}
 	]
 }

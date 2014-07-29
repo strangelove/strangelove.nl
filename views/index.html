@@ -73,14 +73,14 @@
 				<nav class="slides-tabs">
 					<ul>
 						{% for section in about %}
-						<li><a href="#about/{{section.slug}}">{{section.title}}</a></li>
+						<li><a href="#about/{{section.slug}}">{{section.name}}</a></li>
 						{% endfor %}
 					</ul>
 				</nav>
 				<div class="slides-contents">
 					{% for section in about %}
 					<article>
-						{{section.body|safe}}
+						{{section.summary|safe}}
 					</article>
 					{% endfor %}
 				</div>
@@ -97,7 +97,7 @@
 					{% for project in cases %}
 					<article>
 						<div class="summary">
-							<h3>{{project.title}}</h3>
+							<h3>{{project.name}}</h3>
 							<p>{{project.summary}}</p>
 							<a href="/cases/{{project.slug}}" class="more">Read more</a>
 						</div>
@@ -149,7 +149,7 @@
 					<p>{{person.title}}</p>
 					<section class="popover-content">
 						<h3>{{person.name}}</h3>
-						{{person.body|safe}}
+						{{person.value|safe}}
 					</section>
 				</li>
 				{% endfor %}
@@ -167,14 +167,14 @@
 				<nav class="slides-tabs">
 					<ul>
 						{% for section in office %}
-						<li><a href="#office/{{section.slug}}">{{section.title}}</a></li>
+						<li><a href="#office/{{section.slug}}">{{section.name}}</a></li>
 						{% endfor %}
 					</ul>
 				</nav>
 				<div class="slides-contents">
 					{% for section in office %}
 					<article>
-						{{section.body|safe}}
+						{{section.value|safe}}
 					</article>
 					{% endfor %}
 				</div>
@@ -189,9 +189,9 @@
 			<div class="job-listing">
 				{% for job in jobs %}
 				<article>
-					<h3>{{job.title}}</h3>
+					<h3>{{job.name}}</h3>
 					<p class="subtitle">{{job.experience}}</p>
-					{{job.body|safe}}
+					{{job.value|safe}}
 					<a href="#" class="btn">Apply</a>
 				</article>
 				{% endfor %}
