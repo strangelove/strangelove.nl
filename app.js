@@ -26,6 +26,10 @@ app.get('/', function(req, res){
 	});
 });
 
+app.get('/cases/ing', function(req, res){
+	res.render('cases/ing');
+});
+
 app.get('/cases/litedark', function(req, res){
 	res.render('cases/litedark');
 });

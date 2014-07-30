@@ -27,6 +27,7 @@ module.exports = function(grunt){
 			dev: {
 				files: {
 					'public/css/home.css': 'src/css/home.scss',
+					'public/css/cases/ing.css': 'src/css/cases/ing.scss',
 					'public/css/cases/litedark.css': 'src/css/cases/litedark.scss'
 				}
 			}
@@ -68,6 +69,14 @@ module.exports = function(grunt){
 				},
 				options: {
 					'output': './public/js/home.js'
+				}
+			},
+			ing: {
+				requires: {
+					'./src/js/ing.js': true
+				},
+				options: {
+					'output': './public/js/ing.js'
 				}
 			}
 		}
