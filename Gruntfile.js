@@ -28,6 +28,7 @@ module.exports = function(grunt){
 				files: {
 					'public/css/home.css': 'src/css/home.scss',
 					'public/css/cases/ing.css': 'src/css/cases/ing.scss',
+					'public/css/cases/kpmg.css': 'src/css/cases/kpmg.scss',
 					'public/css/cases/litedark.css': 'src/css/cases/litedark.scss'
 				}
 			}
@@ -77,6 +78,14 @@ module.exports = function(grunt){
 				},
 				options: {
 					'output': './public/js/ing.js'
+				}
+			},
+			kpmg: {
+				requires: {
+					'./src/js/kpmg.js': true
+				},
+				options: {
+					'output': './public/js/kpmg.js'
 				}
 			}
 		}

@@ -1,0 +1,139 @@
+{% extends "../layouts/default.html" %}
+
+{% block stylesheets %}
+	{% parent %}
+	<link rel="stylesheet" href="/css/cases/kpmg.css">
+{% endblock %}
+
+{% block scripts %}
+	<script src="/js/kpmg.js"></script>
+{% endblock %}
+
+{% block bodytag %}
+	<body class="kpmg">
+{% endblock %}
+
+{% block content %}
+	<article class="case">
+		<p class="case-summary">
+			<strong>{{client}}</strong>
+			<span>{{areas|join(', ')}}</span>
+		</p>
+
+		<!-- client -->
+		<div class="client-briefcase"></div>
+		<div class="client-watch"></div>
+		<div class="client-phone"></div>
+		<div class="description desc-client">
+			<h2>{{content1.title}}</h2>
+			{{content1.body|safe}}
+		</div>
+
+		<!-- tax battle -->
+		<div class="battle-her1"></div>
+		<div class="battle-hero2"></div>
+		<div class="battle-hero3"></div>
+		<div class="battle-hero4"></div>
+		<div class="description desc-battle">
+			<h2>{{content2.title}}</h2>
+			{{content2.body|safe}}
+		</div>
+
+		<!-- print -->
+		<div class="flyer-wrap">
+			<div class="flyer"></div>
+		</div>
+		<div class="description desc-print">
+			<h2>{{content3.title}}</h2>
+			{{content3.body|safe}}
+		</div>
+
+		<!-- step into the world of -->
+		<div class="retouch-wrap">
+			<div class="retouch"></div>
+			<div class="original"></div>
+		</div>
+		<ul>
+			<li><img src="#" alt="Retouched image 1"></li>
+			<li><img src="#" alt="Retouched image 2"></li>
+		</ul>
+		<div class="description desc-step">
+			<h2>{{content4.title}}</h2>
+			{{content4.body|safe}}
+		</div>
+
+		<!-- corporate website -->
+		<div class="devices">
+			<div class="device device-imac">
+				<div class="viewport"><img src="#" alt="Corporate website on iMac"></div>
+			</div>
+			<div class="device device-ipad">
+				<div class="viewport"><img src="#" alt="Corporate website on iPad"></div>
+			</div>
+			<div class="device device-iphone">
+				<div class="viewport"><img src="#" alt="Corporate website on iPhone"></div>
+			</div>
+			<div class="scrollbar">
+				<div class="scrolltrack"></div>
+			</div>
+		</div>
+		<div class="description desc-corporate">
+			<h2>{{content5.title}}</h2>
+			{{content5.body|safe}}
+		</div>
+
+		<!-- custom hr icons -->
+		<ul class="icons">
+			<li class="icon-pencil"></li>
+			<li class="icon-pen"></li>
+			<li class="icon-form"></li>
+			<li class="icon-globe"></li>
+			<li class="icon-temple"></li>
+			<li class="icon-certificate"></li>
+			<li class="icon-briefcase"></li>
+			<li class="icon-brains"></li>
+			<li class="icon-growth"></li>
+			<li class="icon-users"></li>
+			<li class="icon-cog"></li>
+			<li class="icon-leaf"></li>
+			<li class="icon-calendar"></li>
+			<li class="icon-island"></li>
+			<li class="icon-graduate"></li>
+			<li class="icon-sail"></li>
+		</ul>
+		<div class="description desc-icons">
+			<h2>{{content6.title}}</h2>
+			{{content6.body|safe}}
+		</div>
+
+		<!-- multiple devices -->
+		<div class="md-suitcase"></div>
+		<div class="md-ipad"></div>
+		<div class="md-pen"></div>
+		<div class="md-iphone"></div>
+		<div class="md-macbook"></div>
+		<div class="description desc-devices">
+			<h2>{{content7.title}}</h2>
+			{{content7.body|safe}}
+		</div>
+
+		<!-- hr website -->
+		<div class="hr-layer1"></div>
+		<div class="hr-layer2"></div>
+		<div class="hr-layer3"></div>
+		<div class="description desc-hr">
+			<h2>{{content8.title}}</h2>
+			{{content8.body|safe}}
+		</div>
+
+		<!-- extensive calendar -->
+		<div class="calendar-view1"></div>
+		<div class="calendar-view2"></div>
+		<div class="calendar-view3"></div>
+		<div class="calendar-view4"></div>
+		<div class="description desc-calendar">
+			<h2>{{content9.title}}</h2>
+			{{content9.body|safe}}
+		</div>
+	</article>
+{% endblock %}
