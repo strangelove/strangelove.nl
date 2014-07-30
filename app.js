@@ -16,8 +16,10 @@ var app = express()
 	.use(function(req, res, next){
 		if (req.query.mock){
 			if (req.query.mock == '1'){
-				req.cookies.mock = true;
+				res.cookie('mock', '1');
+				req.cookies.mock = '1';
 			} else {
+				res.clearCookie('mock');
 				delete req.cookies.mock;
 			}
 		}
@@ -54,10 +56,7 @@ routes.forEach(function(route){
 				res.render(route.template, {locals: JSON.parse(body)});
 			});
 		} else if (route.endpoint){
-			request({
-				url: 'http://localhost:8000/api/v1/home',
-				json: {}
-			}, function(err, response, body){
+			request({url: route.endpoint, json: {}}, function(err, response, body){
 				res.render(route.template, {locals: body});
 			});
 		} else {
