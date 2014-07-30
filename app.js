@@ -11,27 +11,59 @@ var app = express()
 	.engine('html', cons.swig)
 	.set('view engine', 'html')
 	.set('views', __dirname + '/views')
-	.use(express.static(__dirname + '/public'));
+	.use(express.static(__dirname + '/public'))
+	.use(express.cookieParser())
+	.use(function(req, res, next){
+		if (req.query.mock){
+			if (req.query.mock == '1'){
+				req.cookies.mock = true;
+			} else {
+				delete req.cookies.mock;
+			}
+		}
+		next();
+	});
 
 if (app.settings.env == 'development'){
 	swig.setDefaults({cache: false});
 }
 
-app.get('/', function(req, res){
-	request({
-		url: 'http://localhost:8000/api/v1/home',
-		json: {} 
-	}, function(err, resp, body){
-		res.render('index', {locals: body});
+var routes = [
+	{
+		path: '/',
+		endpoint: 'http://localhost:8000/api/v1/home',
+		mockData: __dirname + '/data/home.json',
+		template: 'index'
+	},
+	{
+		path: '/cases/ing',
+		template: 'cases/ing'
+	},
+	{
+		path: '/cases/litedark',
+		template: 'cases/litedark'
+	}
+];
+
+routes.forEach(function(route){
+	if (!route.path || !route.template) return;
+
+	app.get(route.path, function(req, res){
+		if (req.cookies.mock && route.mockData){
+			fs.readFile(route.mockData, {encoding: 'utf8'}, function(err, body){
+				res.render(route.template, {locals: JSON.parse(body)});
+			});
+		} else if (route.endpoint){
+			request({
+				url: 'http://localhost:8000/api/v1/home',
+				json: {}
+			}, function(err, response, body){
+				res.render(route.template, {locals: body});
+			});
+		} else {
+			res.render(route.template);
+		}
 	});
-});
-
-app.get('/cases/ing', function(req, res){
-	res.render('cases/ing');
-});
-
-app.get('/cases/litedark', function(req, res){
-	res.render('cases/litedark');
 });
 
 var port = parseInt(argv.p, 10) || 3000;
