@@ -15,6 +15,8 @@
 
 {% block content %}
 	<article class="case">
+		<div class="mood"></div>
+
 		<p class="case-summary">
 			<strong>{{client}}</strong>
 			<span>{{areas|join(', ')}}</span>
@@ -30,11 +32,11 @@
 		</div>
 
 		<!-- tax battle -->
-		<div class="battle-her1"></div>
+		<div class="battle-hero1"></div>
 		<div class="battle-hero2"></div>
 		<div class="battle-hero3"></div>
 		<div class="battle-hero4"></div>
-		<div class="description desc-battle">
+		<div class="description left desc-battle">
 			<h2>{{content2.title}}</h2>
 			{{content2.body|safe}}
 		</div>
@@ -50,32 +52,24 @@
 
 		<!-- step into the world of -->
 		<div class="retouch-wrap">
-			<div class="retouch"></div>
-			<div class="original"></div>
+			<div class="edit-left"></div>
+			<div class="edit-right"></div>
+			<div class="raw"></div>
 		</div>
-		<ul>
-			<li><img src="#" alt="Retouched image 1"></li>
-			<li><img src="#" alt="Retouched image 2"></li>
-		</ul>
 		<div class="description desc-step">
 			<h2>{{content4.title}}</h2>
 			{{content4.body|safe}}
 		</div>
 
 		<!-- corporate website -->
-		<div class="devices">
-			<div class="device device-imac">
-				<div class="viewport"><img src="#" alt="Corporate website on iMac"></div>
-			</div>
-			<div class="device device-ipad">
-				<div class="viewport"><img src="#" alt="Corporate website on iPad"></div>
-			</div>
-			<div class="device device-iphone">
-				<div class="viewport"><img src="#" alt="Corporate website on iPhone"></div>
-			</div>
-			<div class="scrollbar">
-				<div class="scrolltrack"></div>
-			</div>
+		<div class="device device-imac">
+			<div class="viewport"><img src="/img/cases/kpmg/screen-imac.jpg" alt="Corporate website on iMac"></div>
+		</div>
+		<div class="device device-ipad">
+			<div class="viewport"><img src="/img/cases/kpmg/screen-ipad.jpg" alt="Corporate website on iPad"></div>
+		</div>
+		<div class="device device-iphone">
+			<div class="viewport"><img src="/img/cases/kpmg/screen-iphone.jpg" alt="Corporate website on iPhone"></div>
 		</div>
 		<div class="description desc-corporate">
 			<h2>{{content5.title}}</h2>

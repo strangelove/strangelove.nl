@@ -1,0 +1,44 @@
+.device .viewport {
+	overflow: hidden;
+	position: absolute;
+	background: #fff;
+	img {
+		display: block;
+}
+}
+.device-imac {
+	position: relative;
+	width: 776px;
+	height: 625px;
+	background: url(/img/devices/imac.png);
+	.viewport {
+		top: 36px;
+		left: 34px;
+		width: 709px;
+		height: 398px;
+	}
+}
+.device-ipad {
+	position: relative;
+	width: 442px;
+	height: 471px;
+	background: url(/img/devices/ipad.png);
+	.viewport {
+		top: 51px;
+		left: 97px;
+		width: 243px;
+		height: 322px;
+	}
+}
+.device-iphone {
+	position: relative;
+	width: 178px;
+	height: 303px;
+	background: url(/img/devices/iphone.png);
+	.viewport {
+		top: 46px;
+		left: 37px;
+		width: 101px;
+		height: 179px;
+	}
+}

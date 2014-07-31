@@ -6,3 +6,249 @@
 @import '../header';
 @import '../footer';
 
+@import '../modules/devices';
+
+/** generic */
+h2 {
+	margin: 0;
+}
+
+.description {
+	position: fixed;
+	top: 100%;
+	left: 35%;
+	width: 30%;
+	text-align: center;
+	&.left {
+		text-align: left;
+		h2 {
+			text-align: left;
+			&:after {
+				margin-left: 0;
+			}
+		}
+	}
+	h2:after {
+		content: ' ';
+		display: block;
+		width: 30px;
+		height: 4px;
+		margin: 30px auto 24px;
+		background: #0078c1;
+	}
+}
+
+.mood {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width:  100%;
+	height: 800px;
+	background: url(/img/cases/kpmg/cover.jpg) no-repeat center top;
+}
+
+.case-summary {
+	position: fixed;
+	z-index: 2;
+	top: 390px;
+	left: 50%;
+	width: 520px;
+	margin: -50px 0 0 -260px;
+	padding: 18px 0;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	&:before, &:after {
+		content: ' ';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background: #fff;
+	}
+	&:before {
+		top: 0;
+		left: 0;
+	}
+	&:after {
+		right: 0;
+		bottom: 0;
+	}
+	strong {
+		display: block;
+		font: 700 36px 'Ubuntu';
+		letter-spacing: 4px;
+		text-transform: uppercase;
+	}
+	span {
+		display: block;
+		color: #80bbe0;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+}
+
+/** client */
+.client-briefcase {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	left: 0;
+	width: 303px;
+	height: 430px;
+	background: url(/img/cases/kpmg/client-briefcase.png);
+}
+.client-watch {
+	position: fixed;
+	z-index: 3;
+	top: 100%;
+	left: 0;
+	width: 116px;
+	height: 74px;
+	margin: 330px 0 0;
+	background: url(/img/cases/kpmg/client-watch.png);
+}
+.client-phone {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	left: 0;
+	width: 220px;
+	height: 191px;
+	margin: 215px 0 0;
+	background: url(/img/cases/kpmg/client-phone.png);
+}
+
+/** tax battle */
+.battle-hero1 {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	width: 412px;
+	height: 531px;
+	margin: 0 0 0 -100px;
+	background: url(/img/cases/kpmg/battle-hero1.png);
+}
+.battle-hero2 {
+	position: fixed;
+	z-index: 4;
+	top: 100%;
+	left: 50%;
+	width: 375px;
+	height: 360px;
+	margin: 100px 0 0 100px;
+	background: url(/img/cases/kpmg/battle-hero2.png);
+}
+.battle-hero3 {
+	position: fixed;
+	z-index: 3;
+	top: 100%;
+	left: 50%;
+	width: 407px;
+	height: 517px;
+	margin: 0 0 0 180px;
+	background: url(/img/cases/kpmg/battle-hero3.png);
+}
+.battle-hero4 {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	left: 50%;
+	width: 258px;
+	height: 324px;
+	margin: 150px 0 0 400px;
+	background: url(/img/cases/kpmg/battle-hero4.png);
+}
+.desc-battle {
+	margin: 0 0 0 -350px;
+}
+
+/** print */
+.flyer-wrap {
+	overflow: hidden;
+	position: fixed;
+	top: 100%;
+	width: 100%;
+	height: 600px;
+	background: #add9e7;
+	@include transform(translateY(99em));
+}
+.flyer {
+	height: 33600px;
+	background: url(/img/cases/ing/Sprite1.jpg) no-repeat center 0, url(/img/cases/ing/Sprite2.jpg) no-repeat center 7800px, url(/img/cases/ing/Sprite3.jpg) no-repeat center 15600px, url(/img/cases/ing/Sprite4.jpg) no-repeat center 23400px, url(/img/cases/ing/Sprite5.jpg) no-repeat center 31200px;
+}
+.desc-print {
+	top: 120%;
+	margin: 650px 0 0;
+}
+
+/** step into the world of */
+.retouch-wrap {
+	position: fixed;
+	top: 100%;
+	width: 100%;
+	height: 1028px;
+	.edit-left, .edit-right {
+		overflow: hidden;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		&:before {
+			content: ' ';
+			position: absolute;
+			width: 1600px;
+			height: 100%;
+			background: url(/img/cases/kpmg/retouch1-edit.jpg) no-repeat center;
+		}
+	}
+	.edit-left {
+		right: 50%;
+		&:before {
+			right: -800px;
+		}
+	}
+	.edit-right {
+		left: 50%;
+		&:before {
+			left: -800px;
+		}
+	}
+	.raw {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(/img/cases/kpmg/retouch1-raw.jpg) no-repeat center;
+	}
+}
+.desc-step {
+	top: 200%;
+	left: 25%;
+	width: 50%;
+	margin: -250px 0 0;
+}
+
+/** corporate website */
+.device {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+}
+.device-imac {
+	z-index: 1;
+	margin: 0 0 0 -300px;
+}
+.device-ipad {
+	z-index: 2;
+	margin: 206px 0 0 -500px;
+}
+.device-iphone {
+	z-index: 3;
+	margin: 375px 0 0 -195px;
+}
