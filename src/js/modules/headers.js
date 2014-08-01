@@ -9,18 +9,16 @@ var header = $('.header-main'),
 	bodyRect = document.body.getBoundingClientRect(),
 	headers = [], sectionTops = [], i, clone, sectionRect, y;
 
-setTimeout(function(){
-	for (i = 0; i < sections.length; i++){
-		clone = $(header[0].cloneNode(true));
-		headers.push(clone);
-		clone.insert(sections[i]);
+for (i = 0; i < sections.length; i++){
+	clone = $(header[0].cloneNode(true));
+	headers.push(clone);
+	clone.insert(sections[i]);
 
-		sectionRect = sections[i].getBoundingClientRect();
-		sectionTops.push(sectionRect.top - bodyRect.top);
-	}
+	sectionRect = sections[i].getBoundingClientRect();
+	sectionTops.push(sectionRect.top - bodyRect.top);
+}
 
-	header.style({display: 'none'});
-}, 1);
+header.style({display: 'none'});
 
 setInterval(function(){
 	window.requestAnimationFrame(function(){
