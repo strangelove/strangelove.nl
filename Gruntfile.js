@@ -105,4 +105,11 @@ module.exports = function(grunt){
 		'wrapup',
 		'concurrent:dev'
 	]);
+
+	grunt.registerTask('build', [
+		'symlink',
+		'mkdir',
+		'sass:dev',
+		'wrapup'
+	]);
 };
