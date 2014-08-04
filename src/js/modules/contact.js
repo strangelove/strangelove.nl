@@ -2,6 +2,7 @@
 'use strict';
 
 var $ = require('elements'),
+	debounce = require('mout/function/debounce'),
 	scrollFx = new (require('./scrollfx'))(),
 	mapStyles = require('./map-styles'),
 	contact = $('.contact');
@@ -18,6 +19,10 @@ if (contact){
 		center = new google.maps.LatLng(52.366394, 4.861973),
 		bodyRect = document.body.getBoundingClientRect(),
 		map, rect, contactTop;
+
+	var resize = function(){
+		map.panTo(center);
+	};
 
 	var initialize = function(){
 		map = new google.maps.Map(canvas[0], {
@@ -50,6 +55,8 @@ if (contact){
 			map: map,
 			position: center
 		});
+
+		$(window).on('resize', debounce(resize, 300));
 	};
 	google.maps.event.addDomListener(window, 'load', initialize);
 
