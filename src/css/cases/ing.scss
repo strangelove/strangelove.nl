@@ -6,6 +6,8 @@
 @import '../header';
 @import '../footer';
 
+@import '../modules/devices';
+
 /** generic stuff */
 body {
 	color: #333;
@@ -34,10 +36,9 @@ h2 {
 
 .description {
 	position: fixed;
-	top: 35%;
+	top: 100%;
 	left: 35%;
 	width: 30%;
-	opacity: 0;
 	text-align: center;
 	&.left {
 		text-align: left;
@@ -60,8 +61,9 @@ h2 {
 
 /** mood images */
 .mood {
-	position: relative;
+	position: fixed;
 	z-index: 1;
+	width: 100%;
 	height: 800px;
 	border-bottom: 1px solid #ff7245;
 	&:before, &:after {
@@ -129,22 +131,14 @@ h2 {
 }
 
 /** client */
-.brand-mood {
+.brand-logo {
 	position: fixed;
-	top: 50%;
+	top: 100%;
 	left: 50%;
-	width: 1060px;
-	height: 712px;
-	margin: -356px 0 0 -530px;
-}
-.ing-logo {
-	position: absolute;
-	top: 20px;
-	right: 0;
 	width: 700px;
 	height: 200px;
+	margin: 0 0 0 -170px;
 	background: url(/img/cases/ing/logo-raw.png) no-repeat 10px 13px;
-	@include transform(translateY(99em));
 }
 .logo-overlay {
 	position: absolute;
@@ -163,37 +157,42 @@ h2 {
 		background: #ff7245;
 	}
 }
-.man {
-	position: absolute;
-	width: 100%;
+.brand-man {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	width: 1060px;
 	height: 711px;
+	margin: 0 0 0 -530px;
 	border-bottom: 1px solid #ff7245;
 	background: url(/img/cases/ing/man.jpg) no-repeat;
-	@include transform(translateY(99em));
 }
-.ribbon {
-	position: absolute;
-	bottom: 76px;
+.brand-ribbon {
+	position: fixed;
+	top: 100%;
+	left: 50%;
 	width: 1060px;
 	height: 100px;
+	margin: 535px 0 0 -530px;
 	background: url(/img/cases/ing/ribbon.png);
-	@include transform(translateY(99em));
 }
 
 /** print */
 .flyer-wrap {
 	overflow: hidden;
 	position: fixed;
-	top: 50%;
+	top: 100%;
 	width: 100%;
 	height: 600px;
-	margin: -300px 0 0;
 	background: #add9e7;
-	@include transform(translateY(99em));
 }
 .flyer {
 	height: 33600px;
 	background: url(/img/cases/ing/Sprite1.jpg) no-repeat center 0, url(/img/cases/ing/Sprite2.jpg) no-repeat center 7800px, url(/img/cases/ing/Sprite3.jpg) no-repeat center 15600px, url(/img/cases/ing/Sprite4.jpg) no-repeat center 23400px, url(/img/cases/ing/Sprite5.jpg) no-repeat center 31200px;
+}
+.desc-print {
+	top: 120%;
+	margin: 650px 0 0;
 }
 
 /** iconography */
@@ -207,7 +206,6 @@ h2 {
 	padding: 0;
 	list-style: none;
 	background: url(/img/cases/ing/bg-icons.png);
-	@include transform(translateY(99em));
 	li {
 		position: absolute;
 	}
@@ -218,6 +216,7 @@ h2 {
 	width: 74px;
 	height: 50px;
 	background: url(/img/cases/ing/icons/speechbubble.png);
+	@include transform(translateY(50px));
 }
 .senior {
 	top: 272px;
@@ -225,6 +224,7 @@ h2 {
 	width: 50px;
 	height: 81px;
 	background: url(/img/cases/ing/icons/senior.png);
+	@include transform(translateY(54px));
 }
 .form {
 	top: 321px;
@@ -232,6 +232,7 @@ h2 {
 	width: 71px;
 	height: 73px;
 	background: url(/img/cases/ing/icons/form.png);
+	@include transform(translateY(56px));
 }
 .envelope {
 	top: 313px;
@@ -239,6 +240,7 @@ h2 {
 	width: 110px;
 	height: 46px;
 	background: url(/img/cases/ing/icons/envelope.png);
+	@include transform(translateY(52px));
 }
 .hand {
 	top: 367px;
@@ -246,6 +248,7 @@ h2 {
 	width: 63px;
 	height: 89px;
 	background: url(/img/cases/ing/icons/hand.png);
+	@include transform(translateY(106px));
 }
 .form-hand {
 	top: 292px;
@@ -253,6 +256,7 @@ h2 {
 	width: 47px;
 	height: 88px;
 	background: url(/img/cases/ing/icons/form-hand.png);
+	@include transform(translateY(52px));
 }
 .moneybag {
 	top: 421px;
@@ -260,6 +264,7 @@ h2 {
 	width: 222px;
 	height: 126px;
 	background: url(/img/cases/ing/icons/moneybag.png);
+	@include transform(translateY(100px));
 }
 .lock {
 	top: 432px;
@@ -267,6 +272,7 @@ h2 {
 	width: 46px;
 	height: 60px;
 	background: url(/img/cases/ing/icons/lock.png);
+	@include transform(translateY(104px));
 }
 .eye {
 	top: 423px;
@@ -274,6 +280,7 @@ h2 {
 	width: 81px;
 	height: 50px;
 	background: url(/img/cases/ing/icons/eye.png);
+	@include transform(translateY(102px));
 }
 .piggybank {
 	top: 537px;
@@ -281,6 +288,7 @@ h2 {
 	width: 128px;
 	height: 121px;
 	background: url(/img/cases/ing/icons/piggybank.png);
+	@include transform(translateY(150px));
 }
 .book {
 	top: 549px;
@@ -288,6 +296,7 @@ h2 {
 	width: 97px;
 	height: 77px;
 	background: url(/img/cases/ing/icons/book.png);
+	@include transform(translateY(152px));
 }
 .suitcase {
 	top: 664px;
@@ -295,6 +304,7 @@ h2 {
 	width: 102px;
 	height: 85px;
 	background: url(/img/cases/ing/icons/suitcase.png);
+	@include transform(translateY(204px));
 }
 .male {
 	top: 626px;
@@ -302,103 +312,41 @@ h2 {
 	width: 38px;
 	height: 86px;
 	background: url(/img/cases/ing/icons/male.png);
+	@include transform(translateY(200px));
 }
-.iconography-description {
-	top: 50%;
+.desc-iconography {
+	top: 100%;
 	left: 50%;
 	margin: 200px 0 0 -500px;
 }
 
 /** website */
-.devices {
+.device {
 	position: fixed;
-	top: 50%;
+	top: 100%;
 	left: 50%;
-	width: 1024px;
-	height: 668px;
-	margin: -334px 0 0 -512px;
-	@include transform(translateY(99em));
-	.device {
-		position: absolute;
-	}
-	.viewport {
-		overflow: hidden;
-		position: absolute;
-		background: #fff;
-		img {
-			display: block;
-		}
-	}
-	.device-imac {
-		z-index: 1;
-		top: 1px;
-		left: 124px;
-		width: 776px;
-		height: 625px;
-		background: url(/img/devices/imac.png);
-		.viewport {
-			top: 36px;
-			left: 34px;
-			width: 709px;
-			height: 398px;
-		}
-		img {
-			margin-left: -15px;
-		}
-	}
-	.device-ipad {
-		z-index: 2;
-		top: 217px;
-		left: 0;
-		width: 442px;
-		height: 471px;
-		background: url(/img/devices/ipad.png);
-		.viewport {
-			top: 51px;
-			left: 97px;
-			width: 243px;
-			height: 322px;
-		}
-	}
-	.device-iphone {
-		z-index: 3;
-		top: 385px;
-		left: 235px;
-		width: 178px;
-		height: 303px;
-		background: url(/img/devices/iphone.png);
-		.viewport {
-			top: 46px;
-			left: 37px;
-			width: 101px;
-			height: 179px;
-		}
-	}
-	.scrollbar {
-		position: absolute;
-		right: 0;
-		width: 10px;
-		height: 620px;
-		border-radius: 5px;
-		background: #edeef1;
-	}
-	.scrolltrack {
-		width: 100%;
-		height: 140px;
-		border-radius: 5px;
-		background: #151515;
-	}
+}
+.device-imac {
+	z-index: 1;
+	margin: 0 0 0 -300px;
+}
+.device-ipad {
+	z-index: 2;
+	margin: 206px 0 0 -500px;
+}
+.device-iphone {
+	z-index: 3;
+	margin: 375px 0 0 -195px;
 }
 
 /** infographics */
 .infographics-ipad {
 	position: fixed;
-	top: 50%;
+	top: 100%;
 	left: 50%;
 	width: 1370px;
 	height: 717px;
-	margin: -359px 0 0 -685px;
-	@include transform(translateY(99em));
+	margin: 260px 0 0 -685px;
 	div {
 		position: absolute;
 	}
@@ -494,44 +442,37 @@ h2 {
 }
 
 /** mobile */
-.mobile-screens {
-	position: fixed;
-	top: 50%;
-	right: -140px;
-	height: 691px;
-	margin-top: -345px;
-}
 .mobile-screen-1 {
-	position: absolute;
+	position: fixed;
 	z-index: 3;
-	top: 90px;
-	right: 370px;
+	top: 100%;
+	right: 30px;
 	width: 471px;
 	height: 601px;
+	margin: 90px 0 0;
 	background: url(/img/cases/ing/mobile-1.png);
-	@include transform(translateY(99em));
 }
 .mobile-screen-2 {
-	position: absolute;
+	position: fixed;
 	z-index: 2;
-	top: 45px;
-	right: 185px;
+	top: 100%;
+	right: -55px;
 	width: 472px;
 	height: 603px;
+	margin: 45px 0 0;
 	background: url(/img/cases/ing/mobile-2.png);
-	@include transform(translateY(99em));
 }
 .mobile-screen-3 {
-	position: absolute;
+	position: fixed;
 	z-index: 1;
-	top: 0;
-	right: 0;
+	top: 100%;
+	right: -140px;
 	width: 472px;
 	height: 604px;
 	background: url(/img/cases/ing/mobile-3.png);
-	@include transform(translateY(99em));
 }
-.mobile-description {
-	top: 40%;
-	left: 10%;
+.desc-mobile {
+	top: 100%;
+	left: 50%;
+	margin: 0 0 0 -500px;
 }

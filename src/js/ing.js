@@ -4,48 +4,48 @@ var easeInOutQuad = require('kubrick-js/easing/easeInOutQuad'),
 	prefix = require('kubrick-js/lib/vendorprefix')();
 
 require('kubrick-js')([
-
 	{
 		duration: '100%',
 		easing: 'linear',
 		actors: [
 			{
-				element: '.case-summary',
-				translateY: '-25%',
-				opacity: -0.7
+				element: '.mood',
+				translateY: -1000
 			},
 			{
-				element: '.client-description',
-				translateY: ['40%', 0],
-				opacity: [0, 1]
+				element: '.case-summary',
+				translateY: '-25%',
+				opacity: -1.2
+			},
+			{
+				element: '.desc-client',
+				translateY: '-65%'
 			}
 		]
 	},
-
 	{
 		duration: '100%',
 		actors: [
 			{
-				element: '.client-description',
-				translateY: '-20%',
-				opacity: -0.5,
+				element: '.desc-client',
+				translateY: ['-65%', '-120%'],
+				opacity: -1,
 				scale: 0.8
 			},
 			{
-				element: '.ing-logo',
-				translateY: ['60%', 0]
+				element: '.brand-logo',
+				translateY: '-85%'
 			},
 			{
-				element: '.man',
-				translateY: ['80%', 0]
+				element: '.brand-man',
+				translateY: ['15%', '-85%']
 			},
 			{
-				element: '.ribbon',
-				translateY: ['100%', 0]
+				element: '.brand-ribbon',
+				translateY: ['30%', '-85%']
 			}
 		]
 	},
-
 	{
 		duration: '100%',
 		actors: [
@@ -57,50 +57,51 @@ require('kubrick-js')([
 			}
 		]
 	},
-
 	{
 		duration: '100%',
 		actors: [
 			{
-				element: '.ing-logo',
-				translateY: '-60%'
+				element: '.brand-logo',
+				translateY: ['-85%', '-200%']
 			},
 			{
-				element: '.man',
-				translateY: '-80%'
+				element: '.brand-man',
+				translateY: ['-85%', '-215%']
 			},
 			{
-				element: '.ribbon',
-				translateY: '-100%'
+				element: '.brand-ribbon',
+				translateY: ['-85%', '-240%']
 			},
 			{
-				element: '.brand-description',
-				translateY: ['40%', 0],
-				opacity: [0, 1]
+				element: '.desc-brand',
+				translateY: '-65%'
 			}
 		]
 	},
-
 	{
 		duration: '100%',
 		actors: [
 			{
-				element: '.brand-description',
-				translateY: '-20%',
-				opacity: -0.5,
+				element: '.desc-brand',
+				translateY: ['-65%', '-120%'],
+				opacity: -1,
 				scale: 0.8
 			},
 			{
 				element: '.flyer-wrap',
-				translateY: ['55%', 0]
+				translateY: '-100%'
 			},
 			{
 				element: '.flyer',
 				translateY: ['20%', 0]
+			},
+			{
+				element: '.desc-print',
+				translateY: '-120%',
+				opacity: [-2, 1]
 			}
 		]
 	},
-
 	{
 		duration: '150%',
 		actors: [
@@ -114,44 +115,25 @@ require('kubrick-js')([
 			}
 		]
 	},
-
 	{
-		duration: '100%',
-		actors: [
-			{
-				element: '.flyer-wrap',
-				translateY: '-60%'
-			},
-			{
-				element: '.flyer',
-				translateY: [-33000, -33150]
-			},
-			{
-				element: '.print-description',
-				translateY: ['20%', 0],
-				opacity: [-1, 1]
-			}
-		]
-	},
-
-	{
-		duration: '60%',
+		duration: '80%',
 		easing: 'linear',
 		actors: [
 			{
-				element: '.print-description',
-				translateY: '-12%',
-				opacity: 0.6,
-				scale: 0.88
+				element: '.flyer-wrap',
+				translateY: ['-100%', '-180%']
+			},
+			{
+				element: '.flyer',
+				translateY: [-33000, -33120]
+			},
+			{
+				element: '.desc-print',
+				translateY: ['-120%', '-200%']
 			},
 			{
 				element: '.icons',
-				translateY: '-48%'
-			},
-			{
-				element: '.iconography-description',
-				translateY: ['60%', '20%'],
-				opacity: [0, 1]
+				translateY: '-84%'
 			}
 		]
 	},
@@ -160,18 +142,26 @@ require('kubrick-js')([
 		easing: 'linear',
 		actors: [
 			{
-				element: '.print-description',
-				translateY: ['-12%', '-20%'],
-				opacity: [0.6, 0],
-				scale: [0.88, 0.8]
+				element: '.flyer-wrap',
+				translateY: ['-180%', '-200%']
+			},
+			{
+				element: '.flyer',
+				translateY: [-33120, -33150]
+			},
+			{
+				element: '.desc-print',
+				translateY: ['-200%', '-220%'],
+				opacity: 0
 			},
 			{
 				element: '.icons',
-				translateY: ['-48%', '-72%']
+				translateY: ['-84%', '-105%']
 			},
 			{
-				element: '.iconography-description',
-				translateY: ['20%', 0]
+				element: '.desc-iconography',
+				translateY: ['-30%', '-60%'],
+				opacity: [0, 1]
 			},
 			{
 				element: '.speechbubble',
@@ -227,37 +217,34 @@ require('kubrick-js')([
 			}
 		]
 	},
-
 	{
 		duration: '100%',
 		actors: [
 			{
 				element: '.icons',
-				translateY: ['-72%', '-120%'],
-				opacity: [1.75, 0],
+				translateY: ['-105%', '-205%'],
+				opacity: [2, 0],
 				scale: 0.8
 			},
 			{
-				element: '.iconography-description',
-				translateY: '-60%'
+				element: '.desc-iconography',
+				translateY: ['-60%', '-160%']
 			},
 			{
-				element: '.devices',
-				translateY: ['60%', 0]
+				element: '.device-imac',
+				translateY: ['25%', '-90%']
 			},
 			{
 				element: '.device-ipad',
-				translateY: [200, 0]
+				translateY: ['15%', '-90%']
 			},
 			{
 				element: '.device-iphone',
-				translateY: [120, 0]
+				translateY: [0, '-90%']
 			}
 		]
 	},
-
 	{
-		stage: '.website',
 		duration: '100%',
 		actors: [
 			{
@@ -271,66 +258,53 @@ require('kubrick-js')([
 			{
 				element: '.device-iphone img',
 				translateY: -(448 - 179)
-			},
-			{
-				element: '.scrolltrack',
-				translateY: 480
 			}
 		]
 	},
-
 	{
 		duration: '100%',
 		actors: [
 			{
-				element: '.devices',
-				translateY: '-60%'
+				element: '.device-imac',
+				translateY: ['-90%', '-190%']
 			},
 			{
 				element: '.device-ipad',
-				translateY: -120
+				translateY: ['-90%', '-200%']
 			},
 			{
 				element: '.device-iphone',
-				translateY: -200
+				translateY: ['-90%', '-210%']
 			},
 			{
-				element: '.website-description',
-				translateY: ['20%', 0],
-				opacity: [-1, 1]
-			}
-		]
-	},
-
-	{
-		duration: '50%',
-		easing: 'linear',
-		actors: [
-			{
-				element: '.website-description',
-				translateY: '-10%',
-				opacity: 0.7,
-				scale: 0.9
-			},
-			{
-				element: '.infographics-ipad',
-				translateY: ['74%', '37%']
+				element: '.desc-website',
+				translateY: '-65%'
 			}
 		]
 	},
 	{
-		duration: '50%',
+		duration: '80%',
 		easing: 'linear',
 		actors: [
 			{
-				element: '.website-description',
-				translateY: ['-10%', '-20%'],
-				opacity: [0.7, -0.4],
-				scale: [0.9, 0.8]
+				element: '.desc-website',
+				translateY: ['-65%', '-109%'],
+				opacity: -0.6,
+				scale: 0.86
 			},
 			{
 				element: '.infographics-ipad',
-				translateY: ['37%', 0]
+				translateY: '-88%'
+			}
+		]
+	},
+	{
+		duration: '20%',
+		easing: 'linear',
+		actors: [
+			{
+				element: '.infographics-ipad',
+				translateY: ['-88%', '-110%']
 			},
 			{
 				element: '.el1',
@@ -370,68 +344,50 @@ require('kubrick-js')([
 			}
 		]
 	},
-
 	{
 		duration: '100%',
 		actors: [
 			{
 				element: '.infographics-ipad',
-				translateY: '-65%'
+				translateY: ['-110%', '-210%']
 			},
 			{
-				element: '.infographics-description',
-				translateY: ['20%', 0],
-				opacity: [-1, 1]
+				element: '.desc-infographics',
+				translateY: '-65%'
 			}
 		]
 	},
-
 	{
 		duration: '100%',
 		actors: [
 			{
-				element: '.infographics-description',
-				translateY: '-10%',
-				opacity: -0.5,
+				element: '.desc-infographics',
+				translateY: ['-65%', '-109%'],
+				opacity: -1,
 				scale: 0.8
 			},
 			{
 				element: '.mobile-screen-1',
-				translateX: [300, 0],
-				translateY: ['60%', 0]
+				translateX: '-10%',
+				translateY: '-80%'
 			},
 			{
 				element: '.mobile-screen-2',
-				translateX: [200, 0],
-				translateY: ['60%', 0]
+				translateX: '-5%',
+				translateY: '-80%'
 			},
 			{
 				element: '.mobile-screen-3',
-				translateX: [100, 0],
-				translateY: ['60%', 0]
+				translateY: '-80%'
 			},
 			{
-				element: '.mobile-description',
-				translateY: ['60%', 0],
-				opacity: [0, 1]
+				element: '.desc-mobile',
+				translateY: '-50%'
 			}
 		]
-	// },
-
-	// // mobile
-	// {
-	// 	stage: '.mobile',
-	// 	duration: '100%'
-	// },
-
-	// // testimonial
-	// {
-	// 	stage: '.testimonial',
-	// 	duration: '100%'
 	},
-
 	{
 		stage: '.footer-main',
-		duration: '100%'
+		duration: 1
 	}
 ]);
