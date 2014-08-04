@@ -18,11 +18,19 @@ if (franklinImg){
 teamList.search('> li').forEach(function(el){
 	el = $(el);
 	el.attribute('data-index', i++);
-	popovers.push(new Popover({
-		anchor: el.search('img'),
-		content: el.search('.popover-content'),
-		offset: { x: 80, y: -10 }
-	}));
+	var img = el.search('img'),
+		popover = new Popover({
+			anchor: el.search('img'),
+			content: el.search('.popover-content'),
+			offset: { x: 80, y: -10 }
+		});
+
+	img.on('mouseover', function(){
+		popover.show();
+	});
+	img.on('mouseleave', function(){
+		popover.hide();
+	});
 });
 
 teamList.delegate('click', 'li', function(e, el){

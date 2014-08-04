@@ -8,7 +8,6 @@ var zen = require('elements/zen');
  */
 var Popover = function(options){
 	this.wrapper = zen('div.popover').insert(document.body);
-	this.closeButton = zen('a[href=#].close').insert(this.wrapper);
 	this.content = zen('div.popover-content').insert(this.wrapper);
 
 	options = options || {};
@@ -42,12 +41,6 @@ var Popover = function(options){
 	}
 
 	this.wrapper[0].style.display = 'none';
-
-	var self = this;
-	this.closeButton.on('click', function(e){
-		e.preventDefault();
-		self.hide();
-	});
 };
 
 /**
