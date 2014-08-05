@@ -28,6 +28,17 @@ h2 {
 			}
 		}
 	}
+	&.right {
+		left: auto;
+		right: 35%;
+		text-align: right;
+		h2 {
+			text-align: right;
+			&:after {
+				margin-right: 0;
+			}
+		}
+	}
 	h2:after {
 		content: ' ';
 		display: block;
@@ -247,8 +258,147 @@ h2 {
 .device-ipad {
 	z-index: 2;
 	margin: 206px 0 0 -500px;
+	img {
+		margin: 0 0 0 -39px;
+	}
 }
 .device-iphone {
 	z-index: 3;
 	margin: 375px 0 0 -195px;
+}
+.desc-corporate {
+	left: 25%;
+	width: 50%;
+}
+
+/** custom hr icons */
+// .icon-positioning {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 1600px;
+// 	height: 1098px;
+// 	background: url(/img/cases/kpmg/icon-positioning.png);
+// }
+.icons-bg {
+	position: absolute;
+	top: 0;
+	width: 200%;
+	height: 300px;
+	border: 5px solid #e5f1f9;
+	border-left: 0;
+	border-right: 0;
+	background: #0078c1;
+	@include transform(rotate(26deg));
+	@include transform-origin(0 0);
+}
+.icons {
+	position: fixed;
+	top: 100%;
+	width: 100%;
+	ul {
+		position: relative;
+		width: 1000px;
+		height: 700px;
+		margin: 30px 0 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		position: absolute;
+		width: 72px;
+		height: 72px;
+	}
+	.icon-pencil {
+		top: -121px;
+		left: -126px;
+		width: 260px;
+		height: 213px;
+		background-image: url(/img/cases/kpmg/icons/pencil.png);
+	}
+	.icon-pen {
+		top: 92px;
+		left: -123px;
+		width: 260px;
+		height: 187px;
+		background-image: url(/img/cases/kpmg/icons/pen.png);
+	}
+	.icon-form {
+		top: -66px;
+		left: 136px;
+		width: 72px;
+		height: 223px;
+		background-image: url(/img/cases/kpmg/icons/form.png);
+	}
+	.icon-globe {
+		top: 157px;
+		left: 136px;
+		width: 72px;
+		height: 204px;
+		background-image: url(/img/cases/kpmg/icons/globe.png);
+	}
+	.icon-temple {
+		top: 131px;
+		left: 272px;
+		background-image: url(/img/cases/kpmg/icons/temple.png);
+	}
+	.icon-certificate {
+		top: 243px;
+		left: 272px;
+		background-image: url(/img/cases/kpmg/icons/certificate.png);
+	}
+	.icon-briefcase {
+		top: 197px;
+		left: 408px;
+		background-image: url(/img/cases/kpmg/icons/briefcase.png);
+	}
+	.icon-brains {
+		top: 309px;
+		left: 408px;
+		background-image: url(/img/cases/kpmg/icons/brains.png);
+	}
+	.icon-growth {
+		top: 264px;
+		left: 544px;
+		background-image: url(/img/cases/kpmg/icons/growth.png);
+	}
+	.icon-users {
+		top: 376px;
+		left: 544px;
+		background-image: url(/img/cases/kpmg/icons/users.png);
+	}
+	.icon-cog {
+		top: 330px;
+		left: 680px;
+		background-image: url(/img/cases/kpmg/icons/cog.png);
+	}
+	.icon-leaf {
+		top: 442px;
+		left: 680px;
+		background-image: url(/img/cases/kpmg/icons/leaf.png);
+	}
+	.icon-calendar {
+		top: 397px;
+		left: 816px;
+		background-image: url(/img/cases/kpmg/icons/calendar.png);
+	}
+	.icon-island {
+		top: 509px;
+		left: 816px;
+		background-image: url(/img/cases/kpmg/icons/island.png);
+	}
+	.icon-graduate {
+		top: 463px;
+		left: 952px;
+		background-image: url(/img/cases/kpmg/icons/graduate.png);
+	}
+	.icon-sail {
+		top: 575px;
+		left: 952px;
+		background-image: url(/img/cases/kpmg/icons/sail.png);
+	}
+}
+
+.desc-icons {
+	margin: 170px -350px 0 0;
 }

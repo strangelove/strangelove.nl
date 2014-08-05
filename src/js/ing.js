@@ -362,7 +362,7 @@ require('kubrick-js')([
 		actors: [
 			{
 				element: '.desc-infographics',
-				translateY: ['-65%', '-109%'],
+				translateY: ['-65%', '-120%'],
 				opacity: -1,
 				scale: 0.8
 			},

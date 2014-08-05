@@ -197,15 +197,15 @@ require('kubrick-js')([
 			},
 			{
 				element: '.device-imac',
-				translateY: ['20%', '-90%']
+				translateY: ['25%', '-90%']
 			},
 			{
 				element: '.device-ipad',
-				translateY: ['20%', '-90%']
+				translateY: ['15%', '-90%']
 			},
 			{
 				element: '.device-iphone',
-				translateY: ['20%', '-90%']
+				translateY: [0, '-90%']
 			}
 		]
 	},
@@ -223,6 +223,61 @@ require('kubrick-js')([
 			{
 				element: '.device-iphone img',
 				translateY: -(462 - 179)
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.device-imac',
+				translateY: ['-90%', '-190%']
+			},
+			{
+				element: '.device-ipad',
+				translateY: ['-90%', '-200%']
+			},
+			{
+				element: '.device-iphone',
+				translateY: ['-90%', '-210%']
+			},
+			{
+				element: '.desc-corporate',
+				translateY: '-65%'
+			}
+		]
+	},
+	{
+		duration: '80%',
+		easing: 'linear',
+		actors: [
+			{
+				element: '.desc-corporate',
+				translateY: ['-65%', '-109%'],
+				opacity: -0.6,
+				scale: 0.86
+			},
+			{
+				element: '.desc-icons',
+				translateY: '-80%'
+			},
+			{
+				element: '.icons',
+				translateY: '-80%'
+			}
+		]
+	},
+	{
+		duration: '20%',
+		easing: 'linear',
+		actors: [
+			{
+				element: '.desc-icons',
+				translateY: ['-80%', '-100%']
+			},
+			{
+				element: '.icons',
+				translateY: ['-80%', '-100%']
 			}
 		]
 	},
