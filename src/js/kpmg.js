@@ -300,3 +300,18 @@ var wrap = document.querySelector('.retouch-wrap');
 if (wrap){
 	wrap.style.maxHeight = (window.innerHeight - 300) + 'px';
 }
+
+var positionIcons = function(){
+	var ul = document.querySelector('.icons ul');
+	if (!ul) return;
+
+	var rect = ul.getBoundingClientRect(),
+		iconsWidth = rect.right - rect.left,
+		docWidth = window.innerWidth,
+		marginLeft = (docWidth - iconsWidth) / 2,
+		marginTop = marginLeft * 1.03;
+
+	ul.style.marginTop = marginTop + 'px';
+	ul.style.marginLeft = marginLeft + 'px';
+};
+positionIcons();
