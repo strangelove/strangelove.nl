@@ -329,6 +329,9 @@ h2 {
 .device-imac {
 	z-index: 1;
 	margin: 0 0 0 -300px;
+	img {
+		margin: 0 0 0 -15px;
+	}
 }
 .device-ipad {
 	z-index: 2;
