@@ -281,8 +281,8 @@ require('kubrick-js')([
 					var i, icon, start, end, prgrs, x, y, j;
 					for (i = 0; i < icons.length; i++){
 						icon = icons[i];
-						start = i * 2;
-						end = 100 - ((icons.length - (i + 1)) * 2);
+						start = i * 4;
+						end = 100 - ((icons.length - (i + 1)) * 4);
 						prgrs = clamp(progress, start, end) - start;
 						x = easeInOutQuad(prgrs, -407, 407, end - start);
 						y = easeInOutQuad(prgrs, -200, 200, end - start);
