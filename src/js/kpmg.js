@@ -389,7 +389,7 @@ var positionIcons = function(){
 		iconsWidth = rect.right - rect.left,
 		docWidth = window.innerWidth,
 		marginLeft = (docWidth - iconsWidth) / 2,
-		marginTop = marginLeft * 1.03;
+		marginTop = 90 + (marginLeft * 0.5);
 
 	ul.style.marginTop = marginTop + 'px';
 	ul.style.marginLeft = marginLeft + 'px';
