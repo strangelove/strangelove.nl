@@ -270,7 +270,7 @@ require('kubrick-js')([
 			},
 			{
 				element: '.icons',
-				translateY: '-100%'
+				translateY: '-105%'
 			},
 			{
 				element: '.icons ul',
@@ -302,7 +302,7 @@ require('kubrick-js')([
 			},
 			{
 				element: '.icons',
-				translateY: ['-100%', '-250%']
+				translateY: ['-105%', '-250%']
 			},
 			{
 				element: '.desc-devices',
