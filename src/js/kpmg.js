@@ -3,22 +3,20 @@
 var $ = require('elements'),
 	clamp = require('mout/math/clamp'),
 	easeInOutQuad = require('kubrick-js/easing/easeInOutQuad'),
-	prefix = require('kubrick-js/lib/vendorprefix')();
-
-var windowWidth = window.innerWidth,
+	prefix = require('kubrick-js/lib/vendorprefix')(),
+	windowWidth = window.innerWidth,
 	editLeft = document.querySelector('.retouch-wrap .edit-left'),
-	editRight = document.querySelector('.retouch-wrap .edit-right');
-
-var icons = [
-	$('.icon-graduate, .icon-sail'),
-	$('.icon-calendar, .icon-island'),
-	$('.icon-cog, .icon-leaf'),
-	$('.icon-growth, .icon-users'),
-	$('.icon-briefcase, .icon-brains'),
-	$('.icon-temple, .icon-certificate'),
-	$('.icon-form, .icon-globe'),
-	$('.icon-pencil, .icon-pen')
-];
+	editRight = document.querySelector('.retouch-wrap .edit-right'),
+	icons = [
+		$('.icon-graduate, .icon-sail'),
+		$('.icon-calendar, .icon-island'),
+		$('.icon-cog, .icon-leaf'),
+		$('.icon-growth, .icon-users'),
+		$('.icon-briefcase, .icon-brains'),
+		$('.icon-temple, .icon-certificate'),
+		$('.icon-form, .icon-globe'),
+		$('.icon-pencil, .icon-pen')
+	];
 
 require('kubrick-js')([
 	{
