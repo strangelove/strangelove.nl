@@ -184,12 +184,11 @@ h2 {
 	top: 100%;
 	width: 100%;
 	height: 600px;
-	background: #add9e7;
-	@include transform(translateY(99em));
+	background: url(/img/cases/kpmg/flyer-bg.png) center;
 }
 .flyer {
-	height: 33600px;
-	background: url(/img/cases/ing/Sprite1.jpg) no-repeat center 0, url(/img/cases/ing/Sprite2.jpg) no-repeat center 7800px, url(/img/cases/ing/Sprite3.jpg) no-repeat center 15600px, url(/img/cases/ing/Sprite4.jpg) no-repeat center 23400px, url(/img/cases/ing/Sprite5.jpg) no-repeat center 31200px;
+	height: 40500px;
+	background: url(/img/cases/kpmg/flyer1.jpg) no-repeat center 0, url(/img/cases/kpmg/flyer2.jpg) no-repeat center 7200px, url(/img/cases/kpmg/flyer3.jpg) no-repeat center 14400px, url(/img/cases/kpmg/flyer4.jpg) no-repeat center 21600px;
 }
 .desc-print {
 	top: 120%;

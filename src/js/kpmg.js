@@ -147,7 +147,7 @@ require('kubrick-js')([
 			{
 				element: '.flyer',
 				callback: function(progress){
-					var currentFrame = Math.ceil((55 / 100) * progress) || 1,
+					var currentFrame = Math.ceil((42 / 100) * progress) || 1,
 						pos = (currentFrame - 1) * 600;
 					this.style[prefix + 'Transform'] = 'translateY(-' + pos + 'px)';
 				}
@@ -160,10 +160,6 @@ require('kubrick-js')([
 			{
 				element: '.flyer-wrap',
 				translateY: ['-100%', '-200%']
-			},
-			{
-				element: '.flyer',
-				translateY: [-33000, -33150]
 			},
 			{
 				element: '.desc-print',
