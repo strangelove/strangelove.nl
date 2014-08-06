@@ -308,6 +308,7 @@ h2 {
 		position: absolute;
 		width: 72px;
 		height: 72px;
+		@include transform(translateX(-407px) translateY(-200px));
 	}
 	.icon-pencil {
 		top: -121px;

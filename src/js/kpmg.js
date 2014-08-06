@@ -1,11 +1,24 @@
 'use strict';
 
-var easeInOutQuad = require('kubrick-js/easing/easeInOutQuad'),
+var $ = require('elements'),
+	clamp = require('mout/math/clamp'),
+	easeInOutQuad = require('kubrick-js/easing/easeInOutQuad'),
 	prefix = require('kubrick-js/lib/vendorprefix')();
 
 var windowWidth = window.innerWidth,
 	editLeft = document.querySelector('.retouch-wrap .edit-left'),
 	editRight = document.querySelector('.retouch-wrap .edit-right');
+
+var icons = [
+	$('.icon-graduate, .icon-sail'),
+	$('.icon-calendar, .icon-island'),
+	$('.icon-cog, .icon-leaf'),
+	$('.icon-growth, .icon-users'),
+	$('.icon-briefcase, .icon-brains'),
+	$('.icon-temple, .icon-certificate'),
+	$('.icon-form, .icon-globe'),
+	$('.icon-pencil, .icon-pen')
+];
 
 require('kubrick-js')([
 	{
@@ -248,36 +261,38 @@ require('kubrick-js')([
 		]
 	},
 	{
-		duration: '80%',
-		easing: 'linear',
+		duration: '100%',
 		actors: [
 			{
 				element: '.desc-corporate',
-				translateY: ['-65%', '-109%'],
-				opacity: -0.6,
-				scale: 0.86
+				translateY: ['-65%', '-120%'],
+				opacity: -1,
+				scale: 0.8
 			},
 			{
 				element: '.desc-icons',
-				translateY: '-80%'
+				translateY: '-100%'
 			},
 			{
 				element: '.icons',
-				translateY: '-80%'
-			}
-		]
-	},
-	{
-		duration: '20%',
-		easing: 'linear',
-		actors: [
-			{
-				element: '.desc-icons',
-				translateY: ['-80%', '-100%']
+				translateY: '-100%'
 			},
 			{
-				element: '.icons',
-				translateY: ['-80%', '-100%']
+				element: '.icons ul',
+				callback: function(progress){
+					var i, icon, start, end, prgrs, x, y, j;
+					for (i = 0; i < icons.length; i++){
+						icon = icons[i];
+						start = i * 2;
+						end = 100 - ((icons.length - (i + 1)) * 2);
+						prgrs = clamp(progress, start, end) - start;
+						x = easeInOutQuad(prgrs, -407, 407, end - start);
+						y = easeInOutQuad(prgrs, -200, 200, end - start);
+						for (j = 0; j < icon.length; j++){
+							icon[j].style[prefix + 'Transform'] = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
+						}
+					}
+				}
 			}
 		]
 	},
