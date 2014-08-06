@@ -482,3 +482,45 @@ h2 {
 	left: 952px;
 	bottom: 357px;
 }
+
+/** extensive calendar */
+.cal-views {
+	position: fixed;
+	top: 100%;
+	left: 0;
+	margin: 50px 0 0;
+}
+.cal-1 {
+	position: absolute;
+	left: -50px;
+	width: 482px;
+	height: 723px;
+	background: url(/img/cases/kpmg/cal-1.png);
+}
+.cal-2 {
+	position: absolute;
+	top: 180px;
+	left: -70px;
+	width: 656px;
+	height: 565px;
+	background: url(/img/cases/kpmg/cal-2.png);
+}
+.cal-3 {
+	position: absolute;
+	top: 450px;
+	left: 70px;
+	width: 249px;
+	height: 342px;
+	background: url(/img/cases/kpmg/cal-3.png);
+}
+.cal-4 {
+	position: absolute;
+	top: 564px;
+	left: 188px;
+	width: 332px;
+	height: 320px;
+	background: url(/img/cases/kpmg/cal-4.png);
+}
+.desc-calendar {
+	margin: 370px -350px 0 0;
+}

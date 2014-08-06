@@ -413,6 +413,34 @@ require('kubrick-js')([
 						lines[i].style.height = easeInOutQuad(progress, 274, -274, 100) + 'px';
 					}
 				}
+			},
+			{
+				element: '.cal-views',
+				translateY: '-95%'
+			},
+			{
+				element: '.desc-calendar',
+				translateY: '-100%'
+			},
+			{
+				element: '.cal-1',
+				translateX: 50,
+				translateY: [-50, 0]
+			},
+			{
+				element: '.cal-2',
+				translateX: 150,
+				translateY: [-150, 0]
+			},
+			{
+				element: '.cal-3',
+				translateX: 300,
+				translateY: [-300, 0]
+			},
+			{
+				element: '.cal-4',
+				translateX: 500,
+				translateY: [-500, 0]
 			}
 		]
 	},
