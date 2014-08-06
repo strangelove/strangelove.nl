@@ -435,3 +435,51 @@ h2 {
 	height: 1116px;
 	background: url(/img/cases/kpmg/md-macbook.png);
 }
+
+/** hr website */
+.hr-ipad {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	width: 1021px;
+	height: 529px;
+	margin: 0 0 0 -511px;
+	background: url(/img/cases/kpmg/hr-3.png);
+}
+.hr-layer1 {
+	position: absolute;
+	z-index: 2;
+	top: 26px;
+	left: 73px;
+	width: 880px;
+	height: 422px;
+	background: url(/img/cases/kpmg/hr-1.png);
+}
+.hr-layer2 {
+	position: absolute;
+	z-index: 1;
+	top: 26px;
+	left: 73px;
+	width: 880px;
+	height: 422px;
+	background: url(/img/cases/kpmg/hr-2.png);
+}
+.line {
+	position: absolute;
+	z-index: 3;
+	width: 0;
+	height: 274px;
+	border-left: 1px dotted #b3b3b3;
+}
+.line-1 {
+	left: 72px;
+	bottom: 265px;
+}
+.line-2 {
+	left: 457px;
+	bottom: 82px;
+}
+.line-3 {
+	left: 952px;
+	bottom: 357px;
+}

@@ -16,7 +16,8 @@ var $ = require('elements'),
 		$('.icon-temple, .icon-certificate'),
 		$('.icon-form, .icon-globe'),
 		$('.icon-pencil, .icon-pen')
-	];
+	],
+	lines = $('.line-1, .line-2, .line-3');
 
 require('kubrick-js')([
 	{
@@ -367,6 +368,51 @@ require('kubrick-js')([
 				element: '.md-macbook',
 				translateX: ['-10%', '-10%'],
 				translateY: ['-100%', '-220%']
+			},
+			{
+				element: '.hr-ipad',
+				translateY: '-65%'
+			},
+			{
+				element: '.hr-layer1',
+				translateY: -274
+			},
+			{
+				element: '.hr-layer2',
+				translateY: -137
+			},
+			{
+				element: '.line-1',
+				callback: function(progress){
+					for (var i = 0; i < lines.length; i++){
+						lines[i].style.height = easeInOutQuad(progress, 0, 274, 100) + 'px';
+					}
+				}
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.hr-ipad',
+				translateY: ['-65%', '-180%']
+			},
+			{
+				element: '.hr-layer1',
+				translateY: [-274, 0]
+			},
+			{
+				element: '.hr-layer2',
+				translateY: [-137, 0]
+			},
+			{
+				element: '.line-1',
+				callback: function(progress){
+					for (var i = 0; i < lines.length; i++){
+						lines[i].style.height = easeInOutQuad(progress, 274, -274, 100) + 'px';
+					}
+				}
 			}
 		]
 	},
