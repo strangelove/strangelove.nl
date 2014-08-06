@@ -393,3 +393,45 @@ h2 {
 .desc-icons {
 	margin: 170px -350px 0 0;
 }
+
+/** multiple devices */
+.md-case {
+	position: fixed;
+	top: 100%;
+	left: -10%;
+	width: 396px;
+	height: 984px;
+	background: url(/img/cases/kpmg/md-case.png);
+}
+.md-ipad {
+	position: fixed;
+	top: 100%;
+	left: -15%;
+	width: 327px;
+	height: 612px;
+	background: url(/img/cases/kpmg/md-ipad.png);
+}
+.md-pen {
+	position: fixed;
+	top: 100%;
+	right: 600px;
+	width: 234px;
+	height: 379px;
+	background: url(/img/cases/kpmg/md-pen.png);
+}
+.md-iphone {
+	position: fixed;
+	top: 100%;
+	right: 400px;
+	width: 377px;
+	height: 450px;
+	background: url(/img/cases/kpmg/md-iphone.png);
+}
+.md-macbook {
+	position: fixed;
+	top: 100%;
+	right: -10%;
+	width: 602px;
+	height: 1116px;
+	background: url(/img/cases/kpmg/md-macbook.png);
+}

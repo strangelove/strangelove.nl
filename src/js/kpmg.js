@@ -291,6 +291,86 @@ require('kubrick-js')([
 		]
 	},
 	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.desc-icons',
+				translateY: ['-100%', '-200%'],
+				scale: 0.8,
+				opacity: -1
+			},
+			{
+				element: '.icons',
+				translateY: ['-100%', '-250%']
+			},
+			{
+				element: '.desc-devices',
+				translateY: '-95%'
+			},
+			{
+				element: '.md-case',
+				translateX: '10%',
+				translateY: '-90%'
+			},
+			{
+				element: '.md-ipad',
+				translateX: '15%',
+				translateY: ['10%', '-85%']
+			},
+			{
+				element: '.md-pen',
+				translateX: '-5%',
+				translateY: ['15%', '-65%%']
+			},
+			{
+				element: '.md-iphone',
+				translateX: '-5%',
+				translateY: ['20%', '-62%']
+			},
+			{
+				element: '.md-macbook',
+				translateX: '-10%',
+				translateY: '-100%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.desc-devices',
+				translateY: ['-95%', '-180%'],
+				scale: 0.8,
+				opacity: -1
+			},
+			{
+				element: '.md-case',
+				translateX: ['10%', '10%'],
+				translateY: ['-90%', '-240%']
+			},
+			{
+				element: '.md-ipad',
+				translateX: ['15%', '15%'],
+				translateY: ['-85%', '-250%']
+			},
+			{
+				element: '.md-pen',
+				translateX: ['-5%', '8%'],
+				translateY: ['-65%', '-240%']
+			},
+			{
+				element: '.md-iphone',
+				translateX: ['-5%', '5%'],
+				translateY: ['-62%', '-220%']
+			},
+			{
+				element: '.md-macbook',
+				translateX: ['-10%', '-10%'],
+				translateY: ['-100%', '-220%']
+			}
+		]
+	},
+	{
 		stage: '.footer-main',
 		duration: 1
 	}
