@@ -370,6 +370,21 @@ require('kubrick-js')([
 				translateY: ['-100%', '-220%']
 			},
 			{
+				element: '.desc-hr',
+				translateY: '-65%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.desc-hr',
+				translateY: ['-65%', '-70%'],
+				scale: 0.8,
+				opacity: -1
+			},
+			{
 				element: '.hr-ipad',
 				translateY: '-65%'
 			},
