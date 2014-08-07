@@ -1,6 +1,7 @@
 'use strict';
 
 var zen = require('elements/zen');
+require('moofx');
 
 /**
  * Create a new popover
@@ -48,7 +49,9 @@ var Popover = function(options){
  */
 Popover.prototype.show = function(){
 	this.shown = true;
-	this.wrapper[0].style.display = 'block';
+	this.wrapper.style({opacity: 0, display: 'block'}).animate({
+		opacity: 1
+	}, {duration: 250});
 };
 
 /**
@@ -56,7 +59,13 @@ Popover.prototype.show = function(){
  */
 Popover.prototype.hide = function(){
 	this.shown = false;
-	this.wrapper[0].style.display = 'none';
+	var wrapper = this.wrapper;
+	this.wrapper.animate({opacity: 0}, {
+		duration: 250,
+		callback: function(){
+			wrapper.style({display: 'none'});
+		}
+	});
 };
 
 /**
