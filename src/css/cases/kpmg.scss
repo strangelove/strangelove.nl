@@ -1,6 +1,8 @@
 @import '../vendor/normalize';
 @import '../vendor/bourbon/bourbon';
 
+$img: '/img/cases/kpmg';
+
 @import '../fonts';
 @import '../base';
 @import '../case-base';
@@ -16,7 +18,7 @@
 	left: 0;
 	width:  100%;
 	height: 800px;
-	background: url(/img/cases/kpmg/cover.jpg) no-repeat center top;
+	background: url(#{$img}/cover.jpg) no-repeat center top;
 }
 
 .case-summary {
@@ -69,7 +71,7 @@
 	left: 0;
 	width: 303px;
 	height: 430px;
-	background: url(/img/cases/kpmg/client-briefcase.png);
+	background: url(#{$img}/client-briefcase.png);
 }
 .client-watch {
 	position: fixed;
@@ -79,7 +81,7 @@
 	width: 116px;
 	height: 74px;
 	margin: 330px 0 0;
-	background: url(/img/cases/kpmg/client-watch.png);
+	background: url(#{$img}/client-watch.png);
 }
 .client-phone {
 	position: fixed;
@@ -89,7 +91,7 @@
 	width: 220px;
 	height: 191px;
 	margin: 215px 0 0;
-	background: url(/img/cases/kpmg/client-phone.png);
+	background: url(#{$img}/client-phone.png);
 }
 
 /** tax battle */
@@ -101,7 +103,7 @@
 	width: 412px;
 	height: 531px;
 	margin: 0 0 0 -100px;
-	background: url(/img/cases/kpmg/battle-hero1.png);
+	background: url(#{$img}/battle-hero1.png);
 }
 .battle-hero2 {
 	position: fixed;
@@ -111,7 +113,7 @@
 	width: 375px;
 	height: 360px;
 	margin: 100px 0 0 100px;
-	background: url(/img/cases/kpmg/battle-hero2.png);
+	background: url(#{$img}/battle-hero2.png);
 }
 .battle-hero3 {
 	position: fixed;
@@ -121,7 +123,7 @@
 	width: 407px;
 	height: 517px;
 	margin: 0 0 0 180px;
-	background: url(/img/cases/kpmg/battle-hero3.png);
+	background: url(#{$img}/battle-hero3.png);
 }
 .battle-hero4 {
 	position: fixed;
@@ -131,7 +133,7 @@
 	width: 258px;
 	height: 324px;
 	margin: 150px 0 0 400px;
-	background: url(/img/cases/kpmg/battle-hero4.png);
+	background: url(#{$img}/battle-hero4.png);
 }
 .desc-battle {
 	margin: 0 0 0 -350px;
@@ -144,11 +146,11 @@
 	top: 100%;
 	width: 100%;
 	height: 600px;
-	background: url(/img/cases/kpmg/flyer-bg.png) center;
+	background: url(#{$img}/flyer-bg.png) center;
 }
 .flyer {
 	height: 25800px;
-	background: url(/img/cases/kpmg/flyer1.jpg) no-repeat center 0, url(/img/cases/kpmg/flyer2.jpg) no-repeat center 7200px, url(/img/cases/kpmg/flyer3.jpg) no-repeat center 14400px, url(/img/cases/kpmg/flyer4.jpg) no-repeat center 21600px;
+	background: url(#{$img}/flyer1.jpg) no-repeat center 0, url(#{$img}/flyer2.jpg) no-repeat center 7200px, url(#{$img}/flyer3.jpg) no-repeat center 14400px, url(#{$img}/flyer4.jpg) no-repeat center 21600px;
 }
 .desc-print {
 	top: 120%;
@@ -172,7 +174,7 @@
 			position: absolute;
 			width: 1600px;
 			height: 100%;
-			background: url(/img/cases/kpmg/retouch1-edit.jpg) no-repeat center;
+			background: url(#{$img}/retouch1-edit.jpg) no-repeat center;
 		}
 	}
 	.edit-left {
@@ -194,7 +196,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background: url(/img/cases/kpmg/retouch1-raw.jpg) no-repeat center;
+		background: url(#{$img}/retouch1-raw.jpg) no-repeat center;
 	}
 }
 .desc-step {
@@ -213,9 +215,6 @@
 .device-imac {
 	z-index: 1;
 	margin: 0 0 0 -300px;
-	&:before {
-		background: url(/img/cases/kpmg/imac-logo.png);
-	}
 }
 .device-ipad {
 	z-index: 2;
@@ -269,88 +268,88 @@
 		left: -126px;
 		width: 260px;
 		height: 213px;
-		background-image: url(/img/cases/kpmg/icons/pencil.png);
+		background-image: url(#{$img}/icons/pencil.png);
 	}
 	.icon-pen {
 		top: 92px;
 		left: -123px;
 		width: 260px;
 		height: 187px;
-		background-image: url(/img/cases/kpmg/icons/pen.png);
+		background-image: url(#{$img}/icons/pen.png);
 	}
 	.icon-form {
 		top: -66px;
 		left: 136px;
 		width: 72px;
 		height: 223px;
-		background-image: url(/img/cases/kpmg/icons/form.png);
+		background-image: url(#{$img}/icons/form.png);
 	}
 	.icon-globe {
 		top: 157px;
 		left: 136px;
 		width: 72px;
 		height: 204px;
-		background-image: url(/img/cases/kpmg/icons/globe.png);
+		background-image: url(#{$img}/icons/globe.png);
 	}
 	.icon-temple {
 		top: 131px;
 		left: 272px;
-		background-image: url(/img/cases/kpmg/icons/temple.png);
+		background-image: url(#{$img}/icons/temple.png);
 	}
 	.icon-certificate {
 		top: 243px;
 		left: 272px;
-		background-image: url(/img/cases/kpmg/icons/certificate.png);
+		background-image: url(#{$img}/icons/certificate.png);
 	}
 	.icon-briefcase {
 		top: 197px;
 		left: 408px;
-		background-image: url(/img/cases/kpmg/icons/briefcase.png);
+		background-image: url(#{$img}/icons/briefcase.png);
 	}
 	.icon-brains {
 		top: 309px;
 		left: 408px;
-		background-image: url(/img/cases/kpmg/icons/brains.png);
+		background-image: url(#{$img}/icons/brains.png);
 	}
 	.icon-growth {
 		top: 264px;
 		left: 544px;
-		background-image: url(/img/cases/kpmg/icons/growth.png);
+		background-image: url(#{$img}/icons/growth.png);
 	}
 	.icon-users {
 		top: 376px;
 		left: 544px;
-		background-image: url(/img/cases/kpmg/icons/users.png);
+		background-image: url(#{$img}/icons/users.png);
 	}
 	.icon-cog {
 		top: 330px;
 		left: 680px;
-		background-image: url(/img/cases/kpmg/icons/cog.png);
+		background-image: url(#{$img}/icons/cog.png);
 	}
 	.icon-leaf {
 		top: 442px;
 		left: 680px;
-		background-image: url(/img/cases/kpmg/icons/leaf.png);
+		background-image: url(#{$img}/icons/leaf.png);
 	}
 	.icon-calendar {
 		top: 397px;
 		left: 816px;
-		background-image: url(/img/cases/kpmg/icons/calendar.png);
+		background-image: url(#{$img}/icons/calendar.png);
 	}
 	.icon-island {
 		top: 509px;
 		left: 816px;
-		background-image: url(/img/cases/kpmg/icons/island.png);
+		background-image: url(#{$img}/icons/island.png);
 	}
 	.icon-graduate {
 		top: 463px;
 		left: 952px;
-		background-image: url(/img/cases/kpmg/icons/graduate.png);
+		background-image: url(#{$img}/icons/graduate.png);
 	}
 	.icon-sail {
 		top: 575px;
 		left: 952px;
-		background-image: url(/img/cases/kpmg/icons/sail.png);
+		background-image: url(#{$img}/icons/sail.png);
 	}
 }
 .desc-icons {
@@ -364,7 +363,7 @@
 	left: -10%;
 	width: 396px;
 	height: 984px;
-	background: url(/img/cases/kpmg/md-case.png);
+	background: url(#{$img}/md-case.png);
 }
 .md-ipad {
 	position: fixed;
@@ -372,7 +371,7 @@
 	left: -15%;
 	width: 327px;
 	height: 612px;
-	background: url(/img/cases/kpmg/md-ipad.png);
+	background: url(#{$img}/md-ipad.png);
 }
 .md-pen {
 	position: fixed;
@@ -380,7 +379,7 @@
 	right: 600px;
 	width: 234px;
 	height: 379px;
-	background: url(/img/cases/kpmg/md-pen.png);
+	background: url(#{$img}/md-pen.png);
 }
 .md-iphone {
 	position: fixed;
@@ -388,7 +387,7 @@
 	right: 400px;
 	width: 377px;
 	height: 450px;
-	background: url(/img/cases/kpmg/md-iphone.png);
+	background: url(#{$img}/md-iphone.png);
 }
 .md-macbook {
 	position: fixed;
@@ -396,7 +395,7 @@
 	right: -10%;
 	width: 602px;
 	height: 1116px;
-	background: url(/img/cases/kpmg/md-macbook.png);
+	background: url(#{$img}/md-macbook.png);
 }
 
 /** hr website */
@@ -407,7 +406,7 @@
 	width: 1021px;
 	height: 529px;
 	margin: 0 0 0 -511px;
-	background: url(/img/cases/kpmg/hr-3.png);
+	background: url(#{$img}/hr-3.png);
 }
 .hr-layer1 {
 	position: absolute;
@@ -416,7 +415,7 @@
 	left: 73px;
 	width: 880px;
 	height: 422px;
-	background: url(/img/cases/kpmg/hr-1.png);
+	background: url(#{$img}/hr-1.png);
 }
 .hr-layer2 {
 	position: absolute;
@@ -425,7 +424,7 @@
 	left: 73px;
 	width: 880px;
 	height: 422px;
-	background: url(/img/cases/kpmg/hr-2.png);
+	background: url(#{$img}/hr-2.png);
 }
 .line {
 	position: absolute;
@@ -458,7 +457,7 @@
 	left: -50px;
 	width: 482px;
 	height: 723px;
-	background: url(/img/cases/kpmg/cal-1.png);
+	background: url(#{$img}/cal-1.png);
 }
 .cal-2 {
 	position: absolute;
@@ -466,7 +465,7 @@
 	left: -70px;
 	width: 656px;
 	height: 565px;
-	background: url(/img/cases/kpmg/cal-2.png);
+	background: url(#{$img}/cal-2.png);
 }
 .cal-3 {
 	position: absolute;
@@ -474,7 +473,7 @@
 	left: 70px;
 	width: 249px;
 	height: 342px;
-	background: url(/img/cases/kpmg/cal-3.png);
+	background: url(#{$img}/cal-3.png);
 }
 .cal-4 {
 	position: absolute;
@@ -482,7 +481,7 @@
 	left: 188px;
 	width: 332px;
 	height: 320px;
-	background: url(/img/cases/kpmg/cal-4.png);
+	background: url(#{$img}/cal-4.png);
 }
 .desc-calendar {
 	margin: 370px -350px 0 0;

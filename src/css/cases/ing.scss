@@ -1,6 +1,8 @@
 @import '../vendor/normalize';
 @import '../vendor/bourbon/bourbon';
 
+$img: '/img/cases/ing';
+
 @import '../fonts';
 @import '../base';
 @import '../case-base';
@@ -36,14 +38,14 @@
 		width: 631px;
 		height: 419px;
 		margin: 0 -30px;
-		background: url(/img/cases/ing/logo-large.png);
+		background: url(#{$img}/logo-large.png);
 	}
 	&:after {
 		left: 50%;
 		width: 448px;
 		height: 724px;
 		margin: 0 0 0 60px;
-		background: url(/img/cases/ing/sietske.jpg);
+		background: url(#{$img}/sietske.jpg);
 	}
 }
 
@@ -98,7 +100,7 @@
 	width: 700px;
 	height: 200px;
 	margin: 0 0 0 -170px;
-	background: url(/img/cases/ing/logo-raw.png) no-repeat 10px 13px;
+	background: url(#{$img}/logo-raw.png) no-repeat 10px 13px;
 }
 .logo-overlay {
 	position: absolute;
@@ -106,7 +108,7 @@
 	left: 0;
 	bottom: 0;
 	width: 0;
-	background: #fff url(/img/cases/ing/logo.png) no-repeat 10px 13px;
+	background: #fff url(#{$img}/logo.png) no-repeat 10px 13px;
 	&:after {
 		content: ' ';
 		position: absolute;
@@ -125,7 +127,7 @@
 	height: 711px;
 	margin: 0 0 0 -530px;
 	border-bottom: 1px solid #ff7245;
-	background: url(/img/cases/ing/man.jpg) no-repeat;
+	background: url(#{$img}/man.jpg) no-repeat;
 }
 .brand-ribbon {
 	position: fixed;
@@ -134,7 +136,7 @@
 	width: 1060px;
 	height: 100px;
 	margin: 535px 0 0 -530px;
-	background: url(/img/cases/ing/ribbon.png);
+	background: url(#{$img}/ribbon.png);
 }
 
 /** print */
@@ -148,7 +150,7 @@
 }
 .flyer {
 	height: 33600px;
-	background: url(/img/cases/ing/Sprite1.jpg) no-repeat center 0, url(/img/cases/ing/Sprite2.jpg) no-repeat center 7800px, url(/img/cases/ing/Sprite3.jpg) no-repeat center 15600px, url(/img/cases/ing/Sprite4.jpg) no-repeat center 23400px, url(/img/cases/ing/Sprite5.jpg) no-repeat center 31200px;
+	background: url(#{$img}/Sprite1.jpg) no-repeat center 0, url(#{$img}/Sprite2.jpg) no-repeat center 7800px, url(#{$img}/Sprite3.jpg) no-repeat center 15600px, url(#{$img}/Sprite4.jpg) no-repeat center 23400px, url(#{$img}/Sprite5.jpg) no-repeat center 31200px;
 }
 .desc-print {
 	top: 120%;
@@ -165,7 +167,7 @@
 	margin: 0 0 0 -800px;
 	padding: 0;
 	list-style: none;
-	background: url(/img/cases/ing/bg-icons.png);
+	background: url(#{$img}/bg-icons.png);
 	li {
 		position: absolute;
 	}
@@ -175,7 +177,7 @@
 	left: 340px;
 	width: 74px;
 	height: 50px;
-	background: url(/img/cases/ing/icons/speechbubble.png);
+	background: url(#{$img}/icons/speechbubble.png);
 	@include transform(translateY(50px));
 }
 .senior {
@@ -183,7 +185,7 @@
 	left: 519px;
 	width: 50px;
 	height: 81px;
-	background: url(/img/cases/ing/icons/senior.png);
+	background: url(#{$img}/icons/senior.png);
 	@include transform(translateY(54px));
 }
 .form {
@@ -191,7 +193,7 @@
 	left: 663px;
 	width: 71px;
 	height: 73px;
-	background: url(/img/cases/ing/icons/form.png);
+	background: url(#{$img}/icons/form.png);
 	@include transform(translateY(56px));
 }
 .envelope {
@@ -199,7 +201,7 @@
 	left: 798px;
 	width: 110px;
 	height: 46px;
-	background: url(/img/cases/ing/icons/envelope.png);
+	background: url(#{$img}/icons/envelope.png);
 	@include transform(translateY(52px));
 }
 .hand {
@@ -207,7 +209,7 @@
 	left: 1052px;
 	width: 63px;
 	height: 89px;
-	background: url(/img/cases/ing/icons/hand.png);
+	background: url(#{$img}/icons/hand.png);
 	@include transform(translateY(106px));
 }
 .form-hand {
@@ -215,7 +217,7 @@
 	left: 1205px;
 	width: 47px;
 	height: 88px;
-	background: url(/img/cases/ing/icons/form-hand.png);
+	background: url(#{$img}/icons/form-hand.png);
 	@include transform(translateY(52px));
 }
 .moneybag {
@@ -223,7 +225,7 @@
 	left: 328px;
 	width: 222px;
 	height: 126px;
-	background: url(/img/cases/ing/icons/moneybag.png);
+	background: url(#{$img}/icons/moneybag.png);
 	@include transform(translateY(100px));
 }
 .lock {
@@ -231,7 +233,7 @@
 	left: 628px;
 	width: 46px;
 	height: 60px;
-	background: url(/img/cases/ing/icons/lock.png);
+	background: url(#{$img}/icons/lock.png);
 	@include transform(translateY(104px));
 }
 .eye {
@@ -239,7 +241,7 @@
 	left: 838px;
 	width: 81px;
 	height: 50px;
-	background: url(/img/cases/ing/icons/eye.png);
+	background: url(#{$img}/icons/eye.png);
 	@include transform(translateY(102px));
 }
 .piggybank {
@@ -247,7 +249,7 @@
 	left: 731px;
 	width: 128px;
 	height: 121px;
-	background: url(/img/cases/ing/icons/piggybank.png);
+	background: url(#{$img}/icons/piggybank.png);
 	@include transform(translateY(150px));
 }
 .book {
@@ -255,7 +257,7 @@
 	left: 1043px;
 	width: 97px;
 	height: 77px;
-	background: url(/img/cases/ing/icons/book.png);
+	background: url(#{$img}/icons/book.png);
 	@include transform(translateY(152px));
 }
 .suitcase {
@@ -263,7 +265,7 @@
 	left: 959px;
 	width: 102px;
 	height: 85px;
-	background: url(/img/cases/ing/icons/suitcase.png);
+	background: url(#{$img}/icons/suitcase.png);
 	@include transform(translateY(204px));
 }
 .male {
@@ -271,7 +273,7 @@
 	left: 1217px;
 	width: 38px;
 	height: 86px;
-	background: url(/img/cases/ing/icons/male.png);
+	background: url(#{$img}/icons/male.png);
 	@include transform(translateY(200px));
 }
 .desc-iconography {
@@ -289,9 +291,6 @@
 .device-imac {
 	z-index: 1;
 	margin: 0 0 0 -300px;
-	&:before {
-		background: url(/img/cases/ing/imac-logo.png);
-	}
 	img {
 		margin: 0 0 0 -15px;
 	}
@@ -323,7 +322,7 @@
 		width: 556px;
 		height: 246px;
 		@include transform(translateY(-260px));
-		background: url(/img/cases/ing/ipad/1.png);
+		background: url(#{$img}/ipad/1.png);
 	}
 	.el2 {
 		z-index: 9;
@@ -332,7 +331,7 @@
 		width: 206px;
 		height: 41px;
 		@include transform(translateY(-240px));
-		background: url(/img/cases/ing/ipad/2.png);
+		background: url(#{$img}/ipad/2.png);
 	}
 	.el3 {
 		z-index: 8;
@@ -341,7 +340,7 @@
 		width: 106px;
 		height: 99px;
 		@include transform(translateY(-220px));
-		background: url(/img/cases/ing/ipad/3.png);
+		background: url(#{$img}/ipad/3.png);
 	}
 	.el4 {
 		z-index: 7;
@@ -350,7 +349,7 @@
 		width: 109px;
 		height: 30px;
 		@include transform(translateY(-200px));
-		background: url(/img/cases/ing/ipad/4.png);
+		background: url(#{$img}/ipad/4.png);
 	}
 	.el5 {
 		z-index: 6;
@@ -359,7 +358,7 @@
 		width: 99px;
 		height: 53px;
 		@include transform(translateY(-180px));
-		background: url(/img/cases/ing/ipad/5.png);
+		background: url(#{$img}/ipad/5.png);
 	}
 	.el6 {
 		z-index: 5;
@@ -368,7 +367,7 @@
 		width: 75px;
 		height: 57px;
 		@include transform(translateY(-160px));
-		background: url(/img/cases/ing/ipad/6.png);
+		background: url(#{$img}/ipad/6.png);
 	}
 	.el7 {
 		z-index: 4;
@@ -377,7 +376,7 @@
 		width: 405px;
 		height: 148px;
 		@include transform(translateY(-140px));
-		background: url(/img/cases/ing/ipad/7.png);
+		background: url(#{$img}/ipad/7.png);
 	}
 	.el8 {
 		z-index: 3;
@@ -386,7 +385,7 @@
 		width: 222px;
 		height: 83px;
 		@include transform(translateY(-120px));
-		background: url(/img/cases/ing/ipad/8.png);
+		background: url(#{$img}/ipad/8.png);
 	}
 	.el9 {
 		z-index: 2;
@@ -395,7 +394,7 @@
 		width: 543px;
 		height: 261px;
 		@include transform(translateY(-100px));
-		background: url(/img/cases/ing/ipad/9.png);
+		background: url(#{$img}/ipad/9.png);
 	}
 	.ipad-bg {
 		z-index: 1;
@@ -403,7 +402,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: url(/img/cases/ing/ipad/ipad.png);
+		background: url(#{$img}/ipad/ipad.png);
 	}
 }
 
@@ -416,7 +415,7 @@
 	width: 471px;
 	height: 601px;
 	margin: 90px 0 0;
-	background: url(/img/cases/ing/mobile-1.png);
+	background: url(#{$img}/mobile-1.png);
 }
 .mobile-screen-2 {
 	position: fixed;
@@ -426,7 +425,7 @@
 	width: 472px;
 	height: 603px;
 	margin: 45px 0 0;
-	background: url(/img/cases/ing/mobile-2.png);
+	background: url(#{$img}/mobile-2.png);
 }
 .mobile-screen-3 {
 	position: fixed;
@@ -435,7 +434,7 @@
 	right: -140px;
 	width: 472px;
 	height: 604px;
-	background: url(/img/cases/ing/mobile-3.png);
+	background: url(#{$img}/mobile-3.png);
 }
 .desc-mobile {
 	top: 100%;
