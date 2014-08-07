@@ -130,3 +130,54 @@ $img: '/img/cases/litedark';
 	margin: 0 0 0 -300px;
 	background: url(#{$img}/logo-final.png);
 }
+
+/** print */
+.flyer-bg {
+	overflow: hidden;
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	width: 100%;
+	height: 625px;
+	background: url(#{$img}/bg-wood.jpg) no-repeat center top;
+}
+.leaves3 {
+	position: absolute;
+	top: 100px;
+	right: -30px;
+	width: 83px;
+	height: 138px;
+	background: url(#{$img}/leaves2.png);
+}
+.circle-splatter {
+	position: absolute;
+	bottom: -100px;
+	width: 275px;
+	height: 286px;
+	background: url(#{$img}/circle-splatter.png);
+}
+.flyer1 {
+	position: fixed;
+	z-index: 4;
+	top: 130%;
+	right: 80%;
+	width: 797px;
+	height: 759px;
+	margin: 120px -200px 0 0;
+	background: url(#{$img}/flyer1.png);
+}
+.flyer2 {
+	position: fixed;
+	z-index: 3;
+	top: 120%;
+	left: 80%;
+	width: 798px;
+	height: 759px;
+	margin: -50px 0 0 -60px;
+	background: url(#{$img}/flyer2.png);
+}
+.desc-print {
+	z-index: 1;
+	top: 120%;
+	margin: 675px 0 0;
+}

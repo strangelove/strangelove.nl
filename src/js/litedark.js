@@ -149,7 +149,59 @@ require('kubrick-js')([
 		actors: [
 			{
 				element: '.logo-final',
-				translateY: ['-65%', '-165%']
+				translateY: ['-65%', '-125%']
+			},
+			{
+				element: '.flyer-bg',
+				translateY: '-100%'
+			},
+			{
+				element: '.leaves3',
+				translateX: -30,
+				translateY: -120
+			},
+			{
+				element: '.circle-splatter',
+				translateY: -100
+			},
+			{
+				element: '.flyer1',
+				translateX: '30%',
+				translateY: '-130%'
+			},
+			{
+				element: '.flyer2',
+				translateX: '-30%',
+				translateY: '-120%'
+			},
+			{
+				element: '.desc-print',
+				translateY: '-120%',
+				opacity: [-2, 1]
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.flyer-bg',
+				translateY: ['-100%', '-200%']
+			},
+			{
+				element: '.flyer1',
+				translateX: ['30%', '60%'],
+				translateY: ['-130%', '-240%']
+			},
+			{
+				element: '.flyer2',
+				translateX: ['-30%', '-60%'],
+				translateY: ['-120%', '-280%']
+			},
+			{
+				element: '.desc-print',
+				translateY: ['-120%', '-240%'],
+				opacity: -1
 			}
 		]
 	},
