@@ -1,3 +1,15 @@
+@include keyframes(borderGrow){
+	to {
+		width: 100%;
+	}
+}
+@include keyframes(fadeSlideIn){
+	to {
+		@include transform(translateX(0));
+		opacity: 1;
+	}
+}
+
 h2 {
 	margin: 0;
 }
@@ -54,9 +66,10 @@ h2 {
 		content: ' ';
 		display: block;
 		position: absolute;
-		width: 100%;
+		width: 0;
 		height: 1px;
 		background: #fff;
+		@include animation(borderGrow 1s 1s forwards);
 	}
 	&:before {
 		top: 0;
@@ -71,10 +84,16 @@ h2 {
 		font: 700 36px 'Ubuntu';
 		letter-spacing: 4px;
 		text-transform: uppercase;
+		opacity: 0;
+		@include transform(translateX(-20px));
+		@include animation(fadeSlideIn 1s 1s forwards);
 	}
 	span {
 		display: block;
 		letter-spacing: 2px;
 		text-transform: uppercase;
+		opacity: 0;
+		@include transform(translateX(20px));
+		@include animation(fadeSlideIn 1s 1s forwards);
 	}
 }
