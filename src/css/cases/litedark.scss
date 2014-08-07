@@ -9,6 +9,10 @@ $img: '/img/cases/litedark';
 @import '../header';
 @import '../footer';
 
+.litedark {
+	background: #f8f7f5;
+}
+
 .mood {
 	position: fixed;
 	z-index: 1;
@@ -63,4 +67,66 @@ $img: '/img/cases/litedark';
 	width: 363px;
 	height: 540px;
 	background: url(#{$img}/leaves.png);
+}
+
+/** brand identity */
+.leaves1 {
+	position:fixed;
+	z-index: 6;
+	top: 105%;
+	left: -40px;
+	width: 248px;
+	height: 293px;
+	margin: -50px 0 0;
+	background: url(#{$img}/leaves1.png);
+}
+.leaves2 {
+	position:fixed;
+	z-index: 6;
+	top: 115%;
+	right: -30px;
+	width: 83px;
+	height: 138px;
+	margin: -10px 0 0;
+	background: url(#{$img}/leaves2.png);
+}
+.brand-wrap {
+	overflow: hidden;
+	position: fixed;
+	top: 100%;
+	z-index: 5;
+	width: 100%;
+	height: 787px;
+	background: url(#{$img}/bg-wood.jpg) no-repeat center top;
+}
+.desc-brand {
+	position: static;
+	margin: 180px auto 0;
+}
+.products {
+	position: absolute;
+	top: 365px;
+	right: 0;
+	left: 0;
+	height: 422px;
+	background: url(#{$img}/products.png) no-repeat center;
+}
+.circles {
+	position: fixed;
+	z-index: 4;
+	top: 100%;
+	right: 0;
+	left: 0;
+	height: 120px;
+	margin: 580px 0 0;
+	background: url(#{$img}/circles.png) no-repeat center;
+}
+.logo-final {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	width: 601px;
+	height: 219px;
+	margin: 0 0 0 -300px;
+	background: url(#{$img}/logo-final.png);
 }
