@@ -1,4 +1,7 @@
-var $ = require('elements');
+'use strict';
+
+var $ = require('elements'),
+	debounce = require('mout/function/debounce');
 
 var scrollTop = function(){
 	return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
@@ -29,4 +32,15 @@ $(window).on('load', function(){
 			}
 		});
 	}, 10);
+
+	var recalculate = function(){
+		bodyRect = document.body.getBoundingClientRect();
+		sectionTops = [];
+		for (i = 0; i < sections.length; i++){
+			sectionRect = sections[i].getBoundingClientRect();
+			sectionTops.push(sectionRect.top - bodyRect.top);
+		}
+	};
+
+	$(window).on('resize', debounce(recalculate, 300));
 });
