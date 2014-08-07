@@ -13,6 +13,10 @@ $img: '/img/cases/litedark';
 	background: #f8f7f5;
 }
 
+.description h2:after {
+	background: #00a448;
+}
+
 .mood {
 	position: fixed;
 	z-index: 1;
