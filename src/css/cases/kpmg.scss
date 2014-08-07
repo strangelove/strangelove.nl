@@ -253,6 +253,9 @@ h2 {
 .device-imac {
 	z-index: 1;
 	margin: 0 0 0 -300px;
+	&:before {
+		background: url(/img/cases/kpmg/imac-logo.png);
+	}
 }
 .device-ipad {
 	z-index: 2;

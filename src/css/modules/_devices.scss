@@ -11,6 +11,14 @@
 	width: 776px;
 	height: 625px;
 	background: url(/img/devices/imac.png);
+	&:before {
+		content: ' ';
+		position: absolute;
+		top: 477px;
+		left: 356px;
+		width: 64px;
+		height: 42px;
+	}
 	.viewport {
 		top: 36px;
 		left: 34px;
