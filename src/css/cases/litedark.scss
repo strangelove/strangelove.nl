@@ -1,0 +1,66 @@
+@import '../vendor/normalize';
+@import '../vendor/bourbon/bourbon';
+
+$img: '/img/cases/litedark';
+
+@import '../fonts';
+@import '../base';
+@import '../case-base';
+@import '../header';
+@import '../footer';
+
+.mood {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width:  100%;
+	height: 800px;
+	background: url(#{$img}/cover.jpg) no-repeat center top;
+}
+
+.case-summary {
+	width: 300px;
+	margin-left: -150px;
+}
+
+/** client */
+.client-cup {
+	position: fixed;
+	z-index: 4;
+	top: 100%;
+	right: -300px;
+	width: 485px;
+	height: 674px;
+	margin: 140px 0 0;
+	background: url(#{$img}/cup.png);
+}
+.client-strawberry {
+	position: fixed;
+	z-index: 3;
+	top: 100%;
+	right: -225px;
+	width: 353px;
+	height: 291px;
+	margin: 495px 0 0;
+	background: url(#{$img}/strawberry.png);
+}
+.client-orange {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	right: -130px;
+	width: 498px;
+	height: 416px;
+	margin: 340px 0 0;
+	background: url(#{$img}/orange.png);
+}
+.client-leaves {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	right: -350px;
+	width: 363px;
+	height: 540px;
+	background: url(#{$img}/leaves.png);
+}

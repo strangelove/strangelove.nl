@@ -5,40 +5,75 @@
 	<link rel="stylesheet" href="/css/cases/litedark.css">
 {% endblock %}
 
+{% block scripts %}
+	<script src="/js/litedark.js"></script>
+{% endblock %}
+
 {% block bodytag %}
 	<body class="litedark">
 {% endblock %}
 
 {% block content %}
-	<section class="page dark mood">
-		<p class="mission"><strong>LITE/DARK</strong> <span>brand identity</span></p>
-		<a href="#services" class="arrow-down continue">Continue</a>
-	</section>
+	<article class="case">
+		<div class="mood"></div>
 
-	<section class="page client">
-		<div class="wrap">
-			<h2>The client</h2>
-			<p>
-				The LITE/DARK concept was deliciously straightforward. Just coffee and
-				juices, fruit and chocolate. All organic, hand made and fair-trade.
-			</p>
-			<div class="leaves"></div>
-			<div class="orange"></div>
-			<div class="strawberry"></div>
-			<div class="cup"></div>
-		</div>
-	</section>
-
-	<section class="brand-identity">
-		<h2>Brand identity</h2>
-		<p>
-			Consumers have less time and the amount of content fighting for their
-			attention is overwhelming. Traditional advertising is often money wasted.
+		<p class="case-summary">
+			<strong>{{client}}</strong>
+			<span>{{areas|join(', ')}}</span>
 		</p>
-		<div class="products"></div>
-	</section>
 
-	<section class="final-logo">
-		<div class="circles"></div>
-	</section>
+		<!-- client -->
+		<div class="client-cup"></div>
+		<div class="client-strawberry"></div>
+		<div class="client-orange"></div>
+		<div class="client-leaves"></div>
+		<div class="description desc-client">
+			<h2>{{content1.title}}</h2>
+			{{content1.body|safe}}
+		</div>
+
+		<!-- brand identity -->
+		<section class="brand-wrap">
+			<div class="leaves1"></div>
+			<div class="leaves2"></div>
+			<div class="description desc-brand">
+				<h2>{{content2.title}}</h2>
+				{{content2.body|safe}}
+			</div>
+		</section>
+		<div class="products"></div>
+		<div class="final-logo"></div>
+
+		<!-- print -->
+		<section class="flyer-wrap">
+			<div class="flyer1"></div>
+			<div class="flyer2"></div>
+			<div class="leaves3"></div>
+			<div class="circle-splatter"></div>
+		</section>
+		<div class="description desc-print">
+			<h2>{{content3.title}}</h2>
+			{{content3.body|safe}}
+		</div>
+
+		<!-- product design -->
+		<div class="product-carousel"></div>
+		<div class="description desc-design">
+			<h2>{{content4.title}}</h2>
+			{{content4.body|safe}}
+		</div>
+
+		<!-- result -->
+		<div class="photos-wrap">
+			<div class="photo1"></div>
+			<div class="photo2"></div>
+			<div class="photo3"></div>
+			<div class="leaves4"></div>
+			<div class="circle-red"></div>
+		</div>
+		<div class="description desc-result">
+			<h2>{{content5.title}}</h2>
+			{{content5.body|safe}}
+		</div>
+	</article>
 {% endblock %}

@@ -48,6 +48,7 @@ var routes = [
 	},
 	{
 		path: '/cases/litedark',
+		mockData: __dirname + '/data/cases/litedark.json',
 		template: 'cases/litedark'
 	}
 ];
