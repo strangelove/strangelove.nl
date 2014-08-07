@@ -10,8 +10,7 @@ var $ = require('elements'),
 require('moofx');
 
 if (contact){
-	var header = contact.search('.header-main'),
-		canvas = contact.search('.map-canvas'),
+	var canvas = contact.search('.map-canvas'),
 		overlay = contact.search('.map-overlay'),
 		contents = contact.search('.contact-content'),
 		showMapBtn = contact.search('.show-map'),
@@ -61,6 +60,7 @@ if (contact){
 	google.maps.event.addDomListener(window, 'load', initialize);
 
 	var showMap = function(){
+		var header = contact.search('.header-main');
 		hideMapBtn.animate({opacity: 1});
 		header.animate({opacity: 0});
 		overlay.animate({opacity: 0});
@@ -74,6 +74,7 @@ if (contact){
 	};
 
 	var hideMap = function(){
+		var header = contact.search('.header-main');
 		map.panTo(center);
 		hideMapBtn.animate({opacity: 0});
 		header.style({display: 'block'}).animate({opacity: 1});
