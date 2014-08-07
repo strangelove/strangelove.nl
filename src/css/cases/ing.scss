@@ -3,59 +3,19 @@
 
 @import '../fonts';
 @import '../base';
+@import '../case-base';
 @import '../header';
 @import '../footer';
 
 @import '../modules/devices';
 
 /** generic stuff */
-body {
-	color: #333;
-}
-
-h2 {
-	margin: 0;
-}
-
 .ing {
 	.header-main {
 		position: fixed;
 	}
 	.logo a, .nav-primary a {
 		color: #333;
-	}
-}
-
-.stage {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-
-.description {
-	position: fixed;
-	top: 100%;
-	left: 35%;
-	width: 30%;
-	text-align: center;
-	&.left {
-		text-align: left;
-		h2 {
-			text-align: left;
-			&:after {
-				margin-left: 0;
-			}
-		}
-	}
-	h2:after {
-		content: ' ';
-		display: block;
-		width: 30px;
-		height: 4px;
-		margin: 30px auto 24px;
-		background: #ff7245;
 	}
 }
 

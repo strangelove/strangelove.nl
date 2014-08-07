@@ -1,0 +1,39 @@
+h2 {
+	margin: 0;
+}
+
+.description {
+	position: fixed;
+	top: 100%;
+	left: 35%;
+	width: 30%;
+	text-align: center;
+	&.left {
+		text-align: left;
+		h2 {
+			text-align: left;
+			&:after {
+				margin-left: 0;
+			}
+		}
+	}
+	&.right {
+		left: auto;
+		right: 35%;
+		text-align: right;
+		h2 {
+			text-align: right;
+			&:after {
+				margin-right: 0;
+			}
+		}
+	}
+	h2:after {
+		content: ' ';
+		display: block;
+		width: 30px;
+		height: 4px;
+		margin: 30px auto 24px;
+		background: #0078c1;
+	}
+}
