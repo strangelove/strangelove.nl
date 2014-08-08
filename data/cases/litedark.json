@@ -1,23 +1,23 @@
 {
 	"client": "LITE/DARK",
-	"areas": ["branding"],
-	"content1": {
+	"subtitle": "branding",
+	"section1": {
 		"title": "The client",
 		"body": "<p>The LITE/DARK concept was deliciously straighforward. Just coffee and juices, fruit and chocolate. All organic, hand made and and fair-trade.</p>"
 	},
-	"content2": {
+	"section2": {
 		"title": "Brand identity",
 		"body": "<p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p>"
 	},
-	"content3": {
+	"section3": {
 		"title": "Print",
 		"body": "<p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p>"
 	},
-	"content4": {
+	"section4": {
 		"title": "Product design",
 		"body": "<p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p>"
 	},
-	"content5": {
+	"section5": {
 		"title": "Result",
 		"body": "<p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p><p>Consumers have less time and the amount of content fighting for their attention is overwhelming. Traditional advertising is often money wasted.</p>"
 	}

@@ -19,7 +19,7 @@
 
 		<p class="case-summary">
 			<strong>{{client}}</strong>
-			<span>{{areas|join(', ')}}</span>
+			<span>{{subtitle}}</span>
 		</p>
 
 		<!-- client -->
@@ -28,8 +28,8 @@
 		<div class="client-orange"></div>
 		<div class="client-leaves"></div>
 		<div class="description desc-client">
-			<h2>{{content1.title}}</h2>
-			{{content1.body|safe}}
+			<h2>{{section1.title}}</h2>
+			{{section1.body|safe}}
 		</div>
 
 		<!-- brand identity -->
@@ -38,8 +38,8 @@
 		<section class="brand-wrap">
 			<div class="products"></div>
 			<div class="description desc-brand">
-				<h2>{{content2.title}}</h2>
-				{{content2.body|safe}}
+				<h2>{{section2.title}}</h2>
+				{{section2.body|safe}}
 			</div>
 		</section>
 		<div class="circles"></div>
@@ -53,15 +53,15 @@
 		<div class="flyer1"></div>
 		<div class="flyer2"></div>
 		<div class="description desc-print">
-			<h2>{{content3.title}}</h2>
-			{{content3.body|safe}}
+			<h2>{{section3.title}}</h2>
+			{{section3.body|safe}}
 		</div>
 
 		<!-- product design -->
 		<div class="product-carousel"></div>
 		<div class="description desc-design">
-			<h2>{{content4.title}}</h2>
-			{{content4.body|safe}}
+			<h2>{{section4.title}}</h2>
+			{{section4.body|safe}}
 		</div>
 
 		<!-- result -->
@@ -73,8 +73,8 @@
 			<div class="circle-red"></div>
 		</div>
 		<div class="description desc-result">
-			<h2>{{content5.title}}</h2>
-			{{content5.body|safe}}
+			<h2>{{section5.title}}</h2>
+			{{section5.body|safe}}
 		</div>
 	</article>
 {% endblock %}

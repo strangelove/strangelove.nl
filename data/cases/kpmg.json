@@ -1,39 +1,39 @@
 {
 	"client": "KPMG Meijburg & Co",
-	"areas": ["print", "digital"],
-	"content1": {
+	"subtitle": "print, digital",
+	"section1": {
 		"title": "The client",
 		"body": "<p>Being one of the 'Big Four' tax firms in The Netherlands, KMPG Meijburg &amp; Co presents itself as entrepreneurial tax lawyers that know what they are talking about. Down to earth, respectful, co-operative and always with integrity.</p>"
 	},
-	"content2": {
+	"section2": {
 		"title": "Tax battle",
 		"body": "<p>To attrack the top tax students each year again, KPMG Meijburg &amp; Co organizes different events throughout the acadamic year. For the tax battle we personified students and mentors in super tax heroes.</p>"
 	},
-	"content3": {
+	"section3": {
 		"title": "Print",
 		"body": "<p>We created a wide range of print material for KMPG Meijburg &amp; Co. Invitations, flyers for students, brochures and bookletts for professional workshops and many many more.</p>"
 	},
-	"content4": {
+	"section4": {
 		"title": "Step into the world of",
 		"body": "<p>Every year Meijburg connects with studens of all universities with an appealing campaign to stand out from its competitors. To make the big step students face tangible when leaving the protected grounds of university, we created 'step into the world of KPMG Meijburg &amp; Co'. This concept was translated into print, digital, social and events.</p>"
 	},
-	"content5": {
+	"section5": {
 		"title": "Corporate website",
 		"body": "<p>A 'big four' company communicates via a professional website that is rich of content. With the brand guide of the big sister company KPMG aligned, we created an outstanding digital platform, for professionals and clients to interact.</p>"
 	},
-	"content6": {
+	"section6": {
 		"title": "Custom HR icons",
 		"body": "<p>Meijburg's HR focusses on students and starters. Specially for these target audiences we created a set of icons to bring the corporate identity to a more vivid and young style.</p>"
 	},
-	"content7": {
+	"section7": {
 		"title": "Multiple devices",
 		"body": "<p>No need to explain that the digital environment of a corporate as KPMG Meijburg &amp; Co is accessible from multiple devices. The corporate website as well as the HR website are fully responsive for desktops, tablets and mobile phones.</p>"
 	},
-	"content8": {
+	"section8": {
 		"title": "HR Website",
 		"body": "<p>To sollidate its position as business leader, KPMG Meijburg &amp; Co needs the best professionals available. That starts with cherrypicking the best students and starters every year again. To meet up with this young, but ambitous audience we created a stand alone website, with a smart tool to apply via LinkedIn. Again, fully responsive.</p>"
 	},
-	"content9": {
+	"section9": {
 		"title": "Extensive calendar",
 		"body": "<p>To meet up with the high expectations that professional taxlawyers have, workshops and activities have to be arranged and planned flawlessly, and therefore you need a smart, online tool to keep planning tight.</p>"
 	}
