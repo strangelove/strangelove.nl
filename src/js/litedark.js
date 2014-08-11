@@ -86,6 +86,11 @@ require('kubrick-js')([
 				translateY: '-100%'
 			},
 			{
+				element: '.desc-brand',
+				translateY: '-120%',
+				opacity: [-2, 1]
+			},
+			{
 				element: '.circles',
 				translateY: '-100%'
 			}
@@ -113,7 +118,7 @@ require('kubrick-js')([
 			{
 				element: '.brand-wrap',
 				callback: function(progress, duration){
-					this.style.height = easeInOutQuad((duration / 100) * progress, 787, -207, duration) + 'px';
+					this.style.height = easeInOutQuad((duration / 100) * progress, 625, -207, duration) + 'px';
 				}
 			}
 		]
@@ -138,6 +143,11 @@ require('kubrick-js')([
 			{
 				element: '.circles',
 				translateY: ['-100%', '-200%']
+			},
+			{
+				element: '.desc-brand',
+				translateY: ['-120%', '-240%'],
+				opacity: -1
 			},
 			{
 				element: '.logo-final',
