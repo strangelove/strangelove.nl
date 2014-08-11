@@ -10,7 +10,8 @@ $img: '/img/cases/litedark';
 @import '../footer';
 
 .litedark {
-	background: #f8f7f5;
+	background: #f8f7f5 url(#{$img}/bg-texture.png);
+	background-attachment: fixed;
 }
 
 .description h2:after {
