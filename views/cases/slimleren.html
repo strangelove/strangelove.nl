@@ -1,0 +1,25 @@
+{% extends "../layouts/default.html" %}
+
+{% block stylesheets %}
+	{% parent %}
+	<link rel="stylesheet" href="/css/cases/slimleren.css">
+{% endblock %}
+
+{% block scripts %}
+	<script src="/js/slimleren.js"></script>
+{% endblock %}
+
+{% block bodytag %}
+	<body class="slimleren">
+{% endblock %}
+
+{% block content %}
+	<article class="case">
+		<div class="mood"></div>
+
+		<p class="case-summary">
+			<strong>{{client}}</strong>
+			<span>{{subtitle}}</span>
+		</p>
+	</article>
+{% endblock %}

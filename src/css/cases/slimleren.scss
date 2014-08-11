@@ -1,0 +1,33 @@
+@import '../vendor/normalize';
+@import '../vendor/bourbon/bourbon';
+
+$img: '/img/cases/slimleren';
+
+@import '../fonts';
+@import '../base';
+@import '../case-base';
+@import '../header';
+@import '../footer';
+
+.litedark {
+	background: #f8f7f5;
+}
+
+.description h2:after {
+	background: #2bbaee;
+}
+
+.mood {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width:  100%;
+	height: 800px;
+	background: url(#{$img}/cover.jpg) no-repeat center top;
+}
+
+.case-summary {
+	width: 300px;
+	margin-left: -150px;
+}

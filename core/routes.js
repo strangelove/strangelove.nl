@@ -25,6 +25,11 @@ var routes = [
 		path: '/cases/litedark',
 		mockData: process.cwd() + '/data/cases/litedark.json',
 		template: 'cases/litedark'
+	},
+	{
+		path: '/cases/slimleren',
+		mockData: process.cwd() + '/data/cases/slimleren.json',
+		template: 'cases/slimleren'
 	}
 ];
 
