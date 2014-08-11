@@ -206,6 +206,40 @@ require('kubrick-js')([
 		]
 	},
 	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.photos-wrap',
+				translateY: '-100%'
+			},
+			{
+				element: '.photo1',
+				translateY: '-100%'
+			},
+			{
+				element: '.photo2',
+				translateY: '-70%'
+			},
+			{
+				element: '.photo3',
+				translateY: ['30%', '-105%']
+			},
+			{
+				element: '.leaves4',
+				translateY: -100
+			},
+			{
+				element: '.circle-red',
+				translateX: -30
+			},
+			{
+				element: '.desc-result',
+				translateY: '-120%',
+				opacity: [-2, 1]
+			}
+		]
+	},
+	{
 		stage: '.footer-main',
 		duration: 1
 	}

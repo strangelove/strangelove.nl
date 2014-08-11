@@ -185,3 +185,63 @@ $img: '/img/cases/litedark';
 	top: 120%;
 	margin: 675px 0 0;
 }
+
+/** result */
+.photos-wrap {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	width: 100%;
+	height: 625px;
+	background: url(#{$img}/bg-wood.jpg) no-repeat center top;
+}
+.photo1 {
+	position: fixed;
+	z-index: 3;
+	top: 100%;
+	right: 50%;
+	width: 577px;
+	height: 467px;
+	margin: 0 -100px 0 0;
+	background: url(#{$img}/photo-1.png);
+}
+.photo2 {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	left: 50%;
+	width: 531px;
+	height: 373px;
+	margin: 0 0 0 -250px;
+	background: url(#{$img}/photo-2.png);
+}
+.photo3 {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	width: 434px;
+	height: 518px;
+	background: url(#{$img}/photo-3.png);
+}
+.leaves4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 198px;
+	height: 263px;
+	background: url(#{$img}/leaves3.png);
+}
+.circle-red {
+	position: absolute;
+	right: -30px;
+	bottom: 0;
+	width: 125px;
+	height: 127px;
+	background: url(#{$img}/circle-red.png);
+}
+.desc-result {
+	z-index: 1;
+	top: 120%;
+	margin: 675px 0 0;
+}
