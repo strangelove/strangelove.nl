@@ -1,6 +1,7 @@
 'use strict';
 
-var easeInOutQuad = require('kubrick-js/easing/easeInOutQuad');
+var easeInOutQuad = require('kubrick-js/easing/easeInOutQuad'),
+	prefix = require('kubrick-js/lib/vendorprefix')();
 
 require('kubrick-js')([
 	{
@@ -202,12 +203,41 @@ require('kubrick-js')([
 				element: '.desc-print',
 				translateY: ['-120%', '-240%'],
 				opacity: -1
+			},
+			{
+				element: '.product-wrap',
+				translateY: '-90%'
+			},
+			{
+				element: '.desc-design',
+				translateY: '-90%'
 			}
 		]
 	},
 	{
 		duration: '100%',
 		actors: [
+			{
+				element: '.product-carousel',
+				callback: function(progress){
+					var currentFrame = Math.ceil((37 / 100) * progress) || 1,
+						pos = (currentFrame - 1) * 415;
+					this.style[prefix + 'Transform'] = 'translateY(-' + pos + 'px)';
+				}
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.product-wrap',
+				translateY: ['-90%', '-190%']
+			},
+			{
+				element: '.desc-design',
+				translateY: ['-90%', '-190%']
+			},
 			{
 				element: '.photos-wrap',
 				translateY: '-100%'

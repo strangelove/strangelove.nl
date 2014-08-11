@@ -186,6 +186,22 @@ $img: '/img/cases/litedark';
 	margin: 675px 0 0;
 }
 
+/** product design */
+.product-wrap {
+	overflow: hidden;
+	position: fixed;
+	top: 100%;
+	width: 100%;
+	height: 415px;
+}
+.product-carousel {
+	height: 15355px;
+	background: url(#{$img}/Sprite1.png) no-repeat center 0, url(#{$img}/Sprite2.png) no-repeat center 5810px, url(#{$img}/Sprite3.png) no-repeat center 11620px;
+}
+.desc-design {
+	margin: 550px 0 0;
+}
+
 /** result */
 .photos-wrap {
 	position: fixed;
