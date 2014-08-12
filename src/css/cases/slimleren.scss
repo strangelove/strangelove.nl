@@ -18,6 +18,33 @@ $img: '/img/cases/slimleren';
 	}
 }
 
+@mixin animated-clock {
+	width: 107px;
+	height: 107px;
+	background: url(#{$img}/client-clock.png);
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 6px;
+		border-radius: 3px;
+		background: rgba(100, 100, 100, .8);
+	}
+	&:before {
+		height: 22px;
+		margin: -22px -3px;
+		@include transform-origin(3px 19px);
+		@include animation(clock 6s linear infinite);
+	}
+	&:after {
+		height: 16px;
+		margin: -16px -3px;
+		@include transform-origin(3px 13px);
+		@include animation(clock 72s linear infinite);
+	}
+}
+
 .litedark {
 	background: #f8f7f5;
 }
@@ -102,35 +129,11 @@ $img: '/img/cases/slimleren';
 	background: url(#{$img}/client-student.png);
 }
 .client-clock {
+	@include animated-clock;
 	position: fixed;
 	z-index: 1;
 	top: 100%;
 	right: 320px;
-	width: 107px;
-	height: 107px;
-	background: url(#{$img}/client-clock.png);
-	&:before, &:after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 6px;
-		border-radius: 3px;
-	}
-	&:before {
-		height: 22px;
-		margin: -22px -3px;
-		background: rgba(200, 200, 200, .8);
-		@include transform-origin(3px 19px);
-		@include animation(clock 1s linear infinite);
-	}
-	&:after {
-		height: 16px;
-		margin: -16px -3px;
-		background: rgba(200, 200, 200, .8);
-		@include transform-origin(3px 13px);
-		@include animation(clock 12s linear infinite);
-	}
 }
 
 /** character development */
@@ -218,6 +221,54 @@ $img: '/img/cases/slimleren';
 	z-index: 1;
 	top: 120%;
 	margin: 500px 0 0;
+}
+
+/** visuals */
+.visuals-animation {
+	position: fixed;
+	top: 100%;
+	right: 50%;
+	width: 720px;
+	height: 490px;
+	background: url(#{$img}/visuals-animation-begin.gif);
+}
+.visuals-clock {
+	@include animated-clock;
+	position: absolute;
+	top: 150px;
+	left: 190px;
+	@include transform(scale(0.8));
+}
+.visuals-controller {
+	position: fixed;
+	z-index: 3;
+	top: 100%;
+	right: 80px;
+	width: 125px;
+	height: 114px;
+	background: url(#{$img}/visuals-controller.png);
+}
+.visuals-ball {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	right: 0;
+	width: 123px;
+	height: 153px;
+	background: url(#{$img}/visuals-ball.png);
+}
+.visuals-note {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	right: 120px;
+	width: 56px;
+	height: 69px;
+	background: url(#{$img}/visuals-note.png);
+}
+.desc-visuals {
+	left: 50%;
+	margin: 0 0 0 100px;
 }
 
 /** explanimation */

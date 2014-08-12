@@ -5,7 +5,7 @@ var $ = require('elements'),
 	easeInOutQuad = require('kubrick-js/easing/easeInOutQuad'),
 	prefix = require('kubrick-js/lib/vendorprefix')(),
 	timestamp = new Date().getTime(),
-	phoneReplaced;
+	phoneReplaced, visualsReplaced;
 
 var owls = [
 	{
@@ -194,6 +194,62 @@ require('kubrick-js')([
 				element: '.desc-character',
 				translateY: ['-120%', '-240%'],
 				opacity: -1
+			},
+			{
+				element: '.visuals-animation',
+				translateY: '-80%'
+			},
+			{
+				element: '.visuals-animation',
+				callback: function(){
+					if (visualsReplaced) return;
+					visualsReplaced = true;
+					var bgImage = window.getComputedStyle(this).backgroundImage;
+					bgImage = bgImage.replace('-begin', '');
+					bgImage = bgImage.replace(')', '?' + timestamp + ')');
+					this.style.backgroundImage = bgImage;
+				}
+			},
+			{
+				element: '.visuals-controller',
+				translateY: '-82%'
+			},
+			{
+				element: '.visuals-ball',
+				translateY: '-90%'
+			},
+			{
+				element: '.visuals-note',
+				translateY: '-93%'
+			},
+			{
+				element: '.desc-visuals',
+				translateY: '-55%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.visuals-animation',
+				translateY: ['-80%', '-220%']
+			},
+			{
+				element: '.visuals-controller',
+				translateY: ['-82%', '-180%']
+			},
+			{
+				element: '.visuals-ball',
+				translateY: ['-90%', '-180%']
+			},
+			{
+				element: '.visuals-note',
+				translateY: ['-93%', '-180%']
+			},
+			{
+				element: '.desc-visuals',
+				translateY: ['-55%', '-155%']
 			}
 		]
 	},
