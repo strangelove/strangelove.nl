@@ -31,3 +31,61 @@ $img: '/img/cases/slimleren';
 	width: 300px;
 	margin-left: -150px;
 }
+
+/** explanimation */
+.expl-bg {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	width: 100%;
+	height: 616px;
+	background: url(#{$img}/expl-bg.png) no-repeat center;
+}
+.expl-screen {
+	position: fixed;
+	z-index: 2;
+	top: 140%;
+	left: 50%;
+	width: 904px;
+	height: 574px;
+	margin: 0 0 0 -452px;
+	padding: 11px 0 0 106px;
+	background: url(#{$img}/expl-screen.png);
+}
+.expl-book1 {
+	position: absolute;
+	top: -155px;
+	left: 8px;
+	width: 61px;
+	height: 113px;
+	background: url(#{$img}/expl-book1.png);
+}
+.expl-book2 {
+	position: absolute;
+	top: -84px;
+	left: 55px;
+	width: 88px;
+	height: 38px;
+	background: url(#{$img}/expl-book2.png);
+}
+.expl-book3 {
+	position: absolute;
+	top: -147px;
+	left: 46px;
+	width: 101px;
+	height: 35px;
+	background: url(#{$img}/expl-book3.png);
+}
+.expl-glasses {
+	position: absolute;
+	top: -19px;
+	right: 33px;
+	width: 145px;
+	height: 57px;
+	background: url(#{$img}/expl-glasses.png);
+}
+.desc-explanimation {
+	z-index: 1;
+	top: 120%;
+	margin: 700px 0 0;
+}
