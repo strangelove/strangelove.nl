@@ -133,6 +133,93 @@ $img: '/img/cases/slimleren';
 	}
 }
 
+/** character development */
+.owl-wrap {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	width: 185px;
+	height: 219px;
+	&:after {
+		content: ' ';
+		position: absolute;
+		z-index: 1;
+		top: 206px;
+		width: 100%;
+		height: 31px;
+		background: url(#{$img}/branch.png) no-repeat center top;
+	}
+	.owl {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: no-repeat center bottom;
+	}
+	.wing-left, .wing-right {
+		position: absolute;
+		z-index: 3;
+		top: 119px;
+		height: 81px;
+	}
+	.wing-left {
+		left: 12px;
+		width: 61px;
+		background: url(#{$img}/wing1.png);
+		@include transform-origin(8px 4px);
+		@include transform(rotate(150deg));
+	}
+	.wing-right {
+		right: 12px;
+		width: 62px;
+		background: url(#{$img}/wing2.png);
+		@include transform-origin(54px 4px);
+		@include transform(rotate(-150deg));
+	}
+}
+.char-owl1 {
+	right: 50%;
+	margin-right: 300px;
+	.owl {
+		background-image: url(#{$img}/owl1.png);
+	}
+}
+.char-owl2 {
+	right: 50%;
+	margin-right: 40px;
+	.owl {
+		background-image: url(#{$img}/owl2.png);
+	}
+}
+.char-owl3 {
+	left: 50%;
+	margin-left: 40px;
+	.owl {
+		background-image: url(#{$img}/owl3.png);
+	}
+	.wing-left {
+		background-image: url(#{$img}/wing3.png);
+	}
+}
+.char-owl4 {
+	left: 50%;
+	margin-left: 300px;
+	.owl {
+		background-image: url(#{$img}/owl4.png);
+	}
+	.wing-left {
+		background-image: url(#{$img}/wing3.png);
+	}
+	.wing-right {
+		background: url(#{$img}/wing4.png) no-repeat right top;
+	}
+}
+.desc-character {
+	z-index: 1;
+	top: 120%;
+	margin: 500px 0 0;
+}
+
 /** explanimation */
 .expl-bg {
 	position: fixed;
