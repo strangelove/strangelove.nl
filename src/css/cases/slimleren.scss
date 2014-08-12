@@ -9,6 +9,15 @@ $img: '/img/cases/slimleren';
 @import '../header';
 @import '../footer';
 
+@include keyframes(clock){
+	from {
+		@include transform(rotate(0));
+	}
+	to {
+		@include transform(rotate(360deg));
+	}
+}
+
 .litedark {
 	background: #f8f7f5;
 }
@@ -30,6 +39,98 @@ $img: '/img/cases/slimleren';
 .case-summary {
 	width: 300px;
 	margin-left: -150px;
+}
+
+/** client */
+.feather1 {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	left: 130px;
+	width: 67px;
+	height: 57px;
+	background: url(#{$img}/feather1.png);
+}
+.feather2 {
+	position: fixed;
+	top: 100%;
+	left: 255px;
+	width: 109px;
+	height: 69px;
+	background: url(#{$img}/feather2.png);
+}
+.feather3 {
+	position: fixed;
+	top: 100%;
+	left: 370px;
+	width: 55px;
+	height: 25px;
+	background: url(#{$img}/feather3.png);
+}
+.feather4 {
+	position: fixed;
+	top: 100%;
+	left: 135px;
+	width: 69px;
+	height: 47px;
+	background: url(#{$img}/feather4.png);
+}
+.client-phone {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	width: 150px;
+	height: 330px;
+	background: url(#{$img}/phone-begin.gif);
+}
+.client-teacher {
+	position: fixed;
+	z-index: 3;
+	top: 100%;
+	right: 0;
+	width: 140px;
+	height: 597px;
+	background: url(#{$img}/client-teacher.png);
+}
+.client-student {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	right: 70px;
+	width: 276px;
+	height: 382px;
+	background: url(#{$img}/client-student.png);
+}
+.client-clock {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	right: 320px;
+	width: 107px;
+	height: 107px;
+	background: url(#{$img}/client-clock.png);
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 6px;
+		border-radius: 3px;
+	}
+	&:before {
+		height: 22px;
+		margin: -22px -3px;
+		background: rgba(200, 200, 200, .8);
+		@include transform-origin(3px 19px);
+		@include animation(clock 1s linear infinite);
+	}
+	&:after {
+		height: 16px;
+		margin: -16px -3px;
+		background: rgba(200, 200, 200, .8);
+		@include transform-origin(3px 13px);
+		@include animation(clock 12s linear infinite);
+	}
 }
 
 /** explanimation */
