@@ -18,6 +18,15 @@ $img: '/img/cases/slimleren';
 	}
 }
 
+@include keyframes(sausage){
+	from {
+		@include transform(rotate(-5deg));
+	}
+	to {
+		@include transform(rotate(5deg));
+	}
+}
+
 @mixin animated-clock {
 	width: 107px;
 	height: 107px;
@@ -269,6 +278,75 @@ $img: '/img/cases/slimleren';
 .desc-visuals {
 	left: 50%;
 	margin: 0 0 0 100px;
+}
+
+/** translations */
+.trans-book {
+	position: fixed;
+	top: 100%;
+	right: 465px;
+	width: 187px;
+	height: 209px;
+	background: url(#{$img}/trans-book.png);
+}
+.trans-owl {
+	position: fixed;
+	top: 100%;
+	right: 100px;
+	width: 351px;
+	height: 357px;
+	background: url(#{$img}/butcher-owl.png);
+	.wing-left {
+		position: absolute;
+		top: 143px;
+		left: -42px;
+		width: 250px;
+		height: 155px;
+		background: url(#{$img}/butcher-wing.png);
+		@include transform-origin(61px 1px);
+		@include transform(rotate(30deg));
+	}
+	.wing-right-tip {
+		position: absolute;
+		z-index: 2;
+		top: 115px;
+		left: 322px;
+		width: 44px;
+		height: 44px;
+		background: url(#{$img}/butcher-wingtip.png);
+	}
+}
+.sausage1 {
+	position: absolute;
+	z-index: 1;
+	top: 120px;
+	left: 320px;
+	width: 35px;
+	height: 72px;
+	background: url(#{$img}/butcher-sausage-1.png);
+	@include transform-origin(17px 17px);
+	@include animation(sausage 1.5s ease-in-out infinite alternate);
+}
+.sausage2 {
+	position: absolute;
+	top: 68px;
+	width: 35px;
+	height: 72px;
+	background: url(#{$img}/butcher-sausage-1.png);
+	@include transform-origin(17px 17px);
+	@include animation(sausage 1.5s ease-in-out infinite alternate);
+}
+.sausage3 {
+	position: absolute;
+	top: 68px;
+	width: 35px;
+	height: 69px;
+	background: url(#{$img}/butcher-sausage-2.png);
+	@include transform-origin(17px 17px);
+	@include animation(sausage 1.5s ease-in-out infinite alternate);
+}
+.desc-translations {
+	left: 10%;
 }
 
 /** explanimation */

@@ -250,6 +250,39 @@ require('kubrick-js')([
 			{
 				element: '.desc-visuals',
 				translateY: ['-55%', '-155%']
+			},
+			{
+				element: '.trans-book',
+				translateY: ['20%', '-72%']
+			},
+			{
+				element: '.trans-owl',
+				translateY: '-70%'
+			},
+			{
+				element: '.trans-owl .wing-left',
+				rotate: [30, 0]
+			},
+			{
+				element: '.desc-translations',
+				translateY: '-55%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.trans-book',
+				translateY: ['-72%', '-180%']
+			},
+			{
+				element: '.trans-owl',
+				translateY: ['-70%', '-200%']
+			},
+			{
+				element: '.desc-translations',
+				translateY: ['-55%', '-180%']
 			}
 		]
 	},
