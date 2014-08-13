@@ -559,3 +559,25 @@ $img: '/img/cases/slimleren';
 		margin: 0 0 0 -81px;
 	}
 }
+
+/** tests */
+.tests-layout {
+	position: fixed;
+	top: 100%;
+	left: 0;
+	width: 912px;
+	height: 1515px;
+	background: url(#{$img}/tests-layout.png);
+}
+.tests-tip {
+	position: fixed;
+	top: 100%;
+	left: 886px;
+	width: 259px;
+	height: 334px;
+	background: url(#{$img}/tests-tip.png);
+}
+.desc-tests {
+	top: 130%;
+	left: 912px;
+}

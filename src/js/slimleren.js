@@ -474,6 +474,40 @@ require('kubrick-js')([
 			{
 				element: '.desc-landing',
 				translateY: ['-65%', '-180%']
+			},
+			{
+				element: '.tests-layout',
+				translateY: '-105%'
+			},
+			{
+				element: '.tests-tip',
+				translateY: '-85%'
+			},
+			{
+				element: '.desc-tests',
+				translateY: '-65%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.tests-layout',
+				translateX: -100,
+				translateY: ['-105%', '-115%'],
+				scale: 0.8,
+				opacity: -3
+			},
+			{
+				element: '.tests-tip',
+				translateY: ['-85%', '-125%'],
+				opacity: -3
+			},
+			{
+				element: '.desc-tests',
+				translateY: ['-65%', '-85%'],
+				opacity: -3
 			}
 		]
 	},
