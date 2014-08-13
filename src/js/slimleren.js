@@ -65,8 +65,8 @@ require('kubrick-js')([
 			},
 			{
 				element: '.client-phone',
-				callback: function(){
-					if (phoneReplaced) return;
+				callback: function(progress){
+					if (progress < 60 || phoneReplaced) return;
 					phoneReplaced = true;
 					var bgImage = window.getComputedStyle(this).backgroundImage;
 					bgImage = bgImage.replace('-begin', '');
@@ -201,8 +201,8 @@ require('kubrick-js')([
 			},
 			{
 				element: '.visuals-animation',
-				callback: function(){
-					if (visualsReplaced) return;
+				callback: function(progress){
+					if (progress < 60 || visualsReplaced) return;
 					visualsReplaced = true;
 					var bgImage = window.getComputedStyle(this).backgroundImage;
 					bgImage = bgImage.replace('-begin', '');
