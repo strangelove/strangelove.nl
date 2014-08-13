@@ -391,6 +391,89 @@ require('kubrick-js')([
 			{
 				element: '.desc-website',
 				translateY: ['-75%', '-200%']
+			},
+			{
+				element: '.landing-bg-wrap',
+				translateY: '-140%'
+			},
+			{
+				element: '.landing-bg',
+				translateY: -754
+			},
+			{
+				element: '.landing-eraser',
+				translateY: -754
+			},
+			{
+				element: '.landing-compass',
+				translateY: -754
+			},
+			{
+				element: '.landing-pencil',
+				translateY: -754
+			},
+			{
+				element: '.landing-owl',
+				translateY: -754
+			},
+			{
+				element: '.landing-ipad',
+				translateY: '-140%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.landing-ipad img',
+				translateY: -(1767 - 622)
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.landing-bg-wrap',
+				translateY: ['-140%', '-280%']
+			},
+			{
+				element: '.landing-bg',
+				translateY: [-754, -1508]
+			},
+			{
+				element: '.landing-eraser',
+				translateY: [-754, -1508]
+			},
+			{
+				element: '.landing-compass',
+				translateY: [-754, -1508]
+			},
+			{
+				element: '.landing-pencil',
+				translateY: [-754, -1508]
+			},
+			{
+				element: '.landing-owl',
+				translateY: [-754, -1508]
+			},
+			{
+				element: '.landing-ipad',
+				translateY: ['-140%', '-280%']
+			},
+			{
+				element: '.desc-landing',
+				translateY: '-65%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.desc-landing',
+				translateY: ['-65%', '-180%']
 			}
 		]
 	},

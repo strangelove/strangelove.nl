@@ -459,3 +459,103 @@ $img: '/img/cases/slimleren';
 	top: 120%;
 	left: 10%;
 }
+
+/** landingpage */
+.landing-bg-wrap {
+	overflow: hidden;
+	position: fixed;
+	top: 120%;
+	left: 50%;
+	width: 1600px;
+	height: 1492px;
+	margin: 0 0 0 -800px;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		z-index: 2;
+		display: block;
+		width: 100%;
+		height: 746px;
+		background: url(#{$img}/landing-bg-mask.png);
+		@include transform(translateZ(0));
+	}
+	&:after {
+		top: 50%;
+		@include transform(rotate(180deg) translateZ(0));
+	}
+}
+.landing-bg {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3000px;
+	background: url(#{$img}/landing-bg.png);
+	@include transform(translateZ(0));
+}
+.landing-eraser {
+	position: absolute;
+	z-index: 3;
+	top: 920px;
+	right: 50%;
+	width: 275px;
+	height: 151px;
+	margin: 0 400px 0 0;
+	background: url(#{$img}/landing-eraser.png);
+	@include transform(translateZ(0));
+}
+.landing-compass {
+	position: absolute;
+	z-index: 3;
+	top: 1420px;
+	right: 50%;
+	width: 342px;
+	height: 390px;
+	margin: 0 500px 0 0;
+	background: url(#{$img}/landing-compass.png);
+	@include transform(translateZ(0));
+}
+.landing-pencil {
+	position: absolute;
+	z-index: 3;
+	top: 1330px;
+	left: 50%;
+	width: 182px;
+	height: 129px;
+	margin: 0 0 0 500px;
+	background: url(#{$img}/landing-pencil.png);
+	@include transform(translateZ(0));
+}
+.landing-owl {
+	position: absolute;
+	z-index: 3;
+	top: 1710px;
+	left: 50%;
+	width: 175px;
+	height: 198px;
+	margin: 0 0 0 420px;
+	background: url(#{$img}/landing-owl.png);
+	@include transform(translateZ(0));
+}
+.landing-ipad {
+	position: fixed;
+	top: 150%;
+	left: 50%;
+	width: 522px;
+	height: 775px;
+	margin: 0 0 0 -261px;
+	background: url(#{$img}/landing-ipad.png);
+	.viewport {
+		overflow: hidden;
+		width: 467px;
+		height: 622px;
+		margin: 76px 0 0 27px;
+		background: #fff;
+	}
+	img {
+		display: block;
+		margin: 0 0 0 -81px;
+	}
+}
