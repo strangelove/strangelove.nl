@@ -283,12 +283,7 @@ require('kubrick-js')([
 			{
 				element: '.desc-translations',
 				translateY: ['-55%', '-180%']
-			}
-		]
-	},
-	{
-		duration: '100%',
-		actors: [
+			},
 			{
 				element: '.expl-bg',
 				translateY: '-50%'
