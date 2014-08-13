@@ -330,6 +330,67 @@ require('kubrick-js')([
 				element: '.desc-explanimation',
 				translateY: ['-120%', '-240%'],
 				opacity: -1
+			},
+			{
+				element: '.website-layers',
+				translateY: '-100%'
+			},
+			{
+				element: '.website-layer1',
+				translateX: [200, 0]
+			},
+			{
+				element: '.website-layer2',
+				translateX: [160, 0]
+			},
+			{
+				element: '.website-layer3',
+				translateX: [120, 0]
+			},
+			{
+				element: '.website-layer4',
+				translateX: [80, 0]
+			},
+			{
+				element: '.website-layer5',
+				translateX: [40, 0]
+			},
+			{
+				element: '.desc-website',
+				translateY: '-75%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.website-layers',
+				translateY: ['-100%', '-180%']
+			},
+			{
+				element: '.website-layer2',
+				translateY: -88
+			},
+			{
+				element: '.website-layer3',
+				translateY: -176
+			},
+			{
+				element: '.website-layer4',
+				translateY: -264
+			},
+			{
+				element: '.website-layer5',
+				translateY: -409
+			},
+			{
+				element: '.website-layer6',
+				translateY: -497
+			},
+			{
+				element: '.desc-website',
+				translateY: ['-75%', '-200%']
 			}
 		]
 	},

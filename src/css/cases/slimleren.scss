@@ -406,3 +406,56 @@ $img: '/img/cases/slimleren';
 	top: 120%;
 	margin: 700px 0 0;
 }
+
+/** website */
+.website-layers {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	div {
+		position: absolute;
+		width: 875px;
+		height: 420px;
+	}
+	.website-layer1 {
+		z-index: 6;
+		background: url(#{$img}/website-1.png);
+		@include transform(translateX(200px));
+	}
+	.website-layer2 {
+		z-index: 5;
+		top: 88px;
+		background: url(#{$img}/website-2.png);
+		@include transform(translateX(160px));
+	}
+	.website-layer3 {
+		z-index: 4;
+		top: 176px;
+		background: url(#{$img}/website-3.png);
+		@include transform(translateX(120px));
+	}
+	.website-layer4 {
+		z-index: 3;
+		top: 264px;
+		width: 1012px;
+		height: 501px;
+		margin: -24px 0 0 -71px;
+		background: url(#{$img}/website-4.png);
+		@include transform(translateX(80px));
+	}
+	.website-layer5 {
+		z-index: 2;
+		top: 409px;
+		background: url(#{$img}/website-5.png);
+		@include transform(translateX(40px));
+	}
+	.website-layer6 {
+		z-index: 1;
+		top: 497px;
+		background: url(#{$img}/website-6.png);
+	}
+}
+.desc-website {
+	top: 120%;
+	left: 10%;
+}
