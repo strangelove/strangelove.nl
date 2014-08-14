@@ -508,6 +508,31 @@ require('kubrick-js')([
 				element: '.desc-tests',
 				translateY: ['-65%', '-85%'],
 				opacity: -3
+			},
+			{
+				element: '.prices-bg-wrap',
+				translateY: '-115%'
+			},
+			{
+				element: '.prices-bg',
+				translateY: 400
+			},
+			{
+				element: '.product-price1',
+				translateY: '-105%'
+			},
+			{
+				element: '.product-price2',
+				translateY: '-95%'
+			},
+			{
+				element: '.product-price3',
+				translateY: '-105%'
+			},
+			{
+				element: '.desc-prices',
+				translateY: '-120%',
+				opacity: [-2, 1]
 			}
 		]
 	},

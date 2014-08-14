@@ -581,3 +581,51 @@ $img: '/img/cases/slimleren';
 	top: 130%;
 	left: 912px;
 }
+
+/** product prices */
+.prices-bg-wrap {
+	overflow: hidden;
+	position: fixed;
+	top: 120%;
+	width: 100%;
+	height: 400px;
+	margin: 100px 0 0;
+}
+.prices-bg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1200px;
+	background: url(#{$img}/prices-bg.png) top center;
+}
+.product-price1 {
+	position: fixed;
+	top: 110%;
+	right: 50%;
+	width: 399px;
+	height: 433px;
+	margin: 9px 133px 0 0;
+	background: url(#{$img}/price-1.png);
+}
+.product-price2 {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	width: 399px;
+	height: 453px;
+	margin: 0 0 0 -199px;
+	background: url(#{$img}/price-2.png);
+}
+.product-price3 {
+	position: fixed;
+	top: 110%;
+	left: 50%;
+	width: 399px;
+	height: 433px;
+	margin: 9px 0 0 132px;
+	background: url(#{$img}/price-3.png);
+}
+.desc-prices {
+	top: 120%;
+	margin: 650px 0 0;
+}
