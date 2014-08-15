@@ -67,7 +67,7 @@
 		<div class="wrap">
 			<a class="push" name="about"></a>
 			<h2>About</h2>
-			<div class="slides text-slides" data-slides>
+			<div class="slides text-slides">
 				<a href="#prev" class="arrow-left slides-prev">Previous</a>
 				<a href="#next" class="arrow-right slides-next">Next</a>
 				<nav class="slides-tabs">
@@ -149,10 +149,13 @@
 	</section>
 
 	<section class="page dark office">
+		{% for section in office %}
+		<div class="office-bg bg-{{section.slug}}"></div>
+		{% endfor %}
 		<div class="wrap">
 			<a class="push" name="office"></a>
 			<h2>Our culture</h2>
-			<div class="slides text-slides" data-slides>
+			<div class="slides text-slides">
 				<a href="#prev" class="arrow-left slides-prev">Previous</a>
 				<a href="#next" class="arrow-right slides-next">Next</a>
 				<nav class="slides-tabs">

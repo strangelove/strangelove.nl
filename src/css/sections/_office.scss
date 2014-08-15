@@ -1,3 +1,26 @@
 .office .slides .slides-contents {
 	max-width: 350px;
 }
+.office-bg {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+.office .wrap {
+	position: relative;
+	z-index: 4;
+}
+.bg-a-creative-capital {
+	display: block;
+	background: rgba(255, 0, 0, .5);
+}
+.bg-everything-you-need {
+	background: rgba(0, 255, 0, .5);
+}
+.bg-we-are-family {
+	background: rgba(0, 0, 255, .5);
+}
