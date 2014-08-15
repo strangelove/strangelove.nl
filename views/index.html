@@ -92,32 +92,23 @@
 		<div class="wrap">
 			<a class="push" name="cases"></a>
 			<h2>The cases we love</h2>
-			<div class="slides" data-case-slides>
+			<div class="slides">
 				<div class="slides-contents">
 					{% for project in home_cases %}
-					<article>
+					<article class="case-{{project.slug}}">
 						<div class="summary">
 							<h3>{{project.name}}</h3>
 							<p>{{project.summary}}</p>
 							<a href="/cases/{{project.slug}}" class="more">Read more</a>
 						</div>
+						<div class="asset"></div>
 					</article>
 					{% endfor %}
-				</div>
-				<div class="screenshots">
-					<div class="imac"></div>
-					<ul>
-						<li class="screenshot-1"></li>
-						<li class="screenshot-2"></li>
-						<li class="screenshot-3"></li>
-						<li class="screenshot-4"></li>
-						<li class="screenshot-5"></li>
-					</ul>
 				</div>
 				<nav class="slides-tabs">
 					<ul>
 						{% for project in home_cases %}
-						<li><a href="#" class="{{project.slug}}"><img src="/img/cases/buttons/{{project.slug}}_logo.png" alt="{{project.title}}">{{project.title}}</a></li>
+						<li><a href="#" class="{{project.slug}}"><img src="/img/cases/buttons/{{project.slug}}_logo.png" alt="{{project.name}}"><span>{{project.name}}</span></a></li>
 						{% endfor %}
 					</ul>
 				</nav>
