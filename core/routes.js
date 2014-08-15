@@ -42,7 +42,11 @@ routes.forEach(function(route){
 				res.render(route.template, {locals: JSON.parse(body)});
 			});
 		} else if (route.endpoint){
-			request({url: route.endpoint, json: {}}, function(err, response, body){
+			request({
+				url: route.endpoint,
+				json: {},
+				headers: {'Accept-Language': 'en'}
+			}, function(err, response, body){
 				res.render(route.template, {locals: body});
 			});
 		} else {
