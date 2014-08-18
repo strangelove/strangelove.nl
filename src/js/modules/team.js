@@ -22,7 +22,7 @@ teamList.search('> li').forEach(function(el){
 		popover = new Popover({
 			anchor: el.search('img'),
 			content: el.search('.popover-content'),
-			offset: { x: 80, y: -10 }
+			offset: { x: 30, y: -10 }
 		});
 
 	img.on('mouseover', function(){
