@@ -18,16 +18,19 @@ var routes = [
 	},
 	{
 		path: '/cases/kpmg',
+		endpoint: config.apiUrl + '/api/v1/cases/kpmg',
 		mockData: process.cwd() + '/data/cases/kpmg.json',
 		template: 'cases/kpmg'
 	},
 	{
 		path: '/cases/litedark',
+		endpoint: config.apiUrl + '/api/v1/cases/litedark',
 		mockData: process.cwd() + '/data/cases/litedark.json',
 		template: 'cases/litedark'
 	},
 	{
 		path: '/cases/slimleren',
+		endpoint: config.apiUrl + '/api/v1/cases/slimleren',
 		mockData: process.cwd() + '/data/cases/slimleren.json',
 		template: 'cases/slimleren'
 	}
