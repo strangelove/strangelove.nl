@@ -2,15 +2,25 @@
 
 var fs = require('fs'),
 	request = require('request'),
+	merge = require('mout/object/merge'),
 	app = require('./app'),
-	config = require('./config');
+	config = require('./config'),
+	clients;
+
+try {
+	clients = JSON.parse(fs.readFileSync(process.cwd() + '/data/clients.json'));
+} catch(e){
+	console.log('Failed to read/parse clients.json');
+	process.exit(1);
+}
 
 var routes = [
 	{
 		path: '/',
 		endpoint: config.apiUrl + '/api/v1/home',
 		mockData: process.cwd() + '/data/home.json',
-		template: 'index'
+		template: 'index',
+		extras: 'clientList'
 	},
 	{
 		path: '/cases/ing',
@@ -38,6 +48,12 @@ var routes = [
 	}
 ];
 
+var extras = {
+	clientList: function(data, cb){
+		cb(merge(data, {clients: clients}));
+	}
+};
+
 routes.forEach(function(route){
 	if (!route.path || !route.template) return;
 
@@ -52,7 +68,13 @@ routes.forEach(function(route){
 				json: {},
 				headers: {'Accept-Language': 'en'}
 			}, function(err, response, body){
-				res.render(route.template, {locals: body});
+				if (route.extras && extras[route.extras]){
+					extras[route.extras](body, function(body){
+						res.render(route.template, {locals: body});
+					});
+				} else {
+					res.render(route.template, {locals: body});
+				}
 			});
 		} else {
 			res.render(route.template);
