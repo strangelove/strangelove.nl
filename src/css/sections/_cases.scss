@@ -184,7 +184,10 @@
 				-webkit-transition: -webkit-transform .15s ease-out;
 			}
 			span {
+				overflow: hidden;
 				display: block;
+				text-overflow: ellipsis;
+				white-space: nowrap;
 				&:before {
 					content: '';
 					position: absolute;
