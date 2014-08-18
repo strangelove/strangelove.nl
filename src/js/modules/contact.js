@@ -45,7 +45,7 @@ if (contact){
 				posStart: contactTop - ((window.innerHeight / 3) * 2),
 				posEnd: contactTop - 150,
 				styles: {
-					transform: ['translateY(-110px)', 'translateY(0)']
+					transform: ['translateY(-85px)', 'translateY(0)']
 				}
 			});
 		});
