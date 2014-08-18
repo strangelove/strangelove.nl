@@ -12,6 +12,10 @@ $img: '/img/cases/litedark';
 .litedark {
 	background: #f8f7f5 url(#{$img}/bg-texture.png);
 	background-attachment: fixed;
+	.header-main {
+		border-bottom: 0;
+		background: none;
+	}
 }
 
 .description h2:after {

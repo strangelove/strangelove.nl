@@ -14,7 +14,8 @@ $img: '/img/cases/ing';
 /** generic stuff */
 .ing {
 	.header-main {
-		position: fixed;
+		border-bottom: 0;
+		background: none;
 	}
 	.logo a, .nav-primary a {
 		color: #333;

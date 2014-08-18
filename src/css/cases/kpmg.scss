@@ -11,6 +11,11 @@ $img: '/img/cases/kpmg';
 
 @import '../modules/devices';
 
+.kpmg .header-main {
+	border-bottom: 0;
+	background: none;
+}
+
 .mood {
 	position: fixed;
 	z-index: 1;
