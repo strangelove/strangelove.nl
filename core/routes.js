@@ -14,6 +14,8 @@ var routes = [
 	},
 	{
 		path: '/cases/ing',
+		endpoint: config.apiUrl + '/api/v1/cases/ing',
+		mockData: process.cwd() + '/data/cases/ing.json',
 		template: 'cases/ing'
 	},
 	{

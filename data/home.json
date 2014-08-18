@@ -93,7 +93,7 @@
 			"title": "Red Bull"
 		}
 	],
-	"team": [
+	"home_team": [
 		{
 			"slug": "vincent",
 			"image": "/img/placeholder/team-vincent.png",
@@ -137,7 +137,7 @@
 			"value": "<p>Functional design thinker and maker with an extensive knowledge about popular culture and digital technology. Passionate about the opportunities of consumer experiences on the intersection between the digital and physical world.</p>"
 		}
 	],
-	"office": [
+	"home_office": [
 		{
 			"slug": "a-creative-capital",
 			"name": "A creative capital",
@@ -154,7 +154,7 @@
 			"value": "<p>To us, you are more than an employee. You are family. And we value family.</p><p>So expect no senseless hierarchies, just open discussions and transparency.</p><p>And we have plenty family gatherings, celebrations and</p>"
 		}
 	],
-	"jobs": [
+	"home_jobs": [
 		{
 			"name": "Front-end developer",
 			"experience": "Medior level",

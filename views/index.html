@@ -80,7 +80,7 @@
 				<div class="slides-contents">
 					{% for section in home_about %}
 					<article>
-						{{section.summary|safe}}
+						{{section.value|safe}}
 					</article>
 					{% endfor %}
 				</div>
@@ -133,7 +133,7 @@
 			<a class="push" name="team"></a>
 			<h2>Leadership</h2>
 			<ul class="team-list">
-				{% for person in team %}
+				{% for person in home_team %}
 				<li class="{{person.slug}}">
 					<img src="{{person.image}}" alt="{{person.name}}">
 					<h3>{{person.name}}</h3>
@@ -149,7 +149,7 @@
 	</section>
 
 	<section class="page dark office">
-		{% for section in office %}
+		{% for section in home_office %}
 		<div class="office-bg bg-{{section.slug}}"></div>
 		{% endfor %}
 		<div class="wrap">
@@ -160,13 +160,13 @@
 				<a href="#next" class="arrow-right slides-next">Next</a>
 				<nav class="slides-tabs">
 					<ul>
-						{% for section in office %}
+						{% for section in home_office %}
 						<li><a href="#office/{{section.slug}}">{{section.name}}</a></li>
 						{% endfor %}
 					</ul>
 				</nav>
 				<div class="slides-contents">
-					{% for section in office %}
+					{% for section in home_office %}
 					<article>
 						{{section.value|safe}}
 					</article>
@@ -181,7 +181,7 @@
 			<a class="push" name="jobs"></a>
 			<h2>Become strange</h2>
 			<div class="job-listing">
-				{% for job in jobs %}
+				{% for job in home_jobs %}
 				<article>
 					<h3>{{job.name}}</h3>
 					<p class="subtitle">{{job.experience}}</p>
