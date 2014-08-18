@@ -4,5 +4,7 @@ var Slides = require('slides-js');
 
 new Slides(document.querySelector('.cases .slides'), {
 	slideSelector: '.slides-contents article',
-	navSelector: '.slides-tabs a'
+	navSelector: '.slides-tabs a',
+	loop: false,
+	hover: true
 });
