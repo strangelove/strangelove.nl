@@ -52,7 +52,8 @@ if (contact){
 
 		new google.maps.Marker({
 			map: map,
-			position: center
+			position: center,
+			icon: '/img/marker.png'
 		});
 
 		$(window).on('resize', debounce(resize, 300));
