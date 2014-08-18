@@ -103,7 +103,9 @@
 					<article class="case-{{project.slug}}">
 						<div class="summary">
 							<h3>{{project.name}}</h3>
-							<p>{{project.summary}}</p>
+							{% if project.summary %}
+								<p>{{project.summary}}</p>
+							{% endif %}
 							<a href="/cases/{{project.slug}}" class="more">Read more</a>
 						</div>
 						<div class="asset"></div>
