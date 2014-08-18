@@ -54,10 +54,6 @@ $img: '/img/cases/slimleren';
 	}
 }
 
-.litedark {
-	background: #f8f7f5;
-}
-
 .description h2:after {
 	background: #2bbaee;
 }
@@ -70,6 +66,7 @@ $img: '/img/cases/slimleren';
 	width:  100%;
 	height: 800px;
 	background: url(#{$img}/cover.jpg) no-repeat center top;
+	background-size: cover;
 }
 
 .case-summary {
