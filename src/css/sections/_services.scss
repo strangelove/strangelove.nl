@@ -30,8 +30,7 @@
 	.service {
 		float: left;
 		width: 20%;
-		&:before {
-			content: ' ';
+		.icon {
 			display: block;
 			width: 112px;
 			height: 112px;
@@ -51,11 +50,9 @@
 		@include transition(width .25s ease-in-out);
 	}
 	.clarify {
-		&:before {
+		.icon {
 			background-position: 0 0;
-		}
-		&.loop {
-			&:before {
+			&.loop {
 				@include animation(clarify 1.32s steps(33));
 			}
 		}
@@ -64,11 +61,9 @@
 		}
 	}
 	.create {
-		&:before {
+		.icon {
 			background-position: 0 -112px;
-		}
-		&.loop {
-			&:before {
+			&.loop {
 				@include animation(create 1.72s steps(43));
 			}
 		}
@@ -77,11 +72,9 @@
 		}
 	}
 	.code {
-		&:before {
+		.icon {
 			background-position: 0 -224px;
-		}
-		&.loop {
-			&:before {
+			&.loop {
 				@include animation(code 1.68s steps(42));
 			}
 		}
@@ -90,11 +83,9 @@
 		}
 	}
 	.connect {
-		&:before {
+		.icon {
 			background-position: 0 -336px;
-		}
-		&.loop {
-			&:before {
+			&.loop {
 				@include animation(connect 1.6s steps(40));
 			}
 		}
@@ -103,11 +94,9 @@
 		}
 	}
 	.control {
-		&:before {
+		.icon {
 			background-position: 0 -448px;
-		}
-		&.loop {
-			&:before {
+			&.loop {
 				@include animation(control 1.64s steps(41));
 			}
 		}
