@@ -185,6 +185,22 @@
 			}
 			span {
 				display: block;
+				&:before {
+					content: '';
+					position: absolute;
+					z-index: 4;
+					left: 50%;
+					bottom: 100%;
+					width: 22px;
+					height: 10px;
+					margin: 0 0 0 -11px;
+					background: url(/img/arrow-down-small.png);
+					opacity: 0;
+					@include transition(opacity .2s ease-in-out);
+				}
+			}
+			&.active span:before {
+				opacity: 1;
 			}
 			&:hover img {
 				-webkit-transform: translateX(-6px);
