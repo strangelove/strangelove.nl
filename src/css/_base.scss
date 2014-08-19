@@ -81,6 +81,15 @@ a {
 	text-indent: -999em;
 }
 
+.light {
+	.arrow-left {
+		background: url(/img/arrow-left-dark.png);
+	}
+	.arrow-right {
+		background: url(/img/arrow-right-dark.png);
+	}
+}
+
 .page {
 	overflow: hidden;
 	position: relative;

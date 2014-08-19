@@ -17,13 +17,15 @@
 		"consolidate": "0.9",
 		"elements": "0.4",
 		"express": "3.4",
+		"promise": "5.0",
 		"kubrick-js": "0.1",
 		"moofx": "kamicane/moofx#a3716037e78f057e6eb06504c4192abb56edb4c0",
 		"mout": "0.9",
 		"optimist": "0.6",
 		"request": "2.39",
 		"slides-js": "0.1",
-		"swig": "1.1"
+		"swig": "1.1",
+		"then-all": "2.0"
 	},
 	"devDependencies": {
 		"grunt": "0.4",

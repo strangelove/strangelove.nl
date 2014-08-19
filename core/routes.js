@@ -5,7 +5,8 @@ var fs = require('fs'),
 	merge = require('mout/object/merge'),
 	app = require('./app'),
 	config = require('./config'),
-	clients;
+	workable = require('../lib/workable'),
+	clients = {}, jobs = {};
 
 try {
 	clients = JSON.parse(fs.readFileSync(process.cwd() + '/data/clients.json'));
@@ -14,13 +15,17 @@ try {
 	process.exit(1);
 }
 
+workable.fetchJobs().then(function(list){
+	jobs = list;
+});
+
 var routes = [
 	{
 		path: '/',
 		endpoint: config.apiUrl + '/api/v1/home',
 		mockData: process.cwd() + '/data/home.json',
 		template: 'index',
-		extras: 'clientList'
+		extras: 'home'
 	},
 	{
 		path: '/cases/ing',
@@ -49,8 +54,9 @@ var routes = [
 ];
 
 var extras = {
-	clientList: function(data, cb){
-		cb(merge(data, {clients: clients}));
+	home: function(data, cb){
+		if (data.home_jobs) delete data.home_jobs;
+		cb(merge(data, {clients: clients, home_jobs: jobs}));
 	}
 };
 

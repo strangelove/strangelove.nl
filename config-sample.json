@@ -1,4 +1,9 @@
 {
 	"listen": 3000,
-	"apiUrl": "http://localhost:8000"
+	"apiUrl": "http://localhost:8000",
+	"workable": {
+		"api": "http://www.workable.com/spi/v2",
+		"account": "",
+		"key": ""
+	}
 }
