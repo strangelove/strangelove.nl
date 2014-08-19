@@ -1,4 +1,10 @@
 {
+	"home_header": [
+		{
+			"value": "In the new reality",
+			"tagline": "simplicity works"
+		}
+	],
 	"home_about": [
 		{
 			"slug": "what-we-believe",
