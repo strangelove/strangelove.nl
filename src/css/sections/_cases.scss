@@ -1,6 +1,6 @@
 .cases {
 	min-height: 100%;
-	height: 1100px;
+	height: 800px;
 	.wrap {
 		position: relative;
 		height: 100%;
@@ -58,8 +58,10 @@
 			position: absolute;
 			top: 0;
 			right: 0;
-			width: 603px;
-			height: 831px;
+			width: 700px;
+			height: 100%;
+			background: no-repeat right top;
+			background-size: contain;
 		}
 		.case-pbcf {
 			a {
@@ -69,7 +71,7 @@
 				background: #f26522;
 			}
 			.asset {
-				background: url(/img/asset-pbcf.png);
+				background-image: url(/img/asset-pbcf.png);
 			}
 		}
 		.case-litedark {
@@ -80,9 +82,7 @@
 				background: #009f4e;
 			}
 			.asset {
-				width: 645px;
-				height: 619px;
-				background: url(/img/asset-litedark.png);
+				background-image: url(/img/asset-litedark.png);
 			}
 		}
 		.case-slimleren {
@@ -93,10 +93,7 @@
 				background: #3bc1f0;
 			}
 			.asset {
-				top: 100px;
-				width: 789px;
-				height: 550px;
-				background: url(/img/asset-slimleren.png);
+				background-image: url(/img/asset-slimleren.png);
 			}
 		}
 		.case-ing {
@@ -107,7 +104,7 @@
 				background: #f47318;
 			}
 			.asset {
-				background: url(/img/asset-ing.png);
+				background-image: url(/img/asset-ing.png);
 			}
 		}
 		.case-kpmg {
@@ -118,7 +115,7 @@
 				background: #0078c1;
 			}
 			.asset {
-				background: url(/img/asset-kpmg.png);
+				background-image: url(/img/asset-kpmg.png);
 			}
 		}
 	}
