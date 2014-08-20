@@ -2,7 +2,9 @@
 
 var fs = require('fs'),
 	request = require('request'),
+	map = require('mout/array/map'),
 	merge = require('mout/object/merge'),
+	trim = require('mout/string/trim'),
 	app = require('./app'),
 	config = require('./config'),
 	workable = require('../lib/workable'),
@@ -64,6 +66,21 @@ var routes = [
 var extras = {
 	home: function(data, cb){
 		if (data.home_jobs) delete data.home_jobs;
+
+		if (data.home_services){
+			var services = [], i, service,
+				trimcb = function(val){ return trim(val); };
+			for (i = 1; i < 6; i++){
+				service = data.home_services[i];
+				services.push({
+					name: service.name,
+					keywords: map(service.intro.split(','), trimcb)
+				});
+			}
+			data.services = services;
+			delete data.home_services;
+		}
+
 		cb(merge(data, {
 			clients: clients,
 			home_jobs: jobs,

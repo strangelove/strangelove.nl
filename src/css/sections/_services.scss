@@ -35,7 +35,7 @@
 			width: 112px;
 			height: 112px;
 			margin: 0 auto 30px;
-			background: url(/img/services.png) no-repeat center top;
+			background: url(/img/services.png);
 		}
 		&:hover h3:after {
 			width: 40px;
@@ -49,7 +49,7 @@
 		margin: 24px auto 18px;
 		@include transition(width .25s ease-in-out);
 	}
-	.clarify {
+	.s1 {
 		.icon {
 			background-position: 0 0;
 			&.loop {
@@ -60,7 +60,7 @@
 			background: #515875;
 		}
 	}
-	.create {
+	.s2 {
 		.icon {
 			background-position: 0 -112px;
 			&.loop {
@@ -71,7 +71,7 @@
 			background: #576f9e;
 		}
 	}
-	.code {
+	.s3 {
 		.icon {
 			background-position: 0 -224px;
 			&.loop {
@@ -82,7 +82,7 @@
 			background: #6697b9;
 		}
 	}
-	.connect {
+	.s4 {
 		.icon {
 			background-position: 0 -336px;
 			&.loop {
@@ -93,7 +93,7 @@
 			background: #88c3d8;
 		}
 	}
-	.control {
+	.s5 {
 		.icon {
 			background-position: 0 -448px;
 			&.loop {
