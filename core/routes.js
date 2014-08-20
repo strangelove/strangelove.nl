@@ -6,7 +6,7 @@ var fs = require('fs'),
 	app = require('./app'),
 	config = require('./config'),
 	workable = require('../lib/workable'),
-	clients = {}, jobs = {};
+	clients = {}, jobs = {}, navigation = [];
 
 try {
 	clients = JSON.parse(fs.readFileSync(process.cwd() + '/data/clients.json'));
@@ -17,6 +17,14 @@ try {
 
 workable.fetchJobs().then(function(list){
 	jobs = list;
+});
+
+request({
+	url: config.apiUrl + '/api/v1/navigation',
+	json: true,
+	headers: {'Accept-Language': 'en'}
+}, function(err, response, body){
+	navigation = body;
 });
 
 var routes = [
@@ -56,7 +64,11 @@ var routes = [
 var extras = {
 	home: function(data, cb){
 		if (data.home_jobs) delete data.home_jobs;
-		cb(merge(data, {clients: clients, home_jobs: jobs}));
+		cb(merge(data, {
+			clients: clients,
+			home_jobs: jobs,
+			navigation: navigation
+		}));
 	}
 };
 

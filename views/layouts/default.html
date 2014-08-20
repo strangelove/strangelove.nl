@@ -17,14 +17,9 @@
 				<p class="logo"><a href="/">Strangelove</a></p>
 				<nav class="nav-primary">
 					<ul>
-						<li><a href="/#services">Services</a></li>
-						<li><a href="/#about">About</a></li>
-						<li><a href="/#cases">Cases</a></li>
-						<li><a href="/#clients">Clients</a></li>
-						<li><a href="/#team">Team</a></li>
-						<li><a href="/#office">Office</a></li>
-						<li><a href="/#jobs">Jobs <span class="count">2</span></a></li>
-						<li><a href="/#contact">Contact</a></li>
+						{% for item in navigation['main-en'] %}
+						<li><a href="{{item.uri}}">{{item.title}}</a></li>
+						{% endfor %}
 					</ul>
 				</nav>
 			</div>
@@ -47,21 +42,17 @@
 				<nav class="footer-col">
 					<h4>This site</h4>
 					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#cases">Cases</a></li>
-						<li><a href="#office">Office</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#jobs">Jobs</a></li>
+						{% for item in navigation['footer-main-en'] %}
+						<li><a href="{{item.uri}}">{{item.title}}</a></li>
+						{% endfor %}
 					</ul>
 				</nav>
 				<nav class="footer-col">
 					<h4>More</h4>
 					<ul>
-						<li><a href="#about">Dutch Site</a></li>
-						<li><a href="#cases">Strange.Lab</a></li>
-						<li><a href="#office">Mixed Tapes</a></li>
-						<li><a href="#team">Disclaimer</a></li>
-						<li><a href="#jobs">Terms &amp; Conditions</a></li>
+						{% for item in navigation['footer-more-en'] %}
+						<li><a href="{{item.uri}}">{{item.title}}</a></li>
+						{% endfor %}
 					</ul>
 				</nav>
 				<div class="footer-col">
