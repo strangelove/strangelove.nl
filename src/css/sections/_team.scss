@@ -13,11 +13,25 @@
 			width: 40px;
 		}
 	}
+	.img {
+		position: relative;
+		width: 180px;
+		height: 180px;
+		margin: 0 auto 24px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(/img/team-mask.png);
+		}
+	}
 	img {
 		display: block;
 		width: 180px;
 		height: 180px;
-		margin: 0 auto 24px;
 	}
 	h3:after {
 		content: ' ';
@@ -27,22 +41,22 @@
 		margin: 18px auto 12px;
 		@include transition(width .25s ease-in-out);
 	}
-	.vincent h3:after {
+	.t0 h3:after {
 		background: #2795bd;
 	}
-	.jeroen h3:after {
+	.t1 h3:after {
 		background: #967aa5;
 	}
-	.martin h3:after {
+	.t2 h3:after {
 		background: #d27a24;
 	}
-	.anne h3:after {
+	.t3 h3:after {
 		background: #bd83b8;
 	}
-	.onno h3:after {
+	.t4 h3:after {
 		background: #2795bd;
 	}
-	.franklin h3:after {
+	.t5 h3:after {
 		background: #cbda22;
 	}
 	p {

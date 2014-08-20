@@ -5,22 +5,12 @@ var $ = require('elements'),
 	teamList = $('.team-list'),
 	popovers = [], i = 0;
 
-var franklinImg = teamList.search('.franklin img'),
-	src, num = Math.round(Math.random());
-
-if (franklinImg){
-	src = franklinImg.attribute('src');
-	if (num === 0){
-		franklinImg.attribute('src', src.replace('1', '2'));
-	}
-}
-
 teamList.search('> li').forEach(function(el){
 	el = $(el);
 	el.attribute('data-index', i++);
-	var img = el.search('img'),
+	var img = el.search('.img'),
 		popover = new Popover({
-			anchor: el.search('img'),
+			anchor: img,
 			content: el.search('.popover-content'),
 			offset: { x: 30, y: -10 }
 		});
