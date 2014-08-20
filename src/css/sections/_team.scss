@@ -80,3 +80,24 @@
 		text-align: left;
 	}
 }
+
+.team-social {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		margin: 0 0 0 6px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	a {
+		display: block;
+		background: url(/img/social-color.png);
+		text-indent: -999em;
+	}
+	.linkedin {
+		width: 23px;
+		height: 23px;
+	}
+}
