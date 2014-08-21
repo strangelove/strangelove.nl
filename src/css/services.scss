@@ -1,0 +1,214 @@
+@import 'vendor/normalize';
+@import 'vendor/bourbon/bourbon';
+
+@import 'fonts';
+@import 'base';
+@import 'header';
+@import 'footer';
+
+@import 'sections/mood';
+
+@include keyframes(relevant){
+	from { background-position: 0 0; }
+	to { background-position: -6160px 0; }
+}
+@include keyframes(human){
+	from { background-position: 0 -110px; }
+	to { background-position: -3960px -110px; }
+}
+@include keyframes(memorable){
+	from { background-position: 0 -220px; }
+	to { background-position: -3850px -220px; }
+}
+@include keyframes(simple){
+	from { background-position: 0 -330px; }
+	to { background-position: -6160px -330px; }
+}
+
+@include keyframes(clarify){
+	from { background-position: 0 0; }
+	to { background-position: -2772px 0; }
+}
+@include keyframes(create){
+	from { background-position: 0 -84px; }
+	to { background-position: -3612px -84px; }
+}
+@include keyframes(code){
+	from { background-position: 0 -168px; }
+	to { background-position: -3528px -168px; }
+}
+@include keyframes(connect){
+	from { background-position: 0 -252px; }
+	to { background-position: -3360px -252px; }
+}
+@include keyframes(control){
+	from { background-position: 0 -336px; }
+	to { background-position: -3444px -336px; }
+}
+
+.vision {
+	.wrap {
+		overflow: hidden;
+		padding: 240px 30px 180px;
+	}
+	h2 {
+		margin: 0;
+		font-size: 18px;
+		text-align: left;
+		&:after {
+			content: ' ';
+			display: block;
+			width: 30px;
+			height: 4px;
+			margin: 24px 0 18px;
+			background: #515875;
+		}
+	}
+}
+.vision-content {
+	float: left;
+	max-width: 500px;
+}
+.vision-icons {
+	float: right;
+	margin: -48px 0 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	li {
+		float: left;
+		width: 50%;
+		margin: 96px 0 0;
+	}
+	.vision-icon {
+		display: block;
+		width: 110px;
+		height: 110px;
+		margin: 0 auto 24px;
+		background: url(/img/vision.png);
+	}
+}
+.vision-1 .vision-icon.loop {
+	@include animation(relevant 2.24s steps(56));
+}
+.vision-2 .vision-icon {
+	background-position: 0 -110px;
+	&.loop {
+		@include animation(human 1.44s steps(36));
+	}
+}
+.vision-3 .vision-icon {
+	background-position: 0 -220px;
+	&.loop {
+		@include animation(memorable 1.4s steps(35));
+	}
+}
+.vision-4 .vision-icon {
+	background-position: 0 -330px;
+	&.loop {
+		@include animation(simple 2.24s steps(56));
+	}
+}
+
+.interlude {
+	padding: 120px 0;
+	background: #f7f7f7;
+	text-align: center;
+	p {
+		margin: 0;
+		font-size: 22px;
+		font-style: italic;
+		line-height: 48px;
+		&.emphasize {
+			font: 700 36px 'Ubuntu';
+			text-transform: uppercase;
+			letter-spacing: 4px;
+		}
+	}
+	strong {
+		color: #6697b9;
+		font-weight: inherit;
+	}
+	&.dark {
+		background: url(/img/bg-interlude-dark.jpg) center top;
+		color: #fff;
+	}
+}
+
+.services .wrap {
+	padding-bottom: 0;
+}
+
+.service {
+	padding: 66px 0;
+	border-top: 2px solid #e1e1e1;
+	&:first-child {
+		border-top: 0;
+	}
+	.service-header {
+		overflow: hidden;
+		margin: 0 0 36px 0;
+	}
+	.service-icon {
+		float: left;
+		width: 84px;
+		height: 84px;
+		margin: 0 30px 0 0;
+		background: url(/img/services.png);
+		background-size: 3612px 420px;
+	}
+	h3 {
+		margin: 14px 0 0;
+	}
+	.service-department {
+		margin: 0;
+		font-style: italic;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin: 0 6px 0 0;
+			border: solid transparent;
+			border-color: transparent;
+			border-left-color: #88c3d8;
+			border-width: 5px;
+			pointer-events: none;
+		}
+	}
+}
+
+.service-1 .service-icon.loop {
+	@include animation(clarify 1.32s steps(33));
+}
+.service-2 .service-icon {
+	background-position: 0 -84px;
+	&.loop {
+		@include animation(create 1.72s steps(43));
+	}
+}
+.service-3 .service-icon {
+	background-position: 0 -168px;
+	&.loop {
+		@include animation(code 1.68s steps(42));
+	}
+}
+.service-4 .service-icon {
+	background-position: 0 -252px;
+	&.loop {
+		@include animation(connect 1.6s steps(40));
+	}
+}
+.service-5 .service-icon {
+	background-position: 0 -336px;
+	&.loop {
+		@include animation(control 1.64s steps(41));
+	}
+}

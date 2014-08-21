@@ -38,6 +38,12 @@ var routes = [
 		extras: 'home'
 	},
 	{
+		path: '/services',
+		endpoint: config.apiUrl + '/api/v1/page/our-vision',
+		template: 'services',
+		extras: 'services'
+	},
+	{
 		path: '/cases/ing',
 		endpoint: config.apiUrl + '/api/v1/cases/ing',
 		mockData: process.cwd() + '/data/cases/ing.json',
@@ -84,6 +90,16 @@ var extras = {
 		cb(merge(data, {
 			clients: clients,
 			home_jobs: jobs,
+			navigation: navigation
+		}));
+	},
+
+	services: function(data, cb){
+		if (data['our-vision']){
+			data.our_vision = data['our-vision'];
+			delete data['our-vision'];
+		}
+		cb(merge(data, {
 			navigation: navigation
 		}));
 	}

@@ -1,0 +1,77 @@
+{% extends "layouts/default.html" %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="/css/services.css">
+{% endblock %}
+
+{% block scripts %}
+	<script src="/js/services.js"></script>
+{% endblock %}
+
+{% block content %}
+	<section class="page dark mood">
+		<figure class="mood-bg"></figure>
+		<p class="mission">
+			<span>In the new reality</span>
+			<strong>simplicity works</strong>
+		</p>
+		<a href="#services" class="arrow-down continue">Continue</a>
+	</section>
+
+	<section class="page light vision">
+		<div class="wrap">
+			<div class="vision-content">
+				<h2>{{our_vision[0].name}}</h2>
+				{{our_vision[0].value|safe}}
+			</div>
+			<ul class="vision-icons">
+				<li class="vision-1">
+					<span class="vision-icon"></span>
+					<h3>Relevant</h3>
+				</li>
+				<li class="vision-2">
+					<span class="vision-icon"></span>
+					<h3>Human</h3>
+				</li>
+				<li class="vision-3">
+					<span class="vision-icon"></span>
+					<h3>Memorable</h3>
+				</li>
+				<li class="vision-4">
+					<span class="vision-icon"></span>
+					<h3>Simple</h3>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="interlude">
+		<p>To put it simple</p>
+		<p class="emphasize">
+			Strangelove helps capture<br>
+			your business' true value.
+		</p>
+		<p>And this is how:</p>
+	</section>
+
+	<section class="page light services">
+		<div class="wrap">
+			{% for service in services %}
+			<div class="service service-{{loop.index}}">
+				<header class="service-header">
+					<div class="service-icon"></div>
+					<h3>{{service.name}}</h3>
+					<p class="service-department">{{service.department}}</p>
+				</header>
+				{{service.value|safe}}
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="interlude dark">
+		<p>We're in the process of setting up</p>
+		<p class="emphasize">Strange<strong>.Lab</strong></p>
+		<p>stay tuned!</p>
+	</section>
+{% endblock %}
