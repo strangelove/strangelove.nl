@@ -9,18 +9,20 @@
 	right: 0;
 	bottom: 0;
 	display: none;
+	background: no-repeat center;
+	background-size: cover;
 }
 .office .wrap {
 	position: relative;
 	z-index: 4;
 }
-.bg-a-creative-capital {
+.bg-0 {
 	display: block;
-	background: rgba(255, 0, 0, .5);
+	background-image: url(/img/office-creative-capital.png);
 }
-.bg-everything-you-need {
-	background: rgba(0, 255, 0, .5);
+.bg-1 {
+	background-image: url(/img/office-everything-you-need.png);
 }
-.bg-we-are-family {
-	background: rgba(0, 0, 255, .5);
+.bg-2 {
+	background-image: url(/img/office-we-are-family.png);
 }

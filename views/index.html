@@ -130,7 +130,7 @@
 
 	<section class="page dark office">
 		{% for section in home_office %}
-		<div class="office-bg bg-{{section.slug}}"></div>
+		<div class="office-bg bg-{{loop.index0}}"></div>
 		{% endfor %}
 		<div class="wrap">
 			<a class="push" name="office"></a>
