@@ -10,8 +10,6 @@ $img: '/img/cases/litedark';
 @import '../case-base';
 
 .litedark {
-	background: #f8f7f5 url(#{$img}/bg-texture.png);
-	background-attachment: fixed;
 	.header-main {
 		border-bottom: 0;
 		background: none;
@@ -36,6 +34,9 @@ $img: '/img/cases/litedark';
 .case-summary {
 	width: 300px;
 	margin-left: -150px;
+	span {
+		color: #ffcc00;
+}
 }
 
 /** client */
@@ -266,16 +267,7 @@ $img: '/img/cases/litedark';
 .desc-result {
 	z-index: 1;
 	top: 120%;
+	left: 25%;
+	width: 50%;
 	margin: 675px 0 0;
-}
-
-// end
-.white-bg {
-	position: fixed;
-	z-index: 1;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #fff;
 }

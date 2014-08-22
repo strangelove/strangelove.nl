@@ -419,6 +419,10 @@ require('kubrick-js')([
 			{
 				element: '.landing-ipad',
 				translateY: '-140%'
+			},
+			{
+				element: '.desc-landing',
+				translateY: ['30%', '-90%']
 			}
 		]
 	},
@@ -464,28 +468,19 @@ require('kubrick-js')([
 			},
 			{
 				element: '.desc-landing',
-				translateY: '-65%'
-			}
-		]
-	},
-	{
-		duration: '100%',
-		actors: [
-			{
-				element: '.desc-landing',
-				translateY: ['-65%', '-180%']
+				translateY: ['-90%', '-240%']
 			},
 			{
 				element: '.tests-layout',
-				translateY: '-105%'
+				translateY: ['30%', '-105%']
 			},
 			{
 				element: '.tests-tip',
-				translateY: '-85%'
+				translateY: ['30%', '-85%']
 			},
 			{
 				element: '.desc-tests',
-				translateY: '-65%'
+				translateY: ['20%', '-65%']
 			}
 		]
 	},

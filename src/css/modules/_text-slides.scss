@@ -5,9 +5,10 @@
 	.slides-prev, .slides-next {
 		position: absolute;
 		margin: 200px 0 0;
-		transition: opacity .3s;
+		opacity: .5;
+		@include transition(opacity .3s ease-in-out);
 		&.disabled {
-			opacity: .1;
+			opacity: .2;
 		}
 	}
 	.slides-prev {
@@ -34,6 +35,7 @@
 		}
 		a {
 			display: inline-block;
+			color: #fff;
 			-webkit-transition: opacity .3s;
 			opacity: .2;
 			&.active {

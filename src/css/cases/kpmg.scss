@@ -115,6 +115,7 @@ $img: '/img/cases/kpmg';
 .flyer-wrap {
 	overflow: hidden;
 	position: fixed;
+	z-index: 2;
 	top: 100%;
 	width: 100%;
 	height: 600px;
@@ -132,6 +133,7 @@ $img: '/img/cases/kpmg';
 /** step into the world of */
 .retouch-wrap {
 	position: fixed;
+	z-index: 2;
 	top: 100%;
 	width: 100%;
 	height: 1028px;

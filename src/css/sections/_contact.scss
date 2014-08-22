@@ -16,6 +16,7 @@
 		width: 30px;
 		height: 30px;
 		background: rgba(0, 0, 0, .3);
+		color: #fff;
 		font-size: 30px;
 		line-height: 30px;
 		text-align: center;
@@ -49,7 +50,7 @@
 		width: 33.33333333333333%;
 		text-align: center;
 	}
-	h3, dl {
+	h3 {
 		&:before {
 			content: ' ';
 			display: block;
@@ -59,25 +60,8 @@
 			background: #2795bd;
 		}
 	}
-	dl:before {
-		margin-bottom: 22px;
-	}
 	.sub-title {
 		font-style: italic;
-	}
-	dl {
-		margin: 0;
-	}
-	dt {
-		font: 18px Ubuntu;
-		letter-spacing: 2px;
-		line-height: inherit;
-		text-transform: uppercase;
-	}
-	dd {
-		margin: 0 0 26px;
-		font-style: italic;
-		line-height: inherit;
 	}
 	img, .show-map {
 		display: block;

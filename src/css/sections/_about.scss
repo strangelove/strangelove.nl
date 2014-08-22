@@ -1,6 +1,17 @@
 .about {
+	&:hover {
+		.slides-prev, .slides-next {
+			opacity: 1;
+		}
+	}
 	.read-more {
-		text-align: center;
-		margin: 120px 0 0;
+		font-style: italic;
+		&:after {
+			content: '→';
+			position: relative;
+			top: 2px;
+			margin: 0 0 0 10px;
+			font-size: 18px;
+		}
 	}
 }

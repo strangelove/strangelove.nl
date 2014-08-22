@@ -368,7 +368,7 @@ $img: '/img/cases/slimleren';
 	width: 904px;
 	height: 574px;
 	margin: 0 0 0 -452px;
-	padding: 11px 0 0 106px;
+	padding: 20px 0 0 106px;
 	background: url(#{$img}/expl-screen.png);
 }
 .expl-book1 {
@@ -560,6 +560,12 @@ $img: '/img/cases/slimleren';
 		display: block;
 		margin: 0 0 0 -81px;
 	}
+}
+.desc-landing {
+	left: 50%;
+	right: 2%;
+	width: auto;
+	margin: 0 0 0 291px;
 }
 
 /** tests */

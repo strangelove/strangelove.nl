@@ -39,8 +39,12 @@ p {
 }
 
 a {
-	color: #f36523;
+	color: #2795bd;
 	text-decoration: none;
+	@include transition(opacity .2s ease-in-out);
+	&:hover {
+		opacity: .6;
+	}
 }
 
 .wrap {
@@ -96,7 +100,7 @@ a {
 	&.dark {
 		background-color: #333b4a;
 		color: #fff;
-		a {
+		.header-main a {
 			color: #fff;
 		}
 	}

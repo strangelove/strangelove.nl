@@ -57,7 +57,7 @@ h2 {
 	left: 50%;
 	width: 800px;
 	margin: -50px 0 0 -400px;
-	padding: 18px 0;
+	padding: 18px 0 17px;
 	color: #fff;
 	font-size: 18px;
 	text-align: center;
@@ -90,8 +90,9 @@ h2 {
 	}
 	span {
 		display: block;
+		margin: 6px 0 0;
 		letter-spacing: 2px;
-		text-transform: uppercase;
+		font-style: italic;
 		opacity: 0;
 		@include transform(translateX(20px));
 		@include animation(fadeSlideIn 1s 1s forwards);
@@ -130,6 +131,7 @@ h2 {
 		width: 150px;
 		height: 100px;
 		color: #333;
+		opacity: 1;
 		&:before, &:after {
 			content: ' ';
 			position: absolute;
@@ -187,7 +189,7 @@ h2 {
 			}
 		}
 		&.active {
-			opacity: .6;
+			opacity: .4;
 			span:before {
 				opacity: 1;
 			}
@@ -206,12 +208,18 @@ h2 {
 	z-index: 2;
 	width: 100%;
 	bottom: -100%;
-	background: #333;
+	background: #525252;
 	color: #ccc;
 	a {
 		color: #ccc;
+		&:hover {
+			color: #fff;
+		}
 	}
 	.logo, h4 {
+		color: #fff;
+	}
+	.logo a {
 		color: #fff;
 	}
 	.social a {

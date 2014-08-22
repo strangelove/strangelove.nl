@@ -29,8 +29,7 @@ require('kubrick-js')([
 			{
 				element: '.desc-client',
 				translateY: ['-65%', '-120%'],
-				opacity: -1,
-				scale: 0.8
+				opacity: -1
 			},
 			{
 				element: '.brand-logo',
@@ -84,8 +83,7 @@ require('kubrick-js')([
 			{
 				element: '.desc-brand',
 				translateY: ['-65%', '-120%'],
-				opacity: -1,
-				scale: 0.8
+				opacity: -1
 			},
 			{
 				element: '.flyer-wrap',
@@ -223,8 +221,7 @@ require('kubrick-js')([
 			{
 				element: '.icons',
 				translateY: ['-105%', '-205%'],
-				opacity: [2, 0],
-				scale: 0.8
+				opacity: [2, 0]
 			},
 			{
 				element: '.desc-iconography',
@@ -289,8 +286,7 @@ require('kubrick-js')([
 			{
 				element: '.desc-website',
 				translateY: ['-65%', '-109%'],
-				opacity: -0.6,
-				scale: 0.86
+				opacity: -0.6
 			},
 			{
 				element: '.infographics-ipad',
@@ -363,8 +359,7 @@ require('kubrick-js')([
 			{
 				element: '.desc-infographics',
 				translateY: ['-65%', '-120%'],
-				opacity: -1,
-				scale: 0.8
+				opacity: -1
 			},
 			{
 				element: '.mobile-screen-1',

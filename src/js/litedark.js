@@ -68,8 +68,7 @@ require('kubrick-js')([
 			{
 				element: '.desc-client',
 				translateY: ['-65%', '-70%'],
-				opacity: -1,
-				scale: 0.8
+				opacity: -1
 			},
 			{
 				element: '.leaves1',
@@ -291,12 +290,8 @@ require('kubrick-js')([
 				translateY: ['-120%', '-220%']
 			},
 			{
-				element: '.white-bg',
-				translateY: '-100%'
-			},
-			{
 				element: '.other-cases',
-				translateY: '-90%'
+				translateY: ['30%', '-90%']
 			},
 			{
 				element: '.footer-main',

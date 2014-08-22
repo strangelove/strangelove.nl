@@ -20,7 +20,7 @@
 
 	<section class="page light vision">
 		<div class="wrap">
-			<div class="vision-content">
+			<div class="services-content">
 				<h2>{{our_vision[0].name}}</h2>
 				{{our_vision[0].value|safe}}
 			</div>
@@ -56,16 +56,19 @@
 
 	<section class="page light services">
 		<div class="wrap">
-			{% for service in services %}
-			<div class="service service-{{loop.index}}">
-				<header class="service-header">
-					<div class="service-icon"></div>
-					<h3>{{service.name}}</h3>
-					<p class="service-department">{{service.department}}</p>
-				</header>
-				{{service.value|safe}}
+			<div class="service-list">
+				{% for service in services %}
+				<div class="service service-{{loop.index}}">
+					<a class="push" name="{{service.name|lower}}"></a>
+					<header class="service-header">
+						<div class="service-icon"></div>
+						<h3>{{service.name}}</h3>
+						<p class="service-department">{{service.department}}</p>
+					</header>
+					{{service.value|safe}}
+				</div>
+				{% endfor %}
 			</div>
-			{% endfor %}
 		</div>
 	</section>
 

@@ -46,12 +46,16 @@
 		}
 		.more {
 			font-style: italic;
+			@include transition(opacity .2s ease-in-out);
 			&:after {
 				content: '→';
 				position: relative;
 				top: 2px;
 				margin: 0 0 0 10px;
 				font-size: 18px;
+			}
+			&:hover {
+				opacity: .6;
 			}
 		}
 		.asset {
@@ -143,6 +147,7 @@
 			width: 150px;
 			height: 100px;
 			color: #333;
+			opacity: 1;
 			&:before, &:after {
 				content: ' ';
 				position: absolute;

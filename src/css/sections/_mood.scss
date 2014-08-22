@@ -48,7 +48,7 @@
 			height: 1px;
 			background: #fff;
 			@include transform(translateZ(0));
-			@include animation(borderGrow 1s 1s forwards);
+			@include animation(borderGrow 1s .75s forwards);
 		}
 		&:before {
 			top: 0;
@@ -62,7 +62,7 @@
 			display: block;
 			opacity: 0;
 			@include transform(translateX(-20px));
-			@include animation(fadeSlideIn 1s 1s forwards);
+			@include animation(fadeSlideIn 1s .75s forwards);
 		}
 		strong {
 			display: block;
@@ -71,7 +71,7 @@
 			letter-spacing: 4px;
 			opacity: 0;
 			@include transform(translateX(20px));
-			@include animation(fadeSlideIn 1s 1s forwards);
+			@include animation(fadeSlideIn 1s .75s forwards);
 		}
 	}
 	.continue {

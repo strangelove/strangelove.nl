@@ -26,7 +26,7 @@
 			<ol>
 				{% for service in services %}
 				<li class="service s{{loop.index}}">
-					<span class="icon"></span>
+					<a href="/services#{{service.name|lower}}" class="icon"></a>
 					<h3>{{service.name}}</h3>
 					<ul>
 						{% for keyword in service.keywords %}
@@ -36,9 +36,6 @@
 				</li>
 				{% endfor %}
 			</ol>
-			<p class="read-more">
-				<a href="/services" class="btn">Read more</a>
-			</p>
 		</div>
 	</section>
 
@@ -64,9 +61,6 @@
 					{% endfor %}
 				</div>
 			</div>
-			<p class="read-more">
-				<a href="/services" class="btn">Read more</a>
-			</p>
 		</div>
 	</section>
 
@@ -193,12 +187,12 @@
 				<ul>
 					<li>
 						<img src="/img/contact-office.png" alt="Office">
-						<dl>
-							<dt>0800 - 1486</dt>
-							<dd>Helpdesk</dd>
-							<dt>(0)20 470 05 33</dt>
-							<dd>HQ</dd>
-						</dl>
+						<h3>HQ</h3>
+						<p class="sub-title">(0)20 470 05 33</p>
+						<p>
+							Don't be a stranger.<br>
+							Give us a call!
+						</p>
 						<a href="tel:0031204700533" class="btn">Call</a>
 					</li>
 					<li>

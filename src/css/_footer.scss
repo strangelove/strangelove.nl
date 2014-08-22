@@ -21,7 +21,11 @@
 		@include transition(color .2s ease-in-out);
 		&:hover {
 			color: #2795bd;
+			opacity: 1;
 		}
+	}
+	.logo a {
+		color: #333;
 	}
 	.slogan {
 		color: #2795bd;
@@ -82,9 +86,9 @@
 	}
 	.vea {
 		display: block;
-		width: 63px;
-		height: 21px;
-		background: url(/img/vea.png) 0 -21px;
+		width: 51px;
+		height: 17px;
+		background: url(/img/vea.png) 0 -17px;
 		opacity: .6;
 		@include transition(opacity .2s ease-in-out);
 		&:hover {

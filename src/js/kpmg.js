@@ -74,97 +74,6 @@ require('kubrick-js')([
 			{
 				element: '.desc-client',
 				translateY: ['-65%', '-70%'],
-				scale: 0.8,
-				opacity: -1
-			},
-			{
-				element: '.battle-hero1',
-				translateX: 100,
-				translateY: '-98%'
-			},
-			{
-				element: '.battle-hero2',
-				translateX: -140,
-				translateY: '-60%'
-			},
-			{
-				element: '.battle-hero3',
-				translateX: -70,
-				translateY: '-60%'
-			},
-			{
-				element: '.battle-hero4',
-				translateY: '-60%'
-			},
-			{
-				element: '.desc-battle',
-				translateY: '-50%'
-			}
-		]
-	},
-	{
-		duration: '100%',
-		actors: [
-			{
-				element: '.battle-hero1',
-				translateX: [100, 300],
-				translateY: ['-98%', '-196%']
-			},
-			{
-				element: '.battle-hero2',
-				translateX: [-140, '100%'],
-				translateY: ['-60%', '-200%']
-			},
-			{
-				element: '.battle-hero3',
-				translateX: [-70, '80%'],
-				translateY: ['-60%', '-200%']
-			},
-			{
-				element: '.battle-hero4',
-				translateX: [0, '60%'],
-				translateY: ['-60%', '-200%']
-			},
-			{
-				element: '.desc-battle',
-				translateY: ['-50%', '-70%'],
-				opacity: -1,
-				scale: 0.8
-			},
-			{
-				element: '.flyer-wrap',
-				translateY: '-100%'
-			},
-			{
-				element: '.desc-print',
-				translateY: '-120%',
-				opacity: [-2, 1]
-			}
-		]
-	},
-	{
-		duration: '150%',
-		actors: [
-			{
-				element: '.flyer',
-				callback: function(progress){
-					var currentFrame = Math.ceil((42 / 100) * progress) || 1,
-						pos = (currentFrame - 1) * 600;
-					this.style[prefix + 'Transform'] = 'translateY(-' + pos + 'px)';
-				}
-			}
-		]
-	},
-	{
-		duration: '100%',
-		actors: [
-			{
-				element: '.flyer-wrap',
-				translateY: ['-100%', '-200%']
-			},
-			{
-				element: '.desc-print',
-				translateY: ['-120%', '-220%'],
 				opacity: -1
 			},
 			{
@@ -200,8 +109,7 @@ require('kubrick-js')([
 			{
 				element: '.desc-step',
 				translateY: ['-100%', '-200%'],
-				opacity: -1,
-				scale: 0.8
+				opacity: -1
 			},
 			{
 				element: '.device-imac',
@@ -261,8 +169,7 @@ require('kubrick-js')([
 			{
 				element: '.desc-corporate',
 				translateY: ['-65%', '-120%'],
-				opacity: -1,
-				scale: 0.8
+				opacity: -1
 			},
 			{
 				element: '.desc-icons',
@@ -297,12 +204,14 @@ require('kubrick-js')([
 			{
 				element: '.desc-icons',
 				translateY: ['-100%', '-200%'],
-				scale: 0.8,
 				opacity: -1
 			},
 			{
 				element: '.icons',
 				translateY: ['-105%', '-250%']
+			},
+			{
+				element: '.icons ul'
 			},
 			{
 				element: '.desc-devices',
@@ -341,7 +250,6 @@ require('kubrick-js')([
 			{
 				element: '.desc-devices',
 				translateY: ['-95%', '-180%'],
-				scale: 0.8,
 				opacity: -1
 			},
 			{
@@ -381,7 +289,6 @@ require('kubrick-js')([
 			{
 				element: '.desc-hr',
 				translateY: ['-65%', '-70%'],
-				scale: 0.8,
 				opacity: -1
 			},
 			{
@@ -489,6 +396,95 @@ require('kubrick-js')([
 				element: '.cal-4',
 				translateX: [500, 0],
 				translateY: -500
+			},
+			{
+				element: '.battle-hero1',
+				translateX: 100,
+				translateY: '-98%'
+			},
+			{
+				element: '.battle-hero2',
+				translateX: -140,
+				translateY: '-60%'
+			},
+			{
+				element: '.battle-hero3',
+				translateX: -70,
+				translateY: '-60%'
+			},
+			{
+				element: '.battle-hero4',
+				translateY: '-60%'
+			},
+			{
+				element: '.desc-battle',
+				translateY: '-50%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.battle-hero1',
+				translateX: [100, 300],
+				translateY: ['-98%', '-196%']
+			},
+			{
+				element: '.battle-hero2',
+				translateX: [-140, '100%'],
+				translateY: ['-60%', '-200%']
+			},
+			{
+				element: '.battle-hero3',
+				translateX: [-70, '80%'],
+				translateY: ['-60%', '-200%']
+			},
+			{
+				element: '.battle-hero4',
+				translateX: [0, '60%'],
+				translateY: ['-60%', '-200%']
+			},
+			{
+				element: '.desc-battle',
+				translateY: ['-50%', '-70%'],
+				opacity: -1
+			},
+			{
+				element: '.flyer-wrap',
+				translateY: '-100%'
+			},
+			{
+				element: '.desc-print',
+				translateY: '-120%',
+				opacity: [-2, 1]
+			}
+		]
+	},
+	{
+		duration: '150%',
+		actors: [
+			{
+				element: '.flyer',
+				callback: function(progress){
+					var currentFrame = Math.ceil((42 / 100) * progress) || 1,
+						pos = (currentFrame - 1) * 600;
+					this.style[prefix + 'Transform'] = 'translateY(-' + pos + 'px)';
+				}
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.flyer-wrap',
+				translateY: ['-100%', '-200%']
+			},
+			{
+				element: '.desc-print',
+				translateY: ['-120%', '-220%'],
+				opacity: -1
 			},
 			{
 				element: '.other-cases',
