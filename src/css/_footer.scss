@@ -42,7 +42,7 @@
 			height: 24px;
 			background: url(/img/social.png);
 			text-indent: 999em;
-			opacity: .8;
+			opacity: .6;
 			@include transition(opacity .2s ease-in-out);
 			&:hover {
 				opacity: 1;
