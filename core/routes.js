@@ -47,25 +47,29 @@ var routes = [
 		path: '/cases/ing',
 		endpoint: config.apiUrl + '/api/v1/cases/ing',
 		mockData: process.cwd() + '/data/cases/ing.json',
-		template: 'cases/ing'
+		template: 'cases/ing',
+		extras: 'cases'
 	},
 	{
 		path: '/cases/kpmg',
 		endpoint: config.apiUrl + '/api/v1/cases/kpmg',
 		mockData: process.cwd() + '/data/cases/kpmg.json',
-		template: 'cases/kpmg'
+		template: 'cases/kpmg',
+		extras: 'cases'
 	},
 	{
 		path: '/cases/litedark',
 		endpoint: config.apiUrl + '/api/v1/cases/litedark',
 		mockData: process.cwd() + '/data/cases/litedark.json',
-		template: 'cases/litedark'
+		template: 'cases/litedark',
+		extras: 'cases'
 	},
 	{
 		path: '/cases/slimleren',
 		endpoint: config.apiUrl + '/api/v1/cases/slimleren',
 		mockData: process.cwd() + '/data/cases/slimleren.json',
-		template: 'cases/slimleren'
+		template: 'cases/slimleren',
+		extras: 'cases'
 	}
 ];
 
@@ -99,6 +103,12 @@ var extras = {
 			data.our_vision = data['our-vision'];
 			delete data['our-vision'];
 		}
+		cb(merge(data, {
+			navigation: navigation
+		}));
+	},
+
+	cases: function(data, cb){
 		cb(merge(data, {
 			navigation: navigation
 		}));
