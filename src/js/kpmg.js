@@ -460,8 +460,45 @@ require('kubrick-js')([
 		]
 	},
 	{
-		stage: '.footer-main',
-		duration: 1
+		duration: '100%',
+		actors: [
+			{
+				element: '.cal-views',
+				translateY: ['-95%', '-200%']
+			},
+			{
+				element: '.desc-calendar',
+				translateY: ['-100%', '-200%']
+			},
+			{
+				element: '.cal-1',
+				translateX: [50, 0],
+				translateY: -50
+			},
+			{
+				element: '.cal-2',
+				translateX: [150, 0],
+				translateY: -150
+			},
+			{
+				element: '.cal-3',
+				translateX: [300, 0],
+				translateY: -300
+			},
+			{
+				element: '.cal-4',
+				translateX: [500, 0],
+				translateY: -500
+			},
+			{
+				element: '.other-cases',
+				translateY: '-90%'
+			},
+			{
+				element: '.footer-main',
+				translateY: '-100%'
+			}
+		]
 	}
 ]);
 

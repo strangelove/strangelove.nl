@@ -537,7 +537,40 @@ require('kubrick-js')([
 		]
 	},
 	{
-		stage: '.footer-main',
-		duration: 1
+		duration: '100%',
+		actors: [
+			{
+				element: '.prices-bg-wrap',
+				translateY: ['-115%', '-215%']
+			},
+			{
+				element: '.prices-bg',
+				translateY: [400, 800]
+			},
+			{
+				element: '.product-price1',
+				translateY: ['-105%', '-205%']
+			},
+			{
+				element: '.product-price2',
+				translateY: ['-95%', '-195%']
+			},
+			{
+				element: '.product-price3',
+				translateY: ['-105%', '-205%']
+			},
+			{
+				element: '.desc-prices',
+				translateY: ['-120%', '-220%'],
+			},
+			{
+				element: '.other-cases',
+				translateY: '-90%'
+			},
+			{
+				element: '.footer-main',
+				translateY: '-100%'
+			}
+		]
 	}
 ]);

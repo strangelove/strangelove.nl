@@ -387,7 +387,34 @@ require('kubrick-js')([
 		]
 	},
 	{
-		stage: '.footer-main',
-		duration: 1
+		duration: '100%',
+		actors: [
+			{
+				element: '.mobile-screen-1',
+				translateX: ['-10%', 0],
+				translateY: ['-80%', '-180%']
+			},
+			{
+				element: '.mobile-screen-2',
+				translateX: ['-5%', 0],
+				translateY: ['-80%', '-180%']
+			},
+			{
+				element: '.mobile-screen-3',
+				translateY: ['-80%', '-180%']
+			},
+			{
+				element: '.desc-mobile',
+				translateY: ['-50%', '-200%']
+			},
+			{
+				element: '.other-cases',
+				translateY: '-90%'
+			},
+			{
+				element: '.footer-main',
+				translateY: '-100%'
+			}
+		]
 	}
 ]);

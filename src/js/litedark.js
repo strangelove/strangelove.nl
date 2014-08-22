@@ -280,7 +280,28 @@ require('kubrick-js')([
 		]
 	},
 	{
-		stage: '.footer-main',
-		duration: 1
+		duration: '100%',
+		actors: [
+			{
+				element: '.photos-wrap',
+				translateY: ['-100%', '-200%']
+			},
+			{
+				element: '.desc-result',
+				translateY: ['-120%', '-220%']
+			},
+			{
+				element: '.white-bg',
+				translateY: '-100%'
+			},
+			{
+				element: '.other-cases',
+				translateY: '-90%'
+			},
+			{
+				element: '.footer-main',
+				translateY: '-100%'
+			}
+		]
 	}
 ]);
