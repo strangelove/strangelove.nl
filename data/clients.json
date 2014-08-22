@@ -8,16 +8,16 @@
 		"title": "Vanmoof"
 	},
 	{
-		"image": "/img/clients/klm.png",
-		"title": "KLM"
+		"image": "/img/clients/ing.png",
+		"title": "ING"
 	},
 	{
 		"image": "/img/clients/upc.png",
 		"title": "upc"
 	},
 	{
-		"image": "/img/clients/microsoft.png",
-		"title": "Microsoft"
+		"image": "/img/clients/decos.png",
+		"title": "Decos"
 	},
 	{
 		"image": "/img/clients/litedark.png",
@@ -46,5 +46,21 @@
 	{
 		"image": "/img/clients/redbull.png",
 		"title": "Red Bull"
+	},
+	{
+		"image": "/img/clients/meijburg.png",
+		"title": "KPMG Meijburg & co"
+	},
+	{
+		"image": "/img/clients/novisource.png",
+		"title": "Novisource"
+	},
+	{
+		"image": "/img/clients/partou.png",
+		"title": "Partou"
+	},
+	{
+		"image": "/img/clients/mutsy.png",
+		"title": "Mutsy"
 	}
 ]
