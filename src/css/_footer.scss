@@ -39,23 +39,56 @@
 		}
 		a {
 			display: block;
-			width: 18px;
-			height: 18px;
+			height: 24px;
 			background: url(/img/social.png);
 			text-indent: 999em;
+			opacity: .8;
+			@include transition(opacity .2s ease-in-out);
+			&:hover {
+				opacity: 1;
+			}
+			&.angellist {
+				width: 15px;
+			}
+			&.github {
+				width: 23px;
+				background-position: -16px 0;
+			}
+			&.stackoverflow {
+				width: 19px;
+				background-position: -40px 0;
+			}
+			&.glassdoor {
+				width: 13px;
+				background-position: -60px 0;
+			}
 			&.twitter {
 				width: 20px;
-			}
-			&.facebook {
-				background-position: -20px 0;
+				background-position: -74px 0;
 			}
 			&.linkedin {
-				background-position: -38px 0;
+				width: 18px;
+				background-position: -94px 0;
+			}
+			&.facebook {
+				width: 18px;
+				background-position: -113px 0;
 			}
 		}
 	}
 	.copyright {
 		margin: 0;
 		color: #666;
+	}
+	.vea {
+		display: block;
+		width: 63px;
+		height: 21px;
+		background: url(/img/vea.png) 0 -21px;
+		opacity: .6;
+		@include transition(opacity .2s ease-in-out);
+		&:hover {
+			opacity: 1;
+		}
 	}
 }

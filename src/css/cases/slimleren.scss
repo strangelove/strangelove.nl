@@ -5,9 +5,9 @@ $img: '/img/cases/slimleren';
 
 @import '../fonts';
 @import '../base';
-@import '../case-base';
 @import '../header';
 @import '../footer';
+@import '../case-base';
 
 @include keyframes(clock){
 	from {

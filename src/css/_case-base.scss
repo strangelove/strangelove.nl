@@ -97,3 +97,52 @@ h2 {
 		@include animation(fadeSlideIn 1s 1s forwards);
 	}
 }
+
+.other-cases {
+	position: fixed;
+	top: 100%;
+}
+
+.footer-main {
+	position: fixed;
+	width: 100%;
+	bottom: -100%;
+	background: #333;
+	color: #ccc;
+	a {
+		color: #ccc;
+	}
+	.logo, h4 {
+		color: #fff;
+	}
+	.social a {
+		opacity: .6;
+		&.angellist {
+			background-position: 0 -24px;
+		}
+		&.github {
+			background-position: -16px -24px;
+		}
+		&.stackoverflow {
+			background-position: -40px -24px;
+		}
+		&.glassdoor {
+			background-position: -60px -24px;
+		}
+		&.twitter {
+			background-position: -74px -24px;
+		}
+		&.linkedin {
+			background-position: -94px -24px;
+		}
+		&.facebook {
+			background-position: -113px -24px;
+		}
+	}
+	.copyright {
+		color: #ccc;
+	}
+	.vea {
+		background-position: 0 0;
+	}
+}

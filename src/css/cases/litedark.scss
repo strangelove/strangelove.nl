@@ -5,9 +5,9 @@ $img: '/img/cases/litedark';
 
 @import '../fonts';
 @import '../base';
-@import '../case-base';
 @import '../header';
 @import '../footer';
+@import '../case-base';
 
 .litedark {
 	background: #f8f7f5 url(#{$img}/bg-texture.png);
