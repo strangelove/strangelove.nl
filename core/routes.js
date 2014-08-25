@@ -42,34 +42,6 @@ var routes = [
 		endpoint: config.apiUrl + '/api/v1/page/our-vision',
 		template: 'services',
 		extras: 'services'
-	},
-	{
-		path: '/cases/ing',
-		endpoint: config.apiUrl + '/api/v1/cases/ing',
-		mockData: process.cwd() + '/data/cases/ing.json',
-		template: 'cases/ing',
-		extras: 'cases'
-	},
-	{
-		path: '/cases/kpmg',
-		endpoint: config.apiUrl + '/api/v1/cases/kpmg',
-		mockData: process.cwd() + '/data/cases/kpmg.json',
-		template: 'cases/kpmg',
-		extras: 'cases'
-	},
-	{
-		path: '/cases/litedark',
-		endpoint: config.apiUrl + '/api/v1/cases/litedark',
-		mockData: process.cwd() + '/data/cases/litedark.json',
-		template: 'cases/litedark',
-		extras: 'cases'
-	},
-	{
-		path: '/cases/slimleren',
-		endpoint: config.apiUrl + '/api/v1/cases/slimleren',
-		mockData: process.cwd() + '/data/cases/slimleren.json',
-		template: 'cases/slimleren',
-		extras: 'cases'
 	}
 ];
 
@@ -140,5 +112,17 @@ routes.forEach(function(route){
 		} else {
 			res.render(route.template);
 		}
+	});
+});
+
+app.get(/\/cases\/([A-Za-z0-9_-]+)/, function(req, res){
+	request({
+		url: config.apiUrl + '/api/v1/cases/' + req.params[0],
+		json: true,
+		headers: {'Accept-Language': 'en'}
+	}, function(err, response, body){
+		extras.cases(body, function(body){
+			res.render('cases/case-' + body.id, {locals: body});
+		});
 	});
 });
