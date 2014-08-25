@@ -1,10 +1,15 @@
-var $ = require('elements');
+'use strict';
 
-var causeLoop = function(el){
-	el.addClass('loop');
-	setTimeout(function(){ el.removeClass('loop'); }, 1720);
-};
+var $ = require('elements'),
+	isTouch = ('ontouchstart' in window || 'onmsgesturechange' in window);
 
-$('.services').delegate('mouseover', '.icon', function(e, el){
-	if (!el.hasClass('loop')) causeLoop(el);
-});
+if (!isTouch){
+	var causeLoop = function(el){
+		el.addClass('loop');
+		setTimeout(function(){ el.removeClass('loop'); }, 1720);
+	};
+
+	$('.services').delegate('mouseover', '.icon', function(e, el){
+		if (!el.hasClass('loop')) causeLoop(el);
+	});
+}

@@ -24,8 +24,7 @@
 			<a class="push" name="services"></a>
 			<h2>What we do</h2>
 			<ol>
-				{% for service in services %}
-				<li class="service s{{loop.index}}">
+				{% for service in services %}<li class="service s{{loop.index}}">
 					<a href="/services#{{service.name|lower}}" class="icon"></a>
 					<h3>{{service.name}}</h3>
 					<ul>
@@ -33,8 +32,7 @@
 						<li>{{keyword}}</li>
 						{% endfor %}
 					</ul>
-				</li>
-				{% endfor %}
+				</li>{% endfor %}
 			</ol>
 		</div>
 	</section>
@@ -99,9 +97,9 @@
 			<a class="push" name="clients"></a>
 			<h2>Current and past clients</h2>
 			<ul class="client-list">
-				{% for client in clients %}
-				<li><img src="{{client.image}}" alt="{{client.title}}"></li>
-				{% endfor %}
+				{% for client in clients %}<li>
+					<img src="{{client.image}}" alt="{{client.title}}">
+				</li>{% endfor %}
 			</ul>
 		</h2>
 	</section>
@@ -111,8 +109,7 @@
 			<a class="push" name="team"></a>
 			<h2>Leadership</h2>
 			<ul class="team-list">
-				{% for person in home_team %}
-				<li class="t{{loop.index0}}">
+				{% for person in home_team %}<li class="t{{loop.index0}}">
 					<div class="img">
 						<img src="{{person.image_path}}" alt="{{person.name}}">
 					</div>
@@ -122,8 +119,7 @@
 						<h3>{{person.name}}</h3>
 						{{person.value|safe}}
 					</section>
-				</li>
-				{% endfor %}
+				</li>{% endfor %}
 			</ul>
 		</div>
 	</section>

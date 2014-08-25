@@ -4,7 +4,10 @@
 	text-align: center;
 	.slides-prev, .slides-next {
 		position: absolute;
-		margin: 200px 0 0;
+		width: 17px;
+		height: 37px;
+		margin: 11px 0 0;
+		background-size: cover;
 		opacity: .5;
 		@include transition(opacity .3s ease-in-out);
 		&.disabled {
@@ -12,34 +15,24 @@
 		}
 	}
 	.slides-prev {
-		left: 0;
+		left: -12px;
 	}
 	.slides-next {
-		right: 0;
+		right: -12px;
 	}
 	.slides-tabs {
-		display: inline-block;
-		padding: 0 24px;
+		display: block;
 		border-top: 1px solid #fff;
 		border-bottom: 1px solid #fff;
-		font: 700 18px 'Ubuntu';
+		font: 700 15px 'Ubuntu';
 		letter-spacing: 3px;
 		line-height: 58px;
 		text-transform: uppercase;
-		li {
-			display: inline;
-			margin: 0 0 0 110px;
-			&:first-child {
-				margin-left: 0;
-			}
-		}
 		a {
-			display: inline-block;
+			display: none;
 			color: #fff;
-			-webkit-transition: opacity .3s;
-			opacity: .2;
 			&.active {
-				opacity: 1;
+				display: inline-block;
 			}
 		}
 	}
@@ -52,6 +45,42 @@
 			top: 0;
 			left: 0;
 			width: 100%;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.slides-prev, .slides-next {
+			width: 35px;
+			height: 75px;
+			margin: 200px 0 0;
+			background-size: auto;
+		}
+		.slides-tabs {
+			display: inline-block;
+			padding: 0 24px;
+			li {
+				display: inline;
+				margin: 0 0 0 30px;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+			a {
+				display: inline-block;
+				color: #fff;
+				-webkit-transition: opacity .3s;
+				opacity: .2;
+				&.active {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		.slides-tabs {
+			font-size: 18px;
+			li {
+				margin: 0 0 0 110px;
+			}
 		}
 	}
 }

@@ -27,9 +27,11 @@
 		list-style: none;
 		text-align: center;
 	}
+	ol {
+		margin: 0 0 -60px;
+	}
 	.service {
-		float: left;
-		width: 20%;
+		margin: 0 0 60px;
 		.icon {
 			display: block;
 			width: 112px;
@@ -107,9 +109,36 @@
 	}
 	ul {
 		font-style: italic;
+		li {
+			display: inline;
+			&:after {
+				content: ',';
+			}
+			&:last-child:after {
+				content: '';
+			}
+		}
 	}
 	.read-more {
 		text-align: center;
 		margin: 120px 0 0;
+	}
+	@media screen and (min-width: 600px) {
+		.service {
+			display: inline-block;
+			vertical-align: top;
+			width: 33%;
+		}
+		ul li {
+			display: block;
+			&:after {
+				content: '';
+			}
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		.service {
+			width: 20%;
+		}
 	}
 }

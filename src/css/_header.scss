@@ -1,5 +1,5 @@
 .header-main {
-	position: absolute;
+	position: fixed;
 	z-index: 10;
 	top: 0;
 	left: 0;
@@ -20,6 +20,7 @@
 }
 
 .nav-primary {
+	display: none;
 	float: right;
 	margin-right: 18px;
 	font: bold italic 14px 'Aleo';

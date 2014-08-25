@@ -1,3 +1,6 @@
+.team {
+	display: none;
+}
 .team-list {
 	overflow: hidden;
 	margin: 0 0 -80px;
@@ -5,7 +8,7 @@
 	list-style: none;
 	li {
 		float: left;
-		width: 33.33333333333333%;
+		width: 50%;
 		margin: 0 0 80px;
 		cursor: pointer;
 		text-align: center;
@@ -62,6 +65,17 @@
 	p {
 		margin: 0;
 		font-style: italic;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.team {
+		display: block;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.team-list li {
+		width: 33.33333333333333%;
 	}
 }
 

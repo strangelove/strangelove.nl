@@ -15,7 +15,7 @@ body {
 }
 
 h2 {
-	margin: 0 0 110px;
+	margin: 0 0 60px;
 	font: 24px/35px Ubuntu, sans-serif;
 	letter-spacing: 3px;
 	text-align: center;
@@ -44,6 +44,12 @@ a {
 	@include transition(opacity .2s ease-in-out);
 	&:hover {
 		opacity: .6;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	h2 {
+		margin-bottom: 110px;
 	}
 }
 
@@ -97,6 +103,9 @@ a {
 .page {
 	overflow: hidden;
 	position: relative;
+	.header-main {
+		position: absolute;
+	}
 	&.dark {
 		background-color: #333b4a;
 		color: #fff;
@@ -106,14 +115,24 @@ a {
 	}
 	.push {
 		display: block;
-		padding: 0 0 100px;
+		padding: 0 0 60px;
 	}
 	.wrap {
 		height: 100%;
-		padding-bottom: 150px;
+		padding-bottom: 60px;
 	}
 	.header-main .wrap {
 		padding-bottom: 0;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.page {
+		.push {
+			padding-bottom: 100px;
+		}
+		.wrap {
+			padding-bottom: 150px;
+		}
 	}
 }
 

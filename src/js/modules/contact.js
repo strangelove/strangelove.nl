@@ -5,7 +5,8 @@ var $ = require('elements'),
 	debounce = require('mout/function/debounce'),
 	scrollFx = new (require('./scrollfx'))(),
 	mapStyles = require('./map-styles'),
-	contact = $('.contact');
+	contact = $('.contact'),
+	isTouch = ('ontouchstart' in window || 'onmsgesturechange' in window);
 
 require('moofx');
 
@@ -40,14 +41,16 @@ if (contact){
 			contact.style('height', rect.bottom - rect.top);
 			contactTop = rect.top - bodyRect.top;
 
-			scrollFx.add({
-				el: $('.map-overlay'),
-				posStart: contactTop - ((window.innerHeight / 3) * 2),
-				posEnd: contactTop - 150,
-				styles: {
-					transform: ['translateY(-85px)', 'translateY(0)']
-				}
-			});
+			if (!isTouch){
+				scrollFx.add({
+					el: $('.map-overlay'),
+					posStart: contactTop - ((window.innerHeight / 3) * 2),
+					posEnd: contactTop - 150,
+					styles: {
+						transform: ['translateY(-85px)', 'translateY(0)']
+					}
+				});
+			}
 		});
 
 		new google.maps.Marker({
