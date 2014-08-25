@@ -67,7 +67,7 @@
 			background: no-repeat right top;
 			background-size: contain;
 		}
-		.case-pbcf {
+		.case-3 {
 			a {
 				color: #f26522;
 			}
@@ -78,7 +78,7 @@
 				background-image: url(/img/asset-pbcf.png);
 			}
 		}
-		.case-litedark {
+		.case-7 {
 			a {
 				color: #009f4e;
 			}
@@ -89,7 +89,7 @@
 				background-image: url(/img/asset-litedark.png);
 			}
 		}
-		.case-slimleren {
+		.case-8 {
 			a {
 				color: #3bc1f0;
 			}
@@ -100,7 +100,7 @@
 				background-image: url(/img/asset-slimleren.png);
 			}
 		}
-		.case-ing {
+		.case-2 {
 			a {
 				color: #f47318;
 			}
@@ -111,7 +111,7 @@
 				background-image: url(/img/asset-ing.png);
 			}
 		}
-		.case-kpmg {
+		.case-1 {
 			a {
 				color: #0078c1;
 			}
@@ -163,20 +163,20 @@
 			&:after {
 				z-index: 3;
 			}
-			&.pbcf:after {
-				background: url(/img/cases/buttons/pbcf_mask.png);
+			&.case-3:after {
+				background: url(/img/cases/buttons/3_mask.png);
 			}
-			&.litedark:after {
-				background: url(/img/cases/buttons/litedark_mask.png);
+			&.case-7:after {
+				background: url(/img/cases/buttons/7_mask.png);
 			}
-			&.slimleren:after {
-				background: url(/img/cases/buttons/slimleren_mask.png);
+			&.case-8:after {
+				background: url(/img/cases/buttons/8_mask.png);
 			}
-			&.ing:after {
-				background: url(/img/cases/buttons/ing_mask.png);
+			&.case-2:after {
+				background: url(/img/cases/buttons/2_mask.png);
 			}
-			&.kpmg:after {
-				background: url(/img/cases/buttons/kpmg_mask.png);
+			&.case-1:after {
+				background: url(/img/cases/buttons/1_mask.png);
 			}
 			img {
 				position: relative;
