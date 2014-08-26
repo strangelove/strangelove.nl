@@ -62,7 +62,10 @@
 		text-align: center;
 	}
 	h3 {
-		&:before {
+		margin: 30px 0 0;
+	}
+	.sub-title {
+		&:after {
 			content: ' ';
 			display: block;
 			width: 30px;
