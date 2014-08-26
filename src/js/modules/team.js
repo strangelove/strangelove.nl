@@ -12,7 +12,7 @@ teamList.search('> li').forEach(function(el){
 		popover = new Popover({
 			anchor: img,
 			content: el.search('.popover-content'),
-			offset: { x: 30, y: -10 }
+			offset: { x: 20, y: -13 }
 		});
 
 	img.on('mouseover', function(){

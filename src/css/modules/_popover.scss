@@ -15,12 +15,12 @@
 		pointer-events: none;
 	}
 	&:after {
-		border-width: 14px;
-		margin-top: -14px;
+		border-width: 8px;
+		margin-top: -8px;
 	}
 	&:before {
-		border-width: 15px;
-		margin-top: -15px;
+		border-width: 9px;
+		margin-top: -9px;
 	}
 	&.left {
 		&:after, &:before {

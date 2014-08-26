@@ -42,7 +42,7 @@
 		width: 30px;
 		height: 4px;
 		margin: 18px auto 12px;
-		@include transition(width .25s ease-in-out);
+		@include transition(width .1s ease-in-out);
 	}
 	.t0 h3:after {
 		background: #2795bd;
@@ -87,6 +87,24 @@
 		height: 4px;
 		margin: 18px 0 12px;
 		background: #2994be;
+	}
+	&.t0 h3:after {
+		background: #2795bd;
+	}
+	&.t1 h3:after {
+		background: #967aa5;
+	}
+	&.t2 h3:after {
+		background: #d27a24;
+	}
+	&.t3 h3:after {
+		background: #cd3636;
+	}
+	&.t4 h3:after {
+		background: #ffe13c;
+	}
+	&.t5 h3:after {
+		background: #cbda22;
 	}
 	p {
 		margin: 0 0 25px;
