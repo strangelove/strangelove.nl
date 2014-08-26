@@ -46,6 +46,10 @@
 	to { background-position: -3444px -336px; }
 }
 
+.mood .mood-bg {
+	background-image: url(/img/services-bg.jpg);
+}
+
 .header-main {
 	background: rgba(0, 0, 0, .5);
 }
@@ -116,7 +120,9 @@
 
 .interlude {
 	padding: 120px 0;
-	background: #f7f7f7;
+	background: url(/img/bg-interlude-city.jpg) center;
+	background-size: cover;
+	color: #fff;
 	text-align: center;
 	p {
 		margin: 0;
