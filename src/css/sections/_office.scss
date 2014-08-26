@@ -1,6 +1,11 @@
-.office:hover {
-	.slides-prev, .slides-next {
-		opacity: 1;
+.office {
+	&:hover {
+		.slides-prev, .slides-next {
+			opacity: 1;
+		}
+	}
+	.header-main {
+		background: rgba(59, 60, 61, .8);
 	}
 }
 .office .slides .slides-contents {

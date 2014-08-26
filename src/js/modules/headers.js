@@ -19,6 +19,11 @@ if (!isSafari && !isTouch){
 		bodyRect = document.body.getBoundingClientRect();
 		for (i = 0; i < sections.length; i++){
 			clone = $(header[0].cloneNode(true));
+
+			if (i > 0){
+				clone.find('.nav-primary li:nth-child(' + i + ')').addClass('active');
+			}
+
 			headers.push(clone);
 			clone.insert(sections[i]);
 

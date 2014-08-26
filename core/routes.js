@@ -74,13 +74,15 @@ var extras = {
 			delete data['our-vision'];
 		}
 		cb(merge(data, {
-			navigation: navigation
+			navigation: navigation,
+			home_jobs: jobs
 		}));
 	},
 
 	cases: function(data, cb){
 		cb(merge(data, {
-			navigation: navigation
+			navigation: navigation,
+			home_jobs: jobs
 		}));
 	}
 };
