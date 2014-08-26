@@ -86,7 +86,7 @@
 		.summary {
 			position: absolute;
 			top: 25%;
-			width: 460px;
+			width: 500px;
 		}
 		h3 {
 			font-size: 36px;
@@ -97,12 +97,12 @@
 				display: block;
 				width: 30px;
 				height: 4px;
-				margin: 30px 0 18px;
+				margin: 30px 0;
 				background: #f36523;
 			}
 		}
 		p {
-			width: 270px;
+			width: 360px;
 			font-style: italic;
 			opacity: .75;
 		}
@@ -126,7 +126,7 @@
 			right: 0;
 			width: 700px;
 			height: 100%;
-			background: no-repeat right top;
+			background: no-repeat right center;
 			background-size: contain;
 		}
 		.case-3 {
@@ -148,7 +148,15 @@
 				background: #009f4e;
 			}
 			.asset {
-				background-image: url(/img/asset-litedark.png);
+				&:before {
+					content: '';
+					position: absolute;
+					top: 100px;
+					bottom: 100px;
+					width: 100%;
+					background: url(/img/asset-litedark.png) no-repeat right center;
+					background-size: contain;
+				}
 			}
 		}
 		.case-8 {
@@ -260,7 +268,7 @@
 					bottom: 100%;
 					width: 22px;
 					height: 10px;
-					margin: 0 0 0 -11px;
+					margin: 0 0 0 -18px;
 					background: url(/img/arrow-down-small.png);
 					opacity: 0;
 					@include transition(opacity .2s ease-in-out);
