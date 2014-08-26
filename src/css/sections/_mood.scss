@@ -14,6 +14,7 @@
 .mood {
 	position: relative;
 	height: 100%;
+	text-align: center;
 	.header-main {
 		border: 0;
 		background: transparent;
@@ -30,15 +31,12 @@
 		background-size: cover;
 	}
 	.mission {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 800px;
-		margin: -50px 0 0 -400px;
+		display: inline-block;
+		position: relative;
+		top: 40%;
 		padding: 18px 0;
 		font-size: 22px;
 		font-style: italic;
-		text-align: center;
 		@include transform(translateZ(0));
 		&:before, &:after {
 			content: ' ';
@@ -66,9 +64,10 @@
 		}
 		strong {
 			display: block;
-			font: 700 36px 'Ubuntu';
-			text-transform: uppercase;
+			margin: 6px 0 0;
+			font: 700 21px 'Ubuntu';
 			letter-spacing: 4px;
+			text-transform: uppercase;
 			opacity: 0;
 			@include transform(translateX(20px));
 			@include animation(fadeSlideIn 1s .75s forwards);
@@ -79,5 +78,20 @@
 		bottom: 50px;
 		left: 50%;
 		margin: 0 0 0 -37px;
+	}
+	@media screen and (min-width: 600px){
+		.mission {
+			padding-left: 24px;
+			padding-right: 24px;
+			strong {
+				margin-top: 0;
+				font-size: 36px;
+			}
+		}
+	}
+	@media screen and (min-width: 1024px){
+		.mission {
+			width: 800px;
+		}
 	}
 }
