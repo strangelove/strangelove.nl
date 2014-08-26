@@ -63,9 +63,24 @@
 		</div>
 	</section>
 
+	<a name="cases"></a>
+	<section class="cases-mobile">
+		<ul>
+		{% for project in home_cases %}
+			<li class="case-{{project.id}}">
+				<img src="/img/case-mobile-{{project.id}}.png" alt="">
+				<div class="case-content">
+					<h3>{{project.name}}</h3>
+					<a class="view" href="/cases/{{project.slug}}">View case</a>
+				</div>
+			</li>
+		{% endfor %}
+		</ul>
+	</section>
+
 	<section class="page light cases">
 		<div class="wrap">
-			<a class="push" name="cases"></a>
+			<div class="push"></div>
 			<h2>The cases we love</h2>
 			<div class="slides">
 				<div class="slides-contents">
