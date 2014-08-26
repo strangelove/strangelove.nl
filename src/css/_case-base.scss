@@ -10,6 +10,10 @@
 	}
 }
 
+.header-main {
+	position: absolute;
+}
+
 h2 {
 	margin: 0;
 }
@@ -216,11 +220,11 @@ h2 {
 			color: #fff;
 		}
 	}
-	.logo, h4 {
+	h4 {
 		color: #fff;
 	}
 	.logo a {
-		color: #fff;
+		background-image: url(/img/logo-white.svg);
 	}
 	.social a {
 		opacity: .6;

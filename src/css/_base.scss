@@ -138,12 +138,16 @@ a {
 
 .logo {
 	margin: 0;
-	font: 700 26px/25px 'Ubuntu';
-	text-rendering: optimizeLegibility;
-	text-transform: uppercase;
 	a {
-		color: #fff;
-		text-decoration: none;
+		display: block;
+		width: 190px;
+		height: 19px;
+		background: url(/img/logo-white.svg) no-repeat center;
+		background-size: contain;
+		text-indent: -999em;
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 

@@ -25,7 +25,8 @@
 		}
 	}
 	.logo a {
-		color: #333;
+		background-image: url(/img/logo-black.svg);
+		text-indent: 999em;
 	}
 	.slogan {
 		color: #2795bd;
@@ -33,7 +34,6 @@
 	.social {
 		display: inline-block;
 		overflow: hidden;
-		margin: 25px 0 0;
 		li {
 			float: left;
 			margin: 0 0 0 16px;

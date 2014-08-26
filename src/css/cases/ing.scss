@@ -16,7 +16,10 @@ $img: '/img/cases/ing';
 	.header-main {
 		border-bottom: 0;
 		background: none;
-		.logo a, .nav-primary a {
+		.logo a {
+			background-image: url(/img/logo-black.svg);
+		}
+		.nav-primary a {
 			color: #333;
 		}
 	}
