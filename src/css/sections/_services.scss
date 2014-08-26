@@ -20,6 +20,13 @@
 }
 
 .services {
+	h2 {
+		margin-bottom: 0;
+	}
+	p {
+		margin-bottom: 60px;
+		text-align: center;
+	}
 	ol, ul {
 		overflow: hidden;
 		margin: 0;
@@ -137,6 +144,9 @@
 		}
 	}
 	@media screen and (min-width: 1024px) {
+		p {
+			margin-bottom: 110px;
+		}
 		.service {
 			width: 20%;
 		}

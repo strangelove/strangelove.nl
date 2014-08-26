@@ -22,7 +22,8 @@
 	<section class="page light services">
 		<div class="wrap">
 			<a class="push" name="services"></a>
-			<h2>What we do</h2>
+			<h2>{{home_practices[0].name}}</h2>
+			{{home_practices[0].value|safe}}
 			<ol>
 				{% for service in services %}<li class="service s{{loop.index}}">
 					<a href="/services#{{service.name|lower}}" class="icon"></a>
