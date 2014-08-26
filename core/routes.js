@@ -47,7 +47,6 @@ var routes = [
 
 var extras = {
 	home: function(data, cb){
-		if (data.home_jobs) delete data.home_jobs;
 
 		if (data.home_services){
 			var services = [], i, service,
@@ -65,7 +64,6 @@ var extras = {
 
 		cb(merge(data, {
 			clients: clients,
-			home_jobs: jobs,
 			navigation: navigation
 		}));
 	},

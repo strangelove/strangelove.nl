@@ -18,7 +18,7 @@
 				<nav class="nav-primary">
 					<ul>
 						{% for item in navigation['main-en'] %}
-						<li><a href="{{item.uri}}">{{item.title}}</a></li>
+						<li><a href="{{item.uri}}">{{item.title}}</a>{% if item.id == "58" %}<span class="count">{{home_jobs.length}}</span>{% endif %}</li>
 						{% endfor %}
 					</ul>
 				</nav>

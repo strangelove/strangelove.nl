@@ -172,18 +172,14 @@
 		<div class="wrap">
 			<a class="push" name="jobs"></a>
 			<h2>Become strange</h2>
-			<div class="slides text-slides">
-				<a href="#prev" class="arrow-left slides-prev">Previous</a>
-				<a href="#next" class="arrow-right slides-next">Next</a>
-				<div class="slides-contents">
-					{% for job in home_jobs %}
-					<article>
-						<h3>{{job.title}}</h3>
-						{{job.description|safe}}
-						<a href="{{job.url}}" class="btn">Apply</a>
-					</article>
-					{% endfor %}
-				</div>
+			<div class="jobs-list">
+				{% for job in home_jobs %}
+				<article>
+					<h3>{{job.name}}</h3>
+					{{job.value|safe}}
+					<a href="{{job.workable}}" class="btn">Apply</a>
+				</article>
+				{% endfor %}
 			</div>
 		</div>
 	</section>

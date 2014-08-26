@@ -1,8 +1,11 @@
 .jobs {
-	.job-listing {
+	.jobs-list {
 		overflow: hidden;
 	}
 	article {
+		float: left;
+		width: 33.3333333333333%;
+		padding: 0 60px;
 		text-align: center;
 		&:hover h3:after {
 			width: 40px;
@@ -16,7 +19,7 @@
 			height: 4px;
 			margin: 24px auto;
 			background: #2795bd;
-			@include transition(width .25s ease-in-out);
+			@include transition(width .1s ease-in-out);
 		}
 	}
 	.btn {

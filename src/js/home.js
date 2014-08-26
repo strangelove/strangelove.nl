@@ -6,6 +6,5 @@ require('./modules/about');
 require('./modules/cases');
 require('./modules/team');
 require('./modules/office');
-require('./modules/jobs');
 require('./modules/contact');
 require('./modules/headers');
