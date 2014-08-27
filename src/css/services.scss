@@ -2,10 +2,12 @@
 @import 'vendor/bourbon/bourbon';
 
 @import 'fonts';
+@import 'animations';
 @import 'base';
 @import 'header';
 @import 'footer';
 
+@import 'modules/continue';
 @import 'sections/mood';
 
 @include keyframes(relevant){
