@@ -55,7 +55,7 @@
 .vision {
 	.wrap {
 		overflow: hidden;
-		padding: 240px 30px 180px;
+		padding: 120px 30px;
 	}
 	h2 {
 		margin: 0;
@@ -74,10 +74,13 @@
 .services-content {
 	float: left;
 	max-width: 500px;
+	:last-child {
+		margin-bottom: 0;
+	}
 }
 .vision-icons {
 	float: right;
-	margin: -48px 0 0;
+	margin: -12px 0 0;
 	padding: 0;
 	list-style: none;
 	text-align: center;
@@ -152,15 +155,15 @@
 
 .service-list {
 	overflow: hidden;
-	margin: 0 -60px;
+	margin: 0 -60px 120px;
 }
 .service {
 	overflow: hidden;
 	float: left;
 	width: 50%;
-	padding: 0 60px 66px;
+	padding: 0 60px;
 	.push {
-		padding: 0 0 66px;
+		padding: 0 0 120px;
 	}
 	.service-header {
 		overflow: hidden;
