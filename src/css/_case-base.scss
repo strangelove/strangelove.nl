@@ -1,17 +1,9 @@
-@include keyframes(borderGrow){
-	to {
-		width: 100%;
-	}
-}
-@include keyframes(fadeSlideIn){
-	to {
-		@include transform(translateX(0));
-		opacity: 1;
-	}
-}
-
 h2 {
 	margin: 0;
+}
+
+.case {
+	text-align: center;
 }
 
 .description {
@@ -51,13 +43,12 @@ h2 {
 }
 
 .case-summary {
-	position: fixed;
+	display: inline-block;
+	position: relative;
 	z-index: 2;
-	top: 390px;
-	left: 50%;
-	width: 800px;
-	margin: -50px 0 0 -400px;
-	padding: 18px 0 17px;
+	top: 330px;
+	min-width: 480px;
+	padding: 18px 48px 17px;
 	color: #fff;
 	font-size: 18px;
 	text-align: center;
