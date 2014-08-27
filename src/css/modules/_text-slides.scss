@@ -9,10 +9,14 @@
 		margin: 11px 0 0;
 		background-size: cover;
 		opacity: .5;
-		@include transition(opacity .3s ease-in-out);
+		@include transition(opacity .1s ease-out);
+		&:hover {
+			opacity: 1;
+		}
 		&.disabled {
 			opacity: .2;
 		}
+
 	}
 	.slides-prev {
 		left: -12px;
@@ -67,8 +71,11 @@
 			a {
 				display: inline-block;
 				color: #fff;
-				-webkit-transition: opacity .3s;
+				@include transition(opacity .1s ease-out);
 				opacity: .2;
+				&:hover {
+					opacity: 1;
+				}
 				&.active {
 					opacity: 1;
 				}
