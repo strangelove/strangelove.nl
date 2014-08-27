@@ -11,6 +11,9 @@
 
 {% block content %}
 	<section class="page dark mood">
+		<div class="ray ray1"></div>
+		<div class="ray ray2"></div>
+		<div class="ray ray3"></div>
 		<figure class="mood-bg"></figure>
 		<p class="mission">
 			<span>{{home_header[0].value}}</span>
@@ -39,6 +42,9 @@
 	</section>
 
 	<section class="page dark about">
+		<div class="ray ray1"></div>
+		<div class="ray ray2"></div>
+		<div class="ray ray3"></div>
 		<div class="wrap">
 			<a class="push" name="about"></a>
 			<h2>About</h2>
@@ -109,6 +115,9 @@
 	</section>
 
 	<section class="page dark clients">
+		<div class="ray ray1"></div>
+		<div class="ray ray2"></div>
+		<div class="ray ray3"></div>
 		<div class="wrap">
 			<a class="push" name="clients"></a>
 			<h2>Current and past clients</h2>
@@ -144,6 +153,9 @@
 		{% for section in home_office %}
 		<div class="office-bg bg-{{loop.index0}}"></div>
 		{% endfor %}
+		<div class="ray ray1"></div>
+		<div class="ray ray2"></div>
+		<div class="ray ray3"></div>
 		<div class="wrap">
 			<a class="push" name="culture"></a>
 			<h2>Our culture</h2>
@@ -187,8 +199,13 @@
 	<section class="page dark contact">
 		<a href="#" class="hide-map">Close</a>
 		<div class="map-canvas"></div>
-		<div class="map-overlay"></div>
+		<div class="map-overlay-wrap">
+			<div class="map-overlay"></div>
+		</div>
 		<div class="contact-content">
+			<div class="ray ray1"></div>
+			<div class="ray ray2"></div>
+			<div class="ray ray3"></div>
 			<div class="wrap">
 				<a class="push" name="contact"></a>
 				<h2>Have that strange feeling of love?<br>Contact us</h2>

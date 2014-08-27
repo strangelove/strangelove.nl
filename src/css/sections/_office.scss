@@ -1,5 +1,20 @@
-.office .slides .slides-contents {
-	max-width: 350px;
+.office {
+	.slides .slides-contents {
+		max-width: 350px;
+	}
+	.wrap {
+		position: relative;
+		z-index: 4;
+	}
+	.ray {
+		left: -20%;
+	}
+	.ray2 {
+		margin: 0 0 0 100px;
+	}
+	.ray3 {
+		margin: 0 0 0 300px;
+	}
 }
 .office-bg {
 	position: absolute;
@@ -11,10 +26,6 @@
 	display: none;
 	background: no-repeat center;
 	background-size: cover;
-}
-.office .wrap {
-	position: relative;
-	z-index: 4;
 }
 .bg-0 {
 	display: block;

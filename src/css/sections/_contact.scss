@@ -1,5 +1,14 @@
 .contact {
 	position: relative;
+	.ray {
+		left: 60%;
+	}
+	.ray2 {
+		margin: 0 0 0 100px;
+	}
+	.ray3 {
+		margin: 0 0 0 300px;
+	}
 	.map-canvas {
 		position: absolute;
 		z-index: 1;
@@ -19,6 +28,14 @@
 		opacity: 0;
 		text-indent: -999em;
 	}
+}
+.map-overlay-wrap {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .map-overlay {
 	position: absolute;
