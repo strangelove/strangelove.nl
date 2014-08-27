@@ -3,7 +3,7 @@
 var $ = require('elements'),
 	btn = $('.back-to-top');
 
-var windowHeight = window.innerHeight;
+var windowHeight = window.innerHeight - 1;
 
 $(window).on('scroll', function(){
 	var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
