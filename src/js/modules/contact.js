@@ -17,6 +17,7 @@ if (contact){
 		showMapBtn = contact.search('.show-map'),
 		hideMapBtn = contact.search('.hide-map'),
 		center = new google.maps.LatLng(52.366394, 4.861973),
+		backToTop = $('.back-to-top'),
 		bodyRect = document.body.getBoundingClientRect(),
 		map, rect, contactTop;
 
@@ -64,26 +65,44 @@ if (contact){
 	google.maps.event.addDomListener(window, 'load', initialize);
 
 	var showMap = function(){
-		var header = contact.search('.header-main');
-		hideMapBtn.animate({opacity: 1});
-		header.animate({opacity: 0});
+		var rect = canvas[0].getBoundingClientRect();
 		overlay.animate({opacity: 0});
+		$(document.body).style({overflow: 'hidden'});
+		backToTop.animate({opacity: 0});
 		contents.animate({opacity: 0}, {
 			callback: function(){
-				header.style({display: 'none'});
 				overlay.style({display: 'none'});
 				contents.style({display: 'none'});
+				backToTop.style({display: 'none'});
+				contact.style({zIndex: 4});
+				canvas.animate({
+					top: -rect.top,
+					bottom: -(window.innerHeight - rect.bottom)
+				}, {
+					callback: function(){
+						hideMapBtn.animate({opacity: 1});
+					}
+				});
 			}
 		});
 	};
 
 	var hideMap = function(){
-		var header = contact.search('.header-main');
-		map.panTo(center);
 		hideMapBtn.animate({opacity: 0});
-		header.style({display: 'block'}).animate({opacity: 1});
-		overlay.style({display: 'block'}).animate({opacity: 1});
-		contents.style({display: 'block'}).animate({opacity: 1});
+		canvas.animate({
+			top: 0,
+			bottom: 0
+		}, {
+			callback: function(){
+				map.panTo(center);
+				$(document.body).style({overflow: 'auto'});
+				overlay.style({display: 'block'}).animate({opacity: 1});
+				contents.style({display: 'block'}).animate({opacity: 1});
+				backToTop.style({display: 'block'}).animate({opacity: 1}, {
+					callback: function(){ backToTop[0].setAttribute('style', ''); }
+				});
+			}
+		});
 	};
 
 	showMapBtn.on('click', function(e){
