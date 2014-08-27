@@ -62,6 +62,7 @@
 		margin: 30px 0 0;
 	}
 	.sub-title {
+		font-style: italic;
 		&:after {
 			content: ' ';
 			display: block;
@@ -69,10 +70,11 @@
 			height: 4px;
 			margin: 24px auto;
 			background: #2795bd;
+			@include transition(width .1s ease-in-out);
 		}
 	}
-	.sub-title {
-		font-style: italic;
+	li:hover .sub-title:after {
+		width: 40px;
 	}
 	img, .show-map {
 		display: block;
