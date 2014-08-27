@@ -4,10 +4,13 @@
 $img: '/img/cases/slimleren';
 
 @import '../fonts';
+@import '../animations';
 @import '../base';
 @import '../header';
 @import '../footer';
 @import '../case-base';
+
+@import '../modules/continue';
 
 @include keyframes(clock){
 	from {

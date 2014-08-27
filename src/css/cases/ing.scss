@@ -4,12 +4,14 @@
 $img: '/img/cases/ing';
 
 @import '../fonts';
+@import '../animations';
 @import '../base';
 @import '../header';
 @import '../footer';
 @import '../case-base';
 
 @import '../modules/devices';
+@import '../modules/continue';
 
 /** generic stuff */
 .ing {
@@ -21,6 +23,10 @@ $img: '/img/cases/ing';
 			color: #333;
 		}
 	}
+}
+
+.continue {
+	background-image: url(/img/arrow-down-dark.png);
 }
 
 /** mood images */

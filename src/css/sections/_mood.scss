@@ -1,16 +1,3 @@
-@include keyframes(borderGrow){
-	to {
-		width: 100%;
-	}
-}
-
-@include keyframes(fadeSlideIn){
-	to {
-		@include transform(translateX(0));
-		opacity: 1;
-	}
-}
-
 .mood {
 	position: relative;
 	height: 100%;
@@ -68,12 +55,6 @@
 			@include transform(translateX(20px));
 			@include animation(fadeSlideIn 1s .75s forwards);
 		}
-	}
-	.continue {
-		position: absolute;
-		bottom: 50px;
-		left: 50%;
-		margin: 0 0 0 -37px;
 	}
 	@media screen and (min-width: 600px){
 		.mission {

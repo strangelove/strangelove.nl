@@ -1,0 +1,19 @@
+@include keyframes(borderGrow){
+	to {
+		width: 100%;
+	}
+}
+
+@include keyframes(fadeSlideDown){
+	to {
+		@include transform(translateY(0));
+		opacity: 1;
+	}
+}
+
+@include keyframes(fadeSlideIn){
+	to {
+		@include transform(translateX(0));
+		opacity: 1;
+	}
+}

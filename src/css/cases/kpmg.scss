@@ -4,12 +4,14 @@
 $img: '/img/cases/kpmg';
 
 @import '../fonts';
+@import '../animations';
 @import '../base';
 @import '../header';
 @import '../footer';
 @import '../case-base';
 
 @import '../modules/devices';
+@import '../modules/continue';
 
 .mood {
 	position: fixed;

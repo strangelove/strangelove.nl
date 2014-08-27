@@ -4,10 +4,13 @@
 $img: '/img/cases/litedark';
 
 @import '../fonts';
+@import '../animations';
 @import '../base';
 @import '../header';
 @import '../footer';
 @import '../case-base';
+
+@import '../modules/continue';
 
 .description h2:after {
 	background: #00a448;
