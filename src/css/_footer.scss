@@ -7,9 +7,12 @@
 		width: 20%;
 		&:first-child {
 			width: 40%;
-			padding: 6px 120px 0 0;
-			text-align: right;
 		}
+	}
+	.identity {
+		width: 240px;
+		padding: 8px 0 0;
+		text-align: right;
 	}
 	ul {
 		margin: 0;
@@ -32,13 +35,14 @@
 		}
 	}
 	.slogan {
+		margin: 0 0 28px;
 		color: #2795bd;
 		line-height: 18px;
 	}
 	.social {
 		display: inline-block;
 		overflow: hidden;
-		margin: 24px 0 0;
+		margin: 0 0 14px;
 		li {
 			float: left;
 			margin: 0 0 0 16px;
