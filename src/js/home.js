@@ -7,4 +7,4 @@ require('./modules/cases');
 require('./modules/team');
 require('./modules/office');
 require('./modules/contact');
-require('./modules/headers');
+require('./modules/back-to-top');

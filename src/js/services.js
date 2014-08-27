@@ -1,5 +1,7 @@
 'use strict';
 
+require('./modules/back-to-top');
+
 var $ = require('elements');
 
 var causeLoop = function(el){

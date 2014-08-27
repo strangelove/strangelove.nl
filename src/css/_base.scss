@@ -90,6 +90,25 @@ a {
 	text-indent: -999em;
 }
 
+.back-to-top {
+	position: fixed;
+	z-index: 11;
+	bottom: 18px;
+	right: 18px;
+	opacity: 0;
+	@include transition(opacity .2s ease-in-out);
+	a {
+		display: block;
+		width: 48px;
+		height: 48px;
+		background: rgba(32, 32, 32, .8) url(/img/arrow-up-small.png) no-repeat center;
+		text-indent: -999em;
+	}
+	&.shown {
+		opacity: 1;
+	}
+}
+
 .light {
 	.arrow-left {
 		background: url(/img/arrow-left-dark.png);
@@ -102,15 +121,9 @@ a {
 .page {
 	overflow: hidden;
 	position: relative;
-	.header-main {
-		position: absolute;
-	}
 	&.dark {
 		background-color: #333b4a;
 		color: #fff;
-		.header-main a {
-			color: #fff;
-		}
 	}
 	.push {
 		display: block;
@@ -119,9 +132,6 @@ a {
 	.wrap {
 		height: 100%;
 		padding-bottom: 60px;
-	}
-	.header-main .wrap {
-		padding-bottom: 0;
 	}
 }
 @media screen and (min-width: 1024px) {
