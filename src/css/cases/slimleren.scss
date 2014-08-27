@@ -152,6 +152,7 @@ $img: '/img/cases/slimleren';
 		position: absolute;
 		z-index: 1;
 		top: 206px;
+		left: 0;
 		width: 100%;
 		height: 31px;
 		background: url(#{$img}/branch.png) no-repeat center top;
@@ -363,6 +364,7 @@ $img: '/img/cases/slimleren';
 	margin: 0 0 0 -452px;
 	padding: 20px 0 0 106px;
 	background: url(#{$img}/expl-screen.png);
+	text-align: left;
 }
 .expl-book1 {
 	position: absolute;
