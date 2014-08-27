@@ -62,13 +62,16 @@ a {
 .btn {
 	display: inline-block;
 	height: 40px;
-	padding: 0 40px;
+	padding: 0 24px;
 	background: #2795bd;
 	color: #fff;
-	font: 14px Ubuntu;
-	letter-spacing: 4px;
-	line-height: 42px;
+	font: 13px Ubuntu;
+	letter-spacing: 2px;
+	line-height: 41px;
 	text-transform: uppercase;
+}
+.dark .btn {
+	background: #5b6374;
 }
 
 .arrow-down {
