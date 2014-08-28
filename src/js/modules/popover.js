@@ -1,7 +1,8 @@
 'use strict';
 
 var debounce = require('mout/function/debounce'),
-	zen = require('elements/zen');
+	zen = require('elements/zen'),
+	$ = require('elements');
 require('moofx');
 
 /**
@@ -13,7 +14,7 @@ var Popover = function(options){
 	this.hoverZone = zen('div.popover-hover').insert(this.wrapper);
 	this.content = zen('div.popover-content').insert(this.wrapper);
 
-	options = options || {};
+	this.options = options = options || {};
 
 	if (options.content){
 		options.content.insert(this.content);
@@ -27,23 +28,10 @@ var Popover = function(options){
 
 	this.hoverZone[0].style.width = options.offset.x + 'px';
 
-	var bodyRect = document.body.getBoundingClientRect(),
-		rect = this.wrapper[0].getBoundingClientRect();
+	var rect = this.wrapper[0].getBoundingClientRect();
 	this.width = rect.right - rect.left;
 	this.height = rect.bottom - rect.top;
-
-	if (options.anchor){
-		this.anchor = options.anchor;
-		this.anchorRect = this.anchor[0].getBoundingClientRect();
-		this.wrapper[0].style.top = ((this.anchorRect.top - bodyRect.top) + options.offset.y) + 'px';
-		if (this.width + options.offset.x < bodyRect.right - this.anchorRect.right){
-			this.wrapper.addClass('left');
-			this.wrapper[0].style.left = ((this.anchorRect.right - bodyRect.left) + options.offset.x) + 'px';
-		} else {
-			this.wrapper.addClass('right');
-			this.wrapper[0].style.left = (this.anchorRect.left - this.width - options.offset.x) + 'px';
-		}
-	}
+	this.position();
 
 	this.wrapper[0].style.display = 'none';
 	this.hoverAnchor = false;
@@ -63,6 +51,10 @@ var Popover = function(options){
 		}, 1));
 	}
 
+	$(window).on('resize', debounce(function(){
+		self.position();
+	}, 300));
+
 	this.wrapper.on('mouseenter', function(){
 		self.hoverPopover = true;
 	});
@@ -72,6 +64,26 @@ var Popover = function(options){
 			self.hide();
 		}
 	}, 1));
+};
+
+Popover.prototype.position = function(){
+	this.wrapper.removeClass('left');
+	this.wrapper.removeClass('right');
+
+	var bodyRect = document.body.getBoundingClientRect();
+
+	if (this.options.anchor){
+		this.anchor = this.options.anchor;
+		this.anchorRect = this.anchor[0].getBoundingClientRect();
+		this.wrapper[0].style.top = ((this.anchorRect.top - bodyRect.top) + this.options.offset.y) + 'px';
+		if (this.width + this.options.offset.x < bodyRect.right - this.anchorRect.right){
+			this.wrapper.addClass('left');
+			this.wrapper[0].style.left = ((this.anchorRect.right - bodyRect.left) + this.options.offset.x) + 'px';
+		} else {
+			this.wrapper.addClass('right');
+			this.wrapper[0].style.left = (this.anchorRect.left - this.width - this.options.offset.x) + 'px';
+		}
+	}
 };
 
 Popover.prototype.show = function(){
