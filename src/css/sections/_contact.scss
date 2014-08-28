@@ -1,4 +1,5 @@
 .contact {
+	overflow: visible;
 	position: relative;
 	.ray {
 		left: 60%;
@@ -55,6 +56,7 @@
 	}
 }
 .contact-content {
+	overflow: hidden;
 	position: relative;
 	z-index: 4;
 	top: 0;
