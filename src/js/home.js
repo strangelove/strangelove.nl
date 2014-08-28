@@ -8,3 +8,4 @@ require('./modules/team');
 require('./modules/office');
 require('./modules/contact');
 require('./modules/back-to-top');
+require('./modules/menu');

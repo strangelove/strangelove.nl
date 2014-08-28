@@ -15,10 +15,16 @@
 		<header class="header-main">
 			<div class="wrap">
 				<p class="logo"><a href="/">Strangelove</a></p>
+				<a class="show-menu" href="#">Menu</a>
 				<nav class="nav-primary">
 					<ul>
 						{% for item in navigation['main-en'] %}
-						<li><a href="{{item.uri}}">{{item.title}}</a>{% if item.id == "58" %}<span class="count">{{home_jobs.length}}</span>{% endif %}</li>
+							{% if item.id == '55' || item.id == '56' %}
+								{% set classAttr = ' class=mobile-hide' %}
+							{% else %}
+								{% set classAttr = '' %}
+							{% endif %}
+							<li{{classAttr}}><a href="{{item.uri}}">{{item.title}}{% if item.id == "58" %}<span class="count">{{home_jobs.length}}</span>{% endif %}</a></li>
 						{% endfor %}
 					</ul>
 				</nav>

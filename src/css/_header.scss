@@ -4,34 +4,48 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 60px;
+	height: 80px;
 	@include transform(translateZ(0));
 	@include backface-visibility(hidden);
 	.logo {
 		float: left;
-		line-height: 60px;
+		line-height: 80px;
 		a {
-			height: 60px;
+			height: 80px;
+		}
+	}
+}
+@media screen and (min-width: 1024px){
+	.header-main {
+		height: 60px;
+		.logo {
+			float: left;
+			line-height: 60px;
+			a {
+				height: 60px;
+			}
 		}
 	}
 }
 
-.nav-primary {
+.show-menu {
 	float: right;
-	ul {
-		font: bold italic 14px 'Aleo';
-		line-height: 68px;
+	width: 40px;
+	height: 80px;
+	background: url(/img/menu-icon.png) no-repeat right center;
+	text-indent: -999em;
+	&:hover {
+		opacity: 1;
 	}
-	li {
-		float: left;
-		margin-left: 42px;
-		&:first-child {
-			margin-left: 0;
-		}
-		&.active a {
-			border-bottom: 1px solid #fff;
-		}
+}
+@media screen and (min-width: 1024px){
+	.show-menu {
+		display: none;
 	}
+}
+
+.nav-primary, .nav-clone {
+	font: bold italic 14px 'Aleo';
 	a {
 		color: #fff;
 		text-decoration: none;
@@ -49,6 +63,91 @@
 		line-height: 14px;
 		text-align: center;
 	}
+}
+
+.nav-primary {
+	display: none;
+	float: right;
+	line-height: 68px;
+	li {
+		float: left;
+		margin-left: 42px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		display: block;
+	}
+}
+
+.nav-clone {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: -50%;
+	bottom: 0;
+	width: 50%;
+	margin: 0;
+	padding: 0 24px;
+	background: #333;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 54px;
+	list-style: none;
+	@include transition(transform .2s ease-in-out);
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 100%;
+		bottom: 0;
+		width: 2px;
+		background: rgba(0, 0, 0, .2);
+	}
+	&.shown {
+		@include transform(translateX(-100%));
+	}
+	h2 {
+		height: 80px;
+		margin: 0 0 30px;
+		color: #666;
+		letter-spacing: normal;
+		line-height: 80px;
+		text-align: left;
+	}
+	.mobile-hide {
+		display: none;
+	}
+	ul {
+		margin: 0 -24px;
+	}
+	a {
+		display: block;
+		padding: 0 24px;
+		color: #fff;
+		@include transition(background .1s ease-out);
+		&:active, &:hover {
+			background: #2795bd;
+			opacity: 1;
+		}
+	}
+	@media screen and (min-width: 600px) {
+		.mobile-hide {
+			display: block;
+		}
+	}
+}
+
+.body-overlay {
+	display: none;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .4);
 }
 
 .light {
