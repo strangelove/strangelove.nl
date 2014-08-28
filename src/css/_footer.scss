@@ -1,18 +1,53 @@
 .footer-main {
 	overflow: hidden;
-	padding: 74px 0;
+	padding: 60px 0;
 	font-size: 12px;
 	.footer-col {
-		float: left;
-		width: 20%;
+		display: none;
 		&:first-child {
-			width: 40%;
+			display: block;
 		}
 	}
 	.identity {
-		width: 240px;
-		padding: 8px 0 0;
-		text-align: right;
+		text-align: center;
+	}
+	@media screen and (min-width: 600px) {
+		.footer-col {
+			display: block;
+			float: left;
+			width: 22%;
+			&:first-child {
+				width: 56%;
+			}
+			&.extra {
+				display: none;
+			}
+		}
+		.identity {
+			width: 240px;
+			width: 240px;
+			padding: 8px 0 0;
+			text-align: right;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.footer-col {
+			width: 25%;
+			&:first-child {
+				width: 50%;
+			}
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		.footer-col {
+			width: 20%;
+			&:first-child {
+				width: 40%;
+			}
+			&.extra {
+				display: block;
+			}
+		}
 	}
 	ul {
 		margin: 0;
@@ -35,9 +70,9 @@
 		}
 	}
 	.slogan {
-		margin: 0 0 28px;
+		margin: 0 0 21px;
 		color: #2795bd;
-		line-height: 18px;
+		font-size: 16px;
 	}
 	.social {
 		display: inline-block;
