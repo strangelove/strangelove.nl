@@ -145,6 +145,9 @@
 					<section class="popover-content t{{loop.index0}}">
 						<h3>{{person.name}}</h3>
 						{{person.value|safe}}
+						<ul class="team-social">
+							<li><a href="{{person.linkedin}}" class="linkedin">View {{person.name}}'s LinkedIn profile</a></li>
+						</ul>
 					</section>
 				</li>{% endfor %}
 			</ul>

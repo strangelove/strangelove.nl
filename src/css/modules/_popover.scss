@@ -5,6 +5,11 @@
 	padding: 45px;
 	border: 1px solid #d9d9d9;
 	background: rgba(255, 255, 255, .95);
+	.popover-hover {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
 	&:after, &:before {
 		content: ' ';
 		position: absolute;
@@ -23,6 +28,9 @@
 		margin-top: -9px;
 	}
 	&.left {
+		.popover-hover {
+			right: 100%;
+		}
 		&:after, &:before {
 			right: 100%;
 		}
@@ -34,6 +42,9 @@
 		}
 	}
 	&.right {
+		.popover-hover {
+			left: 100%;
+		}
 		&:after, &:before {
 			left: 100%;
 		}

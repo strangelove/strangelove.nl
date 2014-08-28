@@ -1,6 +1,7 @@
 'use strict';
 
-var zen = require('elements/zen');
+var debounce = require('mout/function/debounce'),
+	zen = require('elements/zen');
 require('moofx');
 
 /**
@@ -9,6 +10,7 @@ require('moofx');
  */
 var Popover = function(options){
 	this.wrapper = zen('div.popover').insert(document.body);
+	this.hoverZone = zen('div.popover-hover').insert(this.wrapper);
 	this.content = zen('div.popover-content').insert(this.wrapper);
 
 	options = options || {};
@@ -22,6 +24,8 @@ var Popover = function(options){
 		x: options.offset.x || 0,
 		y: options.offset.y || 0
 	};
+
+	this.hoverZone[0].style.width = options.offset.x + 'px';
 
 	var bodyRect = document.body.getBoundingClientRect(),
 		rect = this.wrapper[0].getBoundingClientRect();
@@ -42,22 +46,44 @@ var Popover = function(options){
 	}
 
 	this.wrapper[0].style.display = 'none';
+	this.hoverAnchor = false;
+	this.hoverPopover = false;
+
+	var self = this;
+
+	if (this.anchor){
+		this.anchor.on('mouseenter', function(){
+			self.hoverAnchor = true;
+		});
+		this.anchor.on('mouseleave', debounce(function(){
+			self.hoverAnchor = false;
+			if (!self.hoverPopover){
+				self.hide();
+			}
+		}, 1));
+	}
+
+	this.wrapper.on('mouseenter', function(){
+		self.hoverPopover = true;
+	});
+	this.wrapper.on('mouseleave', debounce(function(){
+		self.hoverPopover = false;
+		if (!self.hoverAnchor){
+			self.hide();
+		}
+	}, 1));
 };
 
-/**
- * Show the content
- */
 Popover.prototype.show = function(){
+	if (this.shown) return;
 	this.shown = true;
 	this.wrapper.style({opacity: 0, display: 'block'}).animate({
 		opacity: 1
 	}, {duration: 250});
 };
 
-/**
- * Hide the popover
- */
 Popover.prototype.hide = function(){
+	if (!this.shown || this.hovering) return;
 	this.shown = false;
 	var wrapper = this.wrapper;
 	this.wrapper.animate({opacity: 0}, {
@@ -68,9 +94,6 @@ Popover.prototype.hide = function(){
 	});
 };
 
-/**
- * Toggle popover visibility
- */
 Popover.prototype.toggle = function(){
 	this[this.shown ? 'hide' : 'show']();
 };
