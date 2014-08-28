@@ -1,3 +1,25 @@
+@include keyframes(clarifySmall){
+	from { background-position: 0 0; }
+	to { background-position: -1815px 0; }
+}
+@include keyframes(createSmall){
+	from { background-position: 0 -55px; }
+	to { background-position: -2365px -55px; }
+}
+@include keyframes(codeSmall){
+	from { background-position: 0 -110px; }
+	to { background-position: -2310px -110px; }
+}
+@include keyframes(connectSmall){
+	from { background-position: 0 -165px; }
+	to { background-position: -2200px -165px; }
+}
+@include keyframes(controlSmall){
+	from { background-position: 0 -220px; }
+	to { background-position: -2255px -220px; }
+}
+
+
 @include keyframes(clarify){
 	from { background-position: 0 0; }
 	to { background-position: -3696px 0; }
@@ -26,92 +48,71 @@
 	p {
 		margin-bottom: 60px;
 		text-align: center;
+		br {
+			display: none;
+		}
 	}
 	ol, ul {
-		overflow: hidden;
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		text-align: center;
 	}
 	ol {
-		margin: 0 0 -60px;
+		margin: 0 0 -60px 10px;
 	}
 	.service {
 		margin: 0 0 60px;
 		.icon {
-			display: block;
-			width: 112px;
-			height: 112px;
-			margin: 0 auto 30px;
+			float: left;
+			width: 64px;
+			height: 64px;
+			margin: 0 24px 0 0;
 			background: url(/img/services.png);
+			background-size: 2752px 320px;
 			opacity: 1;
 		}
-		&:hover h3:after {
-			width: 40px;
-		}
 	}
-	h3:after {
-		content: ' ';
-		display: block;
-		width: 30px;
-		height: 4px;
-		margin: 24px auto 18px;
-		@include transition(width .25s ease-in-out);
+	h3 {
+		padding: 6px 0 0;
 	}
 	.s1 {
 		.icon {
 			background-position: 0 0;
 			&.loop {
-				@include animation(clarify 1.32s steps(33));
+				@include animation(clarifySmall 1.32s steps(33));
 			}
-		}
-		h3:after {
-			background: #515875;
 		}
 	}
 	.s2 {
 		.icon {
-			background-position: 0 -112px;
+			background-position: 0 -64px;
 			&.loop {
-				@include animation(create 1.72s steps(43));
+				@include animation(createSmall 1.72s steps(43));
 			}
-		}
-		h3:after {
-			background: #576f9e;
 		}
 	}
 	.s3 {
 		.icon {
-			background-position: 0 -224px;
+			background-position: 0 -128px;
 			&.loop {
-				@include animation(code 1.68s steps(42));
+				@include animation(codeSmall 1.68s steps(42));
 			}
-		}
-		h3:after {
-			background: #6697b9;
 		}
 	}
 	.s4 {
 		.icon {
-			background-position: 0 -336px;
+			background-position: 0 -192px;
 			&.loop {
-				@include animation(connect 1.6s steps(40));
+				@include animation(connectSmall 1.6s steps(40));
 			}
-		}
-		h3:after {
-			background: #88c3d8;
 		}
 	}
 	.s5 {
 		.icon {
-			background-position: 0 -448px;
+			background-position: 0 -256px;
 			&.loop {
-				@include animation(control 1.64s steps(41));
+				@include animation(controlSmall 1.64s steps(41));
 			}
-		}
-		h3:after {
-			background: #afdae2;
 		}
 	}
 	ul {
@@ -131,10 +132,91 @@
 		margin: 120px 0 0;
 	}
 	@media screen and (min-width: 600px) {
+		p br {
+			display: inline;
+		}
+		ol {
+			margin-left: 0;
+			text-align: center;
+		}
 		.service {
 			display: inline-block;
 			vertical-align: top;
 			width: 33%;
+			.icon {
+				float: none;
+				display: block;
+				width: 112px;
+				height: 112px;
+				margin: 0 auto 30px;
+				background-size: 4816px 560px;
+			}
+			&:hover h3:after {
+				width: 40px;
+			}
+		}
+		h3:after {
+			content: ' ';
+			display: block;
+			width: 30px;
+			height: 4px;
+			margin: 24px auto 18px;
+			@include transition(width .25s ease-in-out);
+		}
+		.s1 {
+			.icon {
+				background-position: 0 0;
+				&.loop {
+					@include animation(clarify 1.32s steps(33));
+				}
+			}
+			h3:after {
+				background: #515875;
+			}
+		}
+		.s2 {
+			.icon {
+				background-position: 0 -112px;
+				&.loop {
+					@include animation(create 1.72s steps(43));
+				}
+			}
+			h3:after {
+				background: #576f9e;
+			}
+		}
+		.s3 {
+			.icon {
+				background-position: 0 -224px;
+				&.loop {
+					@include animation(code 1.68s steps(42));
+				}
+			}
+			h3:after {
+				background: #6697b9;
+			}
+		}
+		.s4 {
+			.icon {
+				background-position: 0 -336px;
+				&.loop {
+					@include animation(connect 1.6s steps(40));
+				}
+			}
+			h3:after {
+				background: #88c3d8;
+			}
+		}
+		.s5 {
+			.icon {
+				background-position: 0 -448px;
+				&.loop {
+					@include animation(control 1.64s steps(41));
+				}
+			}
+			h3:after {
+				background: #afdae2;
+			}
 		}
 		ul li {
 			display: block;
