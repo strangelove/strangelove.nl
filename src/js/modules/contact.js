@@ -39,7 +39,6 @@ if (contact){
 			google.maps.event.trigger(map, 'resize');
 			center = map.getCenter();
 			rect = contact[0].getBoundingClientRect();
-			contact.style('height', rect.bottom - rect.top);
 			contactTop = rect.top - bodyRect.top;
 
 			if (!isTouch){
@@ -66,6 +65,7 @@ if (contact){
 
 	var showMap = function(){
 		var rect = canvas[0].getBoundingClientRect();
+		contact.style('height', rect.bottom - rect.top);
 		overlay.animate({opacity: 0});
 		$(document.body).style({overflow: 'hidden'});
 		backToTop.animate({opacity: 0});
@@ -99,7 +99,10 @@ if (contact){
 				overlay.style({display: 'block'}).animate({opacity: 1});
 				contents.style({display: 'block'}).animate({opacity: 1});
 				backToTop.style({display: 'block'}).animate({opacity: 1}, {
-					callback: function(){ backToTop[0].setAttribute('style', ''); }
+					callback: function(){
+						contact.style('height', '');
+						backToTop[0].setAttribute('style', '');
+					}
 				});
 			}
 		});
