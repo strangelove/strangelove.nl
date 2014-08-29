@@ -60,6 +60,10 @@ a {
 	padding: 0 30px;
 }
 
+@media screen and (min-width: 600px){
+	padding: 0 60px;
+}
+
 .btn {
 	display: inline-block;
 	height: 40px;
