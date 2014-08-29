@@ -39,7 +39,8 @@
 		margin: 0 0 -60px 10px;
 	}
 	.service {
-		margin: 0 0 60px;
+		overflow: hidden;
+		margin: 0 0 30px;
 		.icon {
 			float: left;
 			width: 64px;
@@ -96,6 +97,7 @@
 			display: inline-block;
 			vertical-align: top;
 			width: 33%;
+			margin: 0 0 60px;
 			.icon {
 				float: none;
 				display: block;
