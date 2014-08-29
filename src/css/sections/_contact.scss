@@ -86,9 +86,6 @@
 		width: 33.33333333333333%;
 		text-align: center;
 	}
-	h2 span {
-		display: none;
-	}
 	h3 {
 		margin: 30px 0 0;
 	}
@@ -127,9 +124,6 @@
 	@media screen and (min-width: 768px){
 		.contact-mobile {
 			display: none;
-		}
-		h2 span {
-			display: inline;
 		}
 		ul {
 			display: block;
