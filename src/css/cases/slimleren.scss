@@ -352,7 +352,8 @@ $img: '/img/cases/slimleren';
 	top: 100%;
 	width: 100%;
 	height: 616px;
-	background: url(#{$img}/expl-bg.png) no-repeat center;
+	background: url(#{$img}/expl-bg.png) no-repeat center top;
+	background-size: cover;
 }
 .expl-screen {
 	position: fixed;
