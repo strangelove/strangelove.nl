@@ -72,18 +72,14 @@
 	</section>
 
 	<a name="cases"></a>
-	<section class="cases-mobile">
-		<ul>
-		{% for project in home_cases %}
-			<li class="case-{{project.id}}">
-				<img src="/img/case-mobile-{{project.id}}.png" alt="">
-				<div class="case-content">
-					<h3>{{project.name}}</h3>
-					<a class="view" href="/cases/{{project.slug}}">View case</a>
-				</div>
-			</li>
-		{% endfor %}
-		</ul>
+	<section class="page light cases-mobile">
+		<div class="wrap">
+			<div class="push"></div>
+			<h2>Cases</h2>
+			<p>
+				For the full experience, open our website on a bigger screen&hellip;
+			</p>
+		</div>
 	</section>
 
 	<section class="page light cases">
