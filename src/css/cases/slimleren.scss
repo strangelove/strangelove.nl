@@ -460,28 +460,20 @@ $img: '/img/cases/slimleren';
 
 /** landingpage */
 .landing-bg-wrap {
-	overflow: hidden;
 	position: fixed;
-	top: 120%;
-	left: 50%;
-	width: 1600px;
-	height: 1492px;
-	margin: 0 0 0 -800px;
-	&:before, &:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		z-index: 2;
-		display: block;
-		width: 100%;
-		height: 746px;
-		background: url(#{$img}/landing-bg-mask.png);
-		@include transform(translateZ(0));
-	}
-	&:after {
-		top: 50%;
-		@include transform(rotate(180deg) translateZ(0));
-	}
+	top: 140%;
+	width: 100%;
+	height: 100%;
+}
+.landing-bg-mask {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 600px;
+	width: 100%;
+	margin: -300px 0 0;
+	@include transform(skewY(15deg));
 }
 .landing-bg {
 	position: absolute;
@@ -490,13 +482,21 @@ $img: '/img/cases/slimleren';
 	left: 0;
 	width: 100%;
 	height: 3000px;
-	background: url(#{$img}/landing-bg.png);
-	@include transform(translateZ(0));
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url(#{$img}/landing-bg.png) center top;
+		@include transform(skewY(-15deg));
+	}
 }
 .landing-eraser {
 	position: absolute;
 	z-index: 3;
-	top: 920px;
+	top: 880px;
 	right: 50%;
 	width: 275px;
 	height: 151px;
@@ -507,7 +507,7 @@ $img: '/img/cases/slimleren';
 .landing-compass {
 	position: absolute;
 	z-index: 3;
-	top: 1420px;
+	top: 1200px;
 	right: 50%;
 	width: 342px;
 	height: 390px;
@@ -518,7 +518,7 @@ $img: '/img/cases/slimleren';
 .landing-pencil {
 	position: absolute;
 	z-index: 3;
-	top: 1330px;
+	top: 1040px;
 	left: 50%;
 	width: 182px;
 	height: 129px;
@@ -529,8 +529,8 @@ $img: '/img/cases/slimleren';
 .landing-owl {
 	position: absolute;
 	z-index: 3;
-	top: 1710px;
-	left: 50%;
+	top: 1430px;
+	right: 0;
 	width: 175px;
 	height: 198px;
 	margin: 0 0 0 420px;
