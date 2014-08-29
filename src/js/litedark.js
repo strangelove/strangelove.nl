@@ -3,6 +3,7 @@
 var easeInOutQuad = require('kubrick-js/easing/easeInOutQuad'),
 	prefix = require('kubrick-js/lib/vendorprefix')();
 
+require('./modules/menu');
 require('./modules/back-to-top');
 
 require('kubrick-js')([

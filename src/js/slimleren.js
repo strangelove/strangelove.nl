@@ -7,6 +7,7 @@ var $ = require('elements'),
 	timestamp = new Date().getTime(),
 	phoneReplaced, visualsReplaced;
 
+require('./modules/menu');
 require('./modules/back-to-top');
 
 var owls = [
