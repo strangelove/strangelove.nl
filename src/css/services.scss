@@ -206,15 +206,26 @@
 		font-weight: inherit;
 	}
 	&.dark {
+		display: none;
 		background: #3b3941 url(/img/strange-wars.gif) no-repeat center;
 		color: #fff;
 	}
 }
 
 .services {
+	display: none;
 	.wrap {
 		margin: 0 auto;
 		padding-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.interlude.dark {
+		display: block;
+	}
+	.services {
+		display: block;
 	}
 }
 
