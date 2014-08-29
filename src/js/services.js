@@ -1,5 +1,6 @@
 'use strict';
 
+require('./modules/menu');
 require('./modules/back-to-top');
 
 var $ = require('elements');
