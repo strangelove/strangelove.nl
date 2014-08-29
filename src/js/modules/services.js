@@ -3,13 +3,24 @@
 var $ = require('elements'),
 	isTouch = ('ontouchstart' in window || 'onmsgesturechange' in window);
 
+var removeLoopClass = function(){
+	$(this).removeClass('loop');
+	$(this).off('animationend', removeLoopClass);
+	$(this).off('oAnimationEnd', removeLoopClass);
+	$(this).off('webkitAnimationEnd', removeLoopClass);
+};
+
+var causeLoop = function(el){
+	if (el.hasClass('loop')) return;
+	el.addClass('loop');
+	el.on('animationend', removeLoopClass);
+	el.on('oAnimationEnd', removeLoopClass);
+	el.on('webkitAnimationEnd', removeLoopClass);
+};
+
 if (!isTouch){
-	var causeLoop = function(el){
-		el.addClass('loop');
-		setTimeout(function(){ el.removeClass('loop'); }, 1720);
-	};
 
 	$('.services').delegate('mouseover', '.icon', function(e, el){
-		if (!el.hasClass('loop')) causeLoop(el);
+		causeLoop(el);
 	});
 }

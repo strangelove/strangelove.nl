@@ -3,17 +3,30 @@
 require('./modules/menu');
 require('./modules/back-to-top');
 
-var $ = require('elements');
+var $ = require('elements'),
+	isTouch = ('ontouchstart' in window || 'onmsgesturechange' in window);
 
-var causeLoop = function(el){
-	el.addClass('loop');
-	setTimeout(function(){ el.removeClass('loop'); }, 2240);
+var removeLoopClass = function(){
+	$(this).removeClass('loop');
+	$(this).off('animationend', removeLoopClass);
+	$(this).off('oAnimationEnd', removeLoopClass);
+	$(this).off('webkitAnimationEnd', removeLoopClass);
 };
 
-$('.vision-icons').delegate('mouseover', '.vision-icon', function(e, el){
-	if (!el.hasClass('loop')) causeLoop(el);
+var causeLoop = function(el){
+	if (el.hasClass('loop')) return;
+	el.addClass('loop');
+	el.on('animationend', removeLoopClass);
+	el.on('oAnimationEnd', removeLoopClass);
+	el.on('webkitAnimationEnd', removeLoopClass);
+};
+
+var eType = isTouch ? 'click' : 'mouseover';
+
+$('.vision-icons').delegate(eType, '.vision-icon', function(e, el){
+	causeLoop(el);
 });
 
-$('.services').delegate('mouseover', '.service-icon', function(e, el){
-	if (!el.hasClass('loop')) causeLoop(el);
+$('.services').delegate(eType, '.service-icon', function(e, el){
+	causeLoop(el);
 });
