@@ -10,6 +10,23 @@
 @import 'modules/continue';
 @import 'sections/mood';
 
+@include keyframes(relevantSmall){
+	from { background-position: 0 0; }
+	to { background-position: -3584px 0; }
+}
+@include keyframes(humanSmall){
+	from { background-position: 0 -64px; }
+	to { background-position: -2304px -64px; }
+}
+@include keyframes(memorableSmall){
+	from { background-position: 0 -128px; }
+	to { background-position: -2240px -128px; }
+}
+@include keyframes(simpleSmall){
+	from { background-position: 0 -192px; }
+	to { background-position: -3584px -192px; }
+}
+
 @include keyframes(relevant){
 	from { background-position: 0 0; }
 	to { background-position: -6160px 0; }
@@ -108,14 +125,26 @@
 		background-size: 3584px 256px;
 	}
 }
+.vision-1 .vision-icon.loop {
+	@include animation(relevantSmall 2.24s steps(56));
+}
 .vision-2 .vision-icon {
 	background-position: 0 -64px;
+	&.loop {
+		@include animation(humanSmall 1.44s steps(36));
+	}
 }
 .vision-3 .vision-icon {
 	background-position: 0 -128px;
+	&.loop {
+		@include animation(memorableSmall 1.4s steps(35));
+	}
 }
 .vision-4 .vision-icon {
 	background-position: 0 -192px;
+	&.loop {
+		@include animation(simpleSmall 2.24s steps(56));
+	}
 }
 
 @media screen and (min-width: 600px){
@@ -131,31 +160,7 @@
 		.vision-icon {
 			float: none;
 			display: block;
-			width: 110px;
-			height: 110px;
 			margin: 0 auto;
-			background-size: 6160px 440px;
-		}
-	}
-	.vision-1 .vision-icon.loop {
-		@include animation(relevant 2.24s steps(56));
-	}
-	.vision-2 .vision-icon {
-		background-position: 0 -110px;
-		&.loop {
-			@include animation(human 1.44s steps(36));
-		}
-	}
-	.vision-3 .vision-icon {
-		background-position: 0 -220px;
-		&.loop {
-			@include animation(memorable 1.4s steps(35));
-		}
-	}
-	.vision-4 .vision-icon {
-		background-position: 0 -330px;
-		&.loop {
-			@include animation(simple 2.24s steps(56));
 		}
 	}
 }
@@ -180,6 +185,32 @@
 		margin: 84px 0 -60px;
 		li {
 			width: 50%;
+		}
+		.vision-icon {
+			width: 110px;
+			height: 110px;
+			background-size: 6160px 440px;
+		}
+	}
+	.vision-1 .vision-icon.loop {
+		@include animation(relevant 2.24s steps(56));
+	}
+	.vision-2 .vision-icon {
+		background-position: 0 -110px;
+		&.loop {
+			@include animation(human 1.44s steps(36));
+		}
+	}
+	.vision-3 .vision-icon {
+		background-position: 0 -220px;
+		&.loop {
+			@include animation(memorable 1.4s steps(35));
+		}
+	}
+	.vision-4 .vision-icon {
+		background-position: 0 -330px;
+		&.loop {
+			@include animation(simple 2.24s steps(56));
 		}
 	}
 }
