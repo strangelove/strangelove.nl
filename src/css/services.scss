@@ -75,8 +75,12 @@
 	margin: 0 0 0 300px;
 }
 
-.mood .mood-bg {
-	background-image: url(/img/services-bg.jpg);
+.mood {
+	max-height: 800px;
+	.mood-bg {
+		background-image: url(/img/services-bg.jpg);
+		background-position: center top;
+	}
 }
 
 .vision {
@@ -220,7 +224,7 @@
 
 .interlude {
 	padding: 120px 0;
-	background: url(/img/bg-interlude-1.jpg) center;
+	background: url(/img/bg-interlude-1.jpg) center top;
 	background-size: cover;
 	color: #fff;
 	text-align: center;
