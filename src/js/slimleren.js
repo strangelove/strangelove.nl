@@ -505,60 +505,6 @@ require('kubrick-js')([
 				opacity: -3
 			},
 			{
-				element: '.prices-bg-wrap',
-				translateY: '-115%'
-			},
-			{
-				element: '.prices-bg',
-				translateY: 400
-			},
-			{
-				element: '.product-price1',
-				translateY: '-105%'
-			},
-			{
-				element: '.product-price2',
-				translateY: '-95%'
-			},
-			{
-				element: '.product-price3',
-				translateY: '-105%'
-			},
-			{
-				element: '.desc-prices',
-				translateY: '-120%',
-				opacity: [-2, 1]
-			}
-		]
-	},
-	{
-		duration: '100%',
-		actors: [
-			{
-				element: '.prices-bg-wrap',
-				translateY: ['-115%', '-215%']
-			},
-			{
-				element: '.prices-bg',
-				translateY: [400, 800]
-			},
-			{
-				element: '.product-price1',
-				translateY: ['-105%', '-205%']
-			},
-			{
-				element: '.product-price2',
-				translateY: ['-95%', '-195%']
-			},
-			{
-				element: '.product-price3',
-				translateY: ['-105%', '-205%']
-			},
-			{
-				element: '.desc-prices',
-				translateY: ['-120%', '-220%'],
-			},
-			{
 				element: '.other-cases',
 				translateY: '-90%'
 			},
