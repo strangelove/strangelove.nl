@@ -80,6 +80,7 @@ if (contact){
 					bottom: -(window.innerHeight - rect.bottom)
 				}, {
 					callback: function(){
+						google.maps.event.trigger(map, 'resize');
 						hideMapBtn.animate({opacity: 1});
 					}
 				});
@@ -94,6 +95,7 @@ if (contact){
 			bottom: 0
 		}, {
 			callback: function(){
+				google.maps.event.trigger(map, 'resize');
 				map.panTo(center);
 				$(document.body).style({overflow: 'auto'});
 				overlay.style({display: 'block'}).animate({opacity: 1});

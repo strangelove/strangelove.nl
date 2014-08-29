@@ -63,7 +63,19 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+	.contact-mobile {
+		text-align: center;
+		p:before {
+			content: '';
+			display: block;
+			width: 30px;
+			height: 4px;
+			margin: 24px auto;
+			background: #2795bd;
+		}
+	}
 	ul {
+		display: none;
 		overflow: hidden;
 		margin: 0;
 		padding: 0;
@@ -73,6 +85,9 @@
 		float: left;
 		width: 33.33333333333333%;
 		text-align: center;
+	}
+	h2 span {
+		display: none;
 	}
 	h3 {
 		margin: 30px 0 0;
@@ -108,5 +123,16 @@
 	}
 	.show-map {
 		text-indent: -999em;
+	}
+	@media screen and (min-width: 768px){
+		.contact-mobile {
+			display: none;
+		}
+		h2 span {
+			display: inline;
+		}
+		ul {
+			display: block;
+		}
 	}
 }
