@@ -19,6 +19,8 @@ var $ = require('elements'),
 	],
 	lines = $('.line-1, .line-2, .line-3');
 
+require('./modules/back-to-top');
+
 require('kubrick-js')([
 	{
 		duration: '75%',
