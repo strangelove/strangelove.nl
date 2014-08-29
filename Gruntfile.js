@@ -42,6 +42,7 @@ module.exports = function(grunt){
 			},
 			explicit: {
 				files: [
+					{ src: 'src/doc', dest: 'public/doc' },
 					{ src: 'src/fonts', dest: 'public/fonts' },
 					{ src: 'src/img', dest: 'public/img' }
 				]
