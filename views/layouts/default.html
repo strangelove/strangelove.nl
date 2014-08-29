@@ -63,7 +63,7 @@
 					<h4>More</h4>
 					<ul>
 						{% for item in navigation['footer-more-en'] %}
-							{% if item.id == "64" %}
+							{% if item.id == "64" || item.id == "63" %}
 								<li class="disabled">{{item.title}}</li>
 							{% else %}
 								<li><a href="{{item.uri}}" target="_blank">{{item.title}}</a></li>
