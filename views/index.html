@@ -183,8 +183,15 @@
 
 	<section class="page light jobs">
 		<div class="wrap">
-			<a class="push" name="jobs"></a>
+			<a name="jobs" class="push"></a>
 			<h2>Become strange</h2>
+			<div class="jobs-mobile">
+				<p>
+					Want to work with and build great &amp; strange stuff with some very
+					talented people? Take a look at the current job openings!
+				</p>
+				<a class="btn" target="_blank" href="https://strangelove.workable.com/">Job openings ({{home_jobs.length}})</a>
+			</div>
 			<div class="jobs-list">
 				{% for job in home_jobs %}
 				<article>
