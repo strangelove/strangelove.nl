@@ -260,7 +260,7 @@ require('kubrick-js')([
 			},
 			{
 				element: '.photo2',
-				translateY: '-70%'
+				translateY: '-80%'
 			},
 			{
 				element: '.photo3',
