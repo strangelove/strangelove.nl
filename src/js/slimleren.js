@@ -255,12 +255,12 @@ require('kubrick-js')([
 				translateY: ['-55%', '-155%']
 			},
 			{
-				element: '.trans-book',
+				element: '.trans-scooter-owl',
 				translateY: ['20%', '-72%']
 			},
 			{
 				element: '.trans-owl',
-				translateY: '-70%'
+				translateY: '-60%'
 			},
 			{
 				element: '.trans-owl .wing-left',
@@ -276,12 +276,12 @@ require('kubrick-js')([
 		duration: '100%',
 		actors: [
 			{
-				element: '.trans-book',
+				element: '.trans-scooter-owl',
 				translateY: ['-72%', '-180%']
 			},
 			{
 				element: '.trans-owl',
-				translateY: ['-70%', '-200%']
+				translateY: ['-60%', '-200%']
 			},
 			{
 				element: '.desc-translations',
@@ -413,7 +413,7 @@ require('kubrick-js')([
 			},
 			{
 				element: '.landing-pencil',
-				translateY: -754
+				translateY: -600
 			},
 			{
 				element: '.landing-owl',
@@ -459,7 +459,7 @@ require('kubrick-js')([
 			},
 			{
 				element: '.landing-pencil',
-				translateY: [-754, -1508]
+				translateY: [-600, -1508]
 			},
 			{
 				element: '.landing-owl',
