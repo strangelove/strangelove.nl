@@ -227,6 +227,58 @@ require('kubrick-js')([
 				opacity: [2, 0]
 			},
 			{
+				element: '.speechbubble',
+				translateY: -50
+			},
+			{
+				element: '.senior',
+				translateY: -54
+			},
+			{
+				element: '.form',
+				translateY: -56
+			},
+			{
+				element: '.envelope',
+				translateY: -52
+			},
+			{
+				element: '.hand',
+				translateY: -106
+			},
+			{
+				element: '.form-hand',
+				translateY: -52
+			},
+			{
+				element: '.moneybag',
+				translateY: -100
+			},
+			{
+				element: '.lock',
+				translateY: -104
+			},
+			{
+				element: '.eye',
+				translateY: -102
+			},
+			{
+				element: '.piggybank',
+				translateY: -150
+			},
+			{
+				element: '.book',
+				translateY: -152
+			},
+			{
+				element: '.suitcase',
+				translateY: -204
+			},
+			{
+				element: '.male',
+				translateY: -200
+			},
+			{
 				element: '.desc-iconography',
 				translateY: ['-60%', '-160%']
 			},
