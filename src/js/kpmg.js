@@ -435,17 +435,17 @@ require('kubrick-js')([
 			},
 			{
 				element: '.battle-hero2',
-				translateX: [-140, '100%'],
+				translateX: [-140, '20%'],
 				translateY: ['-60%', '-200%']
 			},
 			{
 				element: '.battle-hero3',
-				translateX: [-70, '80%'],
+				translateX: [-70, '20%'],
 				translateY: ['-60%', '-200%']
 			},
 			{
 				element: '.battle-hero4',
-				translateX: [0, '60%'],
+				translateX: [0, '20%'],
 				translateY: ['-60%', '-200%']
 			},
 			{
