@@ -3,8 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>STRANGELOVE</title>
-		<meta name="description" content="">
+		{% if home_header %}
+			<title>{{home_header[0].meta_title}}</title>
+			<meta name="description" content="{{home_header[0].meta_description}}">
+		{% else %}
+			<title>Strangelove digital agency Amsterdam</title>
+			<meta name="description" content="Strangelove is a creative agency in Amsterdam with a focus on business development, branding and digital development.">
+		{% endif %}
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 		{% block stylesheets %}{% endblock %}
 	</head>
