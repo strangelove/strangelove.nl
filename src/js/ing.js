@@ -21,6 +21,14 @@ require('kubrick-js')([
 				opacity: -1.2
 			},
 			{
+				element: '.client-graph',
+				translateY: '-70%'
+			},
+			{
+				element: '.client-money',
+				translateY: '-65%'
+			},
+			{
 				element: '.desc-client',
 				translateY: '-65%'
 			}

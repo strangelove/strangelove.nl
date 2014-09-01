@@ -68,7 +68,27 @@ $img: '/img/cases/ing';
 	}
 }
 
-/** client */
+// client
+.client-graph {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	right: 40px;
+	width: 330px;
+	height: 194px;
+	background: url(#{$img}/client-graph.png);
+}
+.client-money {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	right: 0;
+	width: 295px;
+	height: 227px;
+	background: url(#{$img}/client-money.png);
+}
+
+// brand
 .brand-logo {
 	position: fixed;
 	top: 100%;
