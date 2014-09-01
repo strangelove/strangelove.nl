@@ -38,6 +38,14 @@ require('kubrick-js')([
 		duration: '100%',
 		actors: [
 			{
+				element: '.client-graph',
+				translateY: ['-70%', '-160%']
+			},
+			{
+				element: '.client-money',
+				translateY: ['-65%', '-140%']
+			},
+			{
 				element: '.desc-client',
 				translateY: ['-65%', '-120%'],
 				opacity: -1
