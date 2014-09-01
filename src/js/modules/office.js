@@ -29,7 +29,7 @@ el.search('.slides-next').on('click', function(e){
 var bgs = $('.office-bg'), i, len = bgs.length, bgSlides = [];
 
 for (i = 0; i < len; i++){
-	bgSlides.push(new Slide(bgs[i]));
+	bgSlides.push(new Slide(bgs[i], {duration: 1000}));
 }
 
 slides.on('change', function(to, from){

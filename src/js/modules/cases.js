@@ -6,5 +6,6 @@ new Slides(document.querySelector('.cases .slides'), {
 	slideSelector: '.slides-contents article',
 	navSelector: '.slides-tabs a',
 	loop: false,
-	hover: true
+	hover: true,
+	transitionOptions: {duration: 1000}
 });
