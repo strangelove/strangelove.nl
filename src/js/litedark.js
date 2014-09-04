@@ -74,14 +74,9 @@ require('kubrick-js')([
 				opacity: -1
 			},
 			{
-				element: '.leaves1',
+				element: '.brand-leaves',
 				translateX: 40,
-				translateY: '-105%'
-			},
-			{
-				element: '.leaves2',
-				translateX: -30,
-				translateY: '-115%'
+				translateY: '-108%'
 			},
 			{
 				element: '.brand-wrap',
@@ -129,14 +124,9 @@ require('kubrick-js')([
 		duration: '100%',
 		actors: [
 			{
-				element: '.leaves1',
+				element: '.brand-leaves',
 				translateX: [40, 0],
-				translateY: ['-105%', '-170%']
-			},
-			{
-				element: '.leaves2',
-				translateX: [-30, 0],
-				translateY: ['-115%', '-160%']
+				translateY: ['-108%', '-170%']
 			},
 			{
 				element: '.brand-wrap',
@@ -162,16 +152,11 @@ require('kubrick-js')([
 		actors: [
 			{
 				element: '.logo-final',
-				translateY: ['-65%', '-125%']
+				translateY: ['-65%', '-160%']
 			},
 			{
 				element: '.flyer-bg',
 				translateY: '-100%'
-			},
-			{
-				element: '.leaves3',
-				translateX: -30,
-				translateY: -120
 			},
 			{
 				element: '.circle-splatter',
@@ -248,7 +233,7 @@ require('kubrick-js')([
 			},
 			{
 				element: '.desc-design',
-				translateY: ['-90%', '-190%']
+				translateY: ['-90%', '-240%']
 			},
 			{
 				element: '.photos-wrap',
@@ -267,10 +252,6 @@ require('kubrick-js')([
 				translateY: ['30%', '-105%']
 			},
 			{
-				element: '.leaves4',
-				translateY: -100
-			},
-			{
 				element: '.circle-red',
 				translateX: -30
 			},
@@ -286,11 +267,11 @@ require('kubrick-js')([
 		actors: [
 			{
 				element: '.photos-wrap',
-				translateY: ['-100%', '-200%']
+				translateY: ['-100%', '-240%']
 			},
 			{
 				element: '.desc-result',
-				translateY: ['-120%', '-220%']
+				translateY: ['-120%', '-260%']
 			},
 			{
 				element: '.other-cases',

@@ -73,24 +73,13 @@ $img: '/img/cases/litedark';
 }
 
 /** brand identity */
-.leaves1 {
+.brand-leaves {
 	position:fixed;
 	z-index: 6;
 	top: 105%;
 	left: -40px;
-	width: 248px;
-	height: 293px;
-	margin: -50px 0 0;
-	background: url(#{$img}/leaves1.png);
-}
-.leaves2 {
-	position:fixed;
-	z-index: 6;
-	top: 115%;
-	right: -30px;
-	width: 83px;
-	height: 138px;
-	margin: -10px 0 0;
+	width: 206px;
+	height: 234px;
 	background: url(#{$img}/leaves2.png);
 }
 .brand-wrap {
@@ -144,14 +133,6 @@ $img: '/img/cases/litedark';
 	width: 100%;
 	height: 625px;
 	background: url(#{$img}/bg-wood.png) center top;
-}
-.leaves3 {
-	position: absolute;
-	top: 100px;
-	right: -30px;
-	width: 83px;
-	height: 138px;
-	background: url(#{$img}/leaves2.png);
 }
 .circle-splatter {
 	position: absolute;
@@ -239,14 +220,6 @@ $img: '/img/cases/litedark';
 	width: 434px;
 	height: 518px;
 	background: url(#{$img}/photo-3.png);
-}
-.leaves4 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 198px;
-	height: 263px;
-	background: url(#{$img}/leaves3.png);
 }
 .circle-red {
 	position: absolute;
