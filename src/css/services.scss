@@ -103,8 +103,6 @@
 	}
 }
 .services-content {
-	// float: left;
-	// max-width: 500px;
 	:last-child {
 		margin-bottom: 0;
 	}
@@ -223,7 +221,7 @@
 }
 
 .interlude {
-	padding: 120px 0;
+	padding: 60px 0;
 	background: url(/img/bg-interlude-1.jpg) center top;
 	background-size: cover;
 	color: #fff;
@@ -259,8 +257,11 @@
 }
 
 @media screen and (min-width: 600px){
-	.interlude.dark {
-		display: block;
+	.interlude {
+		padding: 120px 0;
+		.dark {
+			display: block;
+		}
 	}
 	.services {
 		display: block;
@@ -329,9 +330,10 @@
 		margin: 0 -30px 60px;
 	}
 	.service {
-		float: left;
+		display: inline-block;
 		width: 50%;
 		padding: 0 30px;
+		vertical-align: top;
 		&:last-child {
 			width: auto;
 		}

@@ -60,8 +60,7 @@
 	<section class="page light services">
 		<div class="wrap">
 			<div class="service-list">
-				{% for service in services %}
-				<div class="service service-{{loop.index}}">
+				{% for service in services %}<div class="service service-{{loop.index}}">
 					<a class="push" name="{{service.name|lower}}"></a>
 					<header class="service-header">
 						<div class="service-icon"></div>
@@ -69,8 +68,7 @@
 						<p class="service-department">{{service.department}}</p>
 					</header>
 					{{service.value|safe}}
-				</div>
-				{% endfor %}
+				</div>{% endfor %}
 			</div>
 		</div>
 	</section>
