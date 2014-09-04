@@ -21,6 +21,8 @@
 		"kubrick-js": "0.1",
 		"moofx": "kamicane/moofx#a3716037e78f057e6eb06504c4192abb56edb4c0",
 		"mout": "0.9",
+		"node-bourbon": "1.2",
+		"normalize.css": "3.0",
 		"optimist": "0.6",
 		"request": "2.39",
 		"slides-js": "0.1",

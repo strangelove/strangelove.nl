@@ -1,6 +1,0 @@
-[submodule "vendor/normalize.css"]
-	path = vendor/normalize.css
-	url = https://github.com/necolas/normalize.css.git
-[submodule "vendor/bourbon"]
-	path = vendor/bourbon
-	url = https://github.com/thoughtbot/bourbon
