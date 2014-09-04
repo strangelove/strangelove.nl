@@ -4,10 +4,11 @@
 	text-align: center;
 	.slides-prev, .slides-next {
 		position: absolute;
-		width: 17px;
-		height: 37px;
-		margin: 11px 0 0;
-		background-size: cover;
+		width: 41px;
+		height: 66px;
+		background-size: 17px 37px;
+		background-position: center;
+		background-repeat: no-repeat;
 		opacity: .5;
 		@include transition(opacity .1s ease-out);
 		&:hover {
@@ -19,18 +20,19 @@
 
 	}
 	.slides-prev {
-		left: -12px;
+		left: -30px;
 	}
 	.slides-next {
-		right: -12px;
+		right: -30px;
 	}
 	.slides-tabs {
 		display: block;
-		border-top: 1px solid #fff;
-		border-bottom: 1px solid #fff;
+		margin: 0 -30px;
+		border-top: 1px solid rgba(255, 255, 255, .3);
+		border-bottom: 1px solid rgba(255, 255, 255, .3);
 		font: 15px Ubuntu;
 		letter-spacing: 3px;
-		line-height: 58px;
+		line-height: 64px;
 		text-transform: uppercase;
 		a {
 			display: none;
@@ -58,9 +60,18 @@
 			margin: 200px 0 0;
 			background-size: auto;
 		}
+		.slides-prev {
+			left: 0;
+		}
+		.slides-next {
+			right: 0;
+		}
 		.slides-tabs {
 			display: inline-block;
+			margin: 0;
 			padding: 0 24px;
+			border-color: #fff;
+			line-height: 58px;
 			li {
 				display: inline;
 				margin: 0 0 0 30px;
