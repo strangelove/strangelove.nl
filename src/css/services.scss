@@ -230,9 +230,8 @@
 		margin: 0;
 		font-size: 22px;
 		font-style: italic;
-		line-height: 48px;
 		&.emphasize {
-			font: 36px Ubuntu;
+			font: 21px Ubuntu;
 			text-transform: uppercase;
 			letter-spacing: 4px;
 		}
@@ -261,6 +260,12 @@
 		padding: 120px 0;
 		.dark {
 			display: block;
+		}
+		p {
+			line-height: 48px;
+			&.emphasize {
+				font: 36px Ubuntu;
+			}
 		}
 	}
 	.services {
