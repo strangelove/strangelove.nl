@@ -7,14 +7,20 @@
 		{% if home_header %}
 			<title>{{home_header[0].meta_title}}</title>
 			<meta name="description" content="{{home_header[0].meta_description}}">
+			<meta property="og:title" content="{{home_header[0].meta_title}}" />
+        	<meta property="og:description" content="{{home_header[0].meta_description}}" />
 		{% else %}
 			<title>{{ meta_title || "Strangelove digital agency Amsterdam" }}</title>
 			<meta name="description" content="{{ meta_description || 'Strangelove is a creative agency in Amsterdam with a focus on business development, branding and digital development.' }}">
+			<meta property="og:title" content="{{ meta_title || "Strangelove digital agency Amsterdam" }}" />
+        	<meta property="og:description" content="{{ meta_description || 'Strangelove is a creative agency in Amsterdam with a focus on business development, branding and digital development.' }}" />
 		{% endif %}
+		<meta property="og:site_name" content="Strangelove digital agency Amsterdam" />
+        <meta property="og:image" content="http://www.strangelove.nl/img/strangelove-logo-og.jpg" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 		{% block stylesheets %}{% endblock %}
 	</head>
-
 	{% block bodytag %}
 		<body>
 	{% endblock %}
