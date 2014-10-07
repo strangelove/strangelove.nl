@@ -196,14 +196,16 @@
 				</p>
 				<a class="btn" target="_blank" href="https://strangelove.workable.com/">Job openings ({{home_jobs.length}})</a>
 			</div>
-			<div class="jobs-list">
-				{% for job in home_jobs %}
-				<article>
+			{% set jobCount = "odd" %}
+			{% if home_jobs.length % 2 == 0 && home_jobs.length % 3 != 0 %}
+				{% set jobCount = "even" %}
+			{% endif %}
+			<div class="jobs-list job-count-{{ jobCount }}">
+				{% for job in home_jobs %}<article>
 					<h3>{{job.name}}</h3>
 					{{job.value|safe}}
 					<a href="{{job.workable}}" target="_blank" class="btn">Apply</a>
-				</article>
-				{% endfor %}
+				</article>{% endfor %}
 			</div>
 		</div>
 	</section>

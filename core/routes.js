@@ -7,8 +7,7 @@ var fs = require('fs'),
 	trim = require('mout/string/trim'),
 	app = require('./app'),
 	config = require('./config'),
-	workable = require('../lib/workable'),
-	clients = {}, jobs = {}, navigation = [];
+	clients = {}, jobs = [], navigation = [];
 
 try {
 	clients = JSON.parse(fs.readFileSync(process.cwd() + '/data/clients.json'));
@@ -16,10 +15,6 @@ try {
 	console.log('Failed to read/parse clients.json');
 	process.exit(1);
 }
-
-workable.fetchJobs().then(function(list){
-	jobs = list;
-});
 
 request({
 	url: config.apiUrl + '/api/v1/navigation',
@@ -61,6 +56,8 @@ var extras = {
 			data.services = services;
 			delete data.home_services;
 		}
+
+		jobs = data.home_jobs;
 
 		cb(merge(data, {
 			clients: clients,

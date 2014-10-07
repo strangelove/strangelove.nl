@@ -40,10 +40,20 @@
 		}
 	}
 	@media screen and (min-width: 1024px){
+		.jobs-list {
+			text-align: center;
+		}
 		article {
-			float: left;
-			width: 33.3333333333333%;
+			display: inline-block;
+			max-width: none;
 			padding: 0 60px;
+			vertical-align: top;
+		}
+		.job-count-odd article {
+			width: 33.3333333333%;
+		}
+		.job-count-even article {
+			width: 50%;
 		}
 	}
 }
