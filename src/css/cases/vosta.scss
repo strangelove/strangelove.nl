@@ -1,0 +1,614 @@
+@import '../vendor/normalize';
+@import '../vendor/bourbon/bourbon';
+
+$img: '/img/cases/vosta';
+
+@import '../fonts';
+@import '../animations';
+@import '../base';
+@import '../header';
+@import '../footer';
+@import '../case-base';
+
+@import '../modules/devices';
+@import '../modules/continue';
+
+@mixin background-size($type) {
+	-webkit-background-size: $type;
+	   -moz-background-size: $type;
+	     -o-background-size: $type;
+	        background-size: $type;
+}
+
+
+/* first mood slide */
+
+.mood {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.mood-sky {
+	width: 100%;
+	height: 68%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: url(#{$img}/sky.jpg) center bottom no-repeat;
+	@include background-size(cover);
+	transform-origin: 0 100%;
+}
+.mood-waves {
+	width: 100%;
+	height: 32%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(#{$img}/waves.jpg) center top no-repeat;
+	@include background-size(cover);
+	transform-origin: 70% 0;
+}
+.mood-ship {
+	width: 499px;
+	height: 505px;
+	position: absolute;
+	bottom: 70%;
+	right: 3%;
+	background: url(#{$img}/ship.png) left bottom no-repeat;
+	transform-origin: -100% 100%;
+}
+
+/* case title */
+.case-summary {
+	min-width: 320px;
+	top: 40%;
+}
+.case-summary span {
+	color: #80bbe0;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.arrow-wrap {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	.continue {
+		bottom: auto;
+		left: auto;
+	}
+}
+
+
+/* second client slide */
+
+.client-ship-back {
+	position: fixed;
+	top: 100%;
+	left: 0;
+	width: 162px;
+	height: 166px;
+	margin-top: 50%;
+	background: url(#{$img}/ship-back.png) 0 0 no-repeat;
+}
+.client-ship-front {
+	position: fixed;
+	top: 100%;
+	left: 0;
+	width: 396px;
+	height: 403px;
+	margin-top: 50%;
+	background: url(#{$img}/ship-front.png) 0 0 no-repeat;
+}
+.desc-client {
+	margin-top: 40vw;
+}
+/* all descriptions with orange dash */
+.description {
+	h2:after {
+		background: #f47318;
+	}
+}
+
+
+/* third slide with engine rotation */
+
+.grey-case {
+	position: fixed;
+	top: 100%;
+	width: 100%;
+	background: url(#{$img}/grey-gradient.jpg) center center no-repeat;
+	@include background-size(cover);
+}
+.grey-case:after {
+  	content: '';
+  	background: url(#{$img}/tab-360.png) 0 0 no-repeat;
+	width: 48px;
+	height: 77px;
+	display: block;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	margin-left: -24px;
+}
+.click-n-drag {
+	position: absolute;
+	left: 75%;
+	width: 100px;
+	top: 60px;
+}
+.click-n-drag:after {
+  	content: '';
+	position: absolute;
+	width: 45px;
+	height: 39px;
+	display: block;
+	position: absolute;
+	background: url(/img/cases/vosta/arrow.png) center center no-repeat;
+	margin: 0.8em 0 0 -45px;
+	left: 50%;
+}
+.spritespin-placeholder {
+	margin: 65px auto 140px;
+	padding-bottom: 50px;
+}
+.spritespin-placeholder:after {
+	content: '';
+  	background: url(#{$img}/engine-shadow.png) 0 0 no-repeat;
+	width: 548px;
+	height: 91px;
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -274px;
+}
+.desc-grey {
+	position: absolute;
+	margin-top: 100px;
+    width: 50%;
+    left: 25%;
+}
+
+
+/* slide with cards and sliding phone */
+
+.cards {
+	position: fixed;
+	top: 130%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(#{$img}/cards-wave.jpg) left top no-repeat #fff;
+}
+.cards-cards {
+	position: absolute;
+	width: 1110px;
+	height: 740px;
+	margin-top: -100px;
+	background: url(#{$img}/cards-cards.png) left top no-repeat;
+}
+.cards-phone {
+	position: absolute;
+	width: 761px;
+	height: 512px;
+	background: url(#{$img}/cards-phone.png) left top no-repeat;
+}
+.desc-cards {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	text-align: left;
+	h2 {
+		text-align: left;
+	}
+	h2:after {
+		margin-left: 0;
+	}
+}
+
+
+
+/* !!! done until here !!! */
+
+
+
+/** tax battle */
+.battle-hero1 {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	width: 412px;
+	height: 531px;
+	margin: 0 0 0 -100px;
+	background: url(#{$img}/battle-hero1.png);
+}
+.battle-hero2 {
+	position: fixed;
+	z-index: 4;
+	top: 100%;
+	left: 50%;
+	width: 375px;
+	height: 360px;
+	margin: 100px 0 0 100px;
+	background: url(#{$img}/battle-hero2.png);
+}
+.battle-hero3 {
+	position: fixed;
+	z-index: 3;
+	top: 100%;
+	left: 50%;
+	width: 407px;
+	height: 517px;
+	margin: 0 0 0 180px;
+	background: url(#{$img}/battle-hero3.png);
+}
+.battle-hero4 {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	left: 50%;
+	width: 258px;
+	height: 324px;
+	margin: 150px 0 0 400px;
+	background: url(#{$img}/battle-hero4.png);
+}
+.desc-battle {
+	margin: 0 0 0 -350px;
+}
+
+/** print */
+.flyer-wrap {
+	overflow: hidden;
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	width: 100%;
+	height: 600px;
+	background: url(#{$img}/flyer-bg.png) center;
+}
+.flyer {
+	height: 25800px;
+	background: url(#{$img}/flyer1.jpg) no-repeat center 0, url(#{$img}/flyer2.jpg) no-repeat center 7200px, url(#{$img}/flyer3.jpg) no-repeat center 14400px, url(#{$img}/flyer4.jpg) no-repeat center 21600px;
+}
+.desc-print {
+	top: 120%;
+	margin: 650px 0 0;
+}
+
+/** step into the world of */
+.retouch-wrap {
+	position: fixed;
+	z-index: 2;
+	top: 100%;
+	width: 100%;
+	height: 1028px;
+	.edit-left, .edit-right {
+		overflow: hidden;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		&:before {
+			content: ' ';
+			position: absolute;
+			width: 1600px;
+			height: 100%;
+			background: url(#{$img}/retouch1-edit.jpg) no-repeat center;
+		}
+	}
+	.edit-left {
+		right: 50%;
+		&:before {
+			right: -800px;
+		}
+	}
+	.edit-right {
+		left: 50%;
+		&:before {
+			left: -800px;
+		}
+	}
+	.raw {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(#{$img}/retouch1-raw.jpg) no-repeat center;
+	}
+}
+.desc-step {
+	top: 200%;
+	left: 25%;
+	width: 50%;
+	margin: -250px 0 0;
+}
+
+/** corporate website */
+.device {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+}
+.device-imac {
+	z-index: 1;
+	margin: 0 0 0 -300px;
+}
+.device-ipad {
+	z-index: 2;
+	margin: 206px 0 0 -500px;
+	img {
+		margin: 0 0 0 -39px;
+	}
+}
+.device-iphone {
+	z-index: 3;
+	margin: 375px 0 0 -195px;
+}
+.desc-corporate {
+	left: 25%;
+	width: 50%;
+}
+
+/** custom hr icons */
+.icons-bg {
+	position: absolute;
+	top: 0;
+	width: 200%;
+	height: 300px;
+	border: 5px solid #e5f1f9;
+	border-left: 0;
+	border-right: 0;
+	background: #0078c1;
+	@include transform(rotate(26deg));
+	@include transform-origin(0 0);
+}
+.icons {
+	position: fixed;
+	top: 100%;
+	width: 100%;
+	ul {
+		position: relative;
+		width: 1024px;
+		height: 700px;
+		margin: 90px 0 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		position: absolute;
+		width: 72px;
+		height: 72px;
+		@include transform(translateX(-407px) translateY(-200px));
+	}
+	.icon-pencil {
+		top: -121px;
+		left: -126px;
+		width: 260px;
+		height: 213px;
+		background-image: url(#{$img}/icons/pencil.png);
+	}
+	.icon-pen {
+		top: 92px;
+		left: -123px;
+		width: 260px;
+		height: 187px;
+		background-image: url(#{$img}/icons/pen.png);
+	}
+	.icon-form {
+		top: -66px;
+		left: 136px;
+		width: 72px;
+		height: 223px;
+		background-image: url(#{$img}/icons/form.png);
+	}
+	.icon-globe {
+		top: 157px;
+		left: 136px;
+		width: 72px;
+		height: 204px;
+		background-image: url(#{$img}/icons/globe.png);
+	}
+	.icon-temple {
+		top: 131px;
+		left: 272px;
+		background-image: url(#{$img}/icons/temple.png);
+	}
+	.icon-certificate {
+		top: 243px;
+		left: 272px;
+		background-image: url(#{$img}/icons/certificate.png);
+	}
+	.icon-briefcase {
+		top: 197px;
+		left: 408px;
+		background-image: url(#{$img}/icons/briefcase.png);
+	}
+	.icon-brains {
+		top: 309px;
+		left: 408px;
+		background-image: url(#{$img}/icons/brains.png);
+	}
+	.icon-growth {
+		top: 264px;
+		left: 544px;
+		background-image: url(#{$img}/icons/growth.png);
+	}
+	.icon-users {
+		top: 376px;
+		left: 544px;
+		background-image: url(#{$img}/icons/users.png);
+	}
+	.icon-cog {
+		top: 330px;
+		left: 680px;
+		background-image: url(#{$img}/icons/cog.png);
+	}
+	.icon-leaf {
+		top: 442px;
+		left: 680px;
+		background-image: url(#{$img}/icons/leaf.png);
+	}
+	.icon-calendar {
+		top: 397px;
+		left: 816px;
+		background-image: url(#{$img}/icons/calendar.png);
+	}
+	.icon-island {
+		top: 509px;
+		left: 816px;
+		background-image: url(#{$img}/icons/island.png);
+	}
+	.icon-graduate {
+		top: 463px;
+		left: 952px;
+		background-image: url(#{$img}/icons/graduate.png);
+	}
+	.icon-sail {
+		top: 575px;
+		left: 952px;
+		background-image: url(#{$img}/icons/sail.png);
+	}
+}
+.desc-icons {
+	margin: 170px -350px 0 0;
+}
+
+/** multiple devices */
+.md-case {
+	position: fixed;
+	top: 100%;
+	left: -10%;
+	width: 396px;
+	height: 984px;
+	background: url(#{$img}/md-case.png);
+}
+.md-ipad {
+	position: fixed;
+	top: 100%;
+	left: -15%;
+	width: 327px;
+	height: 612px;
+	background: url(#{$img}/md-ipad.png);
+}
+.md-pen {
+	position: fixed;
+	top: 100%;
+	right: 600px;
+	width: 234px;
+	height: 379px;
+	background: url(#{$img}/md-pen.png);
+}
+.md-iphone {
+	position: fixed;
+	top: 100%;
+	right: 400px;
+	width: 377px;
+	height: 450px;
+	background: url(#{$img}/md-iphone.png);
+}
+.md-macbook {
+	position: fixed;
+	top: 100%;
+	right: -10%;
+	width: 602px;
+	height: 1116px;
+	background: url(#{$img}/md-macbook.png);
+}
+
+/** hr website */
+.hr-ipad {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	width: 1021px;
+	height: 529px;
+	margin: 0 0 0 -511px;
+	background: url(#{$img}/hr-3.png);
+}
+.hr-layer1 {
+	position: absolute;
+	z-index: 2;
+	top: 26px;
+	left: 73px;
+	width: 880px;
+	height: 422px;
+	background: url(#{$img}/hr-1.png);
+}
+.hr-layer2 {
+	position: absolute;
+	z-index: 1;
+	top: 26px;
+	left: 73px;
+	width: 880px;
+	height: 422px;
+	background: url(#{$img}/hr-2.png);
+}
+.line {
+	position: absolute;
+	z-index: 3;
+	width: 0;
+	border-left: 1px dotted #b3b3b3;
+}
+.line-1 {
+	left: 72px;
+	bottom: 265px;
+}
+.line-2 {
+	left: 457px;
+	bottom: 82px;
+}
+.line-3 {
+	left: 952px;
+	bottom: 357px;
+}
+
+/** extensive calendar */
+.cal-views {
+	position: fixed;
+	top: 100%;
+	left: 0;
+	margin: 50px 0 0;
+}
+.cal-1 {
+	position: absolute;
+	left: -50px;
+	width: 482px;
+	height: 723px;
+	background: url(#{$img}/cal-1.png);
+}
+.cal-2 {
+	position: absolute;
+	top: 180px;
+	left: -70px;
+	width: 656px;
+	height: 565px;
+	background: url(#{$img}/cal-2.png);
+}
+.cal-3 {
+	position: absolute;
+	top: 450px;
+	left: 70px;
+	width: 249px;
+	height: 342px;
+	background: url(#{$img}/cal-3.png);
+}
+.cal-4 {
+	position: absolute;
+	top: 564px;
+	left: 188px;
+	width: 332px;
+	height: 320px;
+	background: url(#{$img}/cal-4.png);
+}
+.desc-calendar {
+	margin: 370px -350px 0 0;
+}

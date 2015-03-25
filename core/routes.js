@@ -112,6 +112,10 @@ routes.forEach(function(route){
 	});
 });
 
+app.get(/\/cases\/vosta/, function(req, res){
+	res.render('cases/case-vosta');
+});
+
 app.get(/\/cases\/([A-Za-z0-9_-]+)/, function(req, res){
 	request({
 		url: config.apiUrl + '/api/v1/cases/' + req.params[0],
