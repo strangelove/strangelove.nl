@@ -63,6 +63,19 @@
 		line-height: 14px;
 		text-align: center;
 	}
+	.lg-nav {
+		background: url(/img/lg-nav.png) no-repeat right center;
+		height: 70px;
+		width: 104px;
+
+		a {
+			display: block;
+			height: 100%;
+		}
+	}
+	.lg-nav:hover {
+		opacity: 0.5;
+	}
 }
 
 .nav-primary {
@@ -122,6 +135,10 @@
 	ul {
 		margin: 0 -24px;
 		padding: 18px 0;
+	}
+	.lg-nav {
+		background: url(/img/lg-nav.png) no-repeat 24px center;
+		width: 100%;
 	}
 	@media screen and (min-height: 460px){
 		font-size: 18px;

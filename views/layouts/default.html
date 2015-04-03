@@ -37,7 +37,11 @@
 							{% else %}
 								{% set classAttr = '' %}
 							{% endif %}
-							<li{{classAttr}}><a href="{{item.uri}}">{{item.title}}{% if item.id == "58" %}<span class="count">{{home_jobs.length}}</span>{% endif %}</a></li>
+							{% if item.id == '77' %}
+								<li class="lg-nav"><a href="{{item.uri}}"></a></li>
+							{% else %}
+								<li{{classAttr}}><a href="{{item.uri}}">{{item.title}}{% if item.id == "58" %}<span class="count">{{home_jobs.length}}</span>{% endif %}</a></li>
+							{% endif %}
 						{% endfor %}
 					</ul>
 				</nav>

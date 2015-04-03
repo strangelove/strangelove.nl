@@ -1,0 +1,440 @@
+@import '../vendor/normalize'; 
+@import '../vendor/bourbon/bourbon';
+
+$img: '/img/cases/loyalty-grid';
+
+@import '../fonts';
+@import '../animations';
+@import '../base';
+@import '../header';
+@import '../footer';
+@import '../case-base';
+
+@import '../modules/continue';
+
+section {
+	margin: 200px auto;
+	width: 80%;
+	height: 100%;
+
+	h2:after {
+		content: ' ';
+		display: block;
+		width: 30px;
+		height: 4px;
+		margin: 24px auto;
+		background: #515875;
+		-webkit-transition: width 0.1s ease-in-out;
+		-moz-transition: width 0.1s ease-in-out;
+		transition: width 0.1s ease-in-out;
+	}
+
+	h3 {
+		margin-bottom: 25px;
+	}
+
+	.section-left {
+		float: left;
+		width: 50%;
+		height: 100%;
+		text-align: left;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.section-right {
+		float: left;
+		width: 50%;
+		height: 100%;
+		text-align: left;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.mood {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width:  100%;
+	height: 800px;
+	background: url(#{$img}/cover.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+.case-summary {
+	color: #fff;
+	&:before, &:after {
+		background: #fff;
+	}
+	span {
+		color: #fff;
+	}
+}
+
+.lg-wrapper {
+	position: absolute;
+	top: 95%;
+	left: 0;
+	width:  100%;
+}
+
+.lg-main {
+	width: 60%;
+	max-width: 750px;
+	margin-bottom: 75px;
+	h2 {
+		margin-bottom: 60px;
+	}
+}
+
+.lg-intro {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.chip {
+	margin-top: 75px;
+	.chip-text {
+		float: right;
+		max-width: 400px;
+		padding-top: 120px;
+	}
+	.chip-img {
+		margin-left: 60px;
+		width: 300px;
+		height: 320px;
+	}
+}
+
+.renaissance {
+	.renaissance-text {
+		padding-top: 90px;
+		width: 450px;
+	}
+
+	.renaissance-img {
+		float: right;
+		position: relative;
+		right: 10%;
+		height: 335px;
+		width: 335px;
+	}
+}
+
+.samsung {
+	.samsung-text {
+		float: right;
+		padding-top: 140px;
+		max-width: 400px;
+	}
+
+	.samsung-img {
+		width: 240px;
+		height: 460px;
+		margin-left: 60px;
+	}
+}
+
+.macbookair {
+	.macbookair-text {
+		padding-top: 60px;
+		width: 450px;
+	}
+
+	.macbookair-img {
+		position: relative;
+		left: 30%;
+		height: 355px;
+		width: 87%;
+		min-width: 660px;
+	}
+}
+
+.lg-video {
+	width: 80%;
+
+	.lg-embed {
+		position: relative;
+	    padding-bottom: 56.25%;
+	    max-width: 100%;
+	    height: 0;
+	    overflow: hidden;
+	}
+	.lg-embed iframe, .lg-embed object, .lg-embed embed {
+	   	position: absolute;
+	    top:0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+}
+
+.interested {
+	width: 400px;
+
+	p {
+		margin-bottom: 35px;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	body {
+		height: 100%;
+	}
+
+	section {
+		margin: 100px auto;
+
+		.section-left {
+			float: none;
+			width: 100%;
+		}
+
+		.section-right {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.mood {
+		position: static;
+	}
+
+	.continue {
+		display: none;
+	}
+
+	.case-summary {
+		position: absolute;
+		top: 400px;
+		width: 480px;
+		left: 50%;	
+  		margin-left: -240px;	
+	}
+
+	.lg-wrapper {
+		position: static;
+	}
+
+	.lg-main {
+		max-width: auto;
+		width: 80%;
+	}	
+
+	.footer-main {
+		position: static;
+	}
+
+	.chip {
+		.section-left {
+			overflow: auto;
+			zoom: 1;
+		}
+		.chip-text {
+			float: none;
+			width: 100%;
+			max-width: none;
+			padding-top: 0;
+			text-align: center;
+		}
+		.chip-img {
+			margin: 0 auto;
+		}
+	}
+
+	.renaissance {
+
+		.section-left {
+			position: relative;
+			top: 170px;
+			overflow: auto;
+			zoom: 1;
+		}
+
+		.section-right {
+			position: relative;
+			bottom: 320px;
+		}
+
+		.renaissance-text {
+			padding-top: 0;
+			width: 100%;
+			text-align: center;
+		}
+
+		.renaissance-img {
+			float: none;
+			right: 0;
+			margin: 0 auto;
+			overflow: hidden;
+			height: 300px;
+			width: 300px;
+		}
+	}
+
+	.samsung {
+		.section-left {
+			overflow: auto;
+			zoom: 1;
+		}
+		.samsung-text {
+			float: none;
+			max-width: none;
+			padding-top: 0;
+			text-align: center;
+		}
+		.samsung-img {
+			margin: 0 auto;
+		}
+	}
+
+	.macbookair {
+		.section-left {
+			position: relative;
+			top: 160px;
+		}
+
+		.section-right {
+			position: relative;
+			bottom: 405px;
+		}
+		.macbookair-text {
+			padding-top: 0;
+			width: auto;
+			text-align: center;
+		}
+
+		.macbookair-img {
+			position: static;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			min-width: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 920px) {
+
+	.renaissance {
+		.section-left {
+			top: 170px;
+		}
+	}
+
+	.macbookair {
+		.section-right {
+			bottom: 365px;
+		}
+	}
+}
+
+@media screen and (max-width: 780px) {
+
+	.mood {
+		height: 400px;
+	}
+
+	.case-summary {
+		top: 180px;
+		width: 100%;
+		min-width: 0;
+		left: 0;	
+  		margin-left: 0;
+	}
+
+	.macbookair {
+		.section-right {
+			bottom: 310px;
+		}
+	}
+}
+
+@media screen and (max-width: 520px) {
+
+	.macbookair {
+		.section-right {
+			bottom: 255px;
+		}
+	}
+
+	.renaissance {
+		.section-left {
+			top: 175px;
+			height: 250px;
+		}
+		.renaissance-img {
+			height: 240px;
+			width: 240px;
+		}
+	}
+}
+
+@media screen and (max-width: 414px) {
+
+	.renaissance {
+		.section-left {
+			top: 205px;
+		}
+
+		.section-right {
+			bottom: 245px;
+		}
+	}
+
+	.macbookair {
+		.section-left {
+			top: 230px;
+		}
+
+		.section-right {
+			bottom: 180px;
+		}
+	}
+}
+
+@media screen and (max-width: 414px) {
+
+	.case-summary {
+		top: 150px;
+	}
+
+	.chip {
+		.chip-img {
+			width: 230px;
+			height: 230px;
+		}
+	}
+
+	.renaissance {
+		.section-left {
+			top: 250px;
+		}
+	}
+
+	.macbookair {
+		.section-left {
+			top: 256px;
+		}
+
+		.section-right {
+			bottom: 140px;
+		}
+	}
+
+	.interested {
+		width: auto;
+	}
+}

@@ -1,0 +1,117 @@
+{% extends "../layouts/default.html" %}
+
+{% block stylesheets %}
+	{% parent %}
+	<link rel="stylesheet" href="/css/cases/loyalty-grid.css">
+{% endblock %}
+
+{% block scripts %}
+	<script src="/js/loyalty-grid.js"></script>
+{% endblock %}
+
+
+{% block bodytag %}
+	<body class="loyalty-grid">
+{% endblock %}
+
+{% block content %}
+
+	<article class="case">		
+		<div class="mood">
+			<span class="arrow-down continue">Continue</span>
+		</div>
+		
+		<p class="case-summary">
+			<strong>{{client}}</strong>
+			<span>{{ subtitle }}</span>
+		</p>
+
+		<main class="lg-wrapper">
+
+			<div class="clear"></div>
+			
+			<section class="lg-main">
+					<h2>{{section1.title}}</h2>
+					{{section1.body|safe}}
+			</section>
+
+			<section class="lg-intro">
+				<h2>{{section2.title}}</h2>
+			</section>
+
+			<section class="chip">
+				<div class="section-left">
+					<div class="chip-text">
+						<h3>1. {{section3.title}}</h3>
+						{{section3.body|safe}}
+					</div>
+				</div>
+				<div class="section-right">
+					<div class="chip-img">
+						<img src="/img/cases/loyalty-grid/chip.png">
+					</div>	
+				</div>
+				<div class="clear"></div>
+			</section>
+
+			<section class="renaissance">
+				<div class="section-left">
+					<div class="renaissance-img">
+						<img src="/img/cases/loyalty-grid/renaissance.png">	
+					</div>
+				</div>
+				<div class="section-right">
+					<div class="renaissance-text">
+						<h3>2. {{section4.title}}</h3>
+						{{section4.body|safe}}
+					</div>
+				</div>
+				<div class="clear"></div>
+			</section>
+
+			<section class="samsung">
+				<div class="section-left">
+					<div class="samsung-text">
+					<h3>3. {{section5.title}}</h3>
+					{{section5.body|safe}}
+					</div>
+				</div>
+				<div class="section-right">
+					<div class="samsung-img">
+						<img src="/img/cases/loyalty-grid/samsung.png">	
+					</div>
+				</div>
+				<div class="clear"></div>
+			</section>
+
+			<section class="macbookair">
+				<div class="section-left">
+					<div class="macbookair-img">
+						<img src="/img/cases/loyalty-grid/macbookair.png">	
+					</div>
+				</div>
+
+				<div class="section-right">
+					<div class="macbookair-text">
+						<h3>4. {{section6.title}}</h3>
+						{{section6.body|safe}}			
+					</div>
+				</div>
+				<div class="clear"></div>
+			</section>
+
+			<section class="lg-video">
+				<div class="lg-embed">
+					<iframe src='https://player.vimeo.com/video/109254787' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+			</section>
+
+			<section class="interested">
+				<h3>{{section7.title}}</h3>
+				{{section7.body|safe}}
+				<a href="http://www.loyalty-grid.com" target="_blank" class="btn">Request demo</a>
+			</section>
+		</main>
+	</article>
+
+{% endblock %}

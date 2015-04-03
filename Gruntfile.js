@@ -31,7 +31,8 @@ module.exports = function(grunt){
 					'public/css/cases/ing.css': 'src/css/cases/ing.scss',
 					'public/css/cases/kpmg.css': 'src/css/cases/kpmg.scss',
 					'public/css/cases/litedark.css': 'src/css/cases/litedark.scss',
-					'public/css/cases/slimleren.css': 'src/css/cases/slimleren.scss'
+					'public/css/cases/slimleren.css': 'src/css/cases/slimleren.scss',
+					'public/css/cases/loyalty-grid.css': 'src/css/cases/loyalty-grid.scss'
 				}
 			}
 		},
@@ -113,6 +114,14 @@ module.exports = function(grunt){
 				},
 				options: {
 					'output': './public/js/slimleren.js'
+				}
+			},
+			loyalty: {
+				requires: {
+					'./src/js/loyalty-grid.js': true
+				},
+				options: {
+					'output': './public/js/loyalty-grid.js'
 				}
 			}
 		}

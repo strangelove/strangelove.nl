@@ -93,22 +93,30 @@
 			<div class="slides">
 				<div class="slides-contents">
 					{% for project in home_cases %}
-					<article class="case-{{project.id}}">
-						<div class="summary">
-							<h3>{{project.name}}</h3>
-							{% if project.summary %}
-								<p>{{project.summary}}</p>
-							{% endif %}
-							<a href="/cases/{{project.slug}}" class="more">Read more</a>
-						</div>
-						<div class="asset"></div>
-					</article>
+						{% if project.id !== 9 %}
+							<article class="case-{{project.id}}">
+								<div class="summary">
+
+										<h3>{{project.name}}</h3>
+										{% if project.summary %}
+											<p>{{project.summary}}</p>
+										{% endif %}
+
+									<a href="/cases/{{project.slug}}" class="more">Read more</a>
+								</div>
+								<div class="asset"></div>
+							</article>
+						{% endif %}
 					{% endfor %}
 				</div>
 				<nav class="slides-tabs">
 					<ul>
 						{% for project in home_cases %}
-						<li><a href="/cases/{{project.slug}}" class="case-{{project.id}}"><img src="/img/cases/buttons/{{project.id}}_logo.png" alt="{{project.name}}"><span>{{project.name}}</span></a></li>
+							{% if project.id !== 9 %}
+								<li>
+									<a href="/cases/{{project.slug}}" class="case-{{project.id}}"><img src="/img/cases/buttons/{{project.id}}_logo.png" alt="{{project.name}}"><span>{{project.name}}</span></a>
+								</li>
+							{% endif %}
 						{% endfor %}
 					</ul>
 				</nav>
