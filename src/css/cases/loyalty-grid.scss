@@ -87,7 +87,6 @@ section {
 .lg-main {
 	width: 60%;
 	max-width: 750px;
-	margin-bottom: 75px;
 	h2 {
 		margin-bottom: 60px;
 	}
@@ -162,7 +161,7 @@ section {
 
 .lg-video {
 	width: 80%;
-
+	max-width: 1200px;
 	.lg-embed {
 		position: relative;
 	    padding-bottom: 56.25%;

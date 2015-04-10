@@ -24,12 +24,12 @@ var scrollAnimation = [
 		]
 	},
 	{
-		duration: '100%',
+		duration: '150%',
 		easing: 'lineair',
 		actors: [
 			{
 				element: '.lg-wrapper',
-				translateY: '-190%'
+				translateY: '-300%'
 			}
 		]
 	},
@@ -44,8 +44,48 @@ var scrollAnimation = [
 	}
 ];
 
+var scrollLargeAnimation = [
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.mood',
+				translateY: -1000
+			},
+			{
+				element: '.case-summary',
+				translateY: '-40%',
+				opacity: -1
+			}
+		]
+	},
+	{
+		duration: '50%',
+		easing: 'lineair',
+		actors: [
+			{
+				element: '.lg-wrapper',
+				translateY: '-100%'
+			}
+		]
+	},
+	{
+		duration: '100%',
+		actors: [
+			{
+				element: '.footer-main',
+				translateY: '-100%'
+			}
+		]
+	}
+];
 
-if (window.innerWidth > 1024 ) {
+if (window.innerWidth > 1024 && window.innerWidth <= 1280 ) {
 
 	new Kubrick(scrollAnimation);
+}
+
+if (window.innerWidth > 1280) {
+
+	new Kubrick(scrollLargeAnimation);
 }
