@@ -93,7 +93,7 @@
 			<div class="slides">
 				<div class="slides-contents">
 					{% for project in home_cases %}
-						{% if project.id !== 9 %}
+						{% if project.id != 9 %}
 							<article class="case-{{project.id}}">
 								<div class="summary">
 
@@ -112,7 +112,8 @@
 				<nav class="slides-tabs">
 					<ul>
 						{% for project in home_cases %}
-							{% if project.id !== 9 %}
+
+							{% if project.id != 9 %}
 								<li>
 									<a href="/cases/{{project.slug}}" class="case-{{project.id}}"><img src="/img/cases/buttons/{{project.id}}_logo.png" alt="{{project.name}}"><span>{{project.name}}</span></a>
 								</li>
