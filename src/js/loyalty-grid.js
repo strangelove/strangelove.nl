@@ -60,12 +60,12 @@ var scrollLargeAnimation = [
 		]
 	},
 	{
-		duration: '50%',
+		duration: '100%',
 		easing: 'lineair',
 		actors: [
 			{
 				element: '.lg-wrapper',
-				translateY: '-100%'
+				translateY: '-190%'
 			}
 		]
 	},
