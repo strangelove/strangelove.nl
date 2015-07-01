@@ -1,9 +1,5 @@
 [
 	{
-		"image": "/img/clients/pbcf.png",
-		"title": "Prins Bernhard Cultuurfonds"
-	},
-	{
 		"image": "/img/clients/novisource.png",
 		"title": "Novisource"
 	},
@@ -62,5 +58,13 @@
 	{
 		"image": "/img/clients/mutsy.png",
 		"title": "Mutsy"
+	},
+	{
+		"image": "/img/clients/choice.png",
+		"title": "Choice hotels"
+	},
+	{
+		"image": "/img/clients/icl.png",
+		"title": "ICL-SF"
 	}
 ]
