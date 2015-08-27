@@ -44,23 +44,8 @@
 		margin: 18px auto 12px;
 		@include transition(width .1s ease-in-out);
 	}
-	.t0 h3:after {
+	.t-member h3:after {
 		background: #2795bd;
-	}
-	.t1 h3:after {
-		background: #967aa5;
-	}
-	.t2 h3:after {
-		background: #d27a24;
-	}
-	.t3 h3:after {
-		background: #cd3636;
-	}
-	.t4 h3:after {
-		background: #cbda22;
-	}
-	.t5 h3:after {
-		background: #d591bb;
 	}
 	p {
 		margin: 0;
