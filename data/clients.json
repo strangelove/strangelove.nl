@@ -32,8 +32,8 @@
 		"title": "Cuba Travel Network"
 	},
 	{
-		"image": "/img/clients/mrmaria.png",
-		"title": "Mr Maria"
+		"image": "/img/clients/icl.png",
+		"title": "ICL-SF"
 	},
 	{
 		"image": "/img/clients/vosta.png",
@@ -52,8 +52,8 @@
 		"title": "Decos"
 	},
 	{
-		"image": "/img/clients/partou.png",
-		"title": "Partou"
+		"image": "/img/clients/debaak.png",
+		"title": "De Baak"
 	},
 	{
 		"image": "/img/clients/mutsy.png",
@@ -62,9 +62,5 @@
 	{
 		"image": "/img/clients/choice.png",
 		"title": "Choice hotels"
-	},
-	{
-		"image": "/img/clients/icl.png",
-		"title": "ICL-SF"
 	}
 ]
