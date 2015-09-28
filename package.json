@@ -1,42 +1,42 @@
 {
-	"name": "strangelove.nl",
-	"version": "0.0.0",
-	"description": "strangelove.nl templates",
-	"main": "app.js",
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:strangelove/strangelove.nl"
-	},
-	"author": "Strangelove",
-	"bugs": {
-		"url": "https://github.com/strangelove/strangelove.nl/issues"
-	},
-	"homepage": "https://github.com/strangelove/strangelove.nl",
-	"dependencies": {
-		"behaviour": "0.1",
-		"consolidate": "0.9",
-		"elements": "0.4",
-		"express": "3.4",
-		"promise": "5.0",
-		"kubrick-js": "0.1",
-		"moofx": "kamicane/moofx#a3716037e78f057e6eb06504c4192abb56edb4c0",
-		"mout": "0.9",
-		"node-bourbon": "1.2",
-		"normalize.css": "3.0",
-		"optimist": "0.6",
-		"request": "2.39",
-		"slides-js": "0.1",
-		"swig": "1.1",
-		"then-all": "2.0"
-	},
-	"devDependencies": {
-		"grunt": "0.4",
-		"grunt-concurrent": "0.5",
-		"grunt-contrib-symlink": "0.3",
-		"grunt-contrib-watch": "0.6",
-		"grunt-mkdir": "0.1",
-		"grunt-nodemon": "0.1",
-		"grunt-sass": "0.12",
-		"grunt-wrapup": "0.1"
-	}
+  "name": "strangelove.nl",
+  "version": "0.0.0",
+  "description": "strangelove.nl templates",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:strangelove/strangelove.nl"
+  },
+  "author": "Strangelove",
+  "bugs": {
+    "url": "https://github.com/strangelove/strangelove.nl/issues"
+  },
+  "homepage": "https://github.com/strangelove/strangelove.nl",
+  "dependencies": {
+    "behaviour": "0.1",
+    "consolidate": "0.9",
+    "elements": "0.4",
+    "express": "3.4",
+    "promise": "5.0",
+    "kubrick-js": "0.1",
+    "moofx": "kamicane/moofx#a3716037e78f057e6eb06504c4192abb56edb4c0",
+    "mout": "0.9",
+    "node-bourbon": "1.2",
+    "normalize.css": "3.0",
+    "optimist": "0.6",
+    "request": "2.39",
+    "slides-js": "0.1",
+    "swig": "1.1",
+    "then-all": "2.0"
+  },
+  "devDependencies": {
+    "grunt": "0.4",
+    "grunt-concurrent": "0.5",
+    "grunt-contrib-symlink": "0.3",
+    "grunt-contrib-watch": "0.6",
+    "grunt-mkdir": "0.1",
+    "grunt-nodemon": "0.1",
+    "grunt-sass": "^0.18.1",
+    "grunt-wrapup": "0.1"
+  }
 }

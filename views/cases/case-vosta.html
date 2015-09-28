@@ -1,0 +1,182 @@
+{% extends "../layouts/default.html" %}
+
+{% block stylesheets %}
+	{% parent %}
+	<link rel="stylesheet" href="/css/cases/vosta.css">
+{% endblock %}
+
+{% block scripts %}
+	<script src="/js/vosta.js"></script>
+{% endblock %}
+
+{% block bodytag %}
+	<body class="vosta">
+{% endblock %}
+
+{% block content %}
+	<article class="case">
+
+		<!-- ship and waves mood slide -->
+		<div class="mood">
+			<div class="mood-sky"></div>
+			<div class="mood-waves">
+				<div class="mood-ship"></div>
+			</div>
+			<p class="case-summary">
+				<strong>Vosta LMG</strong>
+				<span>Brading, Digital</span>
+			</p>
+			<!-- extra wrapper to stop moving with scroll -->
+			<div class="arrow-wrap">
+				<span class="arrow-down continue">Continue</span>
+			</div>
+		</div>
+
+
+		<!-- client and two ships -->
+		<div class="client-ship-back"></div>
+		<div class="client-ship-front"></div>
+		<div class="description desc-client">
+			<h2>The Client</h2>
+			The LITE/DARK concept is deliciously direct. Just fruit &amp; chocolate. Juice &amp; coffee. Lite &amp; Dark. All organic, all hand-made, all fair-trade and totally social responsible.
+		</div>
+
+
+		<!-- engine rotation -->
+		<div class="grey-case">
+        	<div class="click-n-drag">Click and drag to rotate component</div>
+
+        	<!-- engine img placeholder -->
+        	<div class="spritespin-placeholder"><img src="/img/cases/vosta/engine.png" alt="Engine component" /></div>
+        	<!-- here the rotation -->
+    		<!--<canvas class="spritespin-canvas" width="700" height="525"></canvas>-->
+
+			<div class="description desc-grey">
+				<h2>Interactive elements</h2>
+				The LITE/DARK concept is deliciously direct. Just fruit &amp; chocolate. Juice &amp; coffee. Lite &amp; Dark. All organic, all hand-made, all fair-trade and totally social responsible.
+			</div>
+		</div>
+
+
+		<!-- cards with sliding phone -->
+		<div class="cards">
+			<div class="cards-cards"></div>
+			<div class="cards-phone"></div>
+			<div class="description desc-cards">
+				<h2>Animated content</h2>
+				The LITE/DARK concept is deliciously direct. Just fruit &amp; chocolate. Juice &amp; coffee. Lite &amp; Dark. All organic, all hand-made, all fair-trade and totally social responsible.
+			</div>
+		</div>
+
+
+		<!-- !!! done until here !!! -->
+
+
+		<!-- corporate website -->
+		<div class="device device-imac">
+			<div class="viewport"><img src="/img/cases/kpmg/screen-imac.jpg" alt="Corporate website on iMac"></div>
+		</div>
+		<div class="device device-ipad">
+			<div class="viewport"><img src="/img/cases/kpmg/screen-ipad.jpg" alt="Corporate website on iPad"></div>
+		</div>
+		<div class="device device-iphone">
+			<div class="viewport"><img src="/img/cases/kpmg/screen-iphone.jpg" alt="Corporate website on iPhone"></div>
+		</div>
+		<div class="description desc-corporate">
+			<h2>{{section5.title}}</h2>
+			{{section5.body|safe}}
+		</div>
+
+		<!-- custom hr icons -->
+		<div class="icons">
+			<div class="icons-bg"></div>
+			<ul>
+				<li class="icon-pencil"></li>
+				<li class="icon-pen"></li>
+				<li class="icon-form"></li>
+				<li class="icon-globe"></li>
+				<li class="icon-temple"></li>
+				<li class="icon-certificate"></li>
+				<li class="icon-briefcase"></li>
+				<li class="icon-brains"></li>
+				<li class="icon-growth"></li>
+				<li class="icon-users"></li>
+				<li class="icon-cog"></li>
+				<li class="icon-leaf"></li>
+				<li class="icon-calendar"></li>
+				<li class="icon-island"></li>
+				<li class="icon-graduate"></li>
+				<li class="icon-sail"></li>
+			</ul>
+		</div>
+		<div class="description right desc-icons">
+			<h2>{{section6.title}}</h2>
+			{{section6.body|safe}}
+		</div>
+
+		<!-- multiple devices -->
+		<div class="md-case"></div>
+		<div class="md-ipad"></div>
+		<div class="md-pen"></div>
+		<div class="md-iphone"></div>
+		<div class="md-macbook"></div>
+		<div class="description desc-devices">
+			<h2>{{section7.title}}</h2>
+			{{section7.body|safe}}
+		</div>
+
+		<!-- hr website -->
+		<div class="hr-ipad">
+			<div class="hr-layer1"></div>
+			<div class="hr-layer2"></div>
+			<div class="line line-1"></div>
+			<div class="line line-2"></div>
+			<div class="line line-3"></div>
+		</div>
+		<div class="description desc-hr">
+			<h2>{{section8.title}}</h2>
+			{{section8.body|safe}}
+		</div>
+
+		<!-- extensive calendar -->
+		<div class="cal-views">
+			<div class="cal-1"></div>
+			<div class="cal-2"></div>
+			<div class="cal-3"></div>
+			<div class="cal-4"></div>
+		</div>
+		<div class="description right desc-calendar">
+			<h2>{{section9.title}}</h2>
+			{{section9.body|safe}}
+		</div>
+
+		<!-- tax battle -->
+		<div class="battle-hero1"></div>
+		<div class="battle-hero2"></div>
+		<div class="battle-hero3"></div>
+		<div class="battle-hero4"></div>
+		<div class="description left desc-battle">
+			<h2>{{section2.title}}</h2>
+			{{section2.body|safe}}
+		</div>
+
+		<!-- print -->
+		<div class="flyer-wrap">
+			<div class="flyer"></div>
+		</div>
+		<div class="description desc-print">
+			<h2>{{section3.title}}</h2>
+			{{section3.body|safe}}
+		</div>
+	</article>
+
+	<nav class="other-cases">
+		<h2>Other cases</h2>
+		<ul>
+			<li><a href="/cases/kpmg-meijburg" class="active kpmg"><img src="/img/cases/buttons/1_logo.png" alt="KPMG Meijburg &amp; Co"><span>Meijburg &amp; Co</span></a></li>
+			<li><a href="/cases/litedark" class="litedark"><img src="/img/cases/buttons/7_logo.png" alt="Lite/Dark"><span>Lite/Dark</span></a></li>
+			<li><a href="/cases/ing-cdc" class="ing"><img src="/img/cases/buttons/2_logo.png" alt="ING CDC"><span>ING CDC</span></a></li>
+			<li><a href="/cases/slimleren" class="slimleren"><img src="/img/cases/buttons/8_logo.png" alt="Slimleren"><span>Slimleren</span></a></li>
+		</ul>
+	</nav>
+{% endblock %}

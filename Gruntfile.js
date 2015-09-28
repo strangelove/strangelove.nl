@@ -30,6 +30,7 @@ module.exports = function(grunt){
 					'public/css/services.css': 'src/css/services.scss',
 					'public/css/cases/ing.css': 'src/css/cases/ing.scss',
 					'public/css/cases/kpmg.css': 'src/css/cases/kpmg.scss',
+					'public/css/cases/vosta.css': 'src/css/cases/vosta.scss',
 					'public/css/cases/litedark.css': 'src/css/cases/litedark.scss',
 					'public/css/cases/slimleren.css': 'src/css/cases/slimleren.scss',
 					'public/css/cases/loyalty-grid.css': 'src/css/cases/loyalty-grid.scss'
@@ -98,6 +99,14 @@ module.exports = function(grunt){
 				},
 				options: {
 					'output': './public/js/kpmg.js'
+				}
+			},
+			vosta: {
+				requires: {
+					'./src/js/vosta.js': true
+				},
+				options: {
+					'output': './public/js/vosta.js'
 				}
 			},
 			litedark: {
