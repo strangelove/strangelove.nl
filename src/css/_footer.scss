@@ -134,9 +134,9 @@
 	}
 	.vea {
 		display: block;
-		width: 51px;
-		height: 17px;
-		background: url(/img/vea.png) 0 -17px;
+		width: 100px;
+		height: 41px;
+		background: url(/img/dda.png) -2px -1px;
 		opacity: .6;
 		@include transition(opacity .2s ease-in-out);
 		&:hover {
