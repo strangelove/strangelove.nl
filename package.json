@@ -14,7 +14,7 @@
 	"homepage": "https://github.com/strangelove/strangelove.nl",
 	"dependencies": {
 		"behaviour": "0.1",
-		"consolidate": "0.9",
+		"consolidate": "0.11",
 		"elements": "0.4",
 		"express": "3.4",
 		"promise": "5.0",
