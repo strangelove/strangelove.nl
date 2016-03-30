@@ -22,6 +22,9 @@
 		background-image: url(/img/header-2.jpg);
 		background-position: center;
 		background-size: cover;
+		@media screen and (max-width: 768px){
+			background-position-x: 75%;
+		}
 	}
 	.mission-wrap {
 		position: absolute;
