@@ -24,6 +24,9 @@ app
 		next();
 	});
 
+app.set('view cache', false);
+swig.setDefaults({ cache: false });
+
 if (app.settings.env == 'development'){
 	swig.setDefaults({cache: false});
 }
